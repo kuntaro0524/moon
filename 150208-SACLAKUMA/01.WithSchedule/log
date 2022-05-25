@@ -1,0 +1,85 @@
+A:   -323.20000    879.90000    314.30000
+B:   -609.10000    803.00000    809.30000
+C:   -453.20000    252.00000    817.30000
+D:   -182.20000    332.00000    347.30000
+879.9 252.0
+marumeta size(Y): 627
+SHOU/AMARI= 12.0 27.0
+number of Y lines= 12
+##########################
+##### Crystal No.1 ######
+##########################
+StartPhi of this vector=-60.0
+Start vector::   -509.09077    829.90000    636.14655
+End   vector::   -310.33269    829.90000    317.31150
+Absolute length of this vector:    375.7 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -602.56408    779.90000    809.63539
+End   vector::   -297.46538    779.90000    320.32300
+Absolute length of this vector:    576.6 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -588.41708    729.90000    810.36134
+End   vector::   -284.59807    729.90000    323.33450
+Absolute length of this vector:    574.0 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -574.27007    679.90000    811.08730
+End   vector::   -271.73075    679.90000    326.34599
+Absolute length of this vector:    571.4 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -560.12307    629.90000    811.81325
+End   vector::   -258.86344    629.90000    329.35749
+Absolute length of this vector:    568.8 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -545.97606    579.90000    812.53920
+End   vector::   -245.99613    579.90000    332.36899
+Absolute length of this vector:    566.2 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -531.82906    529.90000    813.26515
+End   vector::   -233.12882    529.90000    335.38049
+Absolute length of this vector:    563.6 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -517.68205    479.90000    813.99111
+End   vector::   -220.26151    479.90000    338.39199
+Absolute length of this vector:    560.9 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -503.53505    429.90000    814.71706
+End   vector::   -207.39420    429.90000    341.40349
+Absolute length of this vector:    558.3 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -489.38804    379.90000    815.44301
+End   vector::   -194.52688    379.90000    344.41498
+Absolute length of this vector:    555.7 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -475.24103    329.90000    816.16897
+End   vector::   -189.31375    329.90000    359.63750
+Absolute length of this vector:    538.7 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+StartPhi of this vector=-60.0
+Start vector::   -461.09403    279.90000    816.89492
+End   vector::   -358.68875    279.90000    653.38750
+Absolute length of this vector:    192.9 [um]
+Length of this vector from X-rays at -90.0[deg]:      0.0 [um]
+SHOU/AMARI= 0.0 0.0
+N points/crystal= 0
+Time for this crystal= 10.0 [min]

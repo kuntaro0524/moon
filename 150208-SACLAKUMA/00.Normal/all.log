@@ -1,0 +1,59 @@
+################## 30 um step
+==> c300um_step30um_sq.log <==
+Total points: 1358
+N points/crystal= 18
+Time for this crystal= 11.5 [min]
+Number of crystals: 24
+1TIME: 5.88611111111  2TIME: 11.7722222222
+
+==> c400um_step30um_sq.log <==
+Total points: 1357
+N points/crystal= 42
+Time for this crystal= 13.5 [min]
+Number of crystals: 12
+1TIME: 3.88472222222  2TIME: 7.76944444444
+
+==> c500um_step30um_sq.log <==
+Total points: 1373
+N points/crystal= 63
+Time for this crystal= 15.25 [min]
+Number of crystals: 8
+1TIME: 3.24027777778  2TIME: 6.48055555556
+
+==> c600um_step30um_sq.log <==
+Total points: 1402
+N points/crystal= 78
+Time for this crystal= 16.5 [min]
+Number of crystals: 6
+1TIME: 2.94722222222  2TIME: 5.89444444444
+
+##################### 50 um step
+
+==> c600um_step50um_sq.log <==
+Total points: 1359
+N points/crystal= 32
+Time for this crystal= 12.6666666667 [min]
+Number of crystals: 16
+1TIME: 4.55416666667  2TIME: 9.10833333333
+
+==> c300um_step50um_sq.log <==
+Total points: 1355
+N points/crystal= 5
+Time for this crystal= 10.4166666667 [min]
+Number of crystals: 78
+1TIME: 14.8819444444  2TIME: 29.7638888889
+
+==> c400um_step50um_sq.log <==
+Total points: 1356
+N points/crystal= 13
+Time for this crystal= 11.0833333333 [min]
+Number of crystals: 39
+1TIME: 8.38333333333  2TIME: 16.7666666667
+
+==> c500um_step50um_sq.log <==
+Total points: 1359
+N points/crystal= 18
+Time for this crystal= 11.5 [min]
+Number of crystals: 24
+1TIME: 5.8875  2TIME: 11.775
+

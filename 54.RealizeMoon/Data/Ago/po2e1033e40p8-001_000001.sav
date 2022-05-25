@@ -1,0 +1,20 @@
+! This input created from an interactive session
+DIRE ./
+polarisation synchrotron 0.95
+DETECTOR A200
+WAVELENGTH  1.24000
+SYNCHROTRON POLARISATION 0.95
+BEAM  101.27   98.78
+ADCOFFSET   0
+DISTANCE  109.991
+DISTORTION YSCALE    1.0000 TILT    0 TWIST    0
+MATRIX po2e1033e40p8-001_000001.mat
+!This matrix was obtained from autoindexing
+! The following images were used:   1
+SYMMETRY   19
+MOSAIC  0.00
+TEMPLATE po2e1033e40p8-001_######.img
+DIRECTORY ./
+RASTER    19   23   12    5    8
+SEPARATION  0.44 0.34
+OVERLOAD CUTOFF  262112

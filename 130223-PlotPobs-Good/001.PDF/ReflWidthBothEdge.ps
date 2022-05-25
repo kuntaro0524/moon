@@ -1,0 +1,1262 @@
+%!PS-Adobe-3.0
+%%Title: ReflWidthBothEdge.py.fixed
+%%For: Kunio Hirata
+%%Creator: a2ps version 4.14
+%%CreationDate: Sat Feb 23 14:52:47 2013
+%%BoundingBox: 24 24 588 768
+%%DocumentData: Clean7Bit
+%%Orientation: Landscape
+%%Pages: 4
+%%PageOrder: Ascend
+%%DocumentMedia: Letter 612 792 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-BoldOblique
+%%+ font Courier-Oblique
+%%+ font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Symbol
+%%+ font Times-Bold
+%%+ font Times-Roman
+%%DocumentProcessColors: Black 
+%%DocumentSuppliedResources: procset a2ps-a2ps-hdr
+%%+ procset a2ps-black+white-Prolog
+%%+ encoding ISO-8859-1Encoding
+%%EndComments
+/a2psdict 200 dict def
+a2psdict begin
+%%BeginProlog
+%%Copyright: (c) 1988, 89, 90, 91, 92, 93 Miguel Santana
+%%Copyright: (c) 1995, 96, 97, 98 Akim Demaille, Miguel Santana
+% Check PostScript language level.
+/languagelevel where {
+  pop /gs_languagelevel languagelevel def
+} {
+  /gs_languagelevel 1 def
+} ifelse
+
+% EPSF import as in the Red Book
+/BeginInclude {
+  /b4_Inc_state save def    		% Save state for cleanup
+  /dict_count countdictstack def	% Count objects on dict stack
+  /op_count count 1 sub def		% Count objects on operand stack 
+  userdict begin
+    0 setgray 0 setlinecap
+    1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [ ] 0 setdash newpath
+    gs_languagelevel 1 ne {
+      false setstrokeadjust false setoverprint 
+    } if
+} bind def
+
+/EndInclude {
+  count op_count sub { pos } repeat	% Clean up stacks
+  countdictstack dict_count sub { end } repeat
+  b4_Inc_state restore
+} bind def
+
+/BeginEPSF {
+  BeginInclude
+  /showpage { } def
+} bind def
+
+/EndEPSF {
+  EndInclude
+} bind def
+
+% Page prefeed
+/page_prefeed {         % bool -> -
+  statusdict /prefeed known {
+    statusdict exch /prefeed exch put
+  } {
+    pop
+  } ifelse
+} bind def
+
+/deffont {
+  findfont exch scalefont def
+} bind def
+
+/reencode_font {
+  findfont reencode 2 copy definefont pop def
+} bind def
+
+% Function c-show (str => -)
+% centers text only according to x axis.
+/c-show { 
+  dup stringwidth pop
+  2 div neg 0 rmoveto
+  show
+} bind def
+
+% Function l-show (str => -)
+% prints texts so that it ends at currentpoint
+/l-show {
+  dup stringwidth pop neg 
+  0 
+  rmoveto show
+} bind def
+
+% center-fit show (str w => -)
+% show centered, and scale currentfont so that the width is less than w
+/cfshow {
+  exch dup stringwidth pop
+  % If the title is too big, try to make it smaller
+  3 2 roll 2 copy
+  gt
+  { % if, i.e. too big
+    exch div
+    currentfont exch scalefont setfont
+  } { % ifelse
+    pop pop 
+  }
+  ifelse
+  c-show			% center title
+} bind def
+
+% Return the y size of the current font
+% - => fontsize
+/currentfontsize {
+  currentfont /FontMatrix get 3 get 1000 mul
+} bind def
+
+% reencode the font
+% <encoding-vector> <fontdict> -> <newfontdict>
+/reencode { %def
+  dup length 5 add dict begin
+    { %forall
+      % <vector> <key> <val>
+      1 index /FID ne 
+      { def }{ pop pop } ifelse
+    } forall
+    /Encoding exch def % -
+
+    % Use the font's bounding box to determine the ascent, descent,
+    % and overall height; don't forget that these values have to be
+    % transformed using the font's matrix.
+    % We use `load' because sometimes BBox is executable, sometimes not.
+    % Since we need 4 numbers an not an array avoid BBox from being executed
+    /FontBBox load aload pop
+    FontMatrix transform /Ascent exch def pop
+    FontMatrix transform /Descent exch def pop
+    /FontHeight Ascent Descent sub def
+
+    % Get the underline position and thickness if they're defined.
+    % Use 1 if they are not defined.
+    currentdict /FontInfo 2 copy known
+    { get
+      /UnderlinePosition 2 copy % <FontInfo> /UP <FontInfo> /UP
+      2 copy known
+      { get }{ pop pop 1 } ifelse
+      0 exch FontMatrix transform exch pop
+      def % <FontInfo>
+
+      /UnderlineThickness 2 copy % <FontInfo> /UT <FontInfo> /UT
+      2 copy known
+      { get }{ pop pop 1 } ifelse
+      0 exch FontMatrix transform exch pop
+      def % <FontInfo>
+      pop % -
+    }{ pop pop
+    } ifelse
+
+    currentdict
+  end 
+} bind def
+
+% Function print line number (<string> # -)
+/# {
+  gsave
+    sx cw mul neg 2 div 0 rmoveto
+    f# setfont
+    c-show
+  grestore
+} bind def
+
+% -------- Some routines to enlight plain b/w printings ---------
+
+% Underline
+% width --
+/dounderline {
+  currentpoint
+  gsave
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    0 rlineto
+    stroke
+  grestore
+} bind def
+
+% Underline a string
+% string --
+/dounderlinestring {
+  stringwidth pop
+  dounderline
+} bind def
+
+/UL {
+  /ul exch store
+} bind def
+
+% Draw a box of WIDTH wrt current font
+% width --
+/dobox {
+  currentpoint
+  gsave
+    newpath
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    dup 0 rlineto
+    0 currentfont /FontHeight get currentfontsize mul rlineto
+    neg 0 rlineto
+    closepath
+    stroke
+  grestore
+} bind def
+
+/BX {
+  /bx exch store
+} bind def
+
+% Box a string
+% string --
+/doboxstring {
+  stringwidth pop
+  dobox
+} bind def
+
+%
+% ------------- Color routines ---------------
+%
+/FG /setrgbcolor load def
+
+% Draw the background
+% width --
+/dobackground {
+  currentpoint
+  gsave
+    newpath
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    dup 0 rlineto
+    0 currentfont /FontHeight get currentfontsize mul rlineto
+    neg 0 rlineto
+    closepath
+    bgcolor aload pop setrgbcolor
+    fill
+  grestore
+} bind def
+
+% Draw bg for a string
+% string --
+/dobackgroundstring {
+  stringwidth pop
+  dobackground
+} bind def
+
+
+/BG {
+  dup /bg exch store
+  { mark 4 1 roll ] /bgcolor exch store } if
+} bind def
+
+
+/Show {
+  bg { dup dobackgroundstring } if
+  ul { dup dounderlinestring } if
+  bx { dup doboxstring } if
+  show
+} bind def
+
+% Function T(ab), jumps to the n-th tabulation in the current line
+/T {
+  cw mul x0 add
+  bg { dup currentpoint pop sub dobackground } if
+  ul { dup currentpoint pop sub dounderline } if
+  bx { dup currentpoint pop sub dobox } if
+  y0 moveto
+} bind def
+
+% Function n: move to the next line
+/n {
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+% Function N: show and move to the next line
+/N {
+  Show
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+/S {
+  Show
+} bind def
+
+%%BeginResource: procset a2ps-a2ps-hdr 2.0 2
+%%Copyright: (c) 1988, 89, 90, 91, 92, 93 Miguel Santana
+%%Copyright: (c) 1995, 96, 97, 98 Akim Demaille, Miguel Santana
+% Function title: prints page header.
+% <ct> <rt> <lt> are passed as argument
+/title { 
+  % 1. Draw the background
+  x v get y v get moveto
+  gsave
+    0 th 2 div neg rmoveto 
+    th setlinewidth
+    0.95 setgray
+    pw 0 rlineto stroke
+  grestore
+  % 2. Border it
+  gsave
+    0.7 setlinewidth
+    pw 0 rlineto
+    0 th neg rlineto
+    pw neg 0 rlineto
+    closepath stroke
+  grestore
+  % stk: ct rt lt
+  x v get y v get th sub 1 add moveto
+%%IncludeResource: font Helvetica
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  % 3. The left title
+  gsave
+    dup stringwidth pop fnfs 0.8 mul add exch % leave space took on stack
+    fnfs 0.8 mul hm rmoveto
+    show			% left title
+  grestore
+  exch
+  % stk: ct ltw rt
+  % 4. the right title
+  gsave
+    dup stringwidth pop fnfs 0.8 mul add exch % leave space took on stack
+    dup
+    pw exch stringwidth pop fnfs 0.8 mul add sub
+    hm
+    rmoveto
+    show			% right title
+  grestore
+  % stk: ct ltw rtw
+  % 5. the center title
+  gsave
+    pw 3 1 roll
+    % stk: ct pw ltw rtw
+    3 copy 
+    % Move to the center of the left room
+    sub add 2 div hm rmoveto
+    % What is the available space in here?
+    add sub fnfs 0.8 mul sub fnfs 0.8 mul sub
+    % stk: ct space_left
+%%IncludeResource: font Helvetica-Bold
+  fHelvetica-Bold fnfs scalefont setfont
+    cfshow
+  grestore
+} bind def
+
+% Function border: prints virtual page border
+/border { %def
+  gsave				% print four sides
+    0 setgray
+    x v get y v get moveto
+    0.7 setlinewidth		% of the square
+    pw 0 rlineto
+    0 ph neg rlineto
+    pw neg 0 rlineto
+    closepath stroke
+  grestore
+} bind def
+
+% Function water: prints a water mark in background
+/water { %def
+  gsave
+    scx scy moveto rotate
+%%IncludeResource: font Times-Bold
+  fTimes-Bold 100 scalefont setfont
+    .97 setgray
+    dup stringwidth pop 2 div neg -50 rmoveto
+    show
+  grestore
+} bind def
+
+% Function rhead: prints the right header
+/rhead {  %def
+  lx ly moveto
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  l-show
+} bind def
+
+% Function footer (cf rf lf -> -)
+/footer {
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  dx dy moveto
+  show
+
+  snx sny moveto
+  l-show
+  
+  fnx fny moveto
+  c-show
+} bind def
+%%EndResource
+%%BeginResource: procset a2ps-black+white-Prolog 2.0 1
+
+% Function T(ab), jumps to the n-th tabulation in the current line
+/T { 
+  cw mul x0 add y0 moveto
+} bind def
+
+% Function n: move to the next line
+/n { %def
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+% Function N: show and move to the next line
+/N {
+  Show
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+}  bind def
+
+/S {
+  Show
+} bind def
+
+/p {
+  false UL
+  false BX
+  fCourier bfs scalefont setfont
+  Show
+} bind def
+
+/sy {
+  false UL
+  false BX
+  fSymbol bfs scalefont setfont
+  Show
+} bind def
+
+/k {
+  false UL
+  false BX
+  fCourier-Oblique bfs scalefont setfont
+  Show
+} bind def
+
+/K {
+  false UL
+  false BX
+  fCourier-Bold bfs scalefont setfont
+  Show
+} bind def
+
+/c {
+  false UL
+  false BX
+  fCourier-Oblique bfs scalefont setfont
+  Show
+} bind def
+
+/C {
+  false UL
+  false BX
+  fCourier-BoldOblique bfs scalefont setfont
+  Show 
+} bind def
+
+/l {
+  false UL
+  false BX
+  fHelvetica bfs scalefont setfont
+  Show
+} bind def
+
+/L {
+  false UL
+  false BX
+  fHelvetica-Bold bfs scalefont setfont
+  Show 
+} bind def
+
+/str{
+  false UL
+  false BX
+  fTimes-Roman bfs scalefont setfont
+  Show
+} bind def
+
+/e{
+  false UL
+  true BX
+  fHelvetica-Bold bfs scalefont setfont
+  Show
+} bind def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Courier
+%%IncludeResource: font Courier-Oblique
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Symbol
+%%IncludeResource: font Courier-BoldOblique
+%%BeginResource: encoding ISO-8859-1Encoding
+/ISO-8859-1Encoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright 
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash 
+/zero /one /two /three /four /five /six /seven 
+/eight /nine /colon /semicolon /less /equal /greater /question 
+/at /A /B /C /D /E /F /G 
+/H /I /J /K /L /M /N /O 
+/P /Q /R /S /T /U /V /W 
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore 
+/quoteleft /a /b /c /d /e /f /g 
+/h /i /j /k /l /m /n /o 
+/p /q /r /s /t /u /v /w 
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section 
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron 
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /bullet 
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown 
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla 
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis 
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply 
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls 
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla 
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis 
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide 
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis 
+] def
+%%EndResource
+% Initialize page description variables.
+/sh 612 def
+/sw 792 def
+/llx 24 def
+/urx 768 def
+/ury 588 def
+/lly 24 def
+/#copies 1 def
+/th 15.000000 def
+/fnfs 11 def
+/bfs 7.493857 def
+/cw 4.496314 def
+
+% Dictionary for ISO-8859-1 support
+/iso1dict 8 dict begin
+  /fCourier ISO-8859-1Encoding /Courier reencode_font
+  /fCourier-Bold ISO-8859-1Encoding /Courier-Bold reencode_font
+  /fCourier-BoldOblique ISO-8859-1Encoding /Courier-BoldOblique reencode_font
+  /fCourier-Oblique ISO-8859-1Encoding /Courier-Oblique reencode_font
+  /fHelvetica ISO-8859-1Encoding /Helvetica reencode_font
+  /fHelvetica-Bold ISO-8859-1Encoding /Helvetica-Bold reencode_font
+  /fTimes-Bold ISO-8859-1Encoding /Times-Bold reencode_font
+  /fTimes-Roman ISO-8859-1Encoding /Times-Roman reencode_font
+currentdict end def
+/bgcolor [ 0 0 0 ] def
+/bg false def
+/ul false def
+/bx false def
+% The font for line numbering
+/f# /Helvetica findfont bfs .6 mul scalefont def
+/fSymbol /Symbol findfont def
+/hm fnfs 0.25 mul def
+/pw
+   cw 81.400000 mul
+def
+/ph
+   522.321860 th add
+def
+/pmw urx llx sub pw 2 mul sub 1 div def
+/pmh 0 def
+/v 0 def
+/x [
+  0
+  dup pmw add pw add
+] def
+/y [
+  pmh ph add 0 mul ph add
+  dup
+] def
+/scx sw 2 div def
+/scy sh 2 div def
+/snx urx def
+/sny lly 2 add def
+/dx llx def
+/dy sny def
+/fnx scx def
+/fny dy def
+/lx snx def
+/ly ury fnfs 0.8 mul sub def
+/sx 0 def
+/tab 8 def
+/x0 0 def
+/y0 0 def
+%%EndSetup
+
+%%Page: (1-2) 1
+%%BeginPageSetup
+/pagesave save def
+sh 0 translate 90 rotate
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 12 add translate
+/v 0 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+(import os,sys,math) p n
+(from numpy import *) N
+(from Amat import *) N
+() N
+(class ReflWidthBothEdge:) N
+() N
+() S 8 T (def __init__\(self,amatfile,divv,divh,mosaic,dispersion,oscstep\):) N
+() S 8 T () S 16 T (self.amatfile=amatfile) N
+() S 8 T () S 16 T (self.mosaic=mosaic) N
+() S 8 T () S 16 T (self.dispersion=dispersion ) S 48 T (#UNIT: degree) N
+() S 8 T () S 16 T (self.divv=divv) S 32 T () S 40 T () S 48 T (# UNIT: degree) N
+() S 8 T () S 16 T (self.divh=divh) S 32 T () S 40 T () S 48 T (# UNIT: degree) N
+() S 8 T () S 16 T (self.cuspflag=1) N
+() S 8 T () S 16 T (self.width_max=3.0 ) S 40 T () S 48 T (# UNIT: degree) N
+() S 8 T () S 16 T (self.oscstep=oscstep ) S 40 T (# UNIT: degree) N
+() S 8 T () S 16 T (self.isPrepDELEPS=False) S 40 T () N
+() S 8 T () S 16 T (self.isSetMisset=False) N
+() N
+() S 8 T () S 16 T (# Some flags) N
+() S 8 T () S 16 T (self.isInit=False) N
+() S 8 T () S 16 T (self.isSolved=False) N
+() N
+() S 8 T (def init\(self\):) N
+() S 8 T () S 16 T (#) S 24 T (S0 vector \(anti-parallel to the x-ray\)) N
+() S 8 T () S 16 T (self.s0=array\(\(-1,0,0\)\)) N
+() S 8 T () S 16 T (#) S 24 T (E3 vector \(Z axis: rotation axis\)) N
+() S 8 T () S 16 T (self.e3=array\(\(0,0,1\)\)) N
+() N
+() S 8 T () S 16 T (# A matrix file open and read 'A matrix') N
+() S 8 T () S 16 T (amatftmp=Amat\(self.amatfile\)) N
+() S 8 T () S 16 T (self.amat=amatftmp.getAmat\(\)) N
+() N
+() S 8 T () S 16 T (self.isInit=True) N
+() N
+() S 8 T (def setMisset\(self,rx,ry,rz\):) N
+() S 8 T () S 16 T (rotx=self.makeRotX\(rx\)) N
+() S 8 T () S 16 T (roty=self.makeRotY\(ry\)) N
+() S 8 T () S 16 T (rotz=self.makeRotZ\(rz\)) N
+() N
+() S 8 T () S 16 T (rot_xy=dot\(rotx,roty\)) N
+() S 8 T () S 16 T (self.misset=dot\(rot_xy,rotz\)) N
+() S 8 T () S 16 T (self.isSetMisset=True) N
+() S 8 T () S 16 T (#print self.misset) N
+() N
+() S 8 T (# hkl: array of reflection index \(type: integer\)) N
+() S 8 T (# phistart: phi start angle [degrees]) N
+() N
+() S 8 T (def setHKL\(self,hkl,phistart\):) N
+() S 8 T () S 16 T (if self.isInit==False:) N
+() S 8 T () S 16 T () S 24 T (self.init\(\)) N
+() S 8 T () S 16 T (self.isPrepDELEPS=False) N
+() N
+() S 8 T () S 16 T (## HKL -> XYZ in reciprocal space) N
+() S 8 T () S 16 T (# convert int -> float ) N
+() S 8 T () S 16 T (tmp_hkl=[]) N
+() S 8 T () S 16 T (tmp_hkl.append\(float\(hkl[0]\)\)) N
+() S 8 T () S 16 T (tmp_hkl.append\(float\(hkl[1]\)\)) N
+() S 8 T () S 16 T (tmp_hkl.append\(float\(hkl[2]\)\)) N
+() S 8 T () S 16 T (self.hkl=hkl) N
+() N
+() S 8 T () S 16 T (self.phistart=phistart) N
+() N
+() S 8 T () S 16 T (# Rotation matrix with phistart from Amatrix origin) N
+() S 8 T () S 16 T (phistart_matr=self.makeRotMat\(self.phistart\)) N
+() N
+() S 8 T () S 16 T (# Rotation matrix with phiend from Amatrix origin) N
+() S 8 T () S 16 T (# phiend = self.phistart + oscillation_width) N
+() S 8 T () S 16 T (phiend=self.phistart+self.oscstep) N
+() S 8 T () S 16 T (phiend_matr=self.makeRotMat\(phiend\)) N
+(ReflWidthBothEdge.py.fixed) (Page 1/8) ( 2 23, 13 14:50) title
+border
+/v 1 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p n
+() S 8 T () S 16 T (# DEBUGGING) N
+() S 8 T () S 16 T (#print "PHIEND matrix") N
+() S 8 T () S 16 T (#print phiend_matr) N
+() S 8 T () S 16 T (#print "PHIEND matrix") N
+() N
+() S 8 T () S 16 T (# Amat x Rotation matrix \(@start phi\)) N
+() S 8 T () S 16 T (self.amat_startphi=dot\(phistart_matr,self.amat\)) N
+() S 8 T () S 16 T (if self.isSetMisset:) N
+() S 8 T () S 16 T () S 24 T (self.amat_startphi=dot\(self.misset,self.amat_startphi\)) N
+() N
+() S 8 T () S 16 T (# Amat x Rotation matrix \(@end phi\)) N
+() S 8 T () S 16 T (self.amat_endphi=dot\(phiend_matr,self.amat\)) N
+() S 8 T () S 16 T (if self.isSetMisset:) N
+() S 8 T () S 16 T () S 24 T (self.amat_endphi=dot\(self.misset,self.amat_endphi\)) N
+() N
+() S 8 T () S 16 T (#print "==== STARTPHI =====") N
+() S 8 T () S 16 T (#print self.amat_startphi) N
+() S 8 T () S 16 T (#print "==== ENDPHI =====") N
+() S 8 T () S 16 T (#print self.amat_endphi) N
+() N
+() S 8 T () S 16 T (# Amat*HKL -> XYZ in reciprocal space) N
+() S 8 T () S 16 T (float_hkl=array\(tmp_hkl\)) N
+() N
+() S 8 T () S 16 T (# XYZ1: RLP at start phi) N
+() S 8 T () S 16 T (self.xyz1=dot\(self.amat_startphi,float_hkl\)) N
+() S 8 T () S 16 T (# XYZ2: RLP at end phi) N
+() S 8 T () S 16 T (self.xyz2=dot\(self.amat_endphi,float_hkl\)) N
+() N
+() S 8 T () S 16 T (# E1/E2/E3 vectors are calculated from XYZ1\(RLP@ start phi\)) N
+() S 8 T () S 16 T (##) S 24 T (E2 vector \(E3xRLP/|E3xRLP|\)) N
+() S 8 T () S 16 T (self.e2=cross\(self.e3,self.xyz1\)/linalg.norm\(cross\(self.e3,self.) N
+(xyz1\)\)) N
+() S 8 T () S 16 T (#) S 24 T (E1 vector \(E2 x E3\)) N
+() S 8 T () S 16 T (self.e1=cross\(self.e2,self.e3\)) N
+() N
+() S 8 T () S 16 T (## d* value is calculated from XYZ1\(RLP@start phi\)) N
+() S 8 T () S 16 T (## Calculating d* value) N
+() S 8 T () S 16 T (self.dstar=linalg.norm\(self.xyz1\)) N
+() S 8 T () S 16 T (self.dstar2=self.dstar*self.dstar) N
+() S 8 T () S 16 T (self.dst4=self.dstar2*self.dstar2*0.25) N
+() N
+() S 8 T () S 16 T (## XRLP .vs. Ewald sphere) N
+() S 8 T () S 16 T (## Diffraction condition) N
+() S 8 T () S 16 T (# CEA.cos\(phic\)+CEB.sin\(phic\)=CEC) N
+() S 8 T () S 16 T (# 1\) CEA=\(XRLP.E1\)*\(E1.S0\)) N
+() S 8 T () S 16 T (# 2\) CEB=\(XRLP.E1\)*\(E2.S0\)) N
+() S 8 T () S 16 T (# 3\) CEC=0.5*\(XRLP.E1\)^2+0.5*\(XRLP.E3\)^2-\(XRLP.E3\)*\(E3.S0\)) N
+() S 8 T () S 16 T (# 4\) CEABSQ=CEA^2+CEB^2 \(=0.0 -> XRLP on rotation axis\)) N
+() N
+() S 8 T () S 16 T (## DEBUG) N
+() S 8 T () S 16 T (#print "E1=",self.e1) N
+() S 8 T () S 16 T (#print "E2=",self.e2) N
+() S 8 T () S 16 T (#print "E3=",self.e3) N
+() S 8 T () S 16 T () N
+() S 8 T () S 16 T (# Preparation) N
+() S 8 T () S 16 T (# xe1: XRLP.E1) N
+() S 8 T () S 16 T (xe1=dot\(self.xyz1,self.e1\)) N
+() S 8 T () S 16 T (# xe3: XRLP.E3) N
+() S 8 T () S 16 T (xe3=dot\(self.xyz1,self.e3\)) N
+() S 8 T () S 16 T (# XE1D) N
+() S 8 T () S 16 T (e1_dot_s0=dot\(self.e1,self.s0\)) N
+() S 8 T () S 16 T (e2_dot_s0=dot\(self.e2,self.s0\)) N
+() S 8 T () S 16 T (e3_dot_s0=dot\(self.e3,self.s0\)) N
+() N
+() S 8 T () S 16 T (## DEBUG) N
+() S 8 T () S 16 T (#print "XE1/3=",xe1,xe3) N
+() S 8 T () S 16 T (#print "E1.S0/E2.S0/E3.S0=",e1_dot_s0,e2_dot_s0,e3_dot_s0) N
+() N
+(ReflWidthBothEdge.py.fixed) (Page 2/8) ( 2 23, 13 14:50) title
+border
+grestore
+(Printed by Kunio Hirata) rhead
+(ReflWidthBothEdge.py.fixed) (1/4) (\345M-^\\M-^_\346M-^[M-^\\\346M-^W\245 2\346M-^\\M-^H 23, 2013) footer
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (3-4) 2
+%%BeginPageSetup
+/pagesave save def
+sh 0 translate 90 rotate
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 12 add translate
+/v 0 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p 8 T () S 16 T (####) N
+() S 8 T () S 16 T (# CEA,CEB,CEC) N
+() S 8 T () S 16 T (self.cea=xe1*e1_dot_s0) N
+() S 8 T () S 16 T (self.ceb=xe1*e2_dot_s0) N
+() S 8 T () S 16 T (self.cec=0.5*pow\(xe1,2.0\)+0.5*pow\(xe3,2.0\)-\(xe3*e3_dot_s0\)) N
+() S 8 T () S 16 T (#print "CEA=",self.cea) N
+() S 8 T () S 16 T (#print "CEB=",ceb) N
+() S 8 T () S 16 T (#print "CEC=",cec) N
+() N
+() S 8 T () S 16 T (self.ceabsq=pow\(self.cea,2.0\)+pow\(self.ceb,2.0\)) N
+() S 8 T () S 16 T (#print "CEABS %12.5f"%self.ceabsq) N
+() N
+() S 8 T () S 16 T (###############) N
+() S 8 T () S 16 T (# There are 2 solutions where RLP crosses Ewald Sphere) N
+() S 8 T () S 16 T (###############) N
+() S 8 T () S 16 T (if self.ceabsq!=0.0:) N
+() S 8 T () S 16 T () S 24 T (self.arg1=self.cec/sqrt\(self.ceabsq\)) N
+() S 8 T () S 16 T () S 24 T (#print "ARG=",self.arg1) N
+() S 8 T () S 16 T () S 24 T (return True) N
+() S 8 T () S 16 T (else:) N
+() S 8 T () S 16 T () S 24 T (return False) N
+() N
+() S 8 T (def solvePhi\(self\):) N
+() S 8 T () S 16 T (dtor=4.0*arctan\(1.0\)/180.0) N
+() N
+() S 8 T () S 16 T (################) N
+() S 8 T () S 16 T (# self.arg1 value is not in the reasonable range) N
+() S 8 T () S 16 T (################) N
+() S 8 T () S 16 T (if self.arg1>1.0:) N
+() S 8 T () S 16 T () S 24 T (self.arg1=1.0) N
+() S 8 T () S 16 T (elif self.arg1<-1.0:) N
+() S 8 T () S 16 T () S 24 T (self.arg1=-1.0) N
+() N
+() S 8 T () S 16 T (# solutions in unit of radians) N
+() S 8 T () S 16 T (t1=arccos\(self.arg1\)) N
+() S 8 T () S 16 T (t2=arctan2\(self.ceb,self.cea\)) N
+() S 8 T () S 16 T () N
+() S 8 T () S 16 T (# 1st solution in unit of degree) N
+() S 8 T () S 16 T (phic=degrees\(t1+t2\)) N
+() S 8 T () S 16 T (phia=self.phistart+phic) N
+() S 8 T () S 16 T (# 2nd solutin in unit of degree) N
+() S 8 T () S 16 T (self.phic=degrees\(-t1+t2\)) N
+() S 8 T () S 16 T (phib=self.phistart+self.phic;) N
+() N
+() S 8 T () S 16 T (# Choosing the solution) N
+() S 8 T () S 16 T (diff1=fabs\(phia-self.phistart\)) N
+() S 8 T () S 16 T (diff2=fabs\(phib-self.phistart\)) N
+() N
+() S 8 T () S 16 T (# DEBUG) N
+() S 8 T () S 16 T (#-print "T1/T2=",t1,t2) N
+() S 8 T () S 16 T (#print "PHIA/PHIB=",phia,phib) N
+() S 8 T () S 16 T (#-print "DIFF1/DIFF2=",diff1,diff2) N
+() N
+() S 8 T () S 16 T (# self.phi UNIT:degrees) N
+() S 8 T () S 16 T (if diff1<diff2:) N
+() S 8 T () S 16 T () S 24 T (self.phi=phia) N
+() S 8 T () S 16 T (else:) N
+() S 8 T () S 16 T () S 24 T (self.phi=phib) N
+() N
+() S 8 T () S 16 T (#print "solved PHI",self.phi) N
+() S 8 T () S 16 T (self.isSolved=True) N
+() N
+() S 8 T (def makeRotMat\(self,phideg\):) N
+() S 8 T () S 16 T (phirad=radians\(phideg\)) N
+() S 8 T () S 16 T (#print "PHIRAD/COS\(PHIRAD\)/SIN\(PHIRAD\)=",phirad,cos\(phirad\),sin\() N
+(phirad\)) N
+() S 8 T () S 16 T (tpl=matrix\( \() N
+() S 8 T () S 16 T (        \( cos\(phirad\), -sin\(phirad\),0.\),) N
+() S 8 T () S 16 T (        \( sin\(phirad\), cos\(phirad\),0\),) N
+(ReflWidthBothEdge.py.fixed) (Page 3/8) ( 2 23, 13 14:50) title
+border
+/v 1 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p 8 T () S 16 T (        \( 0., 0., 1.\)) N
+() S 8 T () S 16 T (\) \)) N
+() S 8 T () S 16 T (mat=array\(matrix\(\(tpl\)\).reshape\(3,3\)\)) N
+() S 8 T () S 16 T (return mat) N
+() N
+() S 8 T (def makeRotZ\(self,phideg\):) N
+() S 8 T () S 16 T (phirad=radians\(phideg\)) N
+() S 8 T () S 16 T (#print "PHIRAD/COS\(PHIRAD\)/SIN\(PHIRAD\)=",phirad,cos\(phirad\),sin\() N
+(phirad\)) N
+() S 8 T () S 16 T (tpl=matrix\( \() N
+() S 8 T () S 16 T (        \( cos\(phirad\), -sin\(phirad\),0.\),) N
+() S 8 T () S 16 T (        \( sin\(phirad\), cos\(phirad\),0\),) N
+() S 8 T () S 16 T (        \( 0., 0., 1.\)) N
+() S 8 T () S 16 T (\) \)) N
+() S 8 T () S 16 T (mat=array\(matrix\(\(tpl\)\).reshape\(3,3\)\)) N
+() S 8 T () S 16 T (return mat) N
+() N
+() S 8 T (def makeRotX\(self,phix\):) N
+() S 8 T () S 16 T (phirad=radians\(phix\)) N
+() S 8 T () S 16 T (#print "PHIRAD/COS\(PHIRAD\)/SIN\(PHIRAD\)=",phirad,cos\(phirad\),sin\() N
+(phirad\)) N
+() S 8 T () S 16 T (tpl=matrix\( \() N
+() S 8 T () S 16 T (        \( 1., 0., 0.\),) N
+() S 8 T () S 16 T (        \( 0.,cos\(phirad\), -sin\(phirad\)\),) N
+() S 8 T () S 16 T (        \( 0.,sin\(phirad\), cos\(phirad\)\)) N
+() S 8 T () S 16 T (\) \)) N
+() S 8 T () S 16 T (mat=array\(matrix\(\(tpl\)\).reshape\(3,3\)\)) N
+() S 8 T () S 16 T (return mat) N
+() N
+() S 8 T (def makeRotY\(self,phiy\):) N
+() S 8 T () S 16 T (phirad=radians\(phiy\)) N
+() S 8 T () S 16 T (#print "PHIRAD/COS\(PHIRAD\)/SIN\(PHIRAD\)=",phirad,cos\(phirad\),sin\() N
+(phirad\)) N
+() S 8 T () S 16 T (tpl=matrix\( \() N
+() S 8 T () S 16 T (        \( cos\(phirad\), 0., sin\(phirad\)\),) N
+() S 8 T () S 16 T (        \( 0., 1., 0.\),) N
+() S 8 T () S 16 T (        \( -sin\(phirad\), 0., cos\(phirad\)\),) N
+() S 8 T () S 16 T (\) \)) N
+() S 8 T () S 16 T (mat=array\(matrix\(\(tpl\)\).reshape\(3,3\)\)) N
+() S 8 T () S 16 T (return mat) N
+() N
+() S 8 T (def distEwaldToRLP\(self\) :) N
+() S 8 T () S 16 T (if self.isSolved==False :) N
+() S 8 T () S 16 T () S 24 T (self.solvePhi\(\)) N
+() S 8 T () S 16 T (# Ewald sphere \(x+1\)^2 + y^2 + z^2 = 1.0) N
+(       ) S 8 T (######################) N
+(       ) S 8 T (##  XRLP at start phi) N
+(       ) S 8 T (######################) N
+() S 8 T () S 16 T (x1=self.xyz1[0]) N
+() S 8 T () S 16 T (y1=self.xyz1[1]) N
+() S 8 T () S 16 T (z1=self.xyz1[2]) N
+() S 8 T () S 16 T (x2=self.xyz2[0]) N
+() S 8 T () S 16 T (y2=self.xyz2[1]) N
+() S 8 T () S 16 T (z2=self.xyz2[2]) N
+() N
+() S 8 T () S 16 T (# Some short cut variants) N
+() S 8 T () S 16 T (# for XYZ1@start phi) N
+() S 8 T () S 16 T (x1_2=\(x1+1.0\)*\(x1+1.0\)) N
+() S 8 T () S 16 T (y1_2=y1*y1) N
+() S 8 T () S 16 T (z1_2=z1*z1) N
+() S 8 T () S 16 T (# for XYZ1@start phi) N
+() S 8 T () S 16 T (x2_2=\(x2+1.0\)*\(x2+1.0\)) N
+() S 8 T () S 16 T (y2_2=y2*y2) N
+() S 8 T () S 16 T (#print "XYZ1 %12.5f %12.5f %12.5f"%\(x1,y1,z1\)) N
+() S 8 T () S 16 T (#print "XYZ2 %12.5f %12.5f %12.5f"%\(x2,y2,z2\)) N
+() S 8 T () S 16 T (#####################) N
+() S 8 T () S 16 T (# Distance from XYZ to Ewald sphere) N
+() S 8 T () S 16 T (#####################) N
+() S 8 T () S 16 T (self.del1=sqrt\(x1_2+y1_2+z1_2\)-1.0) N
+(ReflWidthBothEdge.py.fixed) (Page 4/8) ( 2 23, 13 14:50) title
+border
+grestore
+(Printed by Kunio Hirata) rhead
+(ReflWidthBothEdge.py.fixed) (2/4) (\345M-^\\M-^_\346M-^[M-^\\\346M-^W\245 2\346M-^\\M-^H 23, 2013) footer
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (5-6) 3
+%%BeginPageSetup
+/pagesave save def
+sh 0 translate 90 rotate
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 12 add translate
+/v 0 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p 8 T () S 16 T (self.del2=sqrt\(x2_2+y2_2+z1_2\)-1.0) N
+() S 8 T () S 16 T (self.adel1=fabs\(self.del1\)) N
+() S 8 T () S 16 T (self.adel2=fabs\(self.del2\)) N
+() N
+() S 8 T () S 16 T (return True) N
+() N
+() S 8 T (def calcLorentz\(self\):) N
+() S 8 T () S 16 T (# Matrix required for Lorentz factor estimation) N
+() S 8 T () S 16 T (tmp1=cross\(self.e3,self.s0\)) N
+() S 8 T () S 16 T (# RLP coordinates at the 'solved phi' angle) N
+() S 8 T () S 16 T (# self.phic [degrees]) N
+() S 8 T () S 16 T (phicrotmat=self.makeRotMat\(self.phic\)) N
+() S 8 T () S 16 T (xrlpe=dot\(phicrotmat,self.xyz1\)) N
+() S 8 T () S 16 T () N
+() S 8 T () S 16 T (# Lorentz factor is estimated at the beginning rotation angle) N
+() S 8 T () S 16 T (#print tmp1,xrlpe) N
+() S 8 T () S 16 T (t3=dot\(tmp1,xrlpe\)) N
+() S 8 T () S 16 T (self.lorentz_factor=fabs\(1.0/t3\);) N
+() N
+() S 8 T (def calcRspot\(self\):) N
+() N
+() S 8 T () S 16 T (# Divergence ) N
+() S 8 T () S 16 T (#---- Conventional source geometry) N
+() S 8 T () S 16 T (#  Radius of reciprocal lattice point along radius of Ewald sphe) N
+(re) N
+() S 8 T () S 16 T (#     RSPOT = 0.5*\(DIVERGENCE+dispersion*tan\(theta\) \)*DSTAR*COS\() N
+(THETA\)) N
+() S 8 T () S 16 T (#     and as DSTAR*COS\(THETA\) = SQRT\(DSTAR**2-0.25*DSTAR**4\)) N
+() S 8 T () S 16 T (#  Note that the divergence parameters DIVH,DIVV and the mosaic ) N
+(spread) N
+() S 8 T () S 16 T (#  are stored in the generate file as the FULL WIDTHS in degrees) N
+(.) N
+() S 8 T () S 16 T (#  These are converted to HALF WIDTHS in radians prior to the pr) N
+(ediction) N
+() S 8 T () S 16 T (#  calculations.) N
+() S 8 T () S 16 T (#  Add the contribution due to finite block size.) N
+() N
+() S 8 T () S 16 T (#print "DEG: divv,divh=",self.divv,self.divh) N
+() S 8 T () S 16 T (#print "DEG: mosaic=",self.mosaic) N
+() S 8 T () S 16 T (#print "RAD: divv,divh=",radians\(self.divv\),radians\(self.divh\)) N
+() S 8 T () S 16 T (#print "RAD: mosaic=",radians\(self.mosaic\)) N
+() N
+() S 8 T () S 16 T (# Mosaic/Divergence convertion which can match to MOSFLM) N
+() S 8 T () S 16 T (# For strategy option ON ????) N
+() S 8 T () S 16 T (divv=radians\(self.divv\)/2.0) N
+() S 8 T () S 16 T (divh=radians\(self.divh\)/2.0) N
+() S 8 T () S 16 T (mosaic=radians\(self.mosaic\)/2.0) N
+() N
+() S 8 T () S 16 T (# Energy dispersion?) N
+() S 8 T () S 16 T (delcor=0.0001) N
+() S 8 T () S 16 T (# z1 of XRLP) N
+() S 8 T () S 16 T (z1=self.xyz1[2]) N
+() S 8 T () S 16 T (# ymid : in the MOSFLM \(Y@phistart+Y@phiend\)/2.0) N
+() S 8 T () S 16 T (y1=self.xyz1[1]) N
+() S 8 T () S 16 T (y2=self.xyz2[1]) N
+() S 8 T () S 16 T (ymid=0.5*\(y1+y2\)) N
+() S 8 T () S 16 T (yms=ymid*ymid) N
+() N
+() S 8 T () S 16 T (# Preparation of parameters required for divergence calculation) N
+() S 8 T () S 16 T (esyn_h=delcor*self.dstar2+z1*divh) N
+() S 8 T () S 16 T (esyn_v=divv*ymid) N
+() S 8 T () S 16 T (# Divergence calculation) N
+() S 8 T () S 16 T (divergence=sqrt\(\(pow\(esyn_h,2.0\)+pow\(esyn_v,2.0\)\)/\(yms+z1*z1\)\)) N
+() S 8 T () S 16 T (# Reflection spot radius) N
+() S 8 T () S 16 T (self.rspot=\(divergence+mosaic\)*sqrt\(self.dstar2-self.dst4\) \\) N
+() S 8 T () S 16 T () S 24 T (+0.25*self.dispersion*self.dstar2) N
+() S 8 T () S 16 T (#-print "DIVERG/ETA/DSTAR2/RSPOT=",divergence,mosaic,self.dstar2) N
+(,self.rspot) N
+() S 8 T () S 16 T (#print "RSPOT=",self.rspot) N
+(ReflWidthBothEdge.py.fixed) (Page 5/8) ( 2 23, 13 14:50) title
+border
+/v 1 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p 8 T () S 16 T (return self.rspot) N
+() N
+() S 8 T (def cuspcheck\(self\):) N
+() S 8 T () S 16 T (csmin=0.5*self.dstar2+self.rspot) N
+() S 8 T () S 16 T (csmin2=self.dst4+self.dstar2*self.rspot) N
+() S 8 T () S 16 T (x,y=self.xyz1[0],self.xyz1[1]) N
+() S 8 T () S 16 T (xys=x*x+y*y) N
+() S 8 T () S 16 T (#=====================) N
+() S 8 T () S 16 T (# What should csimin test be ? The spot can still appear on imag) N
+(e) N
+() S 8 T () S 16 T (# even if the centre of the rlp never cuts the sphere \(ie lies i) N
+(n) N
+() S 8 T () S 16 T (# the cusp region\) providing any part of the rlp touches the sph) N
+(ere.) N
+() S 8 T () S 16 T (# In this case, the test on line below is the right one, but thi) N
+(s) N
+() S 8 T () S 16 T (# seems to overpredict in practice, so limit it to case where th) N
+(e) N
+() S 8 T () S 16 T (# centre of the rlp must intersect the sphere.) N
+() S 8 T () S 16 T (#=====================) N
+() S 8 T () S 16 T (if xys<=csmin2:) N
+() S 8 T () S 16 T () S 24 T (##      A part of spot is in cusp region) N
+() S 8 T () S 16 T () S 24 T (self.cuspflag=-3) N
+() S 8 T () S 16 T (elif\(xys<self.dst4\):) N
+() S 8 T () S 16 T () S 24 T (##      Whole spot is included in cusp region) N
+() S 8 T () S 16 T () S 24 T (self.cuspflag=-4) N
+() S 8 T () S 16 T () S 24 T (self.inCusp=true) N
+() N
+(    ## Reflection width and start/end phi of diffraction) N
+() S 8 T (def diffWidth\(self\) :) N
+(        ##      Full width of reflection condition \(UNIT:radians\)) N
+() S 8 T () S 16 T (dtor=4.0*arctan\(1.0\)/180.0) N
+() N
+() S 8 T () S 16 T (# self.phiw = spot angular radius in unit:degrees) N
+() S 8 T () S 16 T (self.phiw=2.0*self.rspot*self.lorentz_factor/dtor) N
+() S 8 T () S 16 T (self.phis=self.phi-0.5*self.phiw) N
+() S 8 T () S 16 T (self.phie=self.phis+self.phiw) N
+() N
+() S 8 T (def numframes\(self\) :) N
+(        ##      Estimating max frames of this reflections) N
+(                maxframes=\(int\)\(self.width_max/oscstep\)) N
+() S 8 T () S 16 T (#- print maxframes) N
+() N
+(        ##      Find start BATCH in which this reflection is observed) N
+() S 8 T () S 16 T (for i in range\(1,maxframes+1\):) N
+(                        if phistart-\(i-1\)*oscstep<=self.phis:) N
+(                                self.istart=i) N
+(                                break) N
+() N
+(                for i in range\(1,maxframes+1\):) N
+(                        if phiend+\(i-1\)*oscstep>=phie:) N
+(                                self.iend=i;) N
+(                                break;) N
+(                self.iwidth=self.istart-1+self.iend-1+1;) N
+() S 8 T () S 16 T (#- print self.iwidth,self.istart,self.iend) N
+(        ## Estimation of deleps1,deleps2. this is the objective of this CLASS) N
+() N
+() S 8 T (def prepDELEPS\(self\):) N
+() S 8 T () S 16 T (self.solvePhi\(\)) N
+() S 8 T () S 16 T (#self.distEStoRLP\(\)) N
+() S 8 T () S 16 T (self.distEwaldToRLP\(\)) N
+() S 8 T () S 16 T (self.calcLorentz\(\)) N
+() S 8 T () S 16 T (self.calcRspot\(\)) N
+() S 8 T () S 16 T (self.diffWidth\(\)) N
+() S 8 T () S 16 T (self.cuspcheck\(\)) N
+() S 8 T () S 16 T (self.isPrepDELEPS=True) N
+() N
+() S 8 T (def calcDELEPS\(self\):) N
+() S 8 T () S 16 T (# Preparation) N
+(ReflWidthBothEdge.py.fixed) (Page 6/8) ( 2 23, 13 14:50) title
+border
+grestore
+(Printed by Kunio Hirata) rhead
+(ReflWidthBothEdge.py.fixed) (3/4) (\345M-^\\M-^_\346M-^[M-^\\\346M-^W\245 2\346M-^\\M-^H 23, 2013) footer
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (7-8) 4
+%%BeginPageSetup
+/pagesave save def
+sh 0 translate 90 rotate
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 12 add translate
+/v 0 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p 8 T () S 16 T (if self.isPrepDELEPS==False:) N
+() S 8 T () S 16 T () S 24 T (self.prepDELEPS\(\)) N
+() N
+(        ## Calculate distance of edge of spot from sphere at end of rotation) N
+() S 8 T () S 16 T (dist1=self.adel1-self.rspot;) N
+() S 8 T () S 16 T (dist2=self.adel2-self.rspot;) N
+() N
+() S 8 T () S 16 T (#print self.adel1,self.adel2) N
+() S 8 T () S 16 T (#print "DIST1/DIST2=%12.5f %12.5f"%\(dist1,dist2\)) N
+() N
+(        ## Test if spot is cut at beginning of rotation) N
+(        ## Set DELEPS to a negative value ) N
+(        ## NOTE: sign change depending on whether Y is +ve/-ve) N
+() N
+() S 8 T () S 16 T (x1,y1,z1=self.xyz1[0],self.xyz1[1],self.xyz1[2]) N
+() S 8 T () S 16 T (x2,y2,z2=self.xyz2[0],self.xyz2[1],self.xyz2[2]) N
+() N
+() S 8 T () S 16 T (self.deleps1=0.0) N
+() S 8 T () S 16 T (self.deleps2=0.0) N
+() S 8 T () S 16 T () N
+() S 8 T () S 16 T (# Flag for partial/full reflection) N
+() S 8 T () S 16 T (self.isFull=True) N
+() N
+() S 8 T () S 16 T (#print "DIST",dist1,dist2) N
+() N
+() S 8 T () S 16 T (# ADEL1 -> Cross section between E.S and RLP \(UNIT:radians\)) N
+() S 8 T () S 16 T (# Firstly, check CUSP flag) N
+() S 8 T () S 16 T (if self.cuspflag<0:) N
+() S 8 T () S 16 T () S 24 T (self.isFull=False) N
+() S 8 T () S 16 T (elif dist1>0.0 and dist2>0.0:) N
+() S 8 T () S 16 T () S 24 T (### IMPORTANT ####) N
+() S 8 T () S 16 T () S 24 T (# Full reflection condition) N
+() S 8 T () S 16 T () S 24 T (# del1 > 0.0 and del2 < 0.0 ) N
+() S 8 T () S 16 T () S 24 T (# or) N
+() S 8 T () S 16 T () S 24 T (# del1 < 0.0 and del2 > 0.0) N
+() S 8 T () S 16 T () S 24 T (### IMPORTANT ####) N
+() N
+() S 8 T () S 16 T () S 24 T (if self.del1*self.del2<0.0:) N
+() S 8 T () S 16 T () S 24 T () S 32 T (self.isFull=True) N
+() S 8 T () S 16 T () S 24 T (else:) N
+() S 8 T () S 16 T () S 24 T () S 32 T (self.isFull=False) N
+() S 8 T () S 16 T (elif dist1<0.0:) N
+() S 8 T () S 16 T () S 24 T (self.isFull=False) N
+() S 8 T () S 16 T () S 24 T (if y1<0.0:) N
+() S 8 T () S 16 T () S 24 T () S 32 T (sign=-1) N
+() S 8 T () S 16 T () S 24 T (else :) N
+() S 8 T () S 16 T () S 24 T () S 32 T (sign=1) N
+() N
+() S 8 T () S 16 T () S 24 T (# DELEPS1 calculation) N
+() S 8 T () S 16 T () S 24 T (self.deleps1=-\(sign*self.del1/self.rspot+1.0\)*0.5) N
+() N
+() S 8 T () S 16 T () S 24 T (# Spot cut at beginning -check for cut at both ends) N
+() S 8 T () S 16 T () S 24 T (if dist2<0.0:) N
+() S 8 T () S 16 T () S 24 T () S 32 T (if y2<0.0:) N
+() S 8 T () S 16 T () S 24 T () S 32 T () S 40 T (sign=-1.0) N
+() S 8 T () S 16 T () S 24 T () S 32 T (else:) N
+() S 8 T () S 16 T () S 24 T () S 32 T () S 40 T (sign=1.0) N
+() S 8 T () S 16 T () S 24 T () S 32 T (self.deleps2=\(1.0-sign*self.del2/self.rspot\)*0.5) N
+() S 8 T () S 16 T (elif dist2<0.0:) N
+() S 8 T () S 16 T () S 24 T (self.isFull=False) N
+() S 8 T () S 16 T () S 24 T (if y2<0.0:) N
+() S 8 T () S 16 T () S 24 T () S 32 T (sign=-1.0) N
+() S 8 T () S 16 T () S 24 T (else:) N
+() S 8 T () S 16 T () S 24 T () S 32 T (sign=1.0) N
+() S 8 T () S 16 T () S 24 T (self.deleps2=\(1.0-sign*self.del2/self.rspot\)*0.5) N
+() N
+() S 8 T () S 16 T (#print "DEL1=%12.9f DEL2=%12.9f"%\(self.del1,self.del2\)) N
+() S 8 T () S 16 T (#print self.hkl,"DELEPS1=%12.9f DELEPS2=%12.9f"%\(self.deleps1,se) N
+(lf.deleps2\)) N
+(ReflWidthBothEdge.py.fixed) (Page 7/8) ( 2 23, 13 14:50) title
+border
+/v 1 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p 8 T () S 16 T (return self.deleps1,self.deleps2) N
+() N
+() S 8 T (def DEBUG_calcPartiality\(self\):) N
+() S 8 T () S 16 T (print "====== PART CALC =====") N
+() S 8 T () S 16 T (dist1=self.adel1-self.rspot) N
+() S 8 T () S 16 T (dist2=self.adel2-self.rspot) N
+() N
+() S 8 T () S 16 T (if dist1<0.0:) N
+() S 8 T () S 16 T () S 24 T (print "Start point is on ES %12.6f %12.6f"%\(self.deleps1) N
+(,self.deleps2\)) N
+() S 8 T () S 16 T () S 24 T (if dist2<0.0:) N
+() S 8 T () S 16 T () S 24 T () S 32 T (print "Both is on ES %12.6f %12.6f"%\(self.deleps) N
+(1,self.deleps2\)) N
+() S 8 T () S 16 T (elif dist2<0.0:) N
+() S 8 T () S 16 T () S 24 T (print "After oscillation on ES %12.6f %12.6f"%\(self.dele) N
+(ps1,self.deleps2\)) N
+() N
+() S 8 T () S 16 T (else:) N
+() S 8 T () S 16 T () S 24 T (print "Hashinimo bounimo %12.6f %12.6f"%\(self.deleps1,se) N
+(lf.deleps2\)) N
+() N
+() S 8 T () S 16 T (return 1.0) N
+() N
+() S 8 T (def calcPartiality\(self\):) N
+() S 8 T () S 16 T (dist1=self.adel1-self.rspot) N
+() S 8 T () S 16 T (dist2=self.adel2-self.rspot) N
+() N
+() S 8 T () S 16 T (## Case1) N
+() S 8 T () S 16 T (if self.isFull:) N
+() S 8 T () S 16 T () S 24 T (p1=self.adel1/self.rspot) N
+() S 8 T () S 16 T () S 24 T (p2=self.adel2/self.rspot) N
+() S 8 T () S 16 T () S 24 T (self.pcalc=array\([p1,p2]\).min\(\)) N
+() S 8 T () S 16 T () S 24 T (#print self.pcalc) N
+() S 8 T () S 16 T () S 24 T (return self.pcalc) N
+() N
+() S 8 T () S 16 T (elif fabs\(self.deleps2\)<0.00001 :) N
+() S 8 T () S 16 T () S 24 T (self.pcalc=0.5*\(1.0-cos\(self.deleps1*pi\)\)) N
+() S 8 T () S 16 T () S 24 T (return self.pcalc) N
+() N
+() S 8 T () S 16 T (elif fabs\(self.deleps1\)<0.00001 :) N
+() S 8 T () S 16 T () S 24 T (self.pcalc=0.5*\(1.0-cos\(self.deleps2*pi\)\)) N
+() S 8 T () S 16 T () S 24 T (return self.pcalc) N
+() N
+() S 8 T () S 16 T (else:) N
+() S 8 T () S 16 T () S 24 T (tmp=0.5*\(1.0-cos\(self.deleps1*pi\)\)) N
+() S 8 T () S 16 T () S 24 T (self.pcalc=tmp-\(1.0-0.5*\(1.0-cos\(self.deleps2*pi\)\)\)) N
+() S 8 T () S 16 T () S 24 T (return self.pcalc) N
+() N
+(if __name__=="__main__":) N
+() S 8 T (#amatfile,divv,divh,mosaic,dispersion,oscstep\):) N
+() S 8 T (tmp=ReflWidthBothEdge\(sys.argv[1],0.02,0.02,0.5,0.0002,0.1\)) N
+() S 8 T (#hklist=[array\(\( -12,  -19,-16\)\)]) N
+() S 8 T (#hklist=[array\(\(-11,-16,-16\)\)]) N
+() S 8 T (h,k,l=int\(sys.argv[2]\),int\(sys.argv[3]\),int\(sys.argv[4]\)) N
+() S 8 T (hklist=[array\(\(h,k,l\)\)]) N
+() S 8 T (#hklist=[array\(\(20,15,10\)\)]) N
+() N
+() S 8 T (oscstart=0.0) N
+() N
+() S 8 T (tmp.setMisseting\(0.0,0.0,0.0\)) N
+() N
+() S 8 T (for hkl in hklist:) N
+() S 8 T () S 16 T (#print "HKL type is ",type\(hkl\)) N
+() S 8 T () S 16 T (if tmp.setHKL\(hkl,oscstart\)==True:) N
+() S 8 T () S 16 T () S 24 T (tmp.calcDELEPS\(\)) N
+() S 8 T () S 16 T () S 24 T (print tmp.calcPartiality\(\)) N
+(ReflWidthBothEdge.py.fixed) (Page 8/8) ( 2 23, 13 14:50) title
+border
+grestore
+(Printed by Kunio Hirata) rhead
+(ReflWidthBothEdge.py.fixed) (4/4) (\345M-^\\M-^_\346M-^[M-^\\\346M-^W\245 2\346M-^\\M-^H 23, 2013) footer
+end % of iso1dict
+pagesave restore
+showpage
+
+%%Trailer
+end
+%%EOF

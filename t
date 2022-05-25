@@ -1,0 +1,1 @@
+\rm -Rf ./130218-DEBUG/000.Data/oxi_test_set.tar ./130218-DEBUG/000.Data/oxi_test.tar ./Factory/DELEPS/oxi_test_set.tar ./Factory/Completed/120915_SACLONE.tar ./Factory/oxi_test.tar ./Factory/001.DELEPS2/oxi_test.tar ./130219-Good/000.Data/oxi_test_set.tar ./130219-Good/000.Data/oxi_test.tar ./130212-DELEPS2/000.Data/oxi_test_set.tar ./130212-DELEPS2/000.Data/oxi_test.tar

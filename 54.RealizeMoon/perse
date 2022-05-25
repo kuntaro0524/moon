@@ -1,0 +1,32 @@
+import sys,os,math
+from numpy import *
+import time
+import datetime,time
+
+sys.path.append("/Users/kuntaro/00.Develop/Prog/02.Python/Libs/")
+from ReflWidthStill import *
+from ReadMtz import *
+from GaussFitXY import *
+
+import iotbx.mtz
+from libtbx import easy_mp
+import scipy.spatial
+
+class ProfileMaker:
+	def init(self):
+		"READ MTZ"
+
+	def prepInfo(self,matfile,startphi=35.0,stepphi=0.1,
+		"Array preparation"
+
+	def getRefInfo(self,pinfo):
+		"RLP/Q calculation"
+
+	def bunch(self):
+		"Bunching same reflections"
+
+	def process_multi_gauss(self,dstar_thresh,nproc):
+		"Gauss fitting"
+		"Making RLP array of each independent reflection"
+		"Making the tree for all RLPs"
+		"Find near reflections and store indices of them"

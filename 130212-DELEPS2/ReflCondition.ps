@@ -1,0 +1,1797 @@
+%!PS-Adobe-3.0
+%%Title: ReflCondition.java
+%%For: Kunio Hirata
+%%Creator: a2ps version 4.14
+%%CreationDate: Wed Feb 13 02:58:22 2013
+%%BoundingBox: 24 24 588 768
+%%DocumentData: Clean7Bit
+%%Orientation: Landscape
+%%Pages: 4
+%%PageOrder: Ascend
+%%DocumentMedia: Letter 612 792 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-BoldOblique
+%%+ font Courier-Oblique
+%%+ font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Symbol
+%%+ font Times-Bold
+%%+ font Times-Roman
+%%DocumentProcessColors: Black 
+%%DocumentSuppliedResources: procset a2ps-a2ps-hdr
+%%+ procset a2ps-black+white-Prolog
+%%+ encoding ISO-8859-1Encoding
+%%EndComments
+/a2psdict 200 dict def
+a2psdict begin
+%%BeginProlog
+%%Copyright: (c) 1988, 89, 90, 91, 92, 93 Miguel Santana
+%%Copyright: (c) 1995, 96, 97, 98 Akim Demaille, Miguel Santana
+% Check PostScript language level.
+/languagelevel where {
+  pop /gs_languagelevel languagelevel def
+} {
+  /gs_languagelevel 1 def
+} ifelse
+
+% EPSF import as in the Red Book
+/BeginInclude {
+  /b4_Inc_state save def    		% Save state for cleanup
+  /dict_count countdictstack def	% Count objects on dict stack
+  /op_count count 1 sub def		% Count objects on operand stack 
+  userdict begin
+    0 setgray 0 setlinecap
+    1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [ ] 0 setdash newpath
+    gs_languagelevel 1 ne {
+      false setstrokeadjust false setoverprint 
+    } if
+} bind def
+
+/EndInclude {
+  count op_count sub { pos } repeat	% Clean up stacks
+  countdictstack dict_count sub { end } repeat
+  b4_Inc_state restore
+} bind def
+
+/BeginEPSF {
+  BeginInclude
+  /showpage { } def
+} bind def
+
+/EndEPSF {
+  EndInclude
+} bind def
+
+% Page prefeed
+/page_prefeed {         % bool -> -
+  statusdict /prefeed known {
+    statusdict exch /prefeed exch put
+  } {
+    pop
+  } ifelse
+} bind def
+
+/deffont {
+  findfont exch scalefont def
+} bind def
+
+/reencode_font {
+  findfont reencode 2 copy definefont pop def
+} bind def
+
+% Function c-show (str => -)
+% centers text only according to x axis.
+/c-show { 
+  dup stringwidth pop
+  2 div neg 0 rmoveto
+  show
+} bind def
+
+% Function l-show (str => -)
+% prints texts so that it ends at currentpoint
+/l-show {
+  dup stringwidth pop neg 
+  0 
+  rmoveto show
+} bind def
+
+% center-fit show (str w => -)
+% show centered, and scale currentfont so that the width is less than w
+/cfshow {
+  exch dup stringwidth pop
+  % If the title is too big, try to make it smaller
+  3 2 roll 2 copy
+  gt
+  { % if, i.e. too big
+    exch div
+    currentfont exch scalefont setfont
+  } { % ifelse
+    pop pop 
+  }
+  ifelse
+  c-show			% center title
+} bind def
+
+% Return the y size of the current font
+% - => fontsize
+/currentfontsize {
+  currentfont /FontMatrix get 3 get 1000 mul
+} bind def
+
+% reencode the font
+% <encoding-vector> <fontdict> -> <newfontdict>
+/reencode { %def
+  dup length 5 add dict begin
+    { %forall
+      % <vector> <key> <val>
+      1 index /FID ne 
+      { def }{ pop pop } ifelse
+    } forall
+    /Encoding exch def % -
+
+    % Use the font's bounding box to determine the ascent, descent,
+    % and overall height; don't forget that these values have to be
+    % transformed using the font's matrix.
+    % We use `load' because sometimes BBox is executable, sometimes not.
+    % Since we need 4 numbers an not an array avoid BBox from being executed
+    /FontBBox load aload pop
+    FontMatrix transform /Ascent exch def pop
+    FontMatrix transform /Descent exch def pop
+    /FontHeight Ascent Descent sub def
+
+    % Get the underline position and thickness if they're defined.
+    % Use 1 if they are not defined.
+    currentdict /FontInfo 2 copy known
+    { get
+      /UnderlinePosition 2 copy % <FontInfo> /UP <FontInfo> /UP
+      2 copy known
+      { get }{ pop pop 1 } ifelse
+      0 exch FontMatrix transform exch pop
+      def % <FontInfo>
+
+      /UnderlineThickness 2 copy % <FontInfo> /UT <FontInfo> /UT
+      2 copy known
+      { get }{ pop pop 1 } ifelse
+      0 exch FontMatrix transform exch pop
+      def % <FontInfo>
+      pop % -
+    }{ pop pop
+    } ifelse
+
+    currentdict
+  end 
+} bind def
+
+% Function print line number (<string> # -)
+/# {
+  gsave
+    sx cw mul neg 2 div 0 rmoveto
+    f# setfont
+    c-show
+  grestore
+} bind def
+
+% -------- Some routines to enlight plain b/w printings ---------
+
+% Underline
+% width --
+/dounderline {
+  currentpoint
+  gsave
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    0 rlineto
+    stroke
+  grestore
+} bind def
+
+% Underline a string
+% string --
+/dounderlinestring {
+  stringwidth pop
+  dounderline
+} bind def
+
+/UL {
+  /ul exch store
+} bind def
+
+% Draw a box of WIDTH wrt current font
+% width --
+/dobox {
+  currentpoint
+  gsave
+    newpath
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    dup 0 rlineto
+    0 currentfont /FontHeight get currentfontsize mul rlineto
+    neg 0 rlineto
+    closepath
+    stroke
+  grestore
+} bind def
+
+/BX {
+  /bx exch store
+} bind def
+
+% Box a string
+% string --
+/doboxstring {
+  stringwidth pop
+  dobox
+} bind def
+
+%
+% ------------- Color routines ---------------
+%
+/FG /setrgbcolor load def
+
+% Draw the background
+% width --
+/dobackground {
+  currentpoint
+  gsave
+    newpath
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    dup 0 rlineto
+    0 currentfont /FontHeight get currentfontsize mul rlineto
+    neg 0 rlineto
+    closepath
+    bgcolor aload pop setrgbcolor
+    fill
+  grestore
+} bind def
+
+% Draw bg for a string
+% string --
+/dobackgroundstring {
+  stringwidth pop
+  dobackground
+} bind def
+
+
+/BG {
+  dup /bg exch store
+  { mark 4 1 roll ] /bgcolor exch store } if
+} bind def
+
+
+/Show {
+  bg { dup dobackgroundstring } if
+  ul { dup dounderlinestring } if
+  bx { dup doboxstring } if
+  show
+} bind def
+
+% Function T(ab), jumps to the n-th tabulation in the current line
+/T {
+  cw mul x0 add
+  bg { dup currentpoint pop sub dobackground } if
+  ul { dup currentpoint pop sub dounderline } if
+  bx { dup currentpoint pop sub dobox } if
+  y0 moveto
+} bind def
+
+% Function n: move to the next line
+/n {
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+% Function N: show and move to the next line
+/N {
+  Show
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+/S {
+  Show
+} bind def
+
+%%BeginResource: procset a2ps-a2ps-hdr 2.0 2
+%%Copyright: (c) 1988, 89, 90, 91, 92, 93 Miguel Santana
+%%Copyright: (c) 1995, 96, 97, 98 Akim Demaille, Miguel Santana
+% Function title: prints page header.
+% <ct> <rt> <lt> are passed as argument
+/title { 
+  % 1. Draw the background
+  x v get y v get moveto
+  gsave
+    0 th 2 div neg rmoveto 
+    th setlinewidth
+    0.95 setgray
+    pw 0 rlineto stroke
+  grestore
+  % 2. Border it
+  gsave
+    0.7 setlinewidth
+    pw 0 rlineto
+    0 th neg rlineto
+    pw neg 0 rlineto
+    closepath stroke
+  grestore
+  % stk: ct rt lt
+  x v get y v get th sub 1 add moveto
+%%IncludeResource: font Helvetica
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  % 3. The left title
+  gsave
+    dup stringwidth pop fnfs 0.8 mul add exch % leave space took on stack
+    fnfs 0.8 mul hm rmoveto
+    show			% left title
+  grestore
+  exch
+  % stk: ct ltw rt
+  % 4. the right title
+  gsave
+    dup stringwidth pop fnfs 0.8 mul add exch % leave space took on stack
+    dup
+    pw exch stringwidth pop fnfs 0.8 mul add sub
+    hm
+    rmoveto
+    show			% right title
+  grestore
+  % stk: ct ltw rtw
+  % 5. the center title
+  gsave
+    pw 3 1 roll
+    % stk: ct pw ltw rtw
+    3 copy 
+    % Move to the center of the left room
+    sub add 2 div hm rmoveto
+    % What is the available space in here?
+    add sub fnfs 0.8 mul sub fnfs 0.8 mul sub
+    % stk: ct space_left
+%%IncludeResource: font Helvetica-Bold
+  fHelvetica-Bold fnfs scalefont setfont
+    cfshow
+  grestore
+} bind def
+
+% Function border: prints virtual page border
+/border { %def
+  gsave				% print four sides
+    0 setgray
+    x v get y v get moveto
+    0.7 setlinewidth		% of the square
+    pw 0 rlineto
+    0 ph neg rlineto
+    pw neg 0 rlineto
+    closepath stroke
+  grestore
+} bind def
+
+% Function water: prints a water mark in background
+/water { %def
+  gsave
+    scx scy moveto rotate
+%%IncludeResource: font Times-Bold
+  fTimes-Bold 100 scalefont setfont
+    .97 setgray
+    dup stringwidth pop 2 div neg -50 rmoveto
+    show
+  grestore
+} bind def
+
+% Function rhead: prints the right header
+/rhead {  %def
+  lx ly moveto
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  l-show
+} bind def
+
+% Function footer (cf rf lf -> -)
+/footer {
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  dx dy moveto
+  show
+
+  snx sny moveto
+  l-show
+  
+  fnx fny moveto
+  c-show
+} bind def
+%%EndResource
+%%BeginResource: procset a2ps-black+white-Prolog 2.0 1
+
+% Function T(ab), jumps to the n-th tabulation in the current line
+/T { 
+  cw mul x0 add y0 moveto
+} bind def
+
+% Function n: move to the next line
+/n { %def
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+% Function N: show and move to the next line
+/N {
+  Show
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+}  bind def
+
+/S {
+  Show
+} bind def
+
+/p {
+  false UL
+  false BX
+  fCourier bfs scalefont setfont
+  Show
+} bind def
+
+/sy {
+  false UL
+  false BX
+  fSymbol bfs scalefont setfont
+  Show
+} bind def
+
+/k {
+  false UL
+  false BX
+  fCourier-Oblique bfs scalefont setfont
+  Show
+} bind def
+
+/K {
+  false UL
+  false BX
+  fCourier-Bold bfs scalefont setfont
+  Show
+} bind def
+
+/c {
+  false UL
+  false BX
+  fCourier-Oblique bfs scalefont setfont
+  Show
+} bind def
+
+/C {
+  false UL
+  false BX
+  fCourier-BoldOblique bfs scalefont setfont
+  Show 
+} bind def
+
+/l {
+  false UL
+  false BX
+  fHelvetica bfs scalefont setfont
+  Show
+} bind def
+
+/L {
+  false UL
+  false BX
+  fHelvetica-Bold bfs scalefont setfont
+  Show 
+} bind def
+
+/str{
+  false UL
+  false BX
+  fTimes-Roman bfs scalefont setfont
+  Show
+} bind def
+
+/e{
+  false UL
+  true BX
+  fHelvetica-Bold bfs scalefont setfont
+  Show
+} bind def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Courier
+%%IncludeResource: font Courier-Oblique
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Symbol
+%%IncludeResource: font Courier-BoldOblique
+%%BeginResource: encoding ISO-8859-1Encoding
+/ISO-8859-1Encoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright 
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash 
+/zero /one /two /three /four /five /six /seven 
+/eight /nine /colon /semicolon /less /equal /greater /question 
+/at /A /B /C /D /E /F /G 
+/H /I /J /K /L /M /N /O 
+/P /Q /R /S /T /U /V /W 
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore 
+/quoteleft /a /b /c /d /e /f /g 
+/h /i /j /k /l /m /n /o 
+/p /q /r /s /t /u /v /w 
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section 
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron 
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /bullet 
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown 
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla 
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis 
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply 
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls 
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla 
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis 
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide 
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis 
+] def
+%%EndResource
+% Initialize page description variables.
+/sh 612 def
+/sw 792 def
+/llx 24 def
+/urx 768 def
+/ury 588 def
+/lly 24 def
+/#copies 1 def
+/th 15.000000 def
+/fnfs 11 def
+/bfs 7.493857 def
+/cw 4.496314 def
+
+% Dictionary for ISO-8859-1 support
+/iso1dict 8 dict begin
+  /fCourier ISO-8859-1Encoding /Courier reencode_font
+  /fCourier-Bold ISO-8859-1Encoding /Courier-Bold reencode_font
+  /fCourier-BoldOblique ISO-8859-1Encoding /Courier-BoldOblique reencode_font
+  /fCourier-Oblique ISO-8859-1Encoding /Courier-Oblique reencode_font
+  /fHelvetica ISO-8859-1Encoding /Helvetica reencode_font
+  /fHelvetica-Bold ISO-8859-1Encoding /Helvetica-Bold reencode_font
+  /fTimes-Bold ISO-8859-1Encoding /Times-Bold reencode_font
+  /fTimes-Roman ISO-8859-1Encoding /Times-Roman reencode_font
+currentdict end def
+/bgcolor [ 0 0 0 ] def
+/bg false def
+/ul false def
+/bx false def
+% The font for line numbering
+/f# /Helvetica findfont bfs .6 mul scalefont def
+/fSymbol /Symbol findfont def
+/hm fnfs 0.25 mul def
+/pw
+   cw 81.400000 mul
+def
+/ph
+   522.321860 th add
+def
+/pmw urx llx sub pw 2 mul sub 1 div def
+/pmh 0 def
+/v 0 def
+/x [
+  0
+  dup pmw add pw add
+] def
+/y [
+  pmh ph add 0 mul ph add
+  dup
+] def
+/scx sw 2 div def
+/scy sh 2 div def
+/snx urx def
+/sny lly 2 add def
+/dx llx def
+/dy sny def
+/fnx scx def
+/fny dy def
+/lx snx def
+/ly ury fnfs 0.8 mul sub def
+/sx 0 def
+/tab 8 def
+/x0 0 def
+/y0 0 def
+%%EndSetup
+
+%%Page: (1-2) 1
+%%BeginPageSetup
+/pagesave save def
+sh 0 translate 90 rotate
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 12 add translate
+/v 0 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+(package) K
+( klib.refl;) p n
+(import) K
+( klib.mat.*;) p n
+(import) K
+( java.math.*;) p n
+() N
+(public) K
+( ) p
+(class) K
+( ) p
+(ReflCondition) L
+( {) p n
+() N
+() S 8 T () S
+(// Main components) c n
+() p 8 T (Matrix s0=) S
+(null) k
+(;) p n
+() S 8 T (Matrix e1=) S
+(null) k
+(;) p n
+() S 8 T (Matrix e2=) S
+(null) k
+(;) p n
+() S 8 T (Matrix e3=) S
+(null) k
+(;) p n
+() S 8 T (Matrix xyz1=) S
+(null) k
+(;) p n
+() S 8 T (Matrix xyz2=) S
+(null) k
+(;) p n
+() S 8 T (Matrix xyzsol=) S
+(null) k
+(;) p n
+() S 8 T () S
+(double) k
+( dtor=4.0D*Math.atan\(1.0D\)/180D;) p n
+() S 8 T () S
+(double) k
+( lorentz_factor;) p n
+() S 8 T () S
+(double) k
+( dstar,dstar2,dst4;) p n
+() S 8 T () S
+(//) c 16 T (Experimental conditions) N
+() p 8 T () S
+(double) k
+( divv,divh,mosaic;) p n
+() S 8 T () S
+(double) k
+( dispersion;) p 32 T () S
+(// energy dispersion) c n
+() p 8 T () S
+(//) c 16 T (Divergence parameters) N
+() p 8 T () S
+(double) k
+( divergence;) p n
+() S 8 T () S
+(// distance from ES to XRLP at start/end oscillation) c n
+() p 8 T () S
+(double) k
+( del1,del2,adel1,adel2;) p n
+() S 8 T () S
+(double) k
+( ymid,yms;) p 32 T () S
+(// a middle point of XRLP1 and XRLP2 and its squ) c n
+(are) N
+() p n
+() S 8 T () S
+(// XRLP coordinates in Reciprocal space) c n
+() p 8 T () S
+(double) k
+( x1,y1,z1;) p n
+() S 8 T () S
+(double) k
+( x2,y2,z2;) p n
+() S 8 T () S
+(double) k
+( xys;) p n
+() N
+() S 8 T () S
+(// oscillation information) c n
+() p 8 T () S
+(// phistart: start oscillation angle of phi\(input\)) c n
+() p 8 T () S
+(// phiend  : final oscillation angle of phi\(input\)) c n
+() p 8 T () S
+(// phi: the anglular point at which XRLP and E.S cross) c n
+() p 8 T () S
+(double) k
+( oscwidth;) p n
+() S 8 T () S
+(double) k
+( phistart,phiend;) p n
+() S 8 T () S
+(double) k
+( phi;) p n
+() N
+() S 8 T () S
+(// for 'condition\(\)') c n
+() p 8 T () S
+(double) k
+( cea,ceb,cec,ceabsq;) p n
+() N
+() S 8 T () S
+(boolean) k
+( isInit=) p
+(false) k
+(;) p 32 T () S 40 T () S 48 T () S
+(// initialization) c n
+() p 8 T () S
+(boolean) k
+( isSolved=) p
+(false) k
+(;) p 32 T () S 40 T () S 48 T () S
+(// solving phi) c n
+() p 8 T () S
+(boolean) k
+() p 16 T (isCalculated=) S
+(false) k
+(;) p 40 T () S 48 T () S
+(// calculation of DELEPSs/Pcalc) c n
+() p 8 T () S
+(boolean) k
+() p 16 T (isLorentzAvailable=) S
+(false) k
+(;) p 48 T () S
+(// calculation of Lorentz) c n
+() p 8 T () S
+(boolean) k
+( isDelAvailable=) p
+(false) k
+(;) p 40 T () S 48 T () S
+(// calculation of DEL1/DEL2) c n
+() p 8 T () S
+(boolean) k
+() p 16 T (isRspotAvailable=) S
+(false) k
+(;) p 40 T () S 48 T () S
+(// calculation of RSPOT) c n
+() p 8 T () S
+(boolean) k
+( isDiffWidthAvailable=) p
+(false) k
+(;) p 48 T () S
+(// calculation of DIFFWIDTH) c n
+() p 8 T () S
+(boolean) k
+( isNframeAvailable=) p
+(false) k
+(;) p 48 T () S
+(// calculation of diffraction wi) c n
+(dth \(frame\)) N
+() p n
+() S 8 T () S
+(// reciprocal coordinates of xyz) c n
+() p 8 T () S
+(double) k
+([][] rc1;) p n
+() S 8 T () S
+(double) k
+([][] rc2;) p n
+() N
+() S 8 T () S
+(// reflection width) c n
+() p 8 T () S
+(// rspot: angle width of reflection) c n
+() p 8 T () S
+(// phiw: width of reflection) c n
+() p 8 T () S
+(// phis: angle at which a reflection start to reflect) c n
+() p 8 T () S
+(// phie: angle at which a reflection completely go through E.S.) c n
+() p 8 T () S
+(// istart: frame on which this reflection is observed at the first) c n
+() p 8 T () S
+(// iend  : frame on which this reflection is observed at the end) c n
+() p 8 T () S
+(double) k
+( rspot;) p n
+() S 8 T () S
+(double) k
+( phiw,phis,phie;) p n
+() S 8 T () S
+(double) k
+( width_max=3.0; ) p
+(// UNIT: degree) c n
+() p 8 T () S
+(int) k
+( iwidth;) p 24 T () S
+(// diffraction frames on oscillation) c n
+() p 8 T () S
+(int) k
+( istart,iend;) p n
+(ReflCondition.java) (Page 1/7) ( 2 13, 13 2:42) title
+border
+/v 1 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p n
+() S 8 T () S
+(// For cusp check) c n
+() p 8 T () S
+(double) k
+( csmin,csmin2;) p n
+() S 8 T () S
+(int) k
+( cuspflag=0;) p n
+() S 8 T () S
+(boolean) k
+( inCusp=) p
+(false) k
+(;) p n
+() N
+() S 8 T () S
+(// epsilons to estimate partiality) c n
+() p 8 T () S
+(double) k
+( deleps1,deleps2;) p n
+() N
+() S 8 T () S
+(// partiality of this reflection) c n
+() p 8 T () S
+(double) k
+( part;) p n
+() N
+() S 8 T () S
+(// xyz1: reciprocal coordinate of the reflection at 'phistart') c n
+() p 8 T () S
+(// xyz2: reciprocal coordinate of the reflection at 'phiend') c n
+() p 8 T () S
+(// !!!NOTE!!!) c n
+() p 8 T () S
+(// mosaic: half width of mosaic spread in RADIANS.) c n
+() p 8 T () S
+(//===================) c n
+() p 8 T () S
+(// !!! Angular parameters should be converted from DEGREE to RADIANS bef) c n
+(ore this routine !!!) N
+() p 8 T () S
+(// !!! Except for phistart/phiend \(They are in DEGREE\)) c n
+() p 8 T () S
+(//===================) c n
+() p 8 T () S
+(public) K
+( ReflCondition\(Matrix xyz1,Matrix xyz2,) p
+(double) k
+( phistart,) p
+(double) k
+( phie) p n
+(nd,) S
+(double) k
+( divv,) p
+(double) k
+( divh,) p
+(double) k
+( mosaic,) p
+(double) k
+( dispersion\) {) p n
+() S 8 T () S 16 T (this.xyz1=xyz1;) N
+() S 8 T () S 16 T (this.xyz2=xyz2;) N
+() S 8 T () S 16 T (this.phistart=phistart;) N
+() S 8 T () S 16 T (this.phiend=phiend;) N
+() S 8 T () S 16 T (this.divv=divv;) N
+() S 8 T () S 16 T (this.divh=divh;) N
+() S 8 T () S 16 T (this.mosaic=mosaic;) N
+() S 8 T () S 16 T (this.dispersion=dispersion;) N
+() S 8 T (}) N
+() S 8 T () S
+(private) K
+( ) p
+(boolean) k
+( init\(\) {) p n
+() S 8 T () S
+(//) c 16 T (S0 vector \(anti-parallel to the x-ray\)) N
+() p 8 T () S 16 T () S
+(double) k
+([][] tmp=) p
+(new) K
+( ) p
+(double) k
+([4][2];) p n
+() S 8 T () S 16 T (tmp[1][1]=-1;) N
+() S 8 T () S 16 T (s0=) S
+(new) K
+( Matrix\(tmp\);) p n
+() S 8 T () S
+(//) c 16 T (E3 vector \(z axis for rotation\)) N
+() p 8 T () S 16 T () S
+(double) k
+([][] tmp2=) p
+(new) K
+( ) p
+(double) k
+([4][2];) p n
+() S 8 T () S 16 T (tmp2[3][1]=1;) N
+() S 8 T () S 16 T (e3=) S
+(new) K
+( Matrix\(tmp2\);) p n
+() S 8 T () S
+(//) c 16 T (E2 vector \(E3xRLP/|E3xRLP|) N
+() p 8 T () S 16 T (e2=e3.cross\(xyz1\);) N
+() S 8 T () S 16 T () S
+(double) k
+( e2_length=e2.length\(\);) p n
+() S 8 T () S 16 T (e2=e2.scale\(1.0/e2_length\);) N
+() S 8 T () S
+(//) c 16 T (E1 vector \(see the equation\)) N
+() p 8 T () S 16 T (e1=e2.cross\(e3\);) N
+() S 8 T () S
+(//) c 16 T (Receive actual double arrays of matrices xyz1 & xyz2) N
+() p 8 T () S 16 T (rc1=xyz1.matrix\(\);) N
+() S 8 T () S 16 T (rc2=xyz2.matrix\(\);) N
+() S 8 T () S
+(//) c 16 T (For XRLP1) N
+() p 8 T () S 16 T (x1=rc1[1][1];) N
+() S 8 T () S 16 T (y1=rc1[2][1];) N
+() S 8 T () S 16 T (z1=rc1[3][1];) N
+() S 8 T () S 16 T (xys=Math.pow\(x1,2\)+Math.pow\(y1,2\);) N
+() S 8 T () S 16 T () S
+(//System.out.printf\("Simple XRLP=%12.8f%12.8f%12.8f\\n",x1,y1,z1\)) c n
+(;) N
+() p 8 T () S
+(//) c 16 T (For XRLP2) N
+() p 8 T () S 16 T (x2=rc2[1][1];) N
+() S 8 T () S 16 T (y2=rc2[2][1];) N
+() S 8 T () S 16 T (z2=rc2[3][1];) N
+() S 8 T () S
+(//) c 16 T (Preparation for d* and related values) N
+() p 8 T () S 16 T (dstar=xyz1.length\(\);) N
+() S 8 T () S 16 T (dstar2=dstar*dstar;) N
+() S 8 T () S 16 T (dst4=dstar2*dstar2*0.25D;) N
+() S 8 T () S
+(//) c 16 T (Flag) N
+() p 8 T () S 16 T (isInit=) S
+(true) k
+(;) p n
+() S 8 T () S 16 T () S
+(return) K
+(\(isInit\);) p n
+() S 8 T (}) N
+(ReflCondition.java) (Page 2/7) ( 2 13, 13 2:42) title
+border
+grestore
+(Printed by Kunio Hirata) rhead
+(ReflCondition.java) (1/4) (\346\260\264\346M-^[M-^\\\346M-^W\245 2\346M-^\\M-^H 13, 2013) footer
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (3-4) 2
+%%BeginPageSetup
+/pagesave save def
+sh 0 translate 90 rotate
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 12 add translate
+/v 0 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p n
+() S 8 T () S
+(/* Estimation of deleps1,deleps2. this is the objective of this CLASS) c n
+() S 8 T (   */) N
+() p 8 T () S
+(private) K
+( ) p
+(boolean) k
+( calc_deleps\(\) {) p n
+() S 8 T () S 16 T () S
+(//) c 24 T (Is spot cut both ends?) N
+() p 8 T () S 16 T () S
+(double) k
+( sign;) p n
+() S 8 T () S 16 T () S
+(// Calculate distance of edge of spot from sphere at end of rota) c n
+(tion) N
+() p 8 T () S 16 T () S
+(double) k
+( dist2=adel2-rspot;) p n
+() N
+() S 8 T () S 16 T () S
+(// Test if spot is cut at beginning of rotation) c n
+() p 8 T () S 16 T () S
+(// Set DELEPS to a negative value ) c n
+() p 8 T () S 16 T () S
+(// NOTE: sign change depending on whether Y is +ve/-ve) c n
+() p 8 T () S 16 T () S
+(if) K
+(\(adel1-rspot<0.0\) {) p n
+() S 8 T () S 16 T () S 24 T () S
+(if) K
+(\(y1<0.0\) {) p n
+() S 8 T () S 16 T () S 24 T () S 32 T (sign=-1;) N
+() S 8 T () S 16 T () S 24 T (} ) S
+(else) K
+( sign=1;) p n
+() S 8 T () S 16 T () S 24 T (deleps1=-\(sign*del1/rspot+1.0D\)*0.5D;) N
+() S 8 T () S 16 T () S
+(//) c 24 T (Spot cut at beginning -check for cut at both ends) N
+() p 8 T () S 16 T () S 24 T () S
+(if) K
+(\(dist2<0.0\) {) p n
+() S 8 T () S 16 T () S 24 T () S 32 T () S
+(if) K
+(\(y2<0.0\) {) p n
+() S 8 T () S 16 T () S 24 T () S 32 T () S 40 T (sign=-1;) N
+() S 8 T () S 16 T () S 24 T () S 32 T (}) N
+() S 8 T () S 16 T () S 24 T () S 32 T (deleps2=\(1.0D-sign*del2/rspot\)*0.5D;) N
+() S 8 T () S 16 T () S 24 T (}) N
+() S 8 T () S 16 T (} ) S
+(else) K
+( ) p
+(if) K
+(\(dist2<0.0\) {) p n
+() S 8 T () S 16 T () S 24 T () S
+(if) K
+(\(y2<0.0\) sign=-1;) p n
+() S 8 T () S 16 T () S 24 T () S
+(else) K
+( sign=1;) p n
+() S 8 T () S 16 T () S 24 T (deleps2=\(1.0D-sign*del2/rspot\)*0.5D;) N
+() S 8 T () S 16 T (}) N
+() S 8 T () S 16 T () S
+(//System.out.printf\("DELEPS1/DELEPS2=%12.8f%12.8f\\n",) c n
+() p 8 T () S 16 T () S 24 T () S
+(//deleps1,deleps2\);) c n
+() p 8 T () S
+(//) c 16 T (Flag) N
+() p 8 T () S 16 T (isRspotAvailable=) S
+(true) k
+(;) p n
+() S 8 T () S 16 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T (}) N
+() S 8 T () S
+(// calculating partialities ) c n
+() p 8 T () S
+(private) K
+( ) p
+(boolean) k
+( calc_part\(\) {) p n
+() S 8 T () S 16 T () S
+(// check if this reflection is ) c n
+() p 8 T () S 16 T () S
+(// 1. Already on Ewald sphere) c n
+() p 8 T () S 16 T () S
+(// 2. Cut at both ends) c n
+() p 8 T () S 16 T () S
+(// 3. Finally on the Ewald sphere) c n
+() p n
+() S 8 T () S 16 T () S
+(double) k
+( dist2=adel2-rspot;) p n
+() N
+() S 8 T () S 16 T () S
+(// Case 1) c n
+() p 8 T () S 16 T () S
+(if) K
+(\(adel1-rspot<0.0\) {) p n
+() S 8 T () S 16 T () S 24 T () S
+(// Case 2) c n
+() p 8 T () S 16 T () S 24 T () S
+(if) K
+(\(dist2<0.0\) {) p n
+() S 8 T () S 16 T () S 24 T () S 32 T () S
+(double) k
+( tmp=0.5D*\(1.0-Math.cos\(deleps1*Math.PI\)\);) p n
+() S 8 T () S 16 T () S 24 T () S 32 T (part=tmp-\(1.0D-0.5D*\(1.0-Math.cos\(deleps2*Math.P) N
+(I\)\)\);) N
+() S 8 T () S 16 T () S 24 T () S 32 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T () S 16 T () S 24 T (}) N
+() S 8 T () S 16 T () S 24 T () S
+(else) K
+( { ) p n
+() S 8 T () S 16 T () S 24 T () S 32 T (part=0.5D*\(1.0-Math.cos\(deleps1*Math.PI\)\);) N
+() S 8 T () S 16 T () S 24 T () S 32 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T () S 16 T () S 24 T (}) N
+() S 8 T () S 16 T (} ) S
+(else) K
+( ) p
+(if) K
+(\(dist2<0.0\) {) p n
+() S 8 T () S 16 T () S 24 T (part=0.5D*\(1.0D-Math.cos\(deleps2*Math.PI\)\);) N
+() S 8 T () S 16 T () S 24 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T () S 16 T (} ) S
+(else) K
+( {) p n
+() S 8 T () S 16 T () S 24 T (System.out.printf\(") S
+(Something wrong\\n) str
+("\);) p n
+() S 8 T () S 16 T () S 24 T (part=0.0D;) N
+() S 8 T () S 16 T () S 24 T () S
+(return) K
+(\() p
+(false) k
+(\);) p n
+() S 8 T () S 16 T (}) N
+() S 8 T (}) N
+() N
+() S 8 T () S
+(/*) c n
+(ReflCondition.java) (Page 3/7) ( 2 13, 13 2:42) title
+border
+/v 1 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() c 8 T (   "Radius of spot is same in plane perp to rot") N
+() S 8 T (   "Note that one should use the horizontal crossfire term here") N
+() S 8 T (*/) N
+() p 8 T () S
+(private) K
+( ) p
+(boolean) k
+( cuspcheck\(\) {) p n
+() S 8 T () S 16 T (csmin=0.5D*dstar2+rspot;) N
+() S 8 T () S 16 T (csmin2=dst4+dstar2*rspot;) N
+() S 8 T () S
+(/*) c n
+() S 8 T (   C---- What should csimin test be ? The spot can still appear on image) N
+() S 8 T (   C     even if the centre of the rlp never cuts the sphere \(ie lies in) N
+() S 8 T (   C     the cusp region\) providing any part of the rlp touches the sphe) N
+(re.) N
+() S 8 T (   C     In this case, the test on line below is the right one, but this) N
+() S 8 T (   C     seems to overpredict in practice, so limit it to case where the) N
+() S 8 T (   C     centre of the rlp must intersect the sphere.) N
+() S 8 T (*/) N
+() p 8 T () S 16 T () S
+(if) K
+(\(xys<=csmin2\) {) p n
+() S 8 T () S 16 T () S
+(//) c 24 T (A part of spot is in cusp region) N
+() p 8 T () S 16 T () S 24 T (cuspflag=-3;) N
+() S 8 T () S 16 T (} ) S
+(else) K
+( ) p
+(if) K
+(\(xys<dst4\) {) p n
+() S 8 T () S 16 T () S
+(//) c 24 T (Whole spot is included in cusp region) N
+() p 8 T () S 16 T () S 24 T (cuspflag=-4;) N
+() S 8 T () S 16 T () S 24 T (inCusp=) S
+(true) k
+(;) p n
+() S 8 T () S 16 T (}) N
+() S 8 T () S 16 T () S
+(return) K
+(\(inCusp\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(// Reflection width and start/end phi of diffraction) c n
+() p 8 T () S
+(private) K
+( ) p
+(boolean) k
+( diffWidth\(\) {) p n
+() S 8 T () S
+(//) c 16 T (Full width of reflection condition \(UNIT:radians\)) N
+() p 8 T () S 16 T (phiw=2.0D*rspot*lorentz_factor/dtor;) N
+() S 8 T () S 16 T (phis=phi-0.5D*phiw;) N
+() S 8 T () S 16 T (phie=phis+phiw;) N
+() S 8 T () S
+(//) c 16 T (Flag) N
+() p 8 T (       ) S 16 T (isDiffWidthAvailable=) S
+(true) k
+(;) p n
+() S 8 T () S 16 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(/*) c n
+(   ) S 8 T (Diffraction condition) N
+(   ) S 8 T (CEA.cos\(phic\)+CEB.sin\(phic\)=CEC) N
+() S 8 T () N
+(   ) S 8 T (1\) CEA=\(XRLP.E1\)*\(E1.S0\)) N
+(   ) S 8 T (2\) CEB=\(XRLP.E1\)*\(E2.S0\)) N
+(   ) S 8 T (3\) CEC=0.5*\(XRLP.E1\)^2+0.5*\(XRLP.E3\)^2-\(XRLP.E3\)*\(E3.S0\)) N
+(   ) S 8 T (4\) CEABSQ=CEA^2+CEB^2 \(=0.0 -> XRLP on rotation axis\)) N
+() S 8 T (*/) N
+() p 8 T () S
+(private) K
+( ) p
+(boolean) k
+( solvePhi\(\) {) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(!isInit\) this.init\(\);) p n
+() S 8 T () S 16 T () S
+(double) k
+( xyz1_dot_e1=xyz1.dot\(e1\);) p n
+() S 8 T () S 16 T () S
+(double) k
+( xyz1_dot_e3=xyz1.dot\(e3\);) p n
+() S 8 T () S 16 T () S
+(double) k
+( e1_dot_s0=e1.dot\(s0\);) p n
+() S 8 T () S 16 T () S
+(double) k
+( e2_dot_s0=e2.dot\(s0\);) p n
+() S 8 T () S 16 T () S
+(double) k
+( e3_dot_s0=e3.dot\(s0\);) p n
+() S 8 T () S
+(//) c 16 T (CEA,CEB,CEC) N
+() p 8 T () S 16 T (cea=xyz1_dot_e1*e1_dot_s0;) N
+() S 8 T () S 16 T (ceb=xyz1_dot_e1*e2_dot_s0;) N
+() S 8 T () S 16 T (cec=0.5D*Math.pow\(xyz1_dot_e1,2.0D\)+0.5D*\(Math.pow\(xyz1_dot_e3,2) N
+(.0D\)\)-\(xyz1_dot_e3*e3_dot_s0\);) N
+() S 8 T () S 16 T () S
+(//System.out.printf\("CEA,CEB,CEC:%12.8f %12.8f %12.8f\\n",cea,ceb) c n
+(,cec\);) N
+() p 8 T () S 16 T (ceabsq=Math.pow\(cea,2.0D\)+Math.pow\(ceb,2.0D\);) N
+() S 8 T () S 16 T () S
+(//System.out.printf\("CEAB**2=%15.8f\\n",ceabsq\);) c n
+() p 8 T () S
+(//) c 16 T (2 solutions) N
+() p 8 T () S 16 T () S
+(double) k
+( arg1=cec/Math.sqrt\(ceabsq\);) p n
+() S 8 T () S 16 T () S
+(//System.out.printf\("ARG1=%12.8f\\n",arg1\);) c n
+() p 8 T () S 16 T () S
+(if) K
+(\(arg1>1.0\) arg1=1.0;) p n
+() S 8 T () S 16 T () S
+(else) K
+( ) p
+(if) K
+(\(arg1<-1.0\) arg1=-1.0;) p n
+() S 8 T () S 16 T () S
+(double) k
+( t1=Math.acos\(arg1\);) p n
+() S 8 T () S 16 T () S
+(double) k
+( t2=Math.atan2\(ceb,cea\);) p n
+(ReflCondition.java) (Page 4/7) ( 2 13, 13 2:42) title
+border
+grestore
+(Printed by Kunio Hirata) rhead
+(ReflCondition.java) (2/4) (\346\260\264\346M-^[M-^\\\346M-^W\245 2\346M-^\\M-^H 13, 2013) footer
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (5-6) 3
+%%BeginPageSetup
+/pagesave save def
+sh 0 translate 90 rotate
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 12 add translate
+/v 0 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p 8 T () S 16 T () S
+(// 1st solution) c n
+() p 8 T () S 16 T () S
+(double) k
+( phic=\(t1+t2\)/dtor;) p n
+() S 8 T () S 16 T () S
+(double) k
+( phia=phistart+phic;) p n
+() S 8 T () S 16 T () S
+(// 2nd solution) c n
+() p 8 T () S 16 T (phic=\(-t1+t2\)/dtor;) N
+() S 8 T () S 16 T () S
+(double) k
+( phib=phistart+phic;) p n
+() S 8 T () S 16 T () S
+(//System.out.printf\("T1/T2=%12.8f %12.8f\\n",t1,t2\);) c n
+() p 8 T () S 16 T () S
+(//System.out.printf\("PHIA/PHIB=%12.8f %12.8f\\n",phia,phib\);) c n
+() p 8 T () S 16 T () S
+(//System.out.printf\("PHIC:%12.8f\\n",phic/dtor\);) c n
+() p 8 T () S 16 T (xyzsol=) S
+(new) K
+( RotMat\(phic*dtor\).rotmat\(\).prod\(xyz1,) p
+(true) k
+(\);) p n
+() S 8 T () S
+(//) c 16 T (Phi range of this oscillation ) N
+() p 8 T () S 16 T (oscwidth=Math.abs\(phiend-phistart\);) N
+() S 8 T () S 16 T () S
+(double) k
+( midphi=0.5D*\(phistart+phiend\);) p n
+() S 8 T () S
+(//) c 16 T (Choosing a phi solution nearby a current oscillation) N
+() p 8 T () S 16 T () S
+(double) k
+( diff1=Math.abs\(phia-midphi\);) p n
+() S 8 T () S 16 T () S
+(double) k
+( diff2=Math.abs\(phib-midphi\);) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(diff1<diff2\) phi=phia;) p n
+() S 8 T () S 16 T () S
+(else) K
+( phi=phib;) p n
+() S 8 T () S 16 T () S
+(//System.out.printf\("Solved PHI= %12.8f\\n",phi\);) c n
+() p 8 T () S
+(//) c 16 T (Flag) N
+() p 8 T () S 16 T (isSolved=) S
+(true) k
+(;) p n
+() S 8 T () S 16 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(private) K
+( ) p
+(boolean) k
+( distEStoRLP\(\) {) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(!isSolved\) this.solvePhi\(\);) p n
+() S 8 T () S
+(/*) c 16 T (Ewald sphere) N
+() S 8 T () S 16 T (\(x+1\)^2 + y^2 + z^2 = 1.0) N
+() S 8 T (*/) N
+() p 8 T () S
+(//) c 16 T (XRLP at start phi) N
+() p 8 T () S 16 T () S
+(double) k
+( x1_2=\(x1+1.0D\)*\(x1+1.0D\);) p n
+() S 8 T () S 16 T () S
+(double) k
+( y1_2=y1*y1;) p n
+() S 8 T () S 16 T () S
+(double) k
+( z1_2=z1*z1;) p n
+() S 8 T () S
+(//) c 16 T (XRLP at start phi) N
+() p 8 T () S 16 T () S
+(double) k
+( x2_2=\(x2+1.0D\)*\(x2+1.0D\);) p n
+() S 8 T () S 16 T () S
+(double) k
+( y2_2=y2*y2;) p n
+() S 8 T () S
+(//) c 16 T (Middle point of XRP1 and 2 on Y axis) N
+() p 8 T () S
+(//) c 16 T (!! NOTE !! Z conpoment is Z1_2 in del2) N
+() p 8 T () S 16 T (ymid=\(y1+y2\)*0.5D;) N
+() S 8 T () S 16 T (yms=ymid*ymid;) N
+() N
+() S 8 T () S 16 T (del1=Math.sqrt\(x1_2+y1_2+z1_2\)-1.0D;) N
+() S 8 T () S 16 T (del2=Math.sqrt\(x2_2+y2_2+z1_2\)-1.0D;) N
+() S 8 T () S 16 T () S
+(//System.out.printf\("DEL1/DEL2=\(%12.8f,%12.8f\)\\n",del1,del2\);) c n
+() p 8 T () S
+(//) c 16 T (Absolute values of del1/del2) N
+() p 8 T () S 16 T (adel1=Math.abs\(del1\);) N
+() S 8 T () S 16 T (adel2=Math.abs\(del2\);) N
+() S 8 T () S 16 T () S
+(//System.out.printf\("ADEL1/ADEL2=\(%12.5f,%12.5f\)\\n",adel1,adel2\)) c n
+(;) N
+() p 8 T () S
+(//) c 16 T (Flag) N
+() p 8 T () S 16 T (isDelAvailable=) S
+(true) k
+(;) p n
+() S 8 T () S 16 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(private) K
+( ) p
+(boolean) k
+( calcLorentz\(\) {) p n
+() S 8 T () S 16 T (Matrix tmp1=e3.cross\(s0\);) N
+() S 8 T () S
+(//) c n
+() p 8 T () S
+(//) c 16 T (Lorentz factor is estimated at the beginning rotation angle) N
+() p 8 T () S
+(//) c n
+() p 8 T () S 16 T () S
+(double) k
+( arg2=xyzsol.dot\(tmp1\);) p n
+() S 8 T () S 16 T () S
+(//System.out.printf\("T3=%12.8f\\n",arg2\);) c n
+() p 8 T () S 16 T (lorentz_factor=Math.abs\(1.0D/arg2\);) N
+() S 8 T () S 16 T () S
+(//System.out.printf\("Lorentz factor=%12.8f\\n",lorentz_factor\);) c n
+() p 8 T () S
+(//) c 16 T (Flag) N
+() p 8 T () S 16 T (isLorentzAvailable=) S
+(true) k
+(;) p n
+() S 8 T () S 16 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(private) K
+( ) p
+(boolean) k
+( numframes\(\) {) p n
+(ReflCondition.java) (Page 5/7) ( 2 13, 13 2:42) title
+border
+/v 1 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p 8 T () S
+(//) c 16 T (Estimating max frames of this reflections) N
+() p 8 T () S 16 T () S
+(int) k
+( maxframes=\() p
+(int) k
+(\)\(width_max/oscwidth\);) p n
+() N
+() S 8 T () S
+(//) c 16 T (Find start BATCH in which this reflection is observed) N
+() p 8 T () S 16 T () S
+(for) K
+(\() p
+(int) k
+( i=1;i<=maxframes+1;i++\) {) p n
+() S 8 T () S 16 T () S 24 T () S
+(if) K
+(\(phistart-\(i-1\)*oscwidth<=phis\) {) p n
+() S 8 T () S 16 T () S 24 T () S 32 T (istart=i;) N
+() S 8 T () S 16 T () S 24 T () S 32 T () S
+(break) K
+(;) p n
+() S 8 T () S 16 T () S 24 T (}) N
+() S 8 T () S 16 T (}) N
+() S 8 T () S 16 T () S
+(for) K
+(\() p
+(int) k
+( i=1;i<=maxframes+1;i++\) {) p n
+() S 8 T () S 16 T () S 24 T () S
+(if) K
+(\(phiend+\(i-1\)*oscwidth>=phie\) {) p n
+() S 8 T () S 16 T () S 24 T () S 32 T (iend=i;) N
+() S 8 T () S 16 T () S 24 T () S 32 T () S
+(break) K
+(;) p n
+() S 8 T () S 16 T () S 24 T (}) N
+() S 8 T () S 16 T (}) N
+() S 8 T () S 16 T (iwidth=istart-1+iend-1+1;) N
+() S 8 T () S
+(//) c 16 T (Flag) N
+() p 8 T () S 16 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(// Estimating spot radius of a reflection) c n
+() p 8 T () S
+(private) K
+( ) p
+(boolean) k
+( rspot\(\) {) p n
+() S 8 T () S 16 T () S
+(double) k
+( delcor=0.0001D;) p n
+() S 8 T () S
+(//      Preparation of parameters required for divergence calculation) c n
+(        ) p 16 T () S
+(double) k
+( esynh=delcor*dstar2+z1*divh;) p n
+(        ) S 16 T () S
+(double) k
+( esynv=divv*ymid;) p n
+() S 8 T () S
+(//      Divergence calculation) c n
+(        ) p 16 T (divergence=Math.sqrt\(\(Math.pow\(esynh,2.0\)+Math.pow\(esynv,2.0\)\)/\() N
+(yms+z1*z1\)\);) N
+() S 8 T () S
+(//      Radius of reflection spot) c n
+(        ) p 16 T (rspot=\(divergence+mosaic\)*Math.sqrt\(dstar2-dst4\)+0.25D*dispersio) N
+(n*dstar2;) N
+() S 8 T () S 16 T () S
+(//System.out.printf\("divv=%12.8f  divh=%12.8f\\n",divv,divh\);) c n
+() p 8 T () S 16 T () S
+(//System.out.printf\("DIVERGE=%12.8f SPOT RADIUS %12.8f\\n",diverg) c n
+(ence,rspot\);) N
+() p 8 T () S 16 T () S
+(//System.out.printf\("RSPOT=%12.5f\\n",rspot\);) c n
+() p 8 T () S 16 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(public) K
+( ) p
+(boolean) k
+( ppp\(\) {) p n
+() S 8 T () S 16 T (init\(\);) N
+() S 8 T () S 16 T (solvePhi\(\);) N
+() S 8 T () S 16 T (distEStoRLP\(\);) N
+() S 8 T () S 16 T (calcLorentz\(\);) N
+() S 8 T () S 16 T (rspot\(\);) N
+() S 8 T () S 16 T (diffWidth\(\);) N
+() S 8 T () S 16 T (numframes\(\);) N
+() S 8 T () S 16 T () S
+(if) K
+(\(cuspcheck\(\)\) {) p n
+() S 8 T () S 16 T () S 24 T (System.out.printf\(") S
+(The reflection is in a cusp region.\\n) str
+("\);) p n
+() S 8 T () S 16 T () S 24 T (this.deleps1=0.0;) N
+() S 8 T () S 16 T () S 24 T (this.deleps2=0.0;) N
+() S 8 T () S 16 T () S 24 T (this.part=0.0;) N
+() S 8 T () S 16 T (} ) S
+(else) K
+( {) p n
+() S 8 T () S 16 T () S 24 T (calc_deleps\(\);) N
+() S 8 T () S 16 T () S 24 T (calc_part\(\);) N
+() S 8 T () S 16 T (}) N
+() S 8 T () S
+(//) c 16 T (Calculation ) N
+() p 8 T () S 16 T (isCalculated=) S
+(true) k
+(;) p n
+() S 8 T () S 16 T () S
+(return) K
+(\() p
+(true) k
+(\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(public) K
+( ) p
+(double) k
+( pcalc\(\) {) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(isCalculated==) p
+(false) k
+(\) ppp\(\);) p n
+() S 8 T () S 16 T () S
+(return) K
+(\(this.part\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(public) K
+( ) p
+(double) k
+( deleps1\(\) {) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(isCalculated==) p
+(false) k
+(\) ppp\(\);) p n
+(ReflCondition.java) (Page 6/7) ( 2 13, 13 2:42) title
+border
+grestore
+(Printed by Kunio Hirata) rhead
+(ReflCondition.java) (3/4) (\346\260\264\346M-^[M-^\\\346M-^W\245 2\346M-^\\M-^H 13, 2013) footer
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (7) 4
+%%BeginPageSetup
+/pagesave save def
+sh 0 translate 90 rotate
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 12 add translate
+/v 0 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p 8 T () S 16 T () S
+(return) K
+(\(this.deleps1\);) p n
+() S 8 T (}) N
+() S 8 T () S
+(public) K
+( ) p
+(double) k
+( deleps2\(\) {) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(isCalculated==) p
+(false) k
+(\) ppp\(\);) p n
+() S 8 T () S 16 T () S
+(return) K
+(\(this.deleps2\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(public) K
+( ) p
+(double) k
+( lorentz\(\) {) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(isLorentzAvailable==) p
+(false) k
+(\) {) p n
+() S 8 T () S 16 T () S 24 T (init\(\);) N
+() S 8 T () S 16 T () S 24 T (solvePhi\(\);) N
+() S 8 T () S 16 T () S 24 T (distEStoRLP\(\);) N
+() S 8 T () S 16 T () S 24 T (calcLorentz\(\);) N
+() S 8 T () S 16 T (}) N
+() S 8 T () S 16 T () S
+(return) K
+(\(this.lorentz_factor\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(public) K
+( ) p
+(double) k
+( phi\(\) {) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(!isSolved\) {) p n
+() S 8 T () S 16 T () S 24 T (init\(\);) N
+() S 8 T () S 16 T () S 24 T (solvePhi\(\);) N
+() S 8 T () S 16 T (}) N
+() S 8 T () S 16 T () S
+(return) K
+(\(phi\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(public) K
+( ) p
+(double) k
+( getDiffWidth\(\) {) p n
+() S 8 T () S 16 T (distEStoRLP\(\);) N
+() S 8 T () S 16 T (calcLorentz\(\);) N
+() S 8 T () S 16 T (rspot\(\);) N
+() S 8 T () S 16 T () S
+(return) K
+(\(rspot\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(public) K
+( ) p
+(int) k
+( numFrames\(\) {) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(!isInit\) this.init\(\);) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(!isSolved\) this.solvePhi\(\);) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(!isDelAvailable\) this.distEStoRLP\(\);) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(!isLorentzAvailable\) this.calcLorentz\(\);) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(!isRspotAvailable\) this.rspot\(\);) p n
+() S 8 T (       ) S 16 T () S
+(if) K
+(\(!isDiffWidthAvailable\) this.diffWidth\(\);) p n
+() S 8 T () S 16 T () S
+(if) K
+(\(!isNframeAvailable\) this.numframes\(\);) p n
+() S 8 T () S 16 T (numframes\(\);) N
+() N
+() S 8 T () S 16 T () S
+(return) K
+(\(iwidth\);) p n
+() S 8 T (}) N
+() N
+() S 8 T () S
+(public) K
+( ) p
+(static) K
+( ) p
+(void) k
+( main\(String[] args\) {) p n
+() S 8 T () S 16 T (Matrix amat=) S
+(new) K
+( Amatrix\(args[0]\).amat\(\);) p n
+() S 8 T () S
+(//) c 16 T (Double) N
+() p 8 T () S 16 T () S
+(double) k
+( tmp[][]=) p
+(new) K
+( ) p
+(double) k
+([4][2];) p n
+() S 8 T () S 16 T (tmp[1][1]=-12;) N
+() S 8 T () S 16 T (tmp[2][1]=-16;) N
+() S 8 T () S 16 T (tmp[3][1]=-19;) N
+() S 8 T () S 16 T (Matrix hkltmp=) S
+(new) K
+( Matrix\(tmp\);) p n
+() N
+() S 8 T () S 16 T (Matrix rm=) S
+(new) K
+( RotMat\(Math.toRadians\(0.01\)\).rotmat\(\);) p n
+() S 8 T () S 16 T (Matrix arot=rm.prod\(amat,) S
+(true) k
+(\);) p n
+() N
+() S 8 T () S 16 T (Matrix conv=) S
+(new) K
+( Axis\(amat,arot\).transmat\(\);) p n
+() S 8 T () S 16 T (conv.showMat\(\);) N
+() S 8 T () S 16 T (Matrix convamat=conv.prod\(amat,) S
+(true) k
+(\);) p n
+() N
+() S 8 T () S 16 T (Matrix xtmp=convamat.prod\(hkltmp,) S
+(true) k
+(\);) p n
+() S 8 T () S 16 T (xtmp.showMat\(\);) N
+() S 8 T () S 16 T (ReflCondition rc=) S
+(new) K
+( ReflCondition\(xtmp,0.0,0.01\);) p n
+() S 8 T () S 16 T (rc.ppp\(\);) N
+() S 8 T (}) N
+(}) N
+(ReflCondition.java) (Page 7/7) ( 2 13, 13 2:42) title
+border
+grestore
+(Printed by Kunio Hirata) rhead
+(ReflCondition.java) (4/4) (\346\260\264\346M-^[M-^\\\346M-^W\245 2\346M-^\\M-^H 13, 2013) footer
+end % of iso1dict
+pagesave restore
+showpage
+
+%%Trailer
+end
+%%EOF

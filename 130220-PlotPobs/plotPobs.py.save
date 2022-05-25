@@ -1,0 +1,56 @@
+import os,sys
+from iotbx import reflection_file_reader
+from cctbx.array_family import flex
+
+sys.path.append("/Users/kuntaro/00.Develop/Prog/02.Python/Libs/")
+from ReadMtz import *
+from ReflWidthBothEdge import *
+
+###########
+# MTZ file
+###########
+if len(sys.argv)!=4:
+	print "Usage MATFILE ONEMTZ REFMTZ"
+	sys.exit()
+
+# Filename
+matfile=sys.argv[1]
+mtzfile1=sys.argv[2]
+reffile=sys.argv[3]
+
+###########
+# Initialization
+###########
+omtz=ReadMtz(mtzfile1)
+rmtz=ReadMtz(reffile)
+
+rwbe=ReflWidthBothEdge(matfile,0.02,0.02,0.3,0.0002,0.1)
+
+#########
+# Reading both image MTZs
+#########
+ipr_o,sig_o=omtz.getProFitIsigI()
+imean,sig_mean=rmtz.getMeanSCALA()
+ohkl=omtz.getOriginalIndex()
+rhkl=rmtz.getIndex()
+pmtz=omtz.getFractionCalc()
+
+test=ohkl.common_sets(rhkl)
+
+i=0
+for hkl in ohkl:
+	print hkl,ipr_o.data[i],sig_o.data[i]
+	i+=1
+
+startphi=0.0
+
+#print "#####################"
+#idx=0
+#for hkl in ohkl:
+    ##print "Pcalc from MOSFLM:",pmtz[idx]
+    #if rwbe.setHKL(hkl,startphi)==True:
+            #del1,del2=rwbe.calcDELEPS()
+            #pcalc_my=rwbe.calcPartiality()
+            ##print hkl
+            #print "%s %12.5f %12.5f  %8.5f %8.5f"%(hkl,del1,del2,pmtz[idx],pcalc_my)
+    #idx+=1

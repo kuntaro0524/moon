@@ -1,0 +1,110 @@
+
+ Generate File TITLE:   .
+ Crystal Identifier:    oxi00_0
+
+ Generate File TITLE:   .
+ Crystal Identifier:    oxi00_0
+
+
+
+ *** WARNING *** No attempt will be made to measure overloaded reflections
+ Use keywords PROFILE OVERLOAD to estimate overloads by profile fitting
+ IMAGE    CCX    CCY    CCOM   DIST YSCALE  TILT TWIST   ROFF   TOFF  RESID  WRESID    FULL   PART   OVRL  NEG  BAD  I/SIGI  I/SIGI   Rsym  Nsym SDRAT
+                                                                                                             overall (at 1.4A)
+        1  -0.02   0.00    0.00  120.2  0.999     0     0   0.00   0.00  0.065     0.4       0  17301     0  5928    2    3.7     0.0    0.000    0   0.0
+
+
+ *** Warning messages ***
+
+ *** SERIOUS PROBLEMS ***
+ ========================
+ The following problems may have a significant effect on data quality
+ Action should be taken to eliminate these warnings.
+
+ ERROR IN DETECTOR GAIN
+ ======================
+ The ratio of the observed variation in background pixels to that
+ expected statistically (the BGRATIO) lies outside the range 0.9 to 1.1.
+ Actual values: minimum:  0.90  maximum:  0.90
+ The most likely explanation is that the GAIN of the detector is incorrect.
+ The current GAIN is 0.30 but the observed BGRATIO suggests it should be
+ set to 0.24.
+ NOTE however that diffuse scatter can lead to an increased value of BGRATIO
+ even when the gain is correct.
+ Since the gain for any detector should remain constant, it should be worked out
+ for a crystal giving strong diffraction and "clean" spots (ie no disorder or
+ diffuse scatter)and kept at this value.
+ Processing data with an incorrect gain will result in a systematic 
+ overestimate of very weak reflections and incorrect standard deviations.
+
+
+ *** PROBLEMS WORTH CONSIDERING ***
+ ==================================
+ The following warnings suggest that the processing might be improved
+ if appropriate action is taken.
+
+
+ POOR PROFILES IN SOME AREAS
+ ===========================
+ For  9 profiles the correlation coefficient with the central profile is less than 0.5.
+ Smallest correlation coefficient is -0.07
+ Possible reasons are:
+ 1) Very weak diffraction (consider cutting back the resolution)
+ 2) Errors in cell parameters (check DELX, DELY for the standard profiles).
+ 3) Genuine variation due to high obliquity (for example).
+ 4) Presence of zingers or spots from an ice or salt crystal which are much
+ stronger than the protein spots. Sometimes these can be rejected using
+ the PROFILE CUTOFF keywords.
+
+ A low correlation does NOT necessarily mean that the processing needs to be changed.
+
+ The image number, profile box number and correlation coefficient for
+ up to the first 6 occurences are:
+   ID BOX CORRLN     ID BOX CORRLN     ID BOX CORRLN     ID BOX CORRLN   
+    1   1   0.38      1   3   0.05      1   6   0.39      1  15   0.24
+    1  16   0.30      1  17  -0.07
+
+
+ *** THE FOLLOWING ARE MAINLY FOR INFORMATION ***
+ ================================================
+ In some cases it may be possible to change the processing to eliminate
+ some of these warnings.
+
+ AVERAGING OF STANDARD PROFILES
+ ==============================
+ Profile averaging has been performed for some of the standard profiles.
+ If possible this should be avoided, eg by accumulating the profiles
+ over more images (BLOCK parameter on PROCESS keyword).
+ Do not attempt to process spots that are not really there !
+ If profiles are being averaged because the RMSBG is too high, but 
+ this is because of diffuse scatter, it is best to increase the maximum 
+ allowed RMSBG (default value 20.0): PROFILE RMSBG 25 (for example).
+
+ TOO MANY BACKGROUND PIXELS OVERLAPPED BY NEIGHBOURING SPOTS
+ ===========================================================
+ For some of the standard profiles, more than half the background pixels are
+ flagged as being overlapped by neighbouring spots (in the worst case,  63.3%
+  are overlapped).
+ You should use the SEPARATION CLOSE keywords, eg SEPARATION 1.0 1.0 CLOSE
+ $TABLE: Refined detector parameters:
+ $GRAPHS :Camera constants CCX CCY (mm) CCOM (deg) v image:A:1,2,3,4:  
+ :Distance (mm) v image:A:1,5:
+ :Yscale v image:A:1,6:
+ :Tilt and twist (hundredths of deg) v image:A:1,7,8:
+ :ROFF and TOFF (mm) v image:A:1,9,10:
+ :Positional error (mm) and weighted error v image:A:1,11,12:
+ :I/sig(I) overall and outer v image:N:1,18,19:
+ :Rsym v image:N:1,20:  
+ :SDratio v image:N:1,22:  
+ :Number of overloads and badspots v image:A:1,15,17: $$
+ IMAGE    CCX    CCY    CCOM   DIST YSCALE  TILT TWIST   ROFF   TOFF  RESID  WRESID    FULL   PART   OVRL  NEG  BAD I/sigI I/sigI_out  Rsym  Nsym SDRAT $$ $$
+        1  -0.02   0.00    0.00  120.2  0.999     0     0   0.00   0.00  0.065     0.4       0  17301     0  5928    2    3.7     0.0    0.000    0   0.0                                               
+ $$
+  $TABLE: Post refinement:
+ $GRAPHS :Missets phix phiy phiz v image:A:1,2,3,4:  
+ :Cell parameters A,B,C v image:A:1,5,6,7:  
+ :Cell angles alpha beta gamma v image:A:1,8,9,10:  
+ :Mosaic spread v image:A:1,11:  
+ :Beam divergences v image:A:1,12,13: $$  
+ Image     PHIX     PHIY     PHIZ        A        B        C      ALPHA     BETA    GAMMA   MOSAIC   DIVH   DIVV    Resid      NR $$ $$
+ $$

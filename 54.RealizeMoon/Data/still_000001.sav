@@ -1,0 +1,24 @@
+! This input created from an interactive session
+DIRE ../../
+polarisation synchrotron 0.95
+DETECTOR marccd reversephi
+WAVELENGTH  1.24000
+DIVERGENCE    0.020    0.020
+DISPERSION  0.00020
+SYNCHROTRON POLARISATION 0.95
+BEAM  112.29  113.70
+ADCOFFSET   0
+DISTANCE  200.080
+DISTORTION YSCALE    0.9997 TILT   12 TWIST   -1
+PIXEL  0.07324
+MATRIX still_000001.mat
+!This matrix was obtained from autoindexing
+! The following images were used:   1
+SYMMETRY   19
+MOSAIC  0.20
+TEMPLATE still_######.img
+DIRECTORY ../../
+RASTER    13   15   10    4    5
+SEPARATION  0.36 0.36
+OVERLOAD CUTOFF   65500
+RESOLUTION   2.50

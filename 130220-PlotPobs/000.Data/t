@@ -1,0 +1,6 @@
+#!/bin/csh
+sortmtz hklout jnk.mtz << eof > sortmtz.log
+H K L M/ISYM BATCH 
+../oxi_all.mtz
+eof
+

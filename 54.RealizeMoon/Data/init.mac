@@ -1,0 +1,16 @@
+DIRE ../../
+TEMPLATE still_######.img
+IMAGE 1 phi 0.0 to 0.1
+DETECTOR marccd reversephi
+RESOLUTION 2.5
+WAVELENGH 1.24
+MOSAIC 0.2
+!beam 113.26 112.10
+beam 112.28 113.66
+DISTANCE 200.0
+!matr ini.mat
+divergence 0.02 0.02
+pixel 0.07324
+dispersion 0.0002
+polarisation synchrotron 0.95
+distortion roff 0.000 toff 0.000

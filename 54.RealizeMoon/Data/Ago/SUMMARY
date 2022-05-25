@@ -1,0 +1,152 @@
+
+ Generate File TITLE:   .
+ Crystal Identifier:    po2e1033e40p8-001
+
+
+
+ *** WARNING *** No attempt will be made to measure overloaded reflections
+ Use keywords PROFILE OVERLOAD to estimate overloads by profile fitting
+ IMAGE    CCX    CCY    CCOM   DIST YSCALE  TILT TWIST   ROFF   TOFF  RESID  WRESID    FULL   PART   OVRL  NEG  BAD  I/SIGI  I/SIGI   Rsym  Nsym SDRAT
+                                                                                                             overall (at 1.4A)
+        1   0.01   0.01    0.00  110.0  1.000     0     0   0.00   0.00  0.022     1.9    2390   2698     0   764  257   22.6     3.3    0.000    0   0.0
+
+
+ *** Warning messages ***
+
+ *** SERIOUS PROBLEMS ***
+ ========================
+ The following problems may have a significant effect on data quality
+ Action should be taken to eliminate these warnings.
+
+ ERROR IN DETECTOR GAIN
+ ======================
+ The ratio of the observed variation in background pixels to that
+ expected statistically (the BGRATIO) lies outside the range 0.9 to 1.1.
+ Actual values: minimum:  1.43  maximum:  1.43
+ The most likely explanation is that the GAIN of the detector is incorrect.
+ The current GAIN is 0.50 but the observed BGRATIO suggests it should be
+ set to 1.02.
+ NOTE however that diffuse scatter can lead to an increased value of BGRATIO
+ even when the gain is correct.
+ Since the gain for any detector should remain constant, it should be worked out
+ for a crystal giving strong diffraction and "clean" spots (ie no disorder or
+ diffuse scatter)and kept at this value.
+ Processing data with an incorrect gain will result in a systematic 
+ overestimate of very weak reflections and incorrect standard deviations.
+
+
+ *** PROBLEMS WORTH CONSIDERING ***
+ ==================================
+ The following warnings suggest that the processing might be improved
+ if appropriate action is taken.
+
+ LARGE WEIGHTED RESIDUAL
+ =======================
+ The weighted residual is rather large (it should be unity, actual maximum value 1.93).
+ This is usually due to poor cell parameters..check these and possibly try post-refinement
+
+ EXCESSIVE NUMBER OF BADSPOTS
+ ============================
+ At least some images have rather a lot of badspots (Maximum number 257)
+ They are rejected on the basis of: 
+ 1) Poor profile fit (PKRATIO >3, controlled by REJECTION PKRATIO).
+ 2) Too large a BGRATIO (too much background variation, controlled by
+    REJECTION BGRATIO).
+ 3) Too large a background gradient (controlled by REJECTION GRADMAX)
+ 4) Intensity negative and more than 5 sigma.
+ Look at the list of badspots to see what category they fall under.
+
+ Not defining the backstop shadow can give large background plane gradients.
+ Very intense images can have unusually large gradients, GRADMAX may have to
+ be changed from the default
+ A pixel dump of the BADSPOTS can be obtained using REJECTION PLOT
+ if the reason for their rejection is not clear
+
+
+ POOR PROFILES IN SOME AREAS
+ ===========================
+ For 13 profiles the correlation coefficient with the central profile is less than 0.5.
+ Smallest correlation coefficient is -0.26
+ Possible reasons are:
+ 1) Very weak diffraction (consider cutting back the resolution)
+ 2) Errors in cell parameters (check DELX, DELY for the standard profiles).
+ 3) Genuine variation due to high obliquity (for example).
+ 4) Presence of zingers or spots from an ice or salt crystal which are much
+ stronger than the protein spots. Sometimes these can be rejected using
+ the PROFILE CUTOFF keywords.
+
+ A low correlation does NOT necessarily mean that the processing needs to be changed.
+
+ The image number, profile box number and correlation coefficient for
+ up to the first 6 occurences are:
+   ID BOX CORRLN     ID BOX CORRLN     ID BOX CORRLN     ID BOX CORRLN   
+    1   1  -0.26      1   5   0.02      1   6   0.44      1  10   0.23
+    1  11   0.10      1  15   0.41
+
+
+ *** THE FOLLOWING ARE MAINLY FOR INFORMATION ***
+ ================================================
+ In some cases it may be possible to change the processing to eliminate
+ some of these warnings.
+
+ AVERAGING OF STANDARD PROFILES
+ ==============================
+ Profile averaging has been performed for some of the standard profiles.
+ If possible this should be avoided, eg by accumulating the profiles
+ over more images (BLOCK parameter on PROCESS keyword).
+ Do not attempt to process spots that are not really there !
+ If profiles are being averaged because the RMSBG is too high, but 
+ this is because of diffuse scatter, it is best to increase the maximum 
+ allowed RMSBG (default value 20.0): PROFILE RMSBG 25 (for example).
+
+ BROAD PROFILES
+ ==============
+ At least some of the standard profiles have rather long tails
+ Percentage of peak pixels with values less than 5% of maximum value is  46.2
+ This may be genuine, but may also arise if there is significant diffuse
+ scatter which is (incorrectly) being included in the Bragg peak.
+ Check the profiles carefully and also inspect the images.
+ If the optimisation of the measurement boxes is making the profiles too broad
+ (eg a significant number of "0" in the peak regions of the printed profiles)
+ then the effective size of the spots can be controlled by PROFILE TOLERANCE
+ keywords.
+ Try increasing TOLERANCE (current value 0.030) by eg 0.005 and see if the
+ profiles look better. (Increasing TOLERANCE  will decrease spot size).
+
+ STANDARD PROFILES SEEM TO EXTEND WELL BEYOND PEAK AREA
+ ======================================================
+ For  22 of the standard profiles, there is more than 10% of the total
+ counts in the profile outside the peak region.
+
+ Examine the printout of the standard profiles (in the logfile)
+ This can be a result of rather noisy profiles (weak data) or 
+ poor profile optimisation. As a last resort
+ it can be turned off using keywords PROFILE NOOPT.
+ If this does not help, try turning off the
+ weighting when forming the standard profiles (PROFILE NOWSUM)
+ The following profiles are affected
+    1   2   3   4   5   6   7   8   9  10  11  14  15  16  17  19  20  21  22
+ The fraction of the profile outside the peak for these profile is given below
+ 0.570.430.450.420.470.450.340.140.360.390.130.100.170.360.260.180.240.350.30
+ $TABLE: Refined detector parameters:
+ $GRAPHS :Camera constants CCX CCY (mm) CCOM (deg) v image:A:1,2,3,4:  
+ :Distance (mm) v image:A:1,5:
+ :Yscale v image:A:1,6:
+ :Tilt and twist (hundredths of deg) v image:A:1,7,8:
+ :ROFF and TOFF (mm) v image:A:1,9,10:
+ :Positional error (mm) and weighted error v image:A:1,11,12:
+ :I/sig(I) overall and outer v image:N:1,18,19:
+ :Rsym v image:N:1,20:  
+ :SDratio v image:N:1,22:  
+ :Number of overloads and badspots v image:A:1,15,17: $$
+ IMAGE    CCX    CCY    CCOM   DIST YSCALE  TILT TWIST   ROFF   TOFF  RESID  WRESID    FULL   PART   OVRL  NEG  BAD I/sigI I/sigI_out  Rsym  Nsym SDRAT $$ $$
+        1   0.01   0.01    0.00  110.0  1.000     0     0   0.00   0.00  0.022     1.9    2390   2698     0   764  257   22.6     3.3    0.000    0   0.0                                               
+ $$
+  $TABLE: Post refinement:
+ $GRAPHS :Missets phix phiy phiz v image:A:1,2,3,4:  
+ :Cell parameters A,B,C v image:A:1,5,6,7:  
+ :Cell angles alpha beta gamma v image:A:1,8,9,10:  
+ :Mosaic spread v image:A:1,11:  
+ :Beam divergences v image:A:1,12,13: $$  
+ Image     PHIX     PHIY     PHIZ        A        B        C      ALPHA     BETA    GAMMA   MOSAIC   DIVH   DIVV    Resid      NR $$ $$
+ $$

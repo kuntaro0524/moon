@@ -1,0 +1,2252 @@
+xds2mtz.py running in /isilon/users/target/target/AutoUsers/220512/sengoku/_kamo_30deg/TMP
+output directory: ccp4
+original file: /isilon/users/target/target/AutoUsers/220512/sengoku/_kamo_30deg/TMP/1097-06.hkl
+flag_source: None
+space group: P 1 (SPACE_GROUP_NUMBER=1; requested space_group=None)
+anomalous: True (FRIEDEL'S_LAW=FALSE force_anomalous=None)
+
+generating MTZ for I(+),I(-),SIGI(+),SIGI(-)
+
+ ***** XDSCONV ***** (VERSION Jan 10, 2022  BUILT=20220220)  25-May-2022
+ Author: Wolfgang Kabsch
+ Copy licensed until 31-Mar-2023 to
+  academic users for non-commercial applications
+ No redistribution.
+
+
+ ========== CONTROL CARDS ==========
+
+ OUTPUT_FILE=tmp.hkl CCP4_I                                                    
+ INPUT_FILE=original                                                           
+ GENERATE_FRACTION_OF_TEST_REFLECTIONS=0.0                                     
+ WILSON_STATISTICS= TRUE                                                       
+ FRIEDEL'S_LAW= FALSE                                                          
+
+
+ SPACE_GROUP_NUMBER=    1
+ UNIT_CELL_CONSTANTS=    78.59    93.51    93.85  79.877  65.331  65.130
+ FRIEDEL'S_LAW=FALSE
+ MERGE=TRUE 
+ NUMBER OF REFLECTION RECORDS ON INPUT FILE      167839
+ NUMBER OF IGNORED REFLECTIONS (I< -3.0*SIGMA)     2324
+ NUMBER OF REFLECTIONS ACCEPTED FROM INPUT FILE  132286
+
+ NUMBER OF UNIQUE REFLECTIONS ASSIGNED TO TEST SET        0
+ NUMBER OF UNIQUE TEST REFLECTIONS INHERITED              0
+ NUMBER OF UNIQUE TEST REFLECTIONS NEWLY GENERATED        0
+
+
+ SUSPICIOUS REFLECTIONS NOT INCLUDED IN OUTPUT DATA SET
+                (at most 100 are listed below)
+
+    Type     = 2 for centric, 1 for acentric reflections
+ <Intensity> = Mean intensity in resolution shell
+    Score    = Intensity/Sigma - Sigma/(Type*<Intensity>)
+               negative score indicate suspicious reflections
+
+   h    k    l  Type  Intensity     Sigma    <Intensity>   Score
+
+    0   -3  -41    1  0.2540E+00  0.4609E+00 -0.4770E-02 -infinity
+    0   -3  -42    1 -0.3204E+00  0.4290E+00 -0.1334E+00 -infinity
+    0   -4  -42    1  0.3555E+00  0.5296E+00 -0.1860E-01 -infinity
+    0   -4  -43    1 -0.2998E-02  0.5312E+00 -0.2384E+00 -infinity
+    0   -5  -44    1 -0.1141E+00  0.5130E+00 -0.4491E+00 -infinity
+    0   -5  -45    1 -0.1225E+00  0.4647E+00 -0.1433E+00 -infinity
+    0   -6  -46    1 -0.6280E+00  0.5193E+00 -0.8379E+00 -infinity
+    0   -6  -47    1  0.5921E+00  0.4652E+00 -0.1005E+01 -infinity
+    0   -7  -49    1 -0.3224E+00  0.4406E+00 -0.8347E+00 -infinity
+    0   -8  -50    1  0.2446E-01  0.5338E+00 -0.9877E+00 -infinity
+    0   -9  -52    1  0.1942E+00  0.4523E+00 -0.6700E+00 -infinity
+    0  -10  -54    1  0.2808E+00  0.3663E+00 -0.1142E+01 -infinity
+    0  -11  -55    1 -0.5333E+00  0.4086E+00 -0.9027E+00 -infinity
+    0  -12  -56    1  0.1747E+00  0.4798E+00 -0.1040E+01 -infinity
+    0  -12  -57    1  0.1214E+00  0.4875E+00 -0.4769E+00 -infinity
+    0  -13  -57    1 -0.1049E+01  0.5290E+00 -0.7171E+00 -infinity
+    0  -14  -58    1  0.4191E+00  0.5987E+00 -0.6206E+00 -infinity
+    0  -14  -59    1 -0.2193E+00  0.5265E+00 -0.5667E+00 -infinity
+    0  -15  -59    1  0.1817E+00  0.6355E+00 -0.7630E+00 -infinity
+    0  -17   35    1  0.2532E+00  0.9400E+00 -0.3007E+00 -infinity
+    0  -18   37    1  0.1539E+01  0.9740E+00 -0.2321E+00 -infinity
+    0  -19   32    1 -0.2010E+01  0.9425E+00  0.2423E-02   -391.04
+    0  -20   39    1  0.1942E+01  0.1035E+01 -0.3813E+00 -infinity
+    0  -20   38    1  0.4146E+00  0.9979E+00 -0.2742E+00 -infinity
+    0  -20   37    1  0.4596E+00  0.1009E+01 -0.1663E+00 -infinity
+    0  -21   40    1  0.1587E+01  0.1069E+01 -0.3145E+00 -infinity
+    0  -21   39    1  0.5013E+00  0.1027E+01 -0.2649E+00 -infinity
+    0  -21   38    1  0.1663E+01  0.1009E+01 -0.2176E+00 -infinity
+    0  -21   37    1 -0.2163E+01  0.9346E+00 -0.2306E+00 -infinity
+    0  -21   35    1 -0.6347E+00  0.1005E+01 -0.2258E-01 -infinity
+    0  -21   33    1 -0.3038E+00  0.9741E+00 -0.4306E-01 -infinity
+    0  -22   42    1  0.1059E+00  0.1032E+01 -0.9669E+00 -infinity
+    0  -22   41    1 -0.4034E+00  0.1042E+01 -0.8948E+00 -infinity
+    0  -22   40    1  0.1035E+01  0.1059E+01 -0.1357E+00 -infinity
+    0  -22   39    1  0.2087E+01  0.1031E+01 -0.6268E-01 -infinity
+    0  -22   38    1  0.1141E+01  0.1010E+01 -0.2646E+00 -infinity
+    0  -22   37    1 -0.1286E+01  0.9991E+00 -0.1562E+00 -infinity
+    0  -22   36    1  0.1401E+01  0.1002E+01 -0.2148E+00 -infinity
+    0  -22   35    1  0.1728E+00  0.1037E+01 -0.1223E+00 -infinity
+    0  -22   34    1 -0.2413E+01  0.9786E+00 -0.5345E-01 -infinity
+    0  -22   32    1 -0.1511E+01  0.9980E+00 -0.3504E-01 -infinity
+    0  -23   42    1 -0.8807E+00  0.1046E+01 -0.1014E+01 -infinity
+    0  -23   41    1 -0.1060E+01  0.1021E+01 -0.8605E+00 -infinity
+    0  -23   39    1  0.4233E+00  0.1035E+01 -0.2245E+00 -infinity
+    0  -23   38    1  0.9729E+00  0.1038E+01 -0.1892E+00 -infinity
+    0  -23   37    1 -0.5394E+00  0.9692E+00 -0.8695E-01 -infinity
+    0  -23   36    1  0.2214E+01  0.1087E+01 -0.1152E+00 -infinity
+    0  -23   35    1  0.5933E+00  0.1042E+01 -0.3787E-01 -infinity
+    0  -23   34    1  0.5442E+00  0.1029E+01 -0.2870E+00 -infinity
+    0  -23   32    1  0.1009E+01  0.1011E+01  0.1581E-01    -62.93
+    0  -24   43    1  0.7387E+00  0.1077E+01 -0.5930E+00 -infinity
+    0  -24   42    1 -0.5868E-01  0.1080E+01 -0.9993E+00 -infinity
+    0  -24   41    1 -0.1360E+01  0.9949E+00 -0.9438E+00 -infinity
+    0  -24   40    1 -0.5604E+00  0.9818E+00 -0.8409E+00 -infinity
+    0  -24   39    1 -0.1142E+01  0.1053E+01 -0.9009E+00 -infinity
+    0  -24   38    1 -0.5910E-01  0.9663E+00 -0.4092E+00 -infinity
+    0  -24   36    1 -0.2271E+01  0.1029E+01 -0.1590E+00 -infinity
+    0  -24   35    1  0.7881E+00  0.1101E+01 -0.2353E+00 -infinity
+    0  -24   34    1 -0.4962E+00  0.1030E+01 -0.2238E+00 -infinity
+    0  -24   33    1 -0.1069E+01  0.1036E+01 -0.3997E-01 -infinity
+    0  -25   44    1  0.7093E+00  0.1149E+01 -0.1039E+01 -infinity
+    0  -25   43    1 -0.9019E+00  0.1109E+01 -0.8463E+00 -infinity
+    0  -25   41    1  0.4891E+00  0.1029E+01 -0.9115E+00 -infinity
+    0  -26   31    1  0.1093E+01  0.1068E+01 -0.4057E-01 -infinity
+    0  -26   30    1 -0.1943E+01  0.9954E+00 -0.4351E-01 -infinity
+    0  -27   40    1 -0.1445E+01  0.1052E+01 -0.7025E+00 -infinity
+    0  -27   39    1  0.1469E+00  0.1147E+01 -0.9459E+00 -infinity
+    0  -27   38    1 -0.1329E+01  0.1077E+01 -0.9088E+00 -infinity
+    0  -27   37    1  0.7375E+00  0.1132E+01 -0.6839E+00 -infinity
+    0  -27   36    1 -0.2500E+01  0.1041E+01 -0.3436E+00 -infinity
+    0  -27   35    1  0.2025E+00  0.1076E+01 -0.2764E+00 -infinity
+    0  -27   33    1 -0.5710E+00  0.1043E+01 -0.1868E+00 -infinity
+    0  -27   32    1 -0.1644E+01  0.1010E+01 -0.1905E+00 -infinity
+    0  -27   31    1 -0.1760E+01  0.9877E+00 -0.2993E+00 -infinity
+    0  -27   30    1 -0.9740E+00  0.1074E+01 -0.6737E-01 -infinity
+    0  -28   46    1  0.8460E+00  0.1225E+01 -0.4936E+00 -infinity
+    0  -28   45    1 -0.2719E+00  0.1147E+01 -0.7327E+00 -infinity
+    0  -28   44    1 -0.1872E+01  0.1112E+01 -0.9036E+00 -infinity
+    0  -28   43    1  0.2770E+00  0.1110E+01 -0.8037E+00 -infinity
+    0  -28   42    1 -0.1561E+00  0.1059E+01 -0.1068E+01 -infinity
+    0  -28   40    1 -0.1701E+01  0.1062E+01 -0.6900E+00 -infinity
+    0  -28   39    1 -0.7204E-01  0.1147E+01 -0.8621E+00 -infinity
+    0  -28   37    1 -0.4355E+00  0.1168E+01 -0.8039E+00 -infinity
+    0  -28   36    1 -0.1611E+01  0.1067E+01 -0.2320E+00 -infinity
+    0  -28   35    1 -0.1592E+01  0.1067E+01 -0.6760E-01 -infinity
+    0  -28   34    1 -0.6263E+00  0.1086E+01 -0.3098E+00 -infinity
+    0  -28   33    1  0.1270E+00  0.1068E+01 -0.1014E+00 -infinity
+    0  -28   31    1 -0.2076E+01  0.1021E+01 -0.4947E-01 -infinity
+    0  -28   30    1  0.1580E+01  0.1059E+01 -0.3981E+00 -infinity
+    0  -28   29    1 -0.1748E+01  0.9939E+00 -0.3084E-01 -infinity
+    0  -29   48    1 -0.8839E+00  0.1160E+01 -0.1083E+01 -infinity
+    0  -29   47    1 -0.1612E+01  0.1163E+01 -0.7273E+00 -infinity
+    0  -29   46    1  0.5585E+00  0.1224E+01 -0.7018E+00 -infinity
+    0  -29   45    1 -0.1136E+01  0.1089E+01 -0.6958E+00 -infinity
+    0  -29   42    1 -0.5947E+00  0.1168E+01 -0.7420E+00 -infinity
+    0  -29   41    1 -0.2617E+01  0.1104E+01 -0.1001E+01 -infinity
+    0  -29   40    1 -0.1527E+01  0.1131E+01 -0.8352E+00 -infinity
+    0  -29   39    1 -0.2335E+00  0.1197E+01 -0.9504E+00 -infinity
+    0  -29   37    1 -0.2778E+00  0.1105E+01 -0.7343E+00 -infinity
+    0  -29   36    1 -0.1407E+01  0.1092E+01 -0.9214E+00 -infinity
+
+ TOTAL NUMBER OF SUSPICIOUS REFLECTIONS REMOVED   95002
+
+ NUMBER OF REFLECTION RECORDS ON OUTPUT FILE     128956
+ NUMBER OF RECORDS ASSIGNED TO WORKING SET       128956
+ NUMBER OF RECORDS ASSIGNED TO TEST SET               0
+
+
+
+ XDSCONV will now generate the keyworded input file F2MTZ.INP
+ needed by f2mtz for the final conversion to binary MTZ-format.
+ To run the CCP4 programs f2mtz and cad (to convert indices to
+ the CCP4-asymmetric unit), just type the two commands:
+
+ f2mtz HKLOUT temp.mtz<F2MTZ.INP
+ cad HKLIN1 temp.mtz HKLOUT output_file_name.mtz<<EOF
+ LABIN FILE 1 ALL
+ DWAVELENGTH FILE 1 1    0.99999
+ END
+EOF
+
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 7.0.047: f2mtz            version 7.0.047 :         ##
+ ###############################################################
+ User: khirata  Run date: 25/ 5/2022 Run time: 15:23:22 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Maximum number of columns in this version:          80
+ Data line--- TITLE XDS to MTZ
+ Data line--- FILE tmp.hkl
+
+FORMATTED      OLD     file opened on unit   1
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+Logical name: tmp.hkl, Filename: tmp.hkl
+<!--SUMMARY_END--></FONT></B>
+
+ Data line--- SYMMETRY    1
+ Data line--- CELL     78.586    93.506    93.850    79.877    65.331    65.130
+ Data line--- LABOUT  H K L IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-)
+ Number of columns to be read in:           9
+ Data line--- CTYPOUT H H H  J       Q      K      M      K    M
+ Data line--- END
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  PROJECTNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  CRYSTALNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  DATASETNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: CCP4_I.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown250522
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.00000
+
+ * Number of Columns = 9
+
+ * Number of Reflections = 128956
+
+ * Missing value set to NaN in input mtz file
+
+ * HISTORY for current MTZ file :
+
+ From f2mtz 25/ 5/2022 15:23:22 
+
+ * Column Labels, Types, Ranges [and Dataset IDs] :
+
+ H                               H              0.0000             63.0000        0 
+ K                               H            -60.0000             64.0000        0 
+ L                               H            -58.0000             80.0000        0 
+ IMEAN                           J             -5.3510            566.3000        1 
+ SIGIMEAN                        Q              0.0267             36.8300        1 
+ I(+)                            K             -5.3340            439.5000        1 
+ SIGI(+)                         M              0.0396             23.5400        1 
+ I(-)                            K             -5.3510            566.3000        1 
+ SIGI(-)                         M              0.0356             36.8300        1 
+
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.78204     (     44.484 -      1.131 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Number of Symmetry Operations = 1 
+ * Number of Primitive Operations = 1 
+ * Space Group = 1 'P 1' 
+ * Lattice Type = P 
+ * Point Group Name = PG1 
+
+ * Symmetry Operations : 
+
+ Symmetry 1 X,  Y,  Z                                                   
+  1.00  0.00  0.00  0.00 
+  0.00  1.00  0.00  0.00 
+  0.00  0.00  1.00  0.00 
+  0.00  0.00  0.00  1.00 
+
+ 128956 input reflections processed
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ f2mtz:  Normal termination
+Times: User:       0.5s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+generating MTZ for F(+),F(-),SIGF(+),SIGF(-)
+
+ ***** XDSCONV ***** (VERSION Jan 10, 2022  BUILT=20220220)  25-May-2022
+ Author: Wolfgang Kabsch
+ Copy licensed until 31-Mar-2023 to
+  academic users for non-commercial applications
+ No redistribution.
+
+
+ ========== CONTROL CARDS ==========
+
+ OUTPUT_FILE=tmp.hkl CCP4_F                                                    
+ INPUT_FILE=original                                                           
+ GENERATE_FRACTION_OF_TEST_REFLECTIONS=0.0                                     
+ WILSON_STATISTICS= TRUE                                                       
+ FRIEDEL'S_LAW= FALSE                                                          
+
+
+ SPACE_GROUP_NUMBER=    1
+ UNIT_CELL_CONSTANTS=    78.59    93.51    93.85  79.877  65.331  65.130
+ FRIEDEL'S_LAW=FALSE
+ MERGE=TRUE 
+ NUMBER OF REFLECTION RECORDS ON INPUT FILE      167839
+ NUMBER OF IGNORED REFLECTIONS (I< -3.0*SIGMA)     2324
+ NUMBER OF REFLECTIONS ACCEPTED FROM INPUT FILE  132286
+
+ NUMBER OF UNIQUE REFLECTIONS ASSIGNED TO TEST SET        0
+ NUMBER OF UNIQUE TEST REFLECTIONS INHERITED              0
+ NUMBER OF UNIQUE TEST REFLECTIONS NEWLY GENERATED        0
+
+
+ SUSPICIOUS REFLECTIONS NOT INCLUDED IN OUTPUT DATA SET
+                (at most 100 are listed below)
+
+    Type     = 2 for centric, 1 for acentric reflections
+ <Intensity> = Mean intensity in resolution shell
+    Score    = Intensity/Sigma - Sigma/(Type*<Intensity>)
+               negative score indicate suspicious reflections
+
+   h    k    l  Type  Intensity     Sigma    <Intensity>   Score
+
+    0   -3  -41    1  0.2540E+00  0.4609E+00 -0.4770E-02 -infinity
+    0   -3  -42    1 -0.3204E+00  0.4290E+00 -0.1334E+00 -infinity
+    0   -4  -42    1  0.3555E+00  0.5296E+00 -0.1860E-01 -infinity
+    0   -4  -43    1 -0.2998E-02  0.5312E+00 -0.2384E+00 -infinity
+    0   -5  -44    1 -0.1141E+00  0.5130E+00 -0.4491E+00 -infinity
+    0   -5  -45    1 -0.1225E+00  0.4647E+00 -0.1433E+00 -infinity
+    0   -6  -46    1 -0.6280E+00  0.5193E+00 -0.8379E+00 -infinity
+    0   -6  -47    1  0.5921E+00  0.4652E+00 -0.1005E+01 -infinity
+    0   -7  -49    1 -0.3224E+00  0.4406E+00 -0.8347E+00 -infinity
+    0   -8  -50    1  0.2446E-01  0.5338E+00 -0.9877E+00 -infinity
+    0   -9  -52    1  0.1942E+00  0.4523E+00 -0.6700E+00 -infinity
+    0  -10  -54    1  0.2808E+00  0.3663E+00 -0.1142E+01 -infinity
+    0  -11  -55    1 -0.5333E+00  0.4086E+00 -0.9027E+00 -infinity
+    0  -12  -56    1  0.1747E+00  0.4798E+00 -0.1040E+01 -infinity
+    0  -12  -57    1  0.1214E+00  0.4875E+00 -0.4769E+00 -infinity
+    0  -13  -57    1 -0.1049E+01  0.5290E+00 -0.7171E+00 -infinity
+    0  -14  -58    1  0.4191E+00  0.5987E+00 -0.6206E+00 -infinity
+    0  -14  -59    1 -0.2193E+00  0.5265E+00 -0.5667E+00 -infinity
+    0  -15  -59    1  0.1817E+00  0.6355E+00 -0.7630E+00 -infinity
+    0  -17   35    1  0.2532E+00  0.9400E+00 -0.3007E+00 -infinity
+    0  -18   37    1  0.1539E+01  0.9740E+00 -0.2321E+00 -infinity
+    0  -19   32    1 -0.2010E+01  0.9425E+00  0.2423E-02   -391.04
+    0  -20   39    1  0.1942E+01  0.1035E+01 -0.3813E+00 -infinity
+    0  -20   38    1  0.4146E+00  0.9979E+00 -0.2742E+00 -infinity
+    0  -20   37    1  0.4596E+00  0.1009E+01 -0.1663E+00 -infinity
+    0  -21   40    1  0.1587E+01  0.1069E+01 -0.3145E+00 -infinity
+    0  -21   39    1  0.5013E+00  0.1027E+01 -0.2649E+00 -infinity
+    0  -21   38    1  0.1663E+01  0.1009E+01 -0.2176E+00 -infinity
+    0  -21   37    1 -0.2163E+01  0.9346E+00 -0.2306E+00 -infinity
+    0  -21   35    1 -0.6347E+00  0.1005E+01 -0.2258E-01 -infinity
+    0  -21   33    1 -0.3038E+00  0.9741E+00 -0.4306E-01 -infinity
+    0  -22   42    1  0.1059E+00  0.1032E+01 -0.9669E+00 -infinity
+    0  -22   41    1 -0.4034E+00  0.1042E+01 -0.8948E+00 -infinity
+    0  -22   40    1  0.1035E+01  0.1059E+01 -0.1357E+00 -infinity
+    0  -22   39    1  0.2087E+01  0.1031E+01 -0.6268E-01 -infinity
+    0  -22   38    1  0.1141E+01  0.1010E+01 -0.2646E+00 -infinity
+    0  -22   37    1 -0.1286E+01  0.9991E+00 -0.1562E+00 -infinity
+    0  -22   36    1  0.1401E+01  0.1002E+01 -0.2148E+00 -infinity
+    0  -22   35    1  0.1728E+00  0.1037E+01 -0.1223E+00 -infinity
+    0  -22   34    1 -0.2413E+01  0.9786E+00 -0.5345E-01 -infinity
+    0  -22   32    1 -0.1511E+01  0.9980E+00 -0.3504E-01 -infinity
+    0  -23   42    1 -0.8807E+00  0.1046E+01 -0.1014E+01 -infinity
+    0  -23   41    1 -0.1060E+01  0.1021E+01 -0.8605E+00 -infinity
+    0  -23   39    1  0.4233E+00  0.1035E+01 -0.2245E+00 -infinity
+    0  -23   38    1  0.9729E+00  0.1038E+01 -0.1892E+00 -infinity
+    0  -23   37    1 -0.5394E+00  0.9692E+00 -0.8695E-01 -infinity
+    0  -23   36    1  0.2214E+01  0.1087E+01 -0.1152E+00 -infinity
+    0  -23   35    1  0.5933E+00  0.1042E+01 -0.3787E-01 -infinity
+    0  -23   34    1  0.5442E+00  0.1029E+01 -0.2870E+00 -infinity
+    0  -23   32    1  0.1009E+01  0.1011E+01  0.1581E-01    -62.93
+    0  -24   43    1  0.7387E+00  0.1077E+01 -0.5930E+00 -infinity
+    0  -24   42    1 -0.5868E-01  0.1080E+01 -0.9993E+00 -infinity
+    0  -24   41    1 -0.1360E+01  0.9949E+00 -0.9438E+00 -infinity
+    0  -24   40    1 -0.5604E+00  0.9818E+00 -0.8409E+00 -infinity
+    0  -24   39    1 -0.1142E+01  0.1053E+01 -0.9009E+00 -infinity
+    0  -24   38    1 -0.5910E-01  0.9663E+00 -0.4092E+00 -infinity
+    0  -24   36    1 -0.2271E+01  0.1029E+01 -0.1590E+00 -infinity
+    0  -24   35    1  0.7881E+00  0.1101E+01 -0.2353E+00 -infinity
+    0  -24   34    1 -0.4962E+00  0.1030E+01 -0.2238E+00 -infinity
+    0  -24   33    1 -0.1069E+01  0.1036E+01 -0.3997E-01 -infinity
+    0  -25   44    1  0.7093E+00  0.1149E+01 -0.1039E+01 -infinity
+    0  -25   43    1 -0.9019E+00  0.1109E+01 -0.8463E+00 -infinity
+    0  -25   41    1  0.4891E+00  0.1029E+01 -0.9115E+00 -infinity
+    0  -26   31    1  0.1093E+01  0.1068E+01 -0.4057E-01 -infinity
+    0  -26   30    1 -0.1943E+01  0.9954E+00 -0.4351E-01 -infinity
+    0  -27   40    1 -0.1445E+01  0.1052E+01 -0.7025E+00 -infinity
+    0  -27   39    1  0.1469E+00  0.1147E+01 -0.9459E+00 -infinity
+    0  -27   38    1 -0.1329E+01  0.1077E+01 -0.9088E+00 -infinity
+    0  -27   37    1  0.7375E+00  0.1132E+01 -0.6839E+00 -infinity
+    0  -27   36    1 -0.2500E+01  0.1041E+01 -0.3436E+00 -infinity
+    0  -27   35    1  0.2025E+00  0.1076E+01 -0.2764E+00 -infinity
+    0  -27   33    1 -0.5710E+00  0.1043E+01 -0.1868E+00 -infinity
+    0  -27   32    1 -0.1644E+01  0.1010E+01 -0.1905E+00 -infinity
+    0  -27   31    1 -0.1760E+01  0.9877E+00 -0.2993E+00 -infinity
+    0  -27   30    1 -0.9740E+00  0.1074E+01 -0.6737E-01 -infinity
+    0  -28   46    1  0.8460E+00  0.1225E+01 -0.4936E+00 -infinity
+    0  -28   45    1 -0.2719E+00  0.1147E+01 -0.7327E+00 -infinity
+    0  -28   44    1 -0.1872E+01  0.1112E+01 -0.9036E+00 -infinity
+    0  -28   43    1  0.2770E+00  0.1110E+01 -0.8037E+00 -infinity
+    0  -28   42    1 -0.1561E+00  0.1059E+01 -0.1068E+01 -infinity
+    0  -28   40    1 -0.1701E+01  0.1062E+01 -0.6900E+00 -infinity
+    0  -28   39    1 -0.7204E-01  0.1147E+01 -0.8621E+00 -infinity
+    0  -28   37    1 -0.4355E+00  0.1168E+01 -0.8039E+00 -infinity
+    0  -28   36    1 -0.1611E+01  0.1067E+01 -0.2320E+00 -infinity
+    0  -28   35    1 -0.1592E+01  0.1067E+01 -0.6760E-01 -infinity
+    0  -28   34    1 -0.6263E+00  0.1086E+01 -0.3098E+00 -infinity
+    0  -28   33    1  0.1270E+00  0.1068E+01 -0.1014E+00 -infinity
+    0  -28   31    1 -0.2076E+01  0.1021E+01 -0.4947E-01 -infinity
+    0  -28   30    1  0.1580E+01  0.1059E+01 -0.3981E+00 -infinity
+    0  -28   29    1 -0.1748E+01  0.9939E+00 -0.3084E-01 -infinity
+    0  -29   48    1 -0.8839E+00  0.1160E+01 -0.1083E+01 -infinity
+    0  -29   47    1 -0.1612E+01  0.1163E+01 -0.7273E+00 -infinity
+    0  -29   46    1  0.5585E+00  0.1224E+01 -0.7018E+00 -infinity
+    0  -29   45    1 -0.1136E+01  0.1089E+01 -0.6958E+00 -infinity
+    0  -29   42    1 -0.5947E+00  0.1168E+01 -0.7420E+00 -infinity
+    0  -29   41    1 -0.2617E+01  0.1104E+01 -0.1001E+01 -infinity
+    0  -29   40    1 -0.1527E+01  0.1131E+01 -0.8352E+00 -infinity
+    0  -29   39    1 -0.2335E+00  0.1197E+01 -0.9504E+00 -infinity
+    0  -29   37    1 -0.2778E+00  0.1105E+01 -0.7343E+00 -infinity
+    0  -29   36    1 -0.1407E+01  0.1092E+01 -0.9214E+00 -infinity
+
+ TOTAL NUMBER OF SUSPICIOUS REFLECTIONS REMOVED   95002
+
+ NUMBER OF REFLECTION RECORDS ON OUTPUT FILE      34016
+ NUMBER OF RECORDS ASSIGNED TO WORKING SET        34016
+ NUMBER OF RECORDS ASSIGNED TO TEST SET               0
+
+
+
+ XDSCONV will now generate the keyworded input file F2MTZ.INP
+ needed by f2mtz for the final conversion to binary MTZ-format.
+ To run the CCP4 programs f2mtz and cad (to convert indices to
+ the CCP4-asymmetric unit), just type the two commands:
+
+ f2mtz HKLOUT temp.mtz<F2MTZ.INP
+ cad HKLIN1 temp.mtz HKLOUT output_file_name.mtz<<EOF
+ LABIN FILE 1 ALL
+ DWAVELENGTH FILE 1 1    0.99999
+ END
+EOF
+
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 7.0.047: f2mtz            version 7.0.047 :         ##
+ ###############################################################
+ User: khirata  Run date: 25/ 5/2022 Run time: 15:23:23 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Maximum number of columns in this version:          80
+ Data line--- TITLE XDS to MTZ
+ Data line--- FILE tmp.hkl
+
+FORMATTED      OLD     file opened on unit   1
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+Logical name: tmp.hkl, Filename: tmp.hkl
+<!--SUMMARY_END--></FONT></B>
+
+ Data line--- SYMMETRY    1
+ Data line--- CELL     78.586    93.506    93.850    79.877    65.331    65.130
+ Data line--- LABOUT  H K L F SIGF F(+) SIGF(+) F(-) SIGF(-)
+ Number of columns to be read in:           9
+ Data line--- CTYPOUT H H H  F   Q    G     L      G     L
+ Data line--- END
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  PROJECTNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  CRYSTALNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  DATASETNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: CCP4_F.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown250522
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.00000
+
+ * Number of Columns = 9
+
+ * Number of Reflections = 34016
+
+ * Missing value set to NaN in input mtz file
+
+ * HISTORY for current MTZ file :
+
+ From f2mtz 25/ 5/2022 15:23:23 
+
+ * Column Labels, Types, Ranges [and Dataset IDs] :
+
+ H                               H              0.0000             61.0000        0 
+ K                               H            -44.0000             61.0000        0 
+ L                               H            -42.0000             78.0000        0 
+ F                               F              0.1167             23.7900        1 
+ SIGF                            Q              0.0307              0.4663        1 
+ F(+)                            G              0.1167             20.9600        1 
+ SIGF(+)                         L              0.0309              0.4748        1 
+ F(-)                            G              0.0990             23.7900        1 
+ SIGF(-)                         L              0.0307              0.4663        1 
+
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.71616     (     44.484 -      1.182 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Number of Symmetry Operations = 1 
+ * Number of Primitive Operations = 1 
+ * Space Group = 1 'P 1' 
+ * Lattice Type = P 
+ * Point Group Name = PG1 
+
+ * Symmetry Operations : 
+
+ Symmetry 1 X,  Y,  Z                                                   
+  1.00  0.00  0.00  0.00 
+  0.00  1.00  0.00  0.00 
+  0.00  0.00  1.00  0.00 
+  0.00  0.00  0.00  1.00 
+
+  34016 input reflections processed
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ f2mtz:  Normal termination
+Times: User:       0.1s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+generating MTZ for DANO, ISYM
+
+ ***** XDSCONV ***** (VERSION Jan 10, 2022  BUILT=20220220)  25-May-2022
+ Author: Wolfgang Kabsch
+ Copy licensed until 31-Mar-2023 to
+  academic users for non-commercial applications
+ No redistribution.
+
+
+ ========== CONTROL CARDS ==========
+
+ OUTPUT_FILE=tmp.hkl CCP4                                                      
+ INPUT_FILE=original                                                           
+ GENERATE_FRACTION_OF_TEST_REFLECTIONS=0.0                                     
+ WILSON_STATISTICS= TRUE                                                       
+ FRIEDEL'S_LAW= FALSE                                                          
+
+
+ SPACE_GROUP_NUMBER=    1
+ UNIT_CELL_CONSTANTS=    78.59    93.51    93.85  79.877  65.331  65.130
+ FRIEDEL'S_LAW=FALSE
+ MERGE=TRUE 
+ NUMBER OF REFLECTION RECORDS ON INPUT FILE      167839
+ NUMBER OF IGNORED REFLECTIONS (I< -3.0*SIGMA)     2324
+ NUMBER OF REFLECTIONS ACCEPTED FROM INPUT FILE  132286
+
+ NUMBER OF UNIQUE REFLECTIONS ASSIGNED TO TEST SET        0
+ NUMBER OF UNIQUE TEST REFLECTIONS INHERITED              0
+ NUMBER OF UNIQUE TEST REFLECTIONS NEWLY GENERATED        0
+
+
+ SUSPICIOUS REFLECTIONS NOT INCLUDED IN OUTPUT DATA SET
+                (at most 100 are listed below)
+
+    Type     = 2 for centric, 1 for acentric reflections
+ <Intensity> = Mean intensity in resolution shell
+    Score    = Intensity/Sigma - Sigma/(Type*<Intensity>)
+               negative score indicate suspicious reflections
+
+   h    k    l  Type  Intensity     Sigma    <Intensity>   Score
+
+    0   -3  -41    1  0.2540E+00  0.4609E+00 -0.4770E-02 -infinity
+    0   -3  -42    1 -0.3204E+00  0.4290E+00 -0.1334E+00 -infinity
+    0   -4  -42    1  0.3555E+00  0.5296E+00 -0.1860E-01 -infinity
+    0   -4  -43    1 -0.2998E-02  0.5312E+00 -0.2384E+00 -infinity
+    0   -5  -44    1 -0.1141E+00  0.5130E+00 -0.4491E+00 -infinity
+    0   -5  -45    1 -0.1225E+00  0.4647E+00 -0.1433E+00 -infinity
+    0   -6  -46    1 -0.6280E+00  0.5193E+00 -0.8379E+00 -infinity
+    0   -6  -47    1  0.5921E+00  0.4652E+00 -0.1005E+01 -infinity
+    0   -7  -49    1 -0.3224E+00  0.4406E+00 -0.8347E+00 -infinity
+    0   -8  -50    1  0.2446E-01  0.5338E+00 -0.9877E+00 -infinity
+    0   -9  -52    1  0.1942E+00  0.4523E+00 -0.6700E+00 -infinity
+    0  -10  -54    1  0.2808E+00  0.3663E+00 -0.1142E+01 -infinity
+    0  -11  -55    1 -0.5333E+00  0.4086E+00 -0.9027E+00 -infinity
+    0  -12  -56    1  0.1747E+00  0.4798E+00 -0.1040E+01 -infinity
+    0  -12  -57    1  0.1214E+00  0.4875E+00 -0.4769E+00 -infinity
+    0  -13  -57    1 -0.1049E+01  0.5290E+00 -0.7171E+00 -infinity
+    0  -14  -58    1  0.4191E+00  0.5987E+00 -0.6206E+00 -infinity
+    0  -14  -59    1 -0.2193E+00  0.5265E+00 -0.5667E+00 -infinity
+    0  -15  -59    1  0.1817E+00  0.6355E+00 -0.7630E+00 -infinity
+    0  -17   35    1  0.2532E+00  0.9400E+00 -0.3007E+00 -infinity
+    0  -18   37    1  0.1539E+01  0.9740E+00 -0.2321E+00 -infinity
+    0  -19   32    1 -0.2010E+01  0.9425E+00  0.2423E-02   -391.04
+    0  -20   39    1  0.1942E+01  0.1035E+01 -0.3813E+00 -infinity
+    0  -20   38    1  0.4146E+00  0.9979E+00 -0.2742E+00 -infinity
+    0  -20   37    1  0.4596E+00  0.1009E+01 -0.1663E+00 -infinity
+    0  -21   40    1  0.1587E+01  0.1069E+01 -0.3145E+00 -infinity
+    0  -21   39    1  0.5013E+00  0.1027E+01 -0.2649E+00 -infinity
+    0  -21   38    1  0.1663E+01  0.1009E+01 -0.2176E+00 -infinity
+    0  -21   37    1 -0.2163E+01  0.9346E+00 -0.2306E+00 -infinity
+    0  -21   35    1 -0.6347E+00  0.1005E+01 -0.2258E-01 -infinity
+    0  -21   33    1 -0.3038E+00  0.9741E+00 -0.4306E-01 -infinity
+    0  -22   42    1  0.1059E+00  0.1032E+01 -0.9669E+00 -infinity
+    0  -22   41    1 -0.4034E+00  0.1042E+01 -0.8948E+00 -infinity
+    0  -22   40    1  0.1035E+01  0.1059E+01 -0.1357E+00 -infinity
+    0  -22   39    1  0.2087E+01  0.1031E+01 -0.6268E-01 -infinity
+    0  -22   38    1  0.1141E+01  0.1010E+01 -0.2646E+00 -infinity
+    0  -22   37    1 -0.1286E+01  0.9991E+00 -0.1562E+00 -infinity
+    0  -22   36    1  0.1401E+01  0.1002E+01 -0.2148E+00 -infinity
+    0  -22   35    1  0.1728E+00  0.1037E+01 -0.1223E+00 -infinity
+    0  -22   34    1 -0.2413E+01  0.9786E+00 -0.5345E-01 -infinity
+    0  -22   32    1 -0.1511E+01  0.9980E+00 -0.3504E-01 -infinity
+    0  -23   42    1 -0.8807E+00  0.1046E+01 -0.1014E+01 -infinity
+    0  -23   41    1 -0.1060E+01  0.1021E+01 -0.8605E+00 -infinity
+    0  -23   39    1  0.4233E+00  0.1035E+01 -0.2245E+00 -infinity
+    0  -23   38    1  0.9729E+00  0.1038E+01 -0.1892E+00 -infinity
+    0  -23   37    1 -0.5394E+00  0.9692E+00 -0.8695E-01 -infinity
+    0  -23   36    1  0.2214E+01  0.1087E+01 -0.1152E+00 -infinity
+    0  -23   35    1  0.5933E+00  0.1042E+01 -0.3787E-01 -infinity
+    0  -23   34    1  0.5442E+00  0.1029E+01 -0.2870E+00 -infinity
+    0  -23   32    1  0.1009E+01  0.1011E+01  0.1581E-01    -62.93
+    0  -24   43    1  0.7387E+00  0.1077E+01 -0.5930E+00 -infinity
+    0  -24   42    1 -0.5868E-01  0.1080E+01 -0.9993E+00 -infinity
+    0  -24   41    1 -0.1360E+01  0.9949E+00 -0.9438E+00 -infinity
+    0  -24   40    1 -0.5604E+00  0.9818E+00 -0.8409E+00 -infinity
+    0  -24   39    1 -0.1142E+01  0.1053E+01 -0.9009E+00 -infinity
+    0  -24   38    1 -0.5910E-01  0.9663E+00 -0.4092E+00 -infinity
+    0  -24   36    1 -0.2271E+01  0.1029E+01 -0.1590E+00 -infinity
+    0  -24   35    1  0.7881E+00  0.1101E+01 -0.2353E+00 -infinity
+    0  -24   34    1 -0.4962E+00  0.1030E+01 -0.2238E+00 -infinity
+    0  -24   33    1 -0.1069E+01  0.1036E+01 -0.3997E-01 -infinity
+    0  -25   44    1  0.7093E+00  0.1149E+01 -0.1039E+01 -infinity
+    0  -25   43    1 -0.9019E+00  0.1109E+01 -0.8463E+00 -infinity
+    0  -25   41    1  0.4891E+00  0.1029E+01 -0.9115E+00 -infinity
+    0  -26   31    1  0.1093E+01  0.1068E+01 -0.4057E-01 -infinity
+    0  -26   30    1 -0.1943E+01  0.9954E+00 -0.4351E-01 -infinity
+    0  -27   40    1 -0.1445E+01  0.1052E+01 -0.7025E+00 -infinity
+    0  -27   39    1  0.1469E+00  0.1147E+01 -0.9459E+00 -infinity
+    0  -27   38    1 -0.1329E+01  0.1077E+01 -0.9088E+00 -infinity
+    0  -27   37    1  0.7375E+00  0.1132E+01 -0.6839E+00 -infinity
+    0  -27   36    1 -0.2500E+01  0.1041E+01 -0.3436E+00 -infinity
+    0  -27   35    1  0.2025E+00  0.1076E+01 -0.2764E+00 -infinity
+    0  -27   33    1 -0.5710E+00  0.1043E+01 -0.1868E+00 -infinity
+    0  -27   32    1 -0.1644E+01  0.1010E+01 -0.1905E+00 -infinity
+    0  -27   31    1 -0.1760E+01  0.9877E+00 -0.2993E+00 -infinity
+    0  -27   30    1 -0.9740E+00  0.1074E+01 -0.6737E-01 -infinity
+    0  -28   46    1  0.8460E+00  0.1225E+01 -0.4936E+00 -infinity
+    0  -28   45    1 -0.2719E+00  0.1147E+01 -0.7327E+00 -infinity
+    0  -28   44    1 -0.1872E+01  0.1112E+01 -0.9036E+00 -infinity
+    0  -28   43    1  0.2770E+00  0.1110E+01 -0.8037E+00 -infinity
+    0  -28   42    1 -0.1561E+00  0.1059E+01 -0.1068E+01 -infinity
+    0  -28   40    1 -0.1701E+01  0.1062E+01 -0.6900E+00 -infinity
+    0  -28   39    1 -0.7204E-01  0.1147E+01 -0.8621E+00 -infinity
+    0  -28   37    1 -0.4355E+00  0.1168E+01 -0.8039E+00 -infinity
+    0  -28   36    1 -0.1611E+01  0.1067E+01 -0.2320E+00 -infinity
+    0  -28   35    1 -0.1592E+01  0.1067E+01 -0.6760E-01 -infinity
+    0  -28   34    1 -0.6263E+00  0.1086E+01 -0.3098E+00 -infinity
+    0  -28   33    1  0.1270E+00  0.1068E+01 -0.1014E+00 -infinity
+    0  -28   31    1 -0.2076E+01  0.1021E+01 -0.4947E-01 -infinity
+    0  -28   30    1  0.1580E+01  0.1059E+01 -0.3981E+00 -infinity
+    0  -28   29    1 -0.1748E+01  0.9939E+00 -0.3084E-01 -infinity
+    0  -29   48    1 -0.8839E+00  0.1160E+01 -0.1083E+01 -infinity
+    0  -29   47    1 -0.1612E+01  0.1163E+01 -0.7273E+00 -infinity
+    0  -29   46    1  0.5585E+00  0.1224E+01 -0.7018E+00 -infinity
+    0  -29   45    1 -0.1136E+01  0.1089E+01 -0.6958E+00 -infinity
+    0  -29   42    1 -0.5947E+00  0.1168E+01 -0.7420E+00 -infinity
+    0  -29   41    1 -0.2617E+01  0.1104E+01 -0.1001E+01 -infinity
+    0  -29   40    1 -0.1527E+01  0.1131E+01 -0.8352E+00 -infinity
+    0  -29   39    1 -0.2335E+00  0.1197E+01 -0.9504E+00 -infinity
+    0  -29   37    1 -0.2778E+00  0.1105E+01 -0.7343E+00 -infinity
+    0  -29   36    1 -0.1407E+01  0.1092E+01 -0.9214E+00 -infinity
+
+ TOTAL NUMBER OF SUSPICIOUS REFLECTIONS REMOVED   95002
+
+ NUMBER OF REFLECTION RECORDS ON OUTPUT FILE      34016
+ NUMBER OF RECORDS ASSIGNED TO WORKING SET        34016
+ NUMBER OF RECORDS ASSIGNED TO TEST SET               0
+
+
+
+ XDSCONV will now generate the keyworded input file F2MTZ.INP
+ needed by f2mtz for the final conversion to binary MTZ-format.
+ To run the CCP4 programs f2mtz and cad (to convert indices to
+ the CCP4-asymmetric unit), just type the two commands:
+
+ f2mtz HKLOUT temp.mtz<F2MTZ.INP
+ cad HKLIN1 temp.mtz HKLOUT output_file_name.mtz<<EOF
+ LABIN FILE 1 ALL
+ DWAVELENGTH FILE 1 1    0.99999
+ END
+EOF
+
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 7.0.047: f2mtz            version 7.0.047 :         ##
+ ###############################################################
+ User: khirata  Run date: 25/ 5/2022 Run time: 15:23:24 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Maximum number of columns in this version:          80
+ Data line--- TITLE XDS to MTZ
+ Data line--- FILE tmp.hkl
+
+FORMATTED      OLD     file opened on unit   1
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+Logical name: tmp.hkl, Filename: tmp.hkl
+<!--SUMMARY_END--></FONT></B>
+
+ Data line--- SYMMETRY    1
+ Data line--- CELL     78.586    93.506    93.850    79.877    65.331    65.130
+ Data line--- LABOUT  H K L FP SIGFP DANO SIGDANO ISYM
+ Number of columns to be read in:           8
+ Data line--- CTYPOUT H H H  F   Q    D      Q      Y
+ Data line--- END
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  PROJECTNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  CRYSTALNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ 
+ $TEXT:Warning: $$ comment $$ 
+ WARNING:  DATASETNAME not assigned
+ $$
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: CCP4.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown250522
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.00000
+
+ * Number of Columns = 8
+
+ * Number of Reflections = 34016
+
+ * Missing value set to NaN in input mtz file
+
+ * HISTORY for current MTZ file :
+
+ From f2mtz 25/ 5/2022 15:23:24 
+
+ * Column Labels, Types, Ranges [and Dataset IDs] :
+
+ H                               H              0.0000             61.0000        0 
+ K                               H            -44.0000             61.0000        0 
+ L                               H            -42.0000             78.0000        0 
+ FP                              F              0.1167             23.7900        1 
+ SIGFP                           Q              0.0307              0.4663        1 
+ DANO                            D             -1.5480              5.1380        1 
+ SIGDANO                         Q              0.0678              0.6399        1 
+ ISYM                            Y              0.0000              2.0000        1 
+
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.71616     (     44.484 -      1.182 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Number of Symmetry Operations = 1 
+ * Number of Primitive Operations = 1 
+ * Space Group = 1 'P 1' 
+ * Lattice Type = P 
+ * Point Group Name = PG1 
+
+ * Symmetry Operations : 
+
+ Symmetry 1 X,  Y,  Z                                                   
+  1.00  0.00  0.00  0.00 
+  0.00  1.00  0.00  0.00 
+  0.00  0.00  1.00  0.00 
+  0.00  0.00  0.00  1.00 
+
+  34016 input reflections processed
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ f2mtz:  Normal termination
+Times: User:       0.1s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+concatenating MTZ files
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 7.0.047: CAD              version 7.0.047 :         ##
+ ###############################################################
+ User: khirata  Run date: 25/ 5/2022 Run time: 15:23:24 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- labin file 1 all
+ Data line--- labin file 2 all
+ Data line--- labin file 3 E1=DANO E2=SIGDANO E3=ISYM
+ Data line--- xname file 1 ALL=XDS
+ Data line--- xname file 2 ALL=XDS
+ Data line--- xname file 3 ALL=XDS
+ Data line--- dname file 1 ALL=XDS
+ Data line--- dname file 2 ALL=XDS
+ Data line--- dname file 3 ALL=XDS
+ Data line--- dwavelength file 1 XDS XDS 0.999990
+ Data line--- end
+ No CTYP lines input for file:  1
+ No CTYP lines input for file:  2
+ No CTYP lines input for file:  3
+    Indices output even if all data items flagged "missing"
+ Warning, NOT all LABOUT data lines given
+ Warning, NOT all LABOUT data lines given
+ Warning, NOT all LABOUT data lines given
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: CCP4_I.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown250522
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.00000
+
+ * Number of Columns = 9
+
+ * Number of Reflections = 128956
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-)
+
+ * Column Types :
+
+ H H H J Q K M K M
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.78204     (     44.484 -      1.131 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 1' (number     1)
+
+Reciprocal space symmetry: 
+Space group: "P 1" Point group: "PG1" Laue group: "-1" 
+Reference asymmetric unit: "l>0 or (l==0 and (h>0 or (h==0 and k>=0)))" 
+  (change of basis may be applied) 
+
+ Spacegroup 1 "P 1" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l    
+
+
+ Chosen Asymmetric unit of reciprocal space: 
+ [-1] hkl:l>=0  hk0:h>=0  0k0:k>=0
+
+
+ ** "Missing" flag set in HKLIN1 to Nan:
+
+
+ ** "Missing" entries LISTED as           -999.000
+ Data line--- LABIN  E1=IMEAN  E2=SIGIMEAN  E3=I(+)  E4=SIGI(+)  E5=I(-)  E6=SIGI(-)
+
+
+ After Processing File_Number:  1
+ Number of columns so far    :   9
+ Accumulated Out_Put_MTZ_labels are:
+  E11=IMEAN  E21=SIGIMEAN  E31=I(+)  E41=SIGI(+)
+  E51=I(-)  E61=SIGI(-) 
+
+
+ MTZOUT_LABELS are H K L and -
+  IMEAN  SIGIMEAN  I(+)  SIGI(+)
+  I(-)  SIGI(-) 
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN2   Filename: CCP4_F.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown250522
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.00000
+
+ * Number of Columns = 9
+
+ * Number of Reflections = 34016
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L F SIGF F(+) SIGF(+) F(-) SIGF(-)
+
+ * Column Types :
+
+ H H H F Q G L G L
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.71616     (     44.484 -      1.182 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 1' (number     1)
+
+ Data line--- LABIN  E1=F  E2=SIGF  E3=F(+)  E4=SIGF(+)  E5=F(-)  E6=SIGF(-)
+
+
+ After Processing File_Number:  2
+ Number of columns so far    :  15
+ Accumulated Out_Put_MTZ_labels are:
+  E11=IMEAN  E21=SIGIMEAN  E31=I(+)  E41=SIGI(+)
+  E51=I(-)  E61=SIGI(-)  E12=F  E22=SIGF
+  E32=F(+)  E42=SIGF(+)  E52=F(-)  E62=SIGF(-)
+ 
+
+
+ MTZOUT_LABELS are H K L and -
+  IMEAN  SIGIMEAN  I(+)  SIGI(+)
+  I(-)  SIGI(-)  F  SIGF
+  F(+)  SIGF(+)  F(-)  SIGF(-)
+ 
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN3   Filename: CCP4.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown250522
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.00000
+
+ * Number of Columns = 8
+
+ * Number of Reflections = 34016
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FP SIGFP DANO SIGDANO ISYM
+
+ * Column Types :
+
+ H H H F Q D Q Y
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.71616     (     44.484 -      1.182 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 1' (number     1)
+
+ Data line--- LABIN  E1=DANO E2=SIGDANO E3=ISYM
+
+
+ After Processing File_Number:  3
+ Number of columns so far    :  18
+ Accumulated Out_Put_MTZ_labels are:
+  E11=IMEAN  E21=SIGIMEAN  E31=I(+)  E41=SIGI(+)
+  E51=I(-)  E61=SIGI(-)  E12=F  E22=SIGF
+  E32=F(+)  E42=SIGF(+)  E52=F(-)  E62=SIGF(-)
+  E13=DANO  E23=SIGDANO  E33=ISYM 
+
+
+ MTZOUT_LABELS are H K L and -
+  IMEAN  SIGIMEAN  I(+)  SIGI(+)
+  I(-)  SIGI(-)  F  SIGF
+  F(+)  SIGF(+)  F(-)  SIGF(-)
+  DANO  SIGDANO  ISYM 
+        3 sort keys, in columns    1   2   3
+
+
+
+
+ Data line--- LABIN  E1=IMEAN  E2=SIGIMEAN  E3=I(+)  E4=SIGI(+)  E5=I(-)  E6=SIGI(-)
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: CCP4_I.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown250522
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.00000
+
+ * Number of Columns = 9
+
+ * Number of Reflections = 128956
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-)
+
+ * Column Types :
+
+ H H H J Q K M K M
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.78204     (     44.484 -      1.131 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 1' (number     1)
+
+ Data line--- XNAME  ALL=XDS
+ Data line--- DNAME  ALL=XDS
+
+ Column pairs - SIGs:  7     9
+
+
+ Column pairs - SIGs:  9     7
+
+
+ Column pairs - I+ I-:  6     8
+
+
+ Column pairs - I+ I-:  8     6
+
+
+ Reading from HKLIN mtz file_Number = :1
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN1 contains a total of      9 Columns
+ and a total of     128956 Reflections
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  hkl 
+  Multiplicity   1
+
+  ******   CENTRIC ZONES  ****** 
+
+  (no centric zones for this spacegroup) 
+
+
+
+ For file HKLIN1
+ Total Number of HKL read                         =     128956
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =     128956
+ Data line--- LABIN  E1=F  E2=SIGF  E3=F(+)  E4=SIGF(+)  E5=F(-)  E6=SIGF(-)
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN2   Filename: CCP4_F.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown250522
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.00000
+
+ * Number of Columns = 9
+
+ * Number of Reflections = 34016
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L F SIGF F(+) SIGF(+) F(-) SIGF(-)
+
+ * Column Types :
+
+ H H H F Q G L G L
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.71616     (     44.484 -      1.182 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 1' (number     1)
+
+ Data line--- XNAME  ALL=XDS
+ Data line--- DNAME  ALL=XDS
+
+ Column pairs- F+ F-:  6     8
+
+
+ Column pairs- F+ F-:  8     6
+
+
+ Column pairs - SIGs:  7     9
+
+
+ Column pairs - SIGs:  9     7
+
+
+ Reading from HKLIN mtz file_Number = :2
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN2 contains a total of      9 Columns
+ and a total of      34016 Reflections
+
+
+ For file HKLIN2
+ Total Number of HKL read                         =      34016
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =      34016
+ Data line--- LABIN  E1=DANO E2=SIGDANO E3=ISYM
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN3   Filename: CCP4.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 unknown
+          unknown
+          unknown250522
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.00000
+
+ * Number of Columns = 8
+
+ * Number of Reflections = 34016
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FP SIGFP DANO SIGDANO ISYM
+
+ * Column Types :
+
+ H H H F Q D Q Y
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.71616     (     44.484 -      1.182 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P 1' (number     1)
+
+ Data line--- XNAME  ALL=XDS
+ Data line--- DNAME  ALL=XDS
+
+ Reading from HKLIN mtz file_Number = :3
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN3 contains a total of      8 Columns
+ and a total of      34016 Reflections
+
+
+ For file HKLIN3
+ Total Number of HKL read                         =      34016
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =      34016
+
+
+ Total number read for all files    =     196988
+ Total passed to sort for all files =     196988
+ Total number systematic absent     =          0
+ Total number rejected outside resol=          0
+
+
+ Number of columns per file:
+ File_Number =    1 Number_Columns_Selected =     6
+
+ File_Number =    2 Number_Columns_Selected =     6
+
+ File_Number =    3 Number_Columns_Selected =     3
+
+ Data line--- LABOUT E11=IMEAN E21=SIGIMEAN E31=I(+) E41=SIGI(+) E51=I(-) E61=SIGI(-) E12=F E22=SIGF E32=F(+) E42=SIGF(+) E52=F(-) E62=SIGF(-) E13=DANO E23=SIGDANO E33=ISYM
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: CCP4_FI.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        2 
+          XDS
+          XDS
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.99999
+
+ * Number of Columns = 18
+
+ * Number of Reflections = 128956
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-) F SIGF F(+) SIGF(+) F(-) SIGF(-) DANO SIGDANO ISYM
+
+ * Column Types :
+
+ H H H J Q K M K M F Q G L G L D Q Y
+
+ * Associated datasets :
+
+ 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.78204     (     44.484 -      1.131 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1' (number     1)
+
+
+
+ Total number from Sorting Routine =     196988
+ Final Total of Unique records to HKLOUT =     128956
+ Final Total of Missing records to HKLOUT =          0
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ CAD:   *** Normal Termination of CAD ***
+Times: User:       0.6s System:    0.0s Elapsed:     0:01  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 7.0.047: UNIQUE           version 7.0.047 :         ##
+ ###############################################################
+ User: khirata  Run date: 25/ 5/2022 Run time: 15:23:25 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- CELL 78.5860 93.5060 93.8500 79.8770 65.3310 65.1300
+ Data line--- SYMMETRY 'P 1'
+ Data line--- LABOUT F=FUNI SIGF=SIGFUNI
+ Data line--- RESOLUTION 1.130799
+Reciprocal space symmetry: 
+Space group: "P 1" Point group: "PG1" Laue group: "-1" 
+Reference asymmetric unit: "l>0 or (l==0 and (h>0 or (h==0 and k>=0)))" 
+  (change of basis may be applied) 
+
+ Spacegroup 1 "P 1" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l    
+
+ Maximum and minimum Bragg spacings     1.131 10000.000 Angstroms
+
+
+ Limits on H,K,L.. -69 to  69    -82 to  82      0 to  82
+
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: unique.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 5
+
+ * Number of Reflections = 823529
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FUNI SIGFUNI
+
+ * Column Types :
+
+ H H H F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00014    0.78204     (     85.285 -      1.131 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1' (number     1)
+
+
+
+    1903605 reflections tested
+     823529 reflections within resolution limits written to output file
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ UNIQUE:  Normal Termination
+Times: User:       0.3s System:    0.0s Elapsed:     0:00  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 7.0.047: CAD              version 7.0.047 :         ##
+ ###############################################################
+ User: khirata  Run date: 25/ 5/2022 Run time: 15:23:25 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- labin file 1 all
+ Data line--- labin file 2 all
+ Data line--- end
+ No CTYP lines input for file:  1
+ No CTYP lines input for file:  2
+    Indices output even if all data items flagged "missing"
+ Warning, NOT all LABOUT data lines given
+ Warning, NOT all LABOUT data lines given
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: CCP4_FI.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        2 dummy
+          XDS
+          XDS
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.99999
+
+ * Number of Columns = 18
+
+ * Number of Reflections = 128956
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-) F SIGF F(+) SIGF(+) F(-) SIGF(-) DANO SIGDANO ISYM
+
+ * Column Types :
+
+ H H H J Q K M K M F Q G L G L D Q Y
+
+ * Associated datasets :
+
+ 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.78204     (     44.484 -      1.131 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1' (number     1)
+
+Reciprocal space symmetry: 
+Space group: "P 1" Point group: "PG1" Laue group: "-1" 
+Reference asymmetric unit: "l>0 or (l==0 and (h>0 or (h==0 and k>=0)))" 
+  (change of basis may be applied) 
+
+ Spacegroup 1 "P 1" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l    
+
+
+ Chosen Asymmetric unit of reciprocal space: 
+ [-1] hkl:l>=0  hk0:h>=0  0k0:k>=0
+
+
+ ** "Missing" flag set in HKLIN1 to Nan:
+
+
+ ** "Missing" entries LISTED as           -999.000
+ Data line--- LABIN  E1=IMEAN  E2=SIGIMEAN  E3=I(+)  E4=SIGI(+)  E5=I(-)  E6=SIGI(-)  E7=F  E8=SIGF  E9=F(+)  E10=SIGF(+)  E11=F(-)  E12=SIGF(-)  E13=DANO  E14=SIGDANO  E15=ISYM
+
+
+ After Processing File_Number:  1
+ Number of columns so far    :  18
+ Accumulated Out_Put_MTZ_labels are:
+  E11=IMEAN  E21=SIGIMEAN  E31=I(+)  E41=SIGI(+)
+  E51=I(-)  E61=SIGI(-)  E71=F  E81=SIGF
+  E91=F(+)  E101=SIGF(+)  E111=F(-)  E121=SIGF(-)
+  E131=DANO  E141=SIGDANO  E151=ISYM 
+
+
+ MTZOUT_LABELS are H K L and -
+  IMEAN  SIGIMEAN  I(+)  SIGI(+)
+  I(-)  SIGI(-)  F  SIGF
+  F(+)  SIGF(+)  F(-)  SIGF(-)
+  DANO  SIGDANO  ISYM 
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN2   Filename: unique.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 5
+
+ * Number of Reflections = 823529
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FUNI SIGFUNI
+
+ * Column Types :
+
+ H H H F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00014    0.78204     (     85.285 -      1.131 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1' (number     1)
+
+ Data line--- LABIN  E1=FUNI  E2=SIGFUNI
+
+
+ After Processing File_Number:  2
+ Number of columns so far    :  20
+ Accumulated Out_Put_MTZ_labels are:
+  E11=IMEAN  E21=SIGIMEAN  E31=I(+)  E41=SIGI(+)
+  E51=I(-)  E61=SIGI(-)  E71=F  E81=SIGF
+  E91=F(+)  E101=SIGF(+)  E111=F(-)  E121=SIGF(-)
+  E131=DANO  E141=SIGDANO  E151=ISYM  E12=FUNI
+  E22=SIGFUNI 
+
+
+ MTZOUT_LABELS are H K L and -
+  IMEAN  SIGIMEAN  I(+)  SIGI(+)
+  I(-)  SIGI(-)  F  SIGF
+  F(+)  SIGF(+)  F(-)  SIGF(-)
+  DANO  SIGDANO  ISYM  FUNI
+  SIGFUNI 
+        3 sort keys, in columns    1   2   3
+
+
+
+
+ Data line--- LABIN  E1=IMEAN  E2=SIGIMEAN  E3=I(+)  E4=SIGI(+)  E5=I(-)  E6=SIGI(-)  E7=F  E8=SIGF  E9=F(+)  E10=SIGF(+)  E11=F(-)  E12=SIGF(-)  E13=DANO  E14=SIGDANO  E15=ISYM
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN1   Filename: CCP4_FI.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        2 dummy
+          XDS
+          XDS
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.99999
+
+ * Number of Columns = 18
+
+ * Number of Reflections = 128956
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-) F SIGF F(+) SIGF(+) F(-) SIGF(-) DANO SIGDANO ISYM
+
+ * Column Types :
+
+ H H H J Q K M K M F Q G L G L D Q Y
+
+ * Associated datasets :
+
+ 0 0 0 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00051    0.78204     (     44.484 -      1.131 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1' (number     1)
+
+
+ Column pairs- F+ F-: 12    14
+
+
+ Column pairs- F+ F-: 14    12
+
+
+ Column pairs - SIGs:  7     9
+
+
+ Column pairs - SIGs:  9     7
+
+
+ Column pairs - SIGs: 13    15
+
+
+ Column pairs - SIGs: 15    13
+
+
+ Column pairs - I+ I-:  6     8
+
+
+ Column pairs - I+ I-:  8     6
+
+
+ Reading from HKLIN mtz file_Number = :1
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN1 contains a total of     18 Columns
+ and a total of     128956 Reflections
+
+  ******   EPSILON ZONES -  Reflection Classes and their multiplicity ****** 
+
+  EPSILON Zone   1
+  Reflections of type  hkl 
+  Multiplicity   1
+
+  ******   CENTRIC ZONES  ****** 
+
+  (no centric zones for this spacegroup) 
+
+
+
+ For file HKLIN1
+ Total Number of HKL read                         =     128956
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =     128956
+ Data line--- LABIN  E1=FUNI  E2=SIGFUNI
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN2   Filename: unique.mtz 
+
+ * Title:
+
+ 
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 0
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+
+ * Number of Columns = 5
+
+ * Number of Reflections = 823529
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FUNI SIGFUNI
+
+ * Column Types :
+
+ H H H F Q
+
+ * Associated datasets :
+
+ 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00014    0.78204     (     85.285 -      1.131 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1' (number     1)
+
+
+ Reading from HKLIN mtz file_Number = :2
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN2 contains a total of      5 Columns
+ and a total of     823529 Reflections
+
+
+ For file HKLIN2
+ Total Number of HKL read                         =     823529
+ Total Number of HKL systematic absent            =          0
+ Total Number of HKL reject for resolution limits =          0
+ Total Number of HKL passed to sort for this file =     823529
+
+
+ Total number read for all files    =     952485
+ Total passed to sort for all files =     952485
+ Total number systematic absent     =          0
+ Total number rejected outside resol=          0
+
+
+ Number of columns per file:
+ File_Number =    1 Number_Columns_Selected =    15
+
+ File_Number =    2 Number_Columns_Selected =     2
+
+ Data line--- LABOUT E11=IMEAN E21=SIGIMEAN E31=I(+) E41=SIGI(+) E51=I(-) E61=SIGI(-) E71=F E81=SIGF E91=F(+) E101=SIGF(+) E111=F(-) E121=SIGF(-) E131=DANO E141=SIGDANO E151=ISYM E12=FUNI E22=SIGFUNI
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: unique_cad.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 dummy
+          XDS
+          XDS
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.99999
+
+ * Number of Columns = 20
+
+ * Number of Reflections = 823530
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FUNI SIGFUNI IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-) F SIGF F(+) SIGF(+) F(-) SIGF(-) DANO SIGDANO ISYM
+
+ * Column Types :
+
+ H H H F Q J Q K M K M F Q G L G L D Q Y
+
+ * Associated datasets :
+
+ 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00014    0.78204     (     85.285 -      1.131 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1' (number     1)
+
+
+
+ Total number from Sorting Routine =     952485
+ Final Total of Unique records to HKLOUT =     823530
+ Final Total of Missing records to HKLOUT =     694574
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ CAD:   *** Normal Termination of CAD ***
+Times: User:       2.9s System:    0.2s Elapsed:     0:03  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 7.0.047: MTZUTILS         version 7.0.047 :         ##
+ ###############################################################
+ User: khirata  Run date: 25/ 5/2022 Run time: 15:23:28 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 2011.
+ "Overview of the CCP4 suite and current developments". Acta Cryst. D67, 235-242.
+ as well as any specific reference in the program write-up.
+
+<!--SUMMARY_END--></FONT></B>
+ Data line--- EXCLUDE FUNI SIGFUNI
+ Data line--- SYMMETRY P1
+ Data line--- RUN
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: HKLIN   Filename: unique_cad.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 dummy
+          XDS
+          XDS
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.99999
+
+ * Number of Columns = 20
+
+ * Number of Reflections = 823530
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L FUNI SIGFUNI IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-) F SIGF F(+) SIGF(+) F(-) SIGF(-) DANO SIGDANO ISYM
+
+ * Column Types :
+
+ H H H F Q J Q K M K M F Q G L G L D Q Y
+
+ * Associated datasets :
+
+ 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00014    0.78204     (     85.285 -      1.131 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1' (number     1)
+
+
+ Reading from HKLIN MTZ File_Number = : 1
+ This file written with MTZLIB Version Number : MTZ:V1.1  
+ File HKLIN contains a total of     20 Columns
+ and a total of     823530 Reflections
+Reciprocal space symmetry: 
+Space group: "P 1" Point group: "PG1" Laue group: "-1" 
+Reference asymmetric unit: "l>0 or (l==0 and (h>0 or (h==0 and k>=0)))" 
+  (change of basis may be applied) 
+
+ Spacegroup 1 "P 1" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l    
+Reciprocal space symmetry: 
+Space group: "P 1" Point group: "PG1" Laue group: "-1" 
+Reference asymmetric unit: "l>0 or (l==0 and (h>0 or (h==0 and k>=0)))" 
+  (change of basis may be applied) 
+
+ Spacegroup 1 "P 1" 
+ Original indices for reflection hkl with symmetry number ISYM 
+
+                              Bijvoet positive 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   1  +h,+k,+l    
+
+                              Bijvoet negative 
+       ISYM              ISYM              ISYM              ISYM              
+  ISYM   2  -h,-k,-l    
+ For EXCLUDE Option, Column Label >> FUNI                          
+ will be Excluded from File_Number:   1
+ For EXCLUDE Option, Column Label >> SIGFUNI                       
+ will be Excluded from File_Number:   1
+  Reflections are forwarded to output file:    823530
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: HKLOUT   Filename: 1097-06.mtz 
+
+ * Title:
+
+ XDS to MTZ
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 dummy
+          XDS
+          XDS
+             78.5860   93.5060   93.8500   79.8770   65.3310   65.1300
+             0.99999
+
+ * Number of Columns = 18
+
+ * Number of Reflections = 823530
+
+ * Missing value set to NaN in input mtz file
+
+ * Column Labels :
+
+ H K L IMEAN SIGIMEAN I(+) SIGI(+) I(-) SIGI(-) F SIGF F(+) SIGF(+) F(-) SIGF(-) DANO SIGDANO ISYM
+
+ * Column Types :
+
+ H H H J Q K M K M F Q G L G L D Q Y
+
+ * Associated datasets :
+
+ 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+   78.5860   93.5060   93.8500   79.8770   65.3310   65.1300 
+
+ *  Resolution Range :
+
+    0.00014    0.78204     (     85.285 -      1.131 A )
+
+ * Sort Order :
+
+      1     2     3     0     0
+
+ * Space group = 'P 1' (number     1)
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+ MTZUTILS:  Normal termination
+Times: User:       1.4s System:    0.1s Elapsed:     0:02  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>

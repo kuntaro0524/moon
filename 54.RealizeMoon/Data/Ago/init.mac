@@ -1,0 +1,7 @@
+DIRE ./
+TEMPLATE po2e1033e40p8-001_######.img
+IMAGE 1 phi 0.0 to 0.1
+WAVELENGH 1.24
+beam 101.40  98.81
+polarisation synchrotron 0.95
+distortion roff 0.000 toff 0.000

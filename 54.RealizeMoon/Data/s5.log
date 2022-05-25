@@ -1,0 +1,192 @@
+ 
+ ###############################################################
+ ###############################################################
+ ###############################################################
+ ### CCP4 6.3: SORTMTZ                  version 6.3 : 01/08/11##
+ ###############################################################
+ User: kuntaro  Run date: 18/ 2/2014 Run time: 18:50:05 
+
+
+ Please reference: Collaborative Computational Project, Number 4. 1994.
+ "The CCP4 Suite: Programs for Protein Crystallography". Acta Cryst. D50, 760-763.
+ as well as any specific reference in the program write-up.
+
+ Data line--- H K L M/ISYM BATCH 
+ Data line--- s5.mtz
+
+ OPENED INPUT MTZ FILE 
+ Logical Name: s5.mtz   Filename: s5.mtz 
+
+ * Title:
+
+ .
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 Unspecified
+          still
+          Unspecified
+            177.7554  182.5015  204.3013   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 18
+
+ * Number of Reflections = 21371
+
+ * Missing value set to NaN in input mtz file
+
+ * Number of Batches = 5
+
+ * Column Labels :
+
+ H K L M/ISYM BATCH I SIGI IPR SIGIPR FRACTIONCALC XDET YDET ROT WIDTH LP MPART FLAG BGPKRATIOS
+
+ * Column Types :
+
+ H H H Y B J Q J Q R R R R R R I I R
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+  177.7554  182.5015  204.3013   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00051    0.16000     (     44.193 -      2.500 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P212121' (number     19)
+
+
+ Spacegroup information obtained from library file: 
+ Logical Name: SYMINFO   Filename: /sw2/opt/ccp4-6.3.0/lib/data/syminfo.lib
+
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: s5_sort.mtz   Filename: s5_sort.mtz 
+
+ * Title:
+
+ .
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 Unspecified
+          still
+          Unspecified
+            177.7554  182.5015  204.3013   90.0000   90.0000   90.0000
+             1.24000
+
+ * Number of Columns = 18
+
+ * Number of Reflections = 21371
+
+ * Missing value set to NaN in input mtz file
+
+ * Number of Batches = 5
+
+ * Column Labels :
+
+ H K L M/ISYM BATCH I SIGI IPR SIGIPR FRACTIONCALC XDET YDET ROT WIDTH LP MPART FLAG BGPKRATIOS
+
+ * Column Types :
+
+ H H H Y B J Q J Q R R R R R R I I R
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+  177.7554  182.5015  204.3013   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00051    0.16000     (     44.193 -      2.500 A )
+
+ * Sort Order :
+
+      1     2     3     4     5
+
+ * Space group = 'P212121' (number     19)
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+
+<a name="smsortmtz"><h2>SORTMTZ</h2></a>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<pre>
+<!--SUMMARY_END--></FONT></B>
+</pre>
+
+<a name="tocSORTMTZ"><h2>Contents</h2></a>
+<ul>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<li><a href="#commandSORTMTZ">Command Input</a>
+<li><a href="#inputSORTMTZ">Input File Details</a>
+<li><a href="#outputSORTMTZ">Output File Details</a>
+<!--SUMMARY_END--></FONT></B>
+<li><a href="#outSORTMTZ">Header Information for Output MTZ File</a>
+</ul>
+<hr>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+<a name="commandSORTMTZ"><h3>Command Input</h3></a>
+<a href="/sw2/opt/ccp4-6.3.0/html/sortmtz.html#ascend">ASCEND/DESCEND</a>
+<a href="/sw2/opt/ccp4-6.3.0/html/sortmtz.html#sort_keys">SORT KEYS</a>
+<!--SUMMARY_END--></FONT></B>
+<pre>
+</pre>
+<hr>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+<a name="inputSORTMTZ"><h3>Input File Details</h3></a>
+<!--SUMMARY_END--></FONT></B>
+<pre>
+        5 sort keys, in columns    1   2   3   4   5
+</pre>
+<hr>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+
+<a name="outputSORTMTZ"><h3>Output File Details</h3></a>
+<!--SUMMARY_END--></FONT></B>
+<pre>
+      21371 records read from file    1
+      21371 records passed to sort
+</pre>
+<hr>
+
+<a name="outSORTMTZ"><h3>Header Information For Output MTZ File </h3></a>
+<pre>
+      21371 records output
+ SORTMTZ:  Normal termination
+Times: User:       0.0s System:    0.0s Elapsed:     0:01  
+</pre>
+</html>
+<!--SUMMARY_END--></FONT></B>
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->

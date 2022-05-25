@@ -1,0 +1,19 @@
+! This input created from an interactive session
+DETECTOR marccd reversephi
+WAVELENGTH  1.00000
+SYNCHROTRON
+BEAM  112.39  113.46
+ADCOFFSET   0
+DISTANCE  149.891
+DISTORTION YSCALE    0.9997 TILT   14 TWIST   -6
+MATRIX ds_000001.mat
+!This matrix was obtained from postrefinement
+!using  2 segments starting with images   1 301
+SYMMETRY   19
+MOSAIC  0.24
+TEMPLATE ds_######.img
+DIRECTORY ./
+RASTER    21   21   16    8    7
+SEPARATION  0.36 0.51
+OVERLOAD CUTOFF   65500
+RESOLUTION   2.00

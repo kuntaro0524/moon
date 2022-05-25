@@ -1,0 +1,978 @@
+
+ Spacegroup information obtained from library file: 
+ Logical Name: SYMINFO   Filename: /sw2/opt/ccp4-6.3.0/lib/data/syminfo.lib
+
+
+FORMATTED      OLD     file opened on unit   3
+Logical name: ds_000001.mat, Filename: ds_000001.mat
+
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<html> <!-- CCP4 HTML LOGFILE -->
+<hr>
+<!--SUMMARY_END--></FONT></B>
+
+
+ ************ Mosflm version 7.0.9  for Image plate and CCD data 14th May 2012  ***********
+ Andrew Leslie and Harry Powell, MRC Laboratory of Molecular Biology,
+ Hills Road, Cambridge CB2 0QH, UK
+ E-mails: andrew@mrc-lmb.cam.ac.uk, harry@mrc-lmb.cam.ac.uk
+ References:
+ Mosflm: A.G.W. Leslie and H.R. Powell (2007), Evolving Methods for 
+         Macromolecular Crystallography, 245, 41-51 ISBN 978-1-4020-6314-5
+ New auto-indexing based on DPS: I. Steller R. Bolotovsky and M.G. Rossmann
+         (1997) J. Appl. Cryst. 30, 1036-1040
+ New iMosflm GUI:  T.G.G. Battye, L. Kontogiannis, O. Johnson, H.R. Powell 
+         and A.G.W. Leslie.(2011) Acta Cryst. D67, 271-281)
+--------------------------------------------------------------------------------
+ How much of this information is useful in diagnosing user problems?
+      Mosflm run on Friday, February 22 2013 at 18:38 by kuntaro
+      Compiler command: gfortran -m64
+      Compiler version: GNU Fortran (GCC) 4.7.2 Copyright (C) 2012 Free Software Foundation, Inc. GNU Fortran comes with NO WARRANTY, to the extent permitted by law. You may redistribute copies of GNU Fortran under the terms of the GNU General Public License. For more informatio
+      Executable type:  Mach-O 64-bit executable x86_64
+      This executable was built by fink-bld on Monday, December 03 2012 at 22:48
+--------------------------------------------------------------------------------
+ ===> DIRE ./
+ ===> hklout oxi_low.mtz
+ ===> TEMPLATE ds_######.img
+ ===> PROCESS 1 to 1 START 0.0 ANGLE 0.3
+ ===> DETECTOR marccd reversephi
+ ===> SYNCHROTRON
+ ===> RESOLUTION 45 3.0
+ ===> WAVELENGH 1.0
+ ===> WAVELENGTH  1.00000
+ ===> BEAM  112.39  113.46
+ ===> DISTANCE 149.5
+ ===> ADCOFFSET   10
+ ===> DISTORTION YSCALE    0.9997 TILT   14 TWIST   -6
+ ===> SYMMETRY   19
+ ===> MATRIX ds_000001.mat
+<B><FONT COLOR="#FF0000"><!--SUMMARY_BEGIN-->
+<!--SUMMARY_END--></FONT></B>
+ ===> MOSAIC  0.24
+ ===> RASTER    21   21   16    8    7
+ ===> SEPARATION  0.36 0.51
+ ===> dispersion 0.0002
+ ===> go
+
+
+ **** Information ****
+ No GENFILE keyword has been given.
+ It will be set to the MTZ filename with an extension ".gen"
+
+ ***** Because only one pack is to be processed, no post refinement or
+ addition of partials will be carried out *****
+ ***** WARNING *****
+ ***** WARNING *****
+ ***** WARNING *****
+ ***** WARNING *****
+ Input crystal to detector distance ( 149.50mm) does NOT agree with value in the image header ( 150.00mm)
+ The input distance will be used.
+
+ Pixel size of 0.0732mm taken from image header.
+ **** WARNING ****
+ Because input wavelength ( 1.0000) is not CuKa (1.5418) or Mo (0.7107),
+ source is assumed to be a synchrotron and synchrotron defaults for polarisation and beam divergence
+ will be used if these have not been defined explicitly (SYNCH POLAR and DIVH/DIVV keywords.
+
+
+
+ Title for MTZ and GENERATE Files (TITLE):
+ .
+ Crystal identifier (IDENT): ds
+
+ Warning: No PROTEIN NAME given by KeyWord PNAME
+ It has been set to "Unspecified"
+
+ Warning: No CRYSTAL NAME given by KeyWord XNAME
+ It has been set to "ds"
+
+
+ Warning: No DATASET NAME given by KeyWord DNAME
+ It has been set to "Unspecified"
+
+
+
+ Beam Parameters
+ ===============
+ Wavelength 1.0000
+ Beam divergence:  Horizontal (DIVH) 0.020   Vertical (DIVV) 0.020
+ Wavelength dispersion (DISP) 0.00020 Correlated Del-Lambda (DELCOR) 0.00000
+ The X-ray beam is assumed to have a degree of polarisation of 0.950
+
+ Crystal Parameters
+ ===================
+ Crystal identifier (used as template for image file names (IDENT): ds
+ Space group (SYMMETRY)   19 (P212121)
+ Real cell parameters (CELL):
+    178.301   182.599   204.887    90.000    90.000    90.000
+ Reciprocal cell parameters :
+   0.005608  0.005476  0.004881     90.00     90.00     90.00
+
+ Mosaic spread (MOSAIC) 0.240 degrees
+ Mosaic block size (BLOCKSIZE) 100.00 microns
+ Rotation matrix U defining standard setting :
+              0.26475 -0.19426 -0.94455
+              0.76877 -0.54880  0.32835
+             -0.58216 -0.81307  0.00404
+
+ Orientation Matrix [A], Components of A*,B*,C*
+    Along X   0.001485 -0.001064 -0.004610
+    Along Y   0.004312 -0.003006  0.001603
+    Along Z  -0.003265 -0.004453  0.000020
+           Misorientation Angles
+        -0.004   -0.002    0.052
+
+ Detector parameters
+ ===================
+ Pixel size in the "slow" (X) direction in the image (PIXEL)  0.07324 mm
+ Physical limits of detector (LIMITS) relative to direct beam position
+ Minimum and maximum X coordinate (XMIN,XMAX)   0.00 112.11 mm
+ Minimum and maximum Y coordinate (YMIN,YMAX)   0.00 112.96 mm
+ Minimum and maximum radial coordinates (RMIN,RMAX)   3.00 159.15 mm
+ Detector limits relative to the physical  centre of the detector:
+ in X (XSCAN)  112.00 mm, in Y (YSCAN)  112.00mm
+
+
+ Detector translations: XOFF   0.11 mm   YOFF  -0.96 mm
+ These are the distances between the direct beam position and the centre of
+ the image.
+
+ Crystal to detector distance (DIST) 149.50 mm
+ Detector swing angle (TWOTHETA)  -0.00 degrees
+ Maximum resolution (RESOLUTION or RMAX) 3.000A
+ Low resolution cutoff (RESOL or RMIN and RCENTRE)    45.00A
+
+ Minimum spot separation before spots will be classified as overlapping:
+ (SEPARATION) In scanner X,Y directions  0.36  0.51mm
+ When rejecting background pixels due to overlap of adjacent spots
+ the peak size of the neighbouring spots will be reduced by 0 pixels
+ in both directions (TRIM).
+ In addition, there must be at least 1 adjacent spots overlapping
+ any given pixel before it is rejected (NOVERLAP).
+
+ Detector gain (GAIN) 0.30
+ Scanner adc offset (ADCOFFSET) 10
+ Pixels outside active area have values of   0 (NULLPIX)
+ Non-linearity correction (quadratic correction)0.000E+00 (NONLINEARITY)
+ Nominal detector thickness (controls expansion of measurement box) 0.20 mm
+ Direct beam coordinates (BEAM) set to   112.390   113.460 mm
+ Note that these coordinates are wrt an origin at the first pixel
+ in the image, with X the slowly changing direction and Y the
+ fast direction in the image.
+
+ Images will be read from the following  1 directories
+ (DIRECTORY...up to 10 can be given):
+ ./
+ The filename extension (EXTENSION) is:mccd    
+
+ Scanner instrument error factor set to  0.070
+ This value will override that calculated by the program
+ Direct beam search box size (FIDUCIAL BEAM)(mm) 0.0
+ Threshold for locating direct beam (FIDUCIAL THRESHOLD      0
+ Image consists of  3072 stripes each of  3072 pixels (SIZE)
+ Header information is contained in the first 1 records of the file
+
+ Distortion parameters (DISTORTION):
+ Crystal to detector distance scalar (XTOFRA) 1.0000
+ Dividing factor relating pixel size in fast scan direction
+ to that in slow direction ( YSCAL) 0.9997
+ Detector Tilt (TILT)   14   Twist (TWIST)   -6
+ Camera constants (mm and degrees): CCX   0.00  CCY   0.00  CCOM   0.000
+
+ The oscillation axis is parallel to the fast axis in the image (scanner Y)
+
+ Parameters affecting refinement (REFINE keyword)
+ ================================================
+ Initial refinement uses up to 200 (MAXREF) reflections within  56.0mm (LIMIT)
+ of the image centre. A minimum of  20 reflections (NREF) are required.
+ The spots must have an rms variation in pixel values more than 20 times 
+ that expected for a uniform background (NSIG).
+ PARTIALS and OVERLOADS will be rejected for positional refinement unless
+ there are not enough fully recorded non-overloaded reflections.
+ (Use INCLUDE PARTIALS or INCLUDE OVERLOADS to use these spots by default.)
+ The measurement box will be used in the initial determination of the centre
+ of gravity of spots in the central region (USEBOX)
+
+ Following   2 cycles of refinement (CYCLES) if the weighted residual
+ exceeds 10.0 (RESID) then processing will be abandoned.
+ For the outer regions of the image, spots with I/(sigma(I)) > CUTOFF will be
+ selected where CUTOFF is  40 for the outermost bins and is incremented by
+  10 for each bin working towards centre of image (IMIN)
+ For spots selected for refinement, the maximum  allowed value for
+ (background gradient)/(average background is 0.030 (GRADIENT) and the
+ maximum allowed fraction of rejected background pixels is 0.50 (BGREJECT)
+ Reflections will be weighted by the estimated error in the position
+ of their centre of gravity (WEIGHT)
+
+ The refined detector parameters will be smoothed (use NOSMOOTH to stop
+ smoothing). The smoothing will be done over   5 degrees (NSM1) for CCOMEGA,
+ YSCALE and DISTANCE and over   10 (NSM2) degrees for all other parameters.
+
+
+ PROFILE FITTING
+ ===============
+ (Use PROFILE OFF to suppress profile fitting)
+ The default profile binning for this resolution giving 9 standard profiles
+ will be used (Default is 21 bins above 2.5A, 9 below)
+ To change this use XLINES/YLINES to define the areas you want
+ The measurement box parameters will be optimised for every standard
+ profile independently (OPTIMISE). The parameters used in the optimisation are:
+ Toleance (TOLERANCE) Minimum 0.020 Maximum 0.030  Boundary (BOUNDARY)  6
+ See the help library for a description of these parameters
+ (To switch off optimisation for all standard profiles use NOOPT, to turn it off
+ for the average central spot profile also use NOOPT ATALL)
+ The overall dimensions will be set to achieve a minimum ratio of background
+ to peak pixels of 2.00 (RATIO)
+ The expansion in either direction to achieve this will be
+ halted when more than 0.50 of the pixels are rejected (STOP)
+ (Use FIXBOX to switch off optimisation of OVERALL dimensions of box)
+ Reflections with peak pixel intensity less than  2 times (ISDR) the rms
+ variation in background density will be rejected from the STANDARD PROFILES
+ For the standard profiles, background points which lie more than
+  99.0 sigma (BGSIG) from the best least squares plane will be rejected
+ Spots with more than  0 (NOVPIX under OVERLOADS) pixel values greater
+ than   65500 (CUTOFF) will be treated as OVERLOADS and excluded.
+ The rejection criteria applied to each profile are:
+ Minimum number of reflections contributing to profile  10 (NREF)
+ Maximum rms variation in background (after scaling peak to 255) 20.0 (RMSBG)
+
+ Pixel values will be interpolated to place CALCULATED spot position
+ in centre of measurement box (INTERPOLATE).
+
+ The background mask for each measurement box will be updated on the basis of
+ background points rejected from the standard profile for that box.
+ The updated mask will be used in the  integration pass (CHANGEMASK).
+
+ Profiles will be accumulated over  1 images (BLOCK subkeyword on PROCESS line)
+ prior to integration (ACCUMULATE).
+
+ All profiles will be printed (PRINT).
+
+ The least-squares fit of the standard profiles to individual spot pixel
+ values will be weighted (WEIGHT).
+ In the formation of the standard profiles, each reflection will
+ be weighted using counting statistics (WSUM).
+
+ A separate profile will be calculated for every reflection as a
+ weighted sum of neighbouring profiles (VARIABLE).
+
+ For fully recorded reflections, individual peak pixels will be rejected
+ from profile fitting if their fit to the scaled profile deviates by more
+ than   20.0 times the expected error (WDLIM1).
+ For ALL reflections, for pixels adjacent to overlapped pixels, the
+ rejection factor is   20.0 (WDLIM2).
+
+ When forming the profiles, spots that lie within shells centred on ice
+ rings will be excluded. The half-width of the shells is set to 0.0050
+ times the actual resolution (ICE).
+
+ When forming the profiles, a fraction 0.050 of the reflections that have
+ the highest pixel values in each profile will be excluded, to eliminate
+ the effect of zingers and hot pixels (PRCUT).
+
+
+ REFLECTION INTEGRATION
+ ======================
+ OVERLOADS (OVERLOAD):
+ Any reflection with more than  0 (NOVER) pixels with a
+ value greater than   65500 (CUTOFF) will be flagged as overloads.
+
+ Background evaluation (BACKGROUND):
+ A fraction 0.80 (BGFRAC) of the background pixels
+ will be used in the initial determination of the plane constants
+ Pixels deviating by more than  3.0 (BGSIG) sigma from this initial
+ plane will be rejected.
+
+ If there are fewer than 50 background pixels remaining after rejecting
+ those overlapped by neighbouring spots, background pixels with
+ the lowest values in the standard profile will be included until 50 background
+ pixels are obtained. This number is RECLEVEL*NBGMIN where RECLEVEL is set by
+ keywords BACKGROUND RECOVER RECLEVEL and NBGMIN by REJECTION MINBG NBGMIN
+
+ REJECTION CRITERIA (REJECTION):
+ Reflections for which the (background gradient)/(average background) is
+ greater than 0.030 will be rejected (GRADMAX)
+ Minimum number of background pixels remaining after rejection of
+ outliers  10 (MINB)
+ Maximum BGRATIO   3.0 (BGRATIO)
+ Maximum PKRATIO   5.0 (PKRATIO)
+ Reflections failing the PKRATIO test will be rejected (use REJECT PKRATIO ACCEPT
+  to keep the summation integration value.)
+
+ Rejected reflections will be omitted from the MTZ file.
+
+ Partial reflections spanning more than 17 images will NOT be integrated
+ (use MAXWIDTH to change)
+
+
+ Other options
+ =============
+ Average spot profile will be printed for all packs
+
+
+ **************************************************
+ Processing image   1
+ The output generate file is oxi_low.gen
+ The output MTZ file is oxi_low.mtz
+ *******************************************************************************
+
+
+   4052 Reflections generated:
+     84 Fully recorded
+   3968 Partials
+      8 Overlapped reflections
+     47 Too wide in phi
+ Number of partials extending over  2 to  10 images
+   2533   771   260   108    70    42    33    25    13
+ Number of partials extending over 11 to  16 images
+     12    12     7     8     9     6
+  THERE ARE         4299  REFLECTIONS.
+ "MEDIAN" "   " "      "      ":            2     "  
+   NADD is currently.............           0
+   NIVB is now...................           2
+
+
+ *** Post-refinement will use partials extending over several images ***
+ This is equivalent to including a POSTREF MULTI keyword.
+ (To prevent this, include keywords POSTREF NOMULTI.)
+ Reflections from up to  3 images will be used in the refinement of missetting angles.
+
+
+ image FILENAME: ./ds_000001.img
+ Image       1: minimum =       10, maximum =    65536, average =    455.4 rms =  436.0 total =  4294996480.
+
+
+ ************************************************
+ Processing Image    1  Phi    0.00 to    0.30
+ ************************************************
+   4052 Reflections generated:
+     84 Fully recorded
+   3968 Partials
+      8 Overlapped reflections
+     47 Too wide in phi
+ Number of partials extending over  2 to  10 images
+   2533   771   260   108    70    42    33    25    13
+ Number of partials extending over 11 to  16 images
+     12    12     7     8     9     6
+  THERE ARE         4299  REFLECTIONS.
+ "MEDIAN" "   " "      "      ":            2     "  
+   NADD is currently.............           3
+   NIVB is now...................           2
+
+
+ ***** WARNING *****
+ ***** WARNING *****
+ ***** WARNING *****
+ Because the fraction of fully recorded reflections is less than 0.33, partials
+  will be included in the positional refinement.
+ This fraction can be reset with keywords REFINE FULLFRAC eg:
+ "REFINE FULLFRAC 0.5" will change it to 0.5
+
+ Refinement cycle  1
+   406 Fulls and partials to be measured
+
+
+   5 reflections rejected because more than a fraction 0.50 of the background pixels were rejected
+ ***** WARNING *****
+ ***** WARNING *****
+ ***** WARNING *****
+ Because there are very few fully recorded reflections in the central region
+ of the image, partials will be used in forming the standard
+ profiles. This is equivalent to including keywords: PROFILE PARTIALS
+ If you do NOT want to include partials in forming profiles, use keywords:  PROFILE FULLS
+ Final rms residual:   0.021mm; Weighted residual    0.1
+   XCEN    YCEN  XTOFRA   XTOFD  YSCALE  TILT TWIST
+ 112.38  113.41  1.0028  149.92  1.0001    14    -4
+ Refined Fiducial constants (mm and degrees)
+  CCX:    -0.00   CCY:     0.00  CCOM:    0.0067
+
+ Refinement cycle  2
+
+ Repeating refinement using the same list of 200 reflections
+   200 Spots to be measured
+ Final rms residual:   0.017mm; Weighted residual    0.2
+   XCEN    YCEN  XTOFRA   XTOFD  YSCALE  TILT TWIST
+ 112.38  113.43  1.0034  150.01  1.0000    14    -4
+ Refined Fiducial constants (mm and degrees)
+  CCX:    -0.00   CCY:     0.00  CCOM:    0.0069
+ Fewer than  3 fully recorded reflections, so average spot profile will include partials
+   200 Fulls and partials to be measured
+
+  200 Reflections included in AVERAGE SPOT PROFILE including 197 partials
+ Average spot profile for central region.
+ Rejected background pixels flagged by "*", true background by "-"
+ Final optimised raster parameters:   21   21   17    8    8
+ This gives  21 pixels in the peak and  44 in background after rejecting outliers.
+ Note that the number of background pixels rejected on any individual spot
+ may be much smaller than the number rejected here.
+ C. of G. SHIFTS = -0.004  0.005mm  Background residual=  0.1 (peak scaled to 255)
+                    *0*0*0*0*0*0*0*0*0*0*0*0*0*0*0*2*7*8*3*1*0                                          
+                    *2*1*0-0*0*0*0*0*0*0*0*0*0*0*0*2*7*7*3*1*0                                          
+                    *4*3*1*0*0*0*0*0*0*0*0*0*0*0*0*1*3*3*1*0*0                                          
+                    *4*3*1*0*0*0*0*0*0*0*0*0-0-0*0*0*1*1*0*0-0                                          
+                    *2*1*0*0*0*0*0*0*0*0-0-0-0-0*0*0*0*0*0-0*0                                          
+                    *0*0*0*0*0*0*0*0-0*0*0*0*0*0-0-0-0*0-0*0*0                                          
+                    *0*0-0*0*0*0*0-0*0*0*0*0*0*0*0*0*0*0*0*0*0                                          
+                    *0*0*0*0*0-0*0*0*0*1*1*1*0*0*0-0*0*0*0*0*0                                          
+                    *0*0*0*0*0-0*0*0*1 4 5 4*1*0*0-0*0*0*0*0*0                                          
+                    *0*0*0*0*0*0*0*1 3 E N D 3*1*0-0*0*0*0*0*0                                          
+                    *0*0*0*0*0*0*0*1 5 M Z J 4*1*0*0*0*0*0*0*0                                          
+                    *0*0*0*0*0*0*0*1 3 C J A 2*1*0-0*0*0*0*0*0                                          
+                    *0*0*0*0*0-0*0*0*1 3 4 3*1*0*0*0*0*0*0*0*0                                          
+                    *0*0*0*0*0*0*0*0*0*1*1*1*0*0-0*0*0*0*0-0-0                                          
+                    *0*0*0*0*0*0*0*0*0*0*0*0*0-0*0*0*0-0*0*0*0                                          
+                    *0*0*0*0-0-0-0*0*0*0*0*0-0*0*0*0-0*0*0*1*1                                          
+                    *0-0*0*0*0*0-0-0-0-0*0*0*0*0*0*0-0*0*1*3*4                                          
+                    -0*0*0*1*1*0*0-0*0*0*0*0*0*0*0*0-0*0*2*4*5                                          
+                    *0*0*1*3*3*1*0-0*0*0*0*0*0*0*0*0*0*0*1*3*3                                          
+                    *0*1*3*7*7*2*0*0*0*0*0*0*0*0*0*0*0*0*0*1*1                                          
+                    *0*1*3*8*7*2*0*0*0*0*0*0*0*0*0*0*0-0*0*0*0                                          
+
+ If the peak region is too large, supply two values on the PROFILE TOLERANCE keyword.
+ The first value is used for the centre of the image, and the second for the
+ outermost profiles. See the helpfile for details.
+ No spots found outside central region of image
+ (defined by REFINEMENT LIMIT keyword) no additional refinement will be performed
+
+  MAX. No. of Active Reflections=    91
+  3997 Reflections written to scratch file for integration
+
+     0 reflections excluded from within ice rings.
+
+ Only  0 of the100 reflections used in CENTRS refinement located in new
+ generate file
+   0 of these are fully recorded
+   4052 Reflections generated:
+     84 Fully recorded
+   3968 Partials
+      8 Overlapped reflections
+     47 Too wide in phi
+ Number of partials extending over  2 to  10 images
+   2533   771   260   108    70    42    33    25    13
+ Number of partials extending over 11 to  16 images
+     12    12     7     8     9     6
+  THERE ARE         4299  REFLECTIONS.
+ "MEDIAN" "   " "      "      ":            2     "  
+   NADD is currently.............           3
+   NIVB is now...................           2
+
+ ************************************************
+ Integrating Image    1  Phi    0.00 to    0.30
+ ************************************************
+
+ Now reading reflection list again applying the profile outlier cutoffs.
+
+ Statistics on the standard PROFILES (before averaging)
+
+   BOX XMIN XMAX YMIN YMAX   NX   NY RMSBG    DELX    DELY   NO     A       B      C  DEVMAX  NBGREJ  NOVER NWK CORRLN
+    1   60   92   60   92    21   21   1.4  -0.003   0.006  249    1.16    1.44 1095.5  14.5     82      6    1  0.995
+    2   60   92   92  133    21   21   0.8   0.001  -0.000  675    0.02   -0.03 1014.1   5.8     98     36    0  0.997
+    3   60   92  133  165    21   21   1.4   0.006  -0.002  288    1.16   -1.26 1062.4   9.4     46      0    1  0.988
+    4   92  133   60   92    21   21   0.8  -0.002   0.007  373   -0.20   -0.32  956.0   6.3    159     31    1  0.997
+    5   92  133   92  133    21   21   0.3  -0.001   0.003  332   -0.08   -0.08  673.7   3.2     89     53    0  1.000
+    6   92  133  133  165    21   21   0.8   0.005  -0.005  393    0.03   -0.08  932.9   6.2    114     29    0  0.984
+    7  133  165   60   92    21   21   1.2  -0.011   0.009  247   -1.32    1.32 1048.4  10.1     81     10    0  0.979
+    8  133  165   92  133    21   21   0.8  -0.005   0.003  727   -0.34    0.02 1008.6   4.3    100     27    0  0.997
+    9  133  165  133  165    21   21   1.2  -0.001  -0.002  292   -1.24   -1.14 1111.1   9.0     69      6    1  0.994
+
+ In the following profiles, background pixels are indictated by a "-" sign and rejected background pixels (due to
+ overlap by a neighbouring spot) are indicated by a "*". Pixels with negative values are denoted by a "]".
+ Note that a background pixel is rejected if it is overlapped by a neighbouring spot for ANY reflection in that
+  area of the detector.
+ If too many background pixels are being rejected try the SEPARATION CLOSE keywords (see help library)
+
+
+ Profile for box  1
+ X limits  60 to  92 mm, Y limits  60 to  92 mm
+ Number of reflections in profile  249  RMSBG  1.4 Profile factor 0.65
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*0*0*1*1*1*2                                          
+                    *1*1*1*0-0-0-0-0-0-0-0-0-0-0*0*0*0*0*1*1*1                                          
+                    *2*3*2*1*0-0-0-0-0-0-0-0-0-0-0*0*0*0-0-0*0                                          
+                    *2*3*2*1*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *1*1*1*0*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *1*0*0*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-1-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1-1-2-1-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1-2 5 8 6-2-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 5 H P G 5-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 7 O Z L 6-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 5 F K C 4-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1-2 5 6 4-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1-1-1-1-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*1*1*1                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*1*3*3*2                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*1*4*4*2                                          
+                    *1-0-0*0*0*0-0-0-0-0-0-0-0-0-0-0*0*1*2*2*1                                          
+                    *1*1*1*0*0*0*0-0-0-0-0-0-0-0-0-0-0*0*1*1*1                                          
+                    *2*1*1*1*0*0*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+
+
+ Profile for box  2
+ X limits  60 to  92 mm, Y limits  92 to 133 mm
+ Number of reflections in profile  675  RMSBG  0.8 Profile factor 0.62
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*2*5*4*2*1*1                                          
+                    *0*0*0-0-0-0-0-0-0-0-0-0-0-0*0*2*5*4*1*1*1                                          
+                    *0*0*0*0-0-0-0-0-0-0-0-0-0-0*0*1*2*1*1*0*0                                          
+                    *0*0*0*0-0-0-0-0-0-0-0-0-0-0-0*0*0*0-0-0*0                                          
+                    *0*0*0*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *0*0*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 4 6 4-2-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 D M F 4-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 6 L Z M 6-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 E M E 4-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-2 4 6 4-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1-1-1-1-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*0*0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*0*0*0                                          
+                    *0-0-0*0*0*0-0-0-0-0-0-0-0-0-0-0-0*0*0*0*0                                          
+                    *0*0*1*1*2*1*0-0-0-0-0-0-0-0-0-0-0*0*0*0*0                                          
+                    *1*1*1*3*4*2*0-0-0-0-0-0-0-0-0-0-0-0*0*0*0                                          
+                    *1*1*1*4*4*2*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+
+
+ Profile for box  3
+ X limits  60 to  92 mm, Y limits 133 to 165 mm
+ Number of reflections in profile  288  RMSBG  1.4 Profile factor 0.64
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-1*3*F*R*H*5-1*0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-1*3*C*M*F*4-1*0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0*2*5*9*6*2-1*0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-1*1*2*1-1-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 4 6 5-2-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 3 D M F 5-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 5 K Z O 7-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 E N G 5-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1-2 5 7 5-2-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1-1-1-1-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-1-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-1*1*2*1-1-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *0-0*2*6*9*6*2-1-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *0-1*4*F*R*H*5-1-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *0-1*4*I*V*K*5-1-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+
+
+ Profile for box  4
+ X limits  92 to 133 mm, Y limits  60 to  92 mm
+ Number of reflections in profile  373  RMSBG  0.8 Profile factor 0.61
+                    *1*1*1*0*0*0*0*0-0-0-0-0-0-0-0*0*0*1*1*0*0                                          
+                    *5*5*3*1*1*0*0*0*0-0-0-0-0-0-0*0*0*0*0*0*0                                          
+                    *D*B*5*2*1*0*0*0*0*0-0-0-0-0-0*0*0*0*0*0-0                                          
+                    *C*9*4*2*1*0*0*0*0*0-0-0-0-0-0-0*0*0*0-0-0                                          
+                    *4*3*2*1*0*0*0*0*0*0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *1*1*0*0*0*0*0*0*0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 5 7 5-2-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 F O F 4-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 6 N Z K 5-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 D K C 3-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 3 5 3-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0*0*0*0*0*0*0*1*2*1                                          
+                    -0-0-0-0-0-0-0-0-0-0-0*0*0*0*0*0*0*1*5*8*6                                          
+                    -0-0*0*0*0-0-0-0-0-0-0*0*0*0*0*0*1*3*9*F*B                                          
+                    -0*0*0*0*0*0-0-0-0-0-0*0*0*0*0*0*1*3*7*B*9                                          
+                    *0*1*1*0*0*0-0-0-0-0-0-0*0*0*0*0*0*1*2*4*3                                          
+                    *0*1*1*1*0*0-0-0-0-0-0-0-0*0*0*0*0*0*0*1*1                                          
+
+
+ Profile for box  5
+ X limits  92 to 133 mm, Y limits  92 to 133 mm
+ Number of reflections in profile  332  RMSBG  0.3 Profile factor 0.57
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*1*2*2*1*0-0                                          
+                    *0*0*0-0-0-0-0-0-0-0-0-0-0-0*0*1*3*3*1*0-0                                          
+                    *1*1*0*0-0-0-0-0-0-0-0-0-0-0*0*0*1*1*0*0-0                                          
+                    *2*1*0*0-0-0-0-0-0-0-0-0-0-0-0*0*0*0*0-0-0                                          
+                    *1*1*0*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *0*0*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-1-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 3 5 3-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0 3 D M D 3-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 5 L Z K 4-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0 3 C K B 3-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 3 4 3-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-1-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*0*0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*1*2*1                                          
+                    -0-0*0*0*0*0-0-0-0-0-0-0-0-0-0-0-0*0*1*2*1                                          
+                    -0*0*0*1*1*0*0-0-0-0-0-0-0-0-0-0-0*0*0*1*1                                          
+                    -0*0*1*3*3*1*0-0-0-0-0-0-0-0-0-0-0-0*0*0*0                                          
+                    -0*0*1*2*2*1*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+
+
+ Profile for box  6
+ X limits  92 to 133 mm, Y limits 133 to 165 mm
+ Number of reflections in profile  393  RMSBG  0.8 Profile factor 0.62
+                    -0-0-0-0-0-0-0-0-0-0*0*0*0*1*3*E*W*P*8*2*1                                          
+                    *0*0*0-0-0-0-0-0-0-0-0*0*0*1*3*C*P*J*6*1*0                                          
+                    *0*0*0*0-0-0-0-0-0-0-0-0*0*0*1*4*8*6*2*1*0                                          
+                    *1*0*0*0-0-0-0-0-0-0-0-0-0-0*0*1*1*1*1-0-0                                          
+                    *0*0*0*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *0*0*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 3 6 4-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 3 C L E 4-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 5 K Z N 6-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 E O G 4-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 5 7 5-2-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*0*0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*0*0*0                                          
+                    -0-0*0*1*1*1*0-0-0-0-0-0-0-0-0-0-0*0*0*0*1                                          
+                    *0*0*2*5*6*3*1*0*0-0-0-0-0-0-0-0-0*0*0*0*0                                          
+                    *0*1*5*F*K*B*3*1*0*0-0-0-0-0-0-0-0-0*0*0*0                                          
+                    *0*1*7*M*T*E*4*1*0*0*0-0-0-0-0-0-0-0-0-0-0                                          
+
+
+ Profile for box  7
+ X limits 133 to 165 mm, Y limits  60 to  92 mm
+ Number of reflections in profile  247  RMSBG  1.2 Profile factor 0.61
+                    *4*3-1-1-0-0-0-0-0-0-0-0-0-0-1*3*A*B*5*1*0                                          
+                    *I*C*4-1-0-0-0-0-0-0-0-0-0-0-0*3*8*A*4*1*0                                          
+                    *Z*O*7*1-0-0-0-0-0-0-0-0-0-0-0*1*3*3*2*0-0                                          
+                    *U*J*5*1-0-0-0-0-0-0-0-0-0-0-0-0*1*1*0-0-0                                          
+                    *9*6*2*1-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *2*1*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-2 6 8 4-2-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 5 I P D 3-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 7 Q Z I 4-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 E J A 2-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1-2 4 4 3-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1-1-1-1-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-1                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*1*2*3                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*1*4*C*D                                          
+                    -0-0*1*1*1-0-0-0-0-0-0-0-0-0-0-0-0*2*8*S*V                                          
+                    -0*1*2*3*2*1-0-0-0-0-0-0-0-0-0-0-0*1*7*O*R                                          
+                    *0*1*5*7*4*1-0-0-0-0-0-0-0-0-0-0-0-1*3*9*A                                          
+                    *0*1*5*7*3*1-0-0-0-0-0-0-0-0-0-0-0-0-1*2*2                                          
+
+
+ Profile for box  8
+ X limits 133 to 165 mm, Y limits  92 to 133 mm
+ Number of reflections in profile  727  RMSBG  0.8 Profile factor 0.60
+                    *1*1-0-0-0-0-0-0-0-0-0-0-0-0*1*6*L*R*D*3-0                                          
+                    *4*3*1-0-0-0-0-0-0-0-0-0-0-0*1*7*N*S*C*2-0                                          
+                    *H*C*3*1-0-0-0-0-0-0-0-0-0-0*1*3*9*A*5*1-0                                          
+                    *S*J*5*1-0-0-0-0-0-0-0-0-0-0-0*1*2*2*1-0-0                                          
+                    *H*C*3*1-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *4*3*1-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -1-1-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 4 6 4-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 F N D 3-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 6 N Z K 5-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 E L C 3-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 4 5 3-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-1-1                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*2*4*5                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*1*5*G*K                                          
+                    -0-0*1*2*2*1-0-0-0-0-0-0-0-0-0-0-0*1*7*P*U                                          
+                    -0*2*6*B*8*2*0-0-0-0-0-0-0-0-0-0-0*1*5*E*H                                          
+                    -1*3*F*S*I*5*1-0-0-0-0-0-0-0-0-0-0-0*1*3*4                                          
+                    -1*3*E*O*F*4*1-0-0-0-0-0-0-0-0-0-0-0-0*1*1                                          
+
+
+ Profile for box  9
+ X limits 133 to 165 mm, Y limits 133 to 165 mm
+ Number of reflections in profile  292  RMSBG  1.2 Profile factor 0.63
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0*1*6*M*V*G*4-1                                          
+                    *1*1*0-0-0-0-0-0-0-0-0-0-0-0-1*5*F*K*B*3-1                                          
+                    *5*5*2*0-0-0-0-0-0-0-0-0-0-0-0-2*5*6*4-1-0                                          
+                    *B*9*3*0-0-0-0-0-0-0-0-0-0-0-0-0-1-1-1-0-0                                          
+                    *A*7*2*0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    *4*3*1-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -1-1-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-0-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 4 6 4-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 D M E 4-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 6 M Z L 5-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-1 4 F N E 4-1-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-1 5 7 5-2-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-1-1-1-1-0-0-0-0-0-0-0-0                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-1                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*1*2*4                                          
+                    -0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0*0*2*6*B                                          
+                    -0-0-1-1-1-0-0-0-0-0-0-0-0-0-0-0-0*0*2*9*D                                          
+                    -0-1*3*6*5-2-0-0-0-0-0-0-0-0-0-0-0*0*1*4*7                                          
+                    -1*3*C*N*H*5-1-0-0-0-0-0-0-0-0-0-0-0*0*1*2                                          
+                    -1*4*I*Z*R*8*1-0-0-0-0-0-0-0-0-0-0-0-0-0-0                                          
+
+ List of BADSPOTS
+ INT and SD are the profile fitted intensity and sigma.
+ A,B,C are the background plane constants. M/100 is the degree of partiality
+ (M=0 for fully recorded). XS, YS are scanner coordinates in pixels wrt origin
+ at the first pixel in the image.
+ BADSPOTS will be written to the output MTZ file, but will be flagged and will be
+ rejected by AIMLESS/SCALA by default.
+    H   K   L   M     XG       YG    XS    YS    INT   SD  BGRATIO PKRATIO PLANE A      B      C
+   47 -19  30   4  4842.1 -1075.5  2199  1696  -1556   293     1.6     0.0      2.6   -0.6  968.6 Intensity too negative               
+   42 -25  29  12  4743.5  -396.3  2186  1603  -1773   322     1.6     0.0      7.9    0.3 1123.1 Intensity too negative               
+   39 -19  25  -3  4118.8  -655.9  2100  1639  -2716   363     1.5     0.0      0.7   -0.7 1277.1 Intensity too negative               
+   29 -29  23 -33  3847.0   538.8  2063  1475  -1935   338     1.7     0.0     -3.0    0.7 1175.6 Intensity too negative               
+   41 -10  23  -9  3772.9 -1376.2  2053  1737  -2020   325     1.6     0.0     -4.5    1.5 1212.5 Intensity too negative               
+   37 -16  22  35  3744.4  -758.3  2049  1653  -1711   323     1.6     0.0     -1.6    2.0 1143.5 Intensity too negative               
+    0 -51  21  11  2918.2  3558.5  1935  1061  -2502   345     1.5     0.0      5.9    3.3 1168.5 Intensity too negative               
+   -7 -48  17  36  2193.8  3684.7  1836  1044  -2907   388     1.6     0.0      2.7    0.4 1250.8 Intensity too negative               
+  -23 -51  15  18  1220.7  4760.0  1703   897  -2590   323     1.6     0.0      1.5    5.8  921.5 Intensity too negative               
+  -17 -38   9   3   844.2  3455.9  1651  1075  -1616   304     1.4     0.0      0.2   -4.7  972.5 Intensity too negative               
+   17  22   3   9   182.3 -2321.1  1560  1867  83512  4421     1.7     0.0    -32.8   -0.9  430.3 Background plane gradient too steep  
+   20  27   4   7   175.8 -2821.6  1560  1935 188216  9836     1.7     0.0    -36.4    2.5  402.6 Background plane gradient too steep  
+    8   9   1  14   135.7  -991.5  1554  1685  14036   848     1.7     0.0    -40.3    0.1  404.5 Background plane gradient too steep  
+    9  11   1  10   109.1 -1174.9  1550  1710  -3302   298     1.7     0.0    -32.0    2.1  253.1 I too -ve and gradient too steep     
+    7  13   0  12  -134.2 -1211.1  1517  1715  16341   954     1.8     0.0     33.7   -3.0  319.5 Background plane gradient too steep  
+   12  21   1   8  -150.8 -2001.2  1515  1823   5180   436     1.7     0.0     27.8   -0.1  405.8 Background plane gradient too steep  
+   22  43   5  11  -419.1 -4080.2  1478  2108  -1786   319     1.6     0.0      0.7    2.5 1157.3 Intensity too negative               
+  -17  -2  -4 -11 -1106.9   966.5  1384  1416  -1476   242     1.5     0.0     -1.3   -0.3  666.1 Intensity too negative               
+  -43 -27   1 -22 -1596.6  4059.1  1317   993  -2253   337     1.6     0.0      1.4    3.3 1202.4 Intensity too negative               
+  -17  16  -7  17 -2001.5  -239.4  1261  1582  -1552   249     1.6     0.0      1.0   -0.7  645.6 Intensity too negative               
+  -47 -24   0  45 -2044.0  4068.4  1255   992  -1796   316     1.5     0.0     -0.9    3.2 1130.9 Intensity too negative               
+  -24  43  -9   2 -3845.0 -1759.8  1009  1790  -1831   348     1.6     0.0      1.0    1.5 1293.8 Intensity too negative               
+  -27  49  -9  10 -4375.9 -2045.4   936  1829  -1813   320     1.6     0.0     -1.6    0.2 1064.5 Intensity too negative               
+
+ Calculated detector error factor is 0.03 but input value of  0.07 will be used
+    11 Reflections with a mean PKRATIO (uncorrected for detector error) of   9.4
+ have been rejected as outliers in the determination of the detector error
+
+
+  3997 Spots measured on this image
+    84 are fully recorded,   68 are OVERLOADS    0 Outside active area
+ Reflections "Outside active area" are those with pixel values less than or equal to    0
+ This value can be changed with keyword NULLPIX.
+   0 Reflections partially outside the scan have been profile fitted, but these will be
+ rejected by SCALA by default.
+ The intensities of overloaded reflections have been estimated by profile fitting.
+ These will be rejected by AIMLESS/SCALA by default, but can be included by using ACCEPT keywords.
+
+    Analysis of Intensities (Binned on integrated intensities.)
+ SDI is summation integration sigma(I), SDP is profile fitted sigma(I)
+  RANGES      -750    0   1250  2500  5000  10000 20000 40000 80000
+    NO.     65    67   204   287   487   552   460   408   411  1056
+ BGRATIO   1.5   1.5   1.5   1.5   1.5   1.6   1.6   1.6   1.6   1.6
+ PKRATIO   0.0   0.0   0.0   0.6   0.5   0.5   0.3   0.3   0.2   0.2
+ <SDI>    291.  273.  271.  289.  340.  481.  819. 1561. 3141.14433.
+ <SDP>    291.  273.  271.  289.  340.  481.  819. 1561. 3141.14433.
+
+  Maximum Intensity=   5835786
+  Minimum Intensity=     -3302
+
+ Analysis as a function of resolution.
+ Res (Ang)   8.49   6.00   4.90   4.24   3.79   3.46   3.21   3.00 Overall
+ Profile fitted fully recorded:
+ Number         0      8     14      8      8     12     17     17     84
+  <I>           0 261805 149271 348571 141837  97600  88381  35844 135601
+
+ WRITTEN OUTPUT MTZ FILE 
+ Logical Name: oxi_low.mtz   Filename: oxi_low.mtz 
+
+ * Title:
+
+ .
+
+ * Base dataset:
+
+        0 HKL_base
+          HKL_base
+          HKL_base
+
+ * Number of Datasets = 1
+
+ * Dataset ID, project/crystal/dataset names, cell dimensions, wavelength:
+
+        1 Unspecified
+          ds
+          Unspecified
+            178.3008  182.5988  204.8866   90.0000   90.0000   90.0000
+             1.00000
+
+ * Number of Columns = 18
+
+ * Number of Reflections = 3997
+
+ * Missing value set to NaN in input mtz file
+
+ * Number of Batches = 1
+
+ * Column Labels :
+
+ H K L M/ISYM BATCH I SIGI IPR SIGIPR FRACTIONCALC XDET YDET ROT WIDTH LP MPART FLAG BGPKRATIOS
+
+ * Column Types :
+
+ H H H Y B J Q J Q R R R R R R I I R
+
+ * Associated datasets :
+
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+ * Cell Dimensions : (obsolete - refer to dataset cell dimensions above)
+
+  178.3008  182.5988  204.8866   90.0000   90.0000   90.0000 
+
+ *  Resolution Range :
+
+    0.00056    0.11107     (     42.368 -      3.001 A )
+
+ * Sort Order :
+
+      0     0     0     0     0
+
+ * Space group = 'P212121' (number     19)
+
+  <sigma>       0  12964   7692  15543   7414   5182   4614   1938   6769
+  <I/sigma>   0.0   19.7   19.4   20.5   19.1   17.4   18.8   16.4   18.5
+ Profile fitted partials:
+ Number       184    314    408    470    546    588    680    723   3913
+  <I>      521839 164680 150803 178762 109494  76906  38106  29437 113844
+  <sigma>   10607   6551   6678   6953   5201   3579   2140   1633   4493
+  <I/sigma>  25.5   15.9   15.8   17.0   14.9   14.0   12.9   12.3   14.8
+
+ Summation integration fully recorded:
+ Res (Ang)   8.49   6.00   4.90   4.24   3.79   3.46   3.21   3.00 Overall
+ Number         0      8     14      8      8     12     17     17     84
+  <I>           0 249865 143539 338159 138278  96062  85735  35037 131260
+  <sigma>       0  12964   7692  15543   7414   5182   4614   1938   6769
+  <I/sigma>   0.0   18.9   18.5   19.7   18.5   17.3   18.2   16.0   17.9
+ Summation integration partials
+ Number       184    314    408    470    546    588    680    723   3913
+  <I>      517804 160491 147346 175891 108510  76788  38051  29498 112460
+  <sigma>   10607   6551   6678   6953   5201   3579   2140   1633   4493
+  <I/sigma>  25.5   15.8   16.0   17.3   15.5   14.7   13.6   13.0   15.4
+
+
+ Intensity as a function of PARTIALITY
+ %age Recorded     5     10     15     20     30     40     50
+ IMEAN         35848  49441  51142  40996  54848  72569 105738
+ SIGMA(IMEAN)   4336   5823   5405   5425   5815   6727   7632
+ NUMBER          657    332    258    208    322    318    270
+
+ %age recorded    60     70     80     90    100   FULL
+ IMEAN        163649 292527 212618 183045 175192 131260
+ SIGMA(IMEAN)  11205  14249  12086  12675  11817  10472
+ NUMBER          288    260    224    295    481     84
+
+
+ Histogram of rejected points
+ The number of reflections having a given number of background points rejected
+ Number of points rejected   0   5  10  15  20  25  30  40  50  60  70  80 100 125 150 200
+                             0   0   0   0   0   0   0   0   0   0   0   2   8  38 1283821
+
+
+ RFACTOR between profile fitted and summation integration intensities
+ For FULLS  3.7  for PARTIALS  2.4
+
+
+   Analysis of c. of g. shifts for full spots (mm) (Bin size is  80. mm)
+  No.    DX     DY    No.    DX     DY    No.    DX     DY    No.    DX    DY
+   0  0.000  0.000     0  0.000  0.000     0  0.000  0.000     0  0.000  0.000
+
+   0  0.000  0.000    17  0.007  0.015    26  0.001  0.003     0  0.000  0.000
+
+   0  0.000  0.000    19  0.004  0.004    22 -0.009  0.008     0  0.000  0.000
+
+   0  0.000  0.000     0  0.000  0.000     0  0.000  0.000     0  0.000  0.000
+
+  Number of bad spots =  23
+  Number of spots with rejected peak pixels due to poor profile fit=  19
+   3997 Reflections written to MTZ file with batch number       1
+
+ Agreement between symmetry related fully recorded reflections
+ ============================================================
+
+  RANGES      -750    0   1250  2500  5000  10000 20000 40000 80000  Overall
+ Nobs        0     0     0     0     0     0     0     0     0     0       0
+ Nhkls       0     0     0     0     0     0     0     0     0     0       0
+ Rfactor 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000   0.000
+ SDratio  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00  0.00    0.00
+
+ Analysis as a function of resolution.
+ Res (Ang)   8.49   6.00   4.90   4.24   3.79   3.46   3.21   3.00
+ Profile fitted fully recorded:
+ Nobs           0      0      0      0      0      0      0      0
+ Nhkl           0      0      0      0      0      0      0      0
+ Rfactor    0.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000
+ SDratio     0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+   4052 Reflections generated:
+     84 Fully recorded
+   3968 Partials
+      8 Overlapped reflections
+     47 Too wide in phi
+ Number of partials extending over  2 to  10 images
+   2533   771   260   108    70    42    33    25    13
+ Number of partials extending over 11 to  16 images
+     12    12     7     8     9     6
+  THERE ARE         4299  REFLECTIONS.
+ "MEDIAN" "   " "      "      ":            2     "  
+   NADD is currently.............           3
+   NIVB is now...................           2
+
+
+ *** Warning messages ***
+
+ *** SERIOUS PROBLEMS ***
+ ========================
+ The following problems may have a significant effect on data quality
+ Action should be taken to eliminate these warnings.
+
+ ERROR IN DETECTOR GAIN
+ ======================
+ The ratio of the observed variation in background pixels to that
+ expected statistically (the BGRATIO) lies outside the range 0.9 to 1.1.
+ Actual values: minimum:  1.56  maximum:  1.56
+ The most likely explanation is that the GAIN of the detector is incorrect.
+ The current GAIN is 0.30 but the observed BGRATIO suggests it should be
+ set to 0.73.
+ NOTE however that diffuse scatter can lead to an increased value of BGRATIO
+ even when the gain is correct.
+ Since the gain for any detector should remain constant, it should be worked out
+ for a crystal giving strong diffraction and "clean" spots (ie no disorder or
+ diffuse scatter)and kept at this value.
+ Processing data with an incorrect gain will result in a systematic 
+ overestimate of very weak reflections and incorrect standard deviations.
+
+
+ *** PROBLEMS WORTH CONSIDERING ***
+ ==================================
+ The following warnings suggest that the processing might be improved
+ if appropriate action is taken.
+
+ EXCESSIVE NUMBER OF BADSPOTS
+ ============================
+ At least some images have rather a lot of badspots (Maximum number  23)
+ They are rejected on the basis of: 
+ 1) Poor profile fit (PKRATIO >3, controlled by REJECTION PKRATIO).
+ 2) Too large a BGRATIO (too much background variation, controlled by
+    REJECTION BGRATIO).
+ 3) Too large a background gradient (controlled by REJECTION GRADMAX)
+ 4) Intensity negative and more than 5 sigma.
+ Look at the list of badspots to see what category they fall under.
+
+ Not defining the backstop shadow can give large background plane gradients.
+ Very intense images can have unusually large gradients, GRADMAX may have to
+ be changed from the default
+ A pixel dump of the BADSPOTS can be obtained using REJECTION PLOT
+ if the reason for their rejection is not clear
+
+
+
+ *********** END OF PROCESSING *****************

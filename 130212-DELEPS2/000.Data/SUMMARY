@@ -1,0 +1,135 @@
+
+ Generate File TITLE:   .
+ Crystal Identifier:    oxi00_0
+
+
+
+ *** WARNING *** No attempt will be made to measure overloaded reflections
+ Use keywords PROFILE OVERLOAD to estimate overloads by profile fitting
+ IMAGE    CCX    CCY    CCOM   DIST YSCALE  TILT TWIST   ROFF   TOFF  RESID  WRESID    FULL   PART   OVRL  NEG  BAD  I/SIGI  I/SIGI   Rsym  Nsym SDRAT
+                                                                                                             overall (at 3.0A)
+        1   0.34   0.09   -0.05  120.1  1.015  -132    68   0.00   0.00  0.117     0.2       0   2950     0  1244   36    4.1     4.6    0.000    0   0.0
+
+
+ *** Warning messages ***
+
+ There are no SERIOUS problems.
+
+
+ *** PROBLEMS WORTH CONSIDERING ***
+ ==================================
+ The following warnings suggest that the processing might be improved
+ if appropriate action is taken.
+
+ EXCESSIVE NUMBER OF BADSPOTS
+ ============================
+ At least some images have rather a lot of badspots (Maximum number  36)
+ They are rejected on the basis of: 
+ 1) Poor profile fit (PKRATIO >3, controlled by REJECTION PKRATIO).
+ 2) Too large a BGRATIO (too much background variation, controlled by
+    REJECTION BGRATIO).
+ 3) Too large a background gradient (controlled by REJECTION GRADMAX)
+ 4) Intensity negative and more than 5 sigma.
+ Look at the list of badspots to see what category they fall under.
+
+ Not defining the backstop shadow can give large background plane gradients.
+ Very intense images can have unusually large gradients, GRADMAX may have to
+ be changed from the default
+ A pixel dump of the BADSPOTS can be obtained using REJECTION PLOT
+ if the reason for their rejection is not clear
+
+ LARGE ERROR IN YSCALE PARAMETER
+ ===============================
+ YSCALE differs from the default value by a maximum of  0.0151
+ YSCALE allows for the pixels in the detector not being square.
+ However, all detectors except the R-axis do have square pixels and so
+ YSCALE should be 1.000.
+ Significantly different values of YSCALE usually indicate errors in cell
+ parameters which are being compensated by changing YSCALE. If YSCALE changes
+ as a function of rotation angle this is almost certainly the reason.
+ If the cell has not yet been refined, then try this first.
+ Use 2 or more segments of data widely separated in phi.
+ The cell can also change as a result of radiation damage,in which case further
+ refinement will probably not help.
+
+
+ POOR PROFILES IN SOME AREAS
+ ===========================
+ For  7 profiles the correlation coefficient with the central profile is less than 0.5.
+ Smallest correlation coefficient is -0.77
+ Possible reasons are:
+ 1) Very weak diffraction (consider cutting back the resolution)
+ 2) Errors in cell parameters (check DELX, DELY for the standard profiles).
+ 3) Genuine variation due to high obliquity (for example).
+ 4) Presence of zingers or spots from an ice or salt crystal which are much
+ stronger than the protein spots. Sometimes these can be rejected using
+ the PROFILE CUTOFF keywords.
+
+ A low correlation does NOT necessarily mean that the processing needs to be changed.
+
+ The image number, profile box number and correlation coefficient for
+ up to the first 6 occurences are:
+   ID BOX CORRLN     ID BOX CORRLN     ID BOX CORRLN     ID BOX CORRLN   
+    1   1   0.13      1   3  -0.77      1   4  -0.77      1   6  -0.21
+    1   7  -0.62      1   8  -0.19
+
+
+ *** THE FOLLOWING ARE MAINLY FOR INFORMATION ***
+ ================================================
+ In some cases it may be possible to change the processing to eliminate
+ some of these warnings.
+
+ SPOT OVERLAP
+ ============
+ Adjacent spots overlap. This will produce systematic errors in the intensities.
+ Note that this warning will arise even if only one pair of spots in
+ one area of the detector overlap. Look at the standard profiles to see how
+ serious the overlap is.
+ The minimum allowed spot separation (SEPARATION keyword) was  0.5 0.4mm.
+ The actual spot size determined by the mask optimisation is 0.5 by 0.4mm
+ in the centre of the image and the largest spot size is 0.8 by 1.0mm.
+ The separation given should be at least as large as the spot size
+ in the centre of the image (keyword SEPARATION).
+ Check standard profiles carefully to ensure that the optimisation of the
+ raster parameters has worked correctly.
+ The effective size of the spots can be controlled by PROFILE TOLERANCE 
+ keywords. If the peak regions look too large (ie they include too much of the
+ tails of the spot), try increasing TOLERANCE (current value 0.030) by
+ eg 0.005 and see if profiles look better.
+ (Increasing TOLERANCE will decrease spot size).
+ As a last resort the profile optimisation can be turned off using keywords
+ PROFILE NOOPT.
+
+ In cases of serious overlap, (ie if the pattern is very dense), then the
+ SEPARATION CLOSE option should be used (eg SEPARATION  1.0 1.0 CLOSE)
+ and it may also help to suppress profile optimisation in these cases
+ (PROFILE NOOPT)keyword. See help library for details.
+
+ TOO MANY BACKGROUND PIXELS OVERLAPPED BY NEIGHBOURING SPOTS
+ ===========================================================
+ For some of the standard profiles, more than half the background pixels are
+ flagged as being overlapped by neighbouring spots (in the worst case, 100.0%
+  are overlapped).
+ You should use the SEPARATION CLOSE keywords, eg SEPARATION 1.0 1.0 CLOSE
+ $TABLE: Refined detector parameters:
+ $GRAPHS :Camera constants CCX CCY (mm) CCOM (deg) v image:A:1,2,3,4:  
+ :Distance (mm) v image:A:1,5:
+ :Yscale v image:A:1,6:
+ :Tilt and twist (hundredths of deg) v image:A:1,7,8:
+ :ROFF and TOFF (mm) v image:A:1,9,10:
+ :Positional error (mm) and weighted error v image:A:1,11,12:
+ :I/sig(I) overall and outer v image:N:1,18,19:
+ :Rsym v image:N:1,20:  
+ :SDratio v image:N:1,22:  
+ :Number of overloads and badspots v image:A:1,15,17: $$
+ IMAGE    CCX    CCY    CCOM   DIST YSCALE  TILT TWIST   ROFF   TOFF  RESID  WRESID    FULL   PART   OVRL  NEG  BAD I/sigI I/sigI_out  Rsym  Nsym SDRAT $$ $$
+        1   0.34   0.09   -0.05  120.1  1.015  -132    68   0.00   0.00  0.117     0.2       0   2950     0  1244   36    4.1     4.6    0.000    0   0.0                                               
+ $$
+  $TABLE: Post refinement:
+ $GRAPHS :Missets phix phiy phiz v image:A:1,2,3,4:  
+ :Cell parameters A,B,C v image:A:1,5,6,7:  
+ :Cell angles alpha beta gamma v image:A:1,8,9,10:  
+ :Mosaic spread v image:A:1,11:  
+ :Beam divergences v image:A:1,12,13: $$  
+ Image     PHIX     PHIY     PHIZ        A        B        C      ALPHA     BETA    GAMMA   MOSAIC   DIVH   DIVV    Resid      NR $$ $$
+ $$

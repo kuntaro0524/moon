@@ -1,0 +1,135 @@
+Appendix 2: Scaling algorithm
+
+          For each reflection h, we have a number of observations Ihl,
+          with estimated standard deviation shl, which defines a weight
+          whl. We need to determine the inverse scale factor ghl to put
+          each observation on a common scale (as Ihl/ghl). This is done by
+          minimizing
+
+        Sum( whl * ( Ihl - ghl * Ih )**2 )   Ref Hamilton, Rollett & Sparks
+
+          where Ih is the current best estimate of the "true" intensity
+        Ih = Sum ( whl * ghl * Ihl ) / Sum ( whl * ghl**2)
+
+          Each observation is assigned to a "run", which corresponds to a
+          set of scale factors. A run would typically consist of a
+          continuous rotation of a crystal about a single axis.
+          The inverse scale factor ghl is derived as follows:
+        ghl = Thl * Chl * Shl
+
+          where Thl is an optional relative B-factor contribution, Chl is
+          a scale factor (1-dimensional or 3-dimensional (ie DETECTOR
+          option)), and Shl is a anisotropic correction expressed as
+          spherical harmonics (ie SECONDARY, ABSORPTION or SURFACE
+          options).
+          a) B-factor (optional)
+          For each run, a relative B-factor (Bi) is determined at
+          intervals in "time" ("time" is normally defined as rotation
+          angle if no independent time value is available), at positions
+          ti (t1, t2, . . tn). Then for an observation measured at time tl
+        B = Sum[i=1,n] ( p(delt) Bi ) / Sum (p(delt))
+        where   Bi  are the B-factors at time ti
+                delt    = tl - ti
+                p(delt) = exp ( - (delt)**2 / Vt )
+                Vt  is "variance" of weight, & controls the smoothness
+                        of interpolation
+        Thl = exp ( + 2 s B )
+                s = (sin theta / lambda)**2
+
+          An alternative anisotropic B-factor may be used to correct for
+          anisotropic fall-off of scattering: THIS OPTION IS NOT
+          RECOMMENDED. This is parameterized on the components of the
+          scattering vector (divided by 2 for compatibility with the
+          normal definition of B) in two directions perpendicular to the
+          Xray beam (y & z in the "Cambridge" coordinate frame with x
+          along the beam).
+        Thl = exp ( + 2[uy**2 Byy + 2 uy uz Byz + uz**2 Bzz])
+        where  uy, uz are the components of d*/2
+
+          Byy, Byz, Bzz are functions of time ti or batch as for the
+          isotropic Bfactor. The principal components of B (Bfac_min,
+          Bfac_max) are also printed.
+          b) Scale factors
+          For each run, scale factors Cxyz are determined at positions
+          (x,y) on the detector, at intervals on rotation angle z. Then
+          for an observation at position (x0, y0, z0),
+        Chl(x0, y0, z0) =
+   Sum(z)[p(delz){Sum(xy)[q(delxy)*Cxyz]/Sum(xy)[q(delxy)]}/Sum(z)[p(delz)]
+where   delz    = z - z0
+        p(delz) = exp(-delz**2/Vz)
+        q(delxy)= exp(-((x-x0)**2 + (y-y0)**2)/Vxy)
+        Vz, Vxy are the "variances" of the weight & control the smoothness
+                of interpolation
+
+          For the SCALES BATCH option, the scale along z is discontinuous:
+          the normal option has one scale factor (or set of scale factors
+          across the detector) for each batch. The SLOPE (not recommended)
+          option has two scale factors per batch, with the scale
+          interpolated linearly between the beginning and end according to
+          the rotation angle of the reflection.
+          c) Anisotropy factor
+          The optional surface or anisotropy factor Shl is expressed as a
+          sum of spherical harmonic terms as a function of the direction
+          of
+          (1) the secondary beam (SECONDARY correction) in the camera
+          spindle frame,
+          (2) the secondary beam (ABSORPTION correction) in the crystal
+          frame, permuted to put either a*, b* or c* along the spherical
+          polar axis
+          or
+          (3) the scattering vector in the crystal frame (SURFACE option).
+
+    1. SECONDARY beam direction (camera frame)
+         s  =  [Phi] [UB] h
+         s2 = s - s0
+         s2' = [-Phi] s2
+Polar coordinates:
+         s2' = (x y z)
+         PolarTheta = arctan(sqrt(x**2 + y**2)/z)
+         PolarPhi   = arctan(y/x)
+                             where [Phi] is the spindle rotation matrix
+                                   [-Phi] is its inverse
+                                   [UB]  is the setting matrix
+                                   h = (h k l)
+
+    2. ABSORPTION: Secondary beam direction (permuted crystal frame)
+         s    = [Phi] [UB] h
+         s2   = s - s0
+         s2c' = [-Q] [-U] [-Phi] s2
+Polar coordinates:
+         s2' = (x y z)
+         PolarTheta = arctan(sqrt(x**2 + y**2)/z)
+         PolarPhi   = arctan(y/x)
+                             where [Phi] is the spindle rotation matrix
+                                   [-Phi] is its inverse
+                                   [Q] is a permutation matrix to put
+                                       h, k, or l along z (see POLE option)
+                                   [U]  is the orientation matrix
+                                   [B]  is the orthogonalization matrix
+                                   h = (h k l)
+
+    3. Scattering vector in crystal frame
+        (x y z) = [Q][B] h
+Polar coordinates:
+         PolarTheta = arctan(sqrt(x**2 + y**2)/z)
+         PolarPhi   = arctan(y/x)
+                             where [Q] is a permutation matrix to put
+                                       h, k, or l along z (see POLE option)
+                                   [B]  is the orthogonalization matrix
+                                   h = (h k l)
+
+   then
+ Shl = 1  +  Sum[l=1,lmax] Sum[m=-l,+l] Clm  Ylm(PolarTheta,PolarPhi)
+                             where Ylm is the spherical harmonic function for
+                                       the direction given by the polar angles
+                                   Clm are the coefficients determined by
+                                       the program
+
+   Notes:
+     * The initial term "1" is essentially the l = 0 term, but with a
+       fixed coefficient.
+     * The number of terms = (lmax + 1)**2 - 1
+     * Even terms (ie l even) are centrosymmetric, odd terms antisymmetric
+     * Restraining all terms to zero (with the TIE SURFACE) reduces the
+       anisotropic correction. This should always be done
+

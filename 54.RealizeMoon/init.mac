@@ -1,0 +1,33 @@
+!=======================
+! Beam parameters
+!=======================
+SYNCHROTRON POLARISATION 0.95
+DIVERGENCE    0.020    0.020
+DISPERSION  0.00020
+WAVELENGTH  1.24000
+BEAM  112.30  113.66
+!=======================
+! Detector parameters
+!=======================
+DETECTOR MARCCD
+DETECTOR REVERSEPHI
+PIXEL 0.07324 0.07324
+ADCOFFSET  10
+OVERLOAD NOVER 0 CUTOFF 65000
+DISTANCE  200.000
+!=======================
+! Crystal parameters
+!=======================
+DIRE ../Images/
+TEMPLATE still_0#####.img
+IMAGE 1 
+MOSAIC 0.3
+matr start.mat
+SYMMETRY p212121
+hklout still_10.mtz
+RASTER    13   15    8    4    5
+SEPARATION  0.36 0.43
+RESOLUTION   2.50
+!autoindex dps image $IMAGE 
+POSTREF FIX MOSAIC
+GO

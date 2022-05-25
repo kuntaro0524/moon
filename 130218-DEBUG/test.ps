@@ -1,0 +1,770 @@
+%!PS-Adobe-3.0
+%%Title: test.doc
+%%For: Kunio Hirata
+%%Creator: a2ps version 4.14
+%%CreationDate: Wed Feb 20 10:43:22 2013
+%%BoundingBox: 24 24 588 768
+%%DocumentData: Clean7Bit
+%%Orientation: Landscape
+%%Pages: 1
+%%PageOrder: Ascend
+%%DocumentMedia: Letter 612 792 0 () ()
+%%DocumentNeededResources: font Courier
+%%+ font Courier-Bold
+%%+ font Courier-BoldOblique
+%%+ font Courier-Oblique
+%%+ font Helvetica
+%%+ font Helvetica-Bold
+%%+ font Symbol
+%%+ font Times-Bold
+%%+ font Times-Roman
+%%DocumentProcessColors: Black 
+%%DocumentSuppliedResources: procset a2ps-a2ps-hdr
+%%+ procset a2ps-black+white-Prolog
+%%+ encoding ISO-8859-1Encoding
+%%EndComments
+/a2psdict 200 dict def
+a2psdict begin
+%%BeginProlog
+%%Copyright: (c) 1988, 89, 90, 91, 92, 93 Miguel Santana
+%%Copyright: (c) 1995, 96, 97, 98 Akim Demaille, Miguel Santana
+% Check PostScript language level.
+/languagelevel where {
+  pop /gs_languagelevel languagelevel def
+} {
+  /gs_languagelevel 1 def
+} ifelse
+
+% EPSF import as in the Red Book
+/BeginInclude {
+  /b4_Inc_state save def    		% Save state for cleanup
+  /dict_count countdictstack def	% Count objects on dict stack
+  /op_count count 1 sub def		% Count objects on operand stack 
+  userdict begin
+    0 setgray 0 setlinecap
+    1 setlinewidth 0 setlinejoin
+    10 setmiterlimit [ ] 0 setdash newpath
+    gs_languagelevel 1 ne {
+      false setstrokeadjust false setoverprint 
+    } if
+} bind def
+
+/EndInclude {
+  count op_count sub { pos } repeat	% Clean up stacks
+  countdictstack dict_count sub { end } repeat
+  b4_Inc_state restore
+} bind def
+
+/BeginEPSF {
+  BeginInclude
+  /showpage { } def
+} bind def
+
+/EndEPSF {
+  EndInclude
+} bind def
+
+% Page prefeed
+/page_prefeed {         % bool -> -
+  statusdict /prefeed known {
+    statusdict exch /prefeed exch put
+  } {
+    pop
+  } ifelse
+} bind def
+
+/deffont {
+  findfont exch scalefont def
+} bind def
+
+/reencode_font {
+  findfont reencode 2 copy definefont pop def
+} bind def
+
+% Function c-show (str => -)
+% centers text only according to x axis.
+/c-show { 
+  dup stringwidth pop
+  2 div neg 0 rmoveto
+  show
+} bind def
+
+% Function l-show (str => -)
+% prints texts so that it ends at currentpoint
+/l-show {
+  dup stringwidth pop neg 
+  0 
+  rmoveto show
+} bind def
+
+% center-fit show (str w => -)
+% show centered, and scale currentfont so that the width is less than w
+/cfshow {
+  exch dup stringwidth pop
+  % If the title is too big, try to make it smaller
+  3 2 roll 2 copy
+  gt
+  { % if, i.e. too big
+    exch div
+    currentfont exch scalefont setfont
+  } { % ifelse
+    pop pop 
+  }
+  ifelse
+  c-show			% center title
+} bind def
+
+% Return the y size of the current font
+% - => fontsize
+/currentfontsize {
+  currentfont /FontMatrix get 3 get 1000 mul
+} bind def
+
+% reencode the font
+% <encoding-vector> <fontdict> -> <newfontdict>
+/reencode { %def
+  dup length 5 add dict begin
+    { %forall
+      % <vector> <key> <val>
+      1 index /FID ne 
+      { def }{ pop pop } ifelse
+    } forall
+    /Encoding exch def % -
+
+    % Use the font's bounding box to determine the ascent, descent,
+    % and overall height; don't forget that these values have to be
+    % transformed using the font's matrix.
+    % We use `load' because sometimes BBox is executable, sometimes not.
+    % Since we need 4 numbers an not an array avoid BBox from being executed
+    /FontBBox load aload pop
+    FontMatrix transform /Ascent exch def pop
+    FontMatrix transform /Descent exch def pop
+    /FontHeight Ascent Descent sub def
+
+    % Get the underline position and thickness if they're defined.
+    % Use 1 if they are not defined.
+    currentdict /FontInfo 2 copy known
+    { get
+      /UnderlinePosition 2 copy % <FontInfo> /UP <FontInfo> /UP
+      2 copy known
+      { get }{ pop pop 1 } ifelse
+      0 exch FontMatrix transform exch pop
+      def % <FontInfo>
+
+      /UnderlineThickness 2 copy % <FontInfo> /UT <FontInfo> /UT
+      2 copy known
+      { get }{ pop pop 1 } ifelse
+      0 exch FontMatrix transform exch pop
+      def % <FontInfo>
+      pop % -
+    }{ pop pop
+    } ifelse
+
+    currentdict
+  end 
+} bind def
+
+% Function print line number (<string> # -)
+/# {
+  gsave
+    sx cw mul neg 2 div 0 rmoveto
+    f# setfont
+    c-show
+  grestore
+} bind def
+
+% -------- Some routines to enlight plain b/w printings ---------
+
+% Underline
+% width --
+/dounderline {
+  currentpoint
+  gsave
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    0 rlineto
+    stroke
+  grestore
+} bind def
+
+% Underline a string
+% string --
+/dounderlinestring {
+  stringwidth pop
+  dounderline
+} bind def
+
+/UL {
+  /ul exch store
+} bind def
+
+% Draw a box of WIDTH wrt current font
+% width --
+/dobox {
+  currentpoint
+  gsave
+    newpath
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    dup 0 rlineto
+    0 currentfont /FontHeight get currentfontsize mul rlineto
+    neg 0 rlineto
+    closepath
+    stroke
+  grestore
+} bind def
+
+/BX {
+  /bx exch store
+} bind def
+
+% Box a string
+% string --
+/doboxstring {
+  stringwidth pop
+  dobox
+} bind def
+
+%
+% ------------- Color routines ---------------
+%
+/FG /setrgbcolor load def
+
+% Draw the background
+% width --
+/dobackground {
+  currentpoint
+  gsave
+    newpath
+    moveto
+    0 currentfont /Descent get currentfontsize mul rmoveto
+    dup 0 rlineto
+    0 currentfont /FontHeight get currentfontsize mul rlineto
+    neg 0 rlineto
+    closepath
+    bgcolor aload pop setrgbcolor
+    fill
+  grestore
+} bind def
+
+% Draw bg for a string
+% string --
+/dobackgroundstring {
+  stringwidth pop
+  dobackground
+} bind def
+
+
+/BG {
+  dup /bg exch store
+  { mark 4 1 roll ] /bgcolor exch store } if
+} bind def
+
+
+/Show {
+  bg { dup dobackgroundstring } if
+  ul { dup dounderlinestring } if
+  bx { dup doboxstring } if
+  show
+} bind def
+
+% Function T(ab), jumps to the n-th tabulation in the current line
+/T {
+  cw mul x0 add
+  bg { dup currentpoint pop sub dobackground } if
+  ul { dup currentpoint pop sub dounderline } if
+  bx { dup currentpoint pop sub dobox } if
+  y0 moveto
+} bind def
+
+% Function n: move to the next line
+/n {
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+% Function N: show and move to the next line
+/N {
+  Show
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+/S {
+  Show
+} bind def
+
+%%BeginResource: procset a2ps-a2ps-hdr 2.0 2
+%%Copyright: (c) 1988, 89, 90, 91, 92, 93 Miguel Santana
+%%Copyright: (c) 1995, 96, 97, 98 Akim Demaille, Miguel Santana
+% Function title: prints page header.
+% <ct> <rt> <lt> are passed as argument
+/title { 
+  % 1. Draw the background
+  x v get y v get moveto
+  gsave
+    0 th 2 div neg rmoveto 
+    th setlinewidth
+    0.95 setgray
+    pw 0 rlineto stroke
+  grestore
+  % 2. Border it
+  gsave
+    0.7 setlinewidth
+    pw 0 rlineto
+    0 th neg rlineto
+    pw neg 0 rlineto
+    closepath stroke
+  grestore
+  % stk: ct rt lt
+  x v get y v get th sub 1 add moveto
+%%IncludeResource: font Helvetica
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  % 3. The left title
+  gsave
+    dup stringwidth pop fnfs 0.8 mul add exch % leave space took on stack
+    fnfs 0.8 mul hm rmoveto
+    show			% left title
+  grestore
+  exch
+  % stk: ct ltw rt
+  % 4. the right title
+  gsave
+    dup stringwidth pop fnfs 0.8 mul add exch % leave space took on stack
+    dup
+    pw exch stringwidth pop fnfs 0.8 mul add sub
+    hm
+    rmoveto
+    show			% right title
+  grestore
+  % stk: ct ltw rtw
+  % 5. the center title
+  gsave
+    pw 3 1 roll
+    % stk: ct pw ltw rtw
+    3 copy 
+    % Move to the center of the left room
+    sub add 2 div hm rmoveto
+    % What is the available space in here?
+    add sub fnfs 0.8 mul sub fnfs 0.8 mul sub
+    % stk: ct space_left
+%%IncludeResource: font Helvetica-Bold
+  fHelvetica-Bold fnfs scalefont setfont
+    cfshow
+  grestore
+} bind def
+
+% Function border: prints virtual page border
+/border { %def
+  gsave				% print four sides
+    0 setgray
+    x v get y v get moveto
+    0.7 setlinewidth		% of the square
+    pw 0 rlineto
+    0 ph neg rlineto
+    pw neg 0 rlineto
+    closepath stroke
+  grestore
+} bind def
+
+% Function water: prints a water mark in background
+/water { %def
+  gsave
+    scx scy moveto rotate
+%%IncludeResource: font Times-Bold
+  fTimes-Bold 100 scalefont setfont
+    .97 setgray
+    dup stringwidth pop 2 div neg -50 rmoveto
+    show
+  grestore
+} bind def
+
+% Function rhead: prints the right header
+/rhead {  %def
+  lx ly moveto
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  l-show
+} bind def
+
+% Function footer (cf rf lf -> -)
+/footer {
+  fHelvetica fnfs 0.8 mul scalefont setfont
+  dx dy moveto
+  show
+
+  snx sny moveto
+  l-show
+  
+  fnx fny moveto
+  c-show
+} bind def
+%%EndResource
+%%BeginResource: procset a2ps-black+white-Prolog 2.0 1
+
+% Function T(ab), jumps to the n-th tabulation in the current line
+/T { 
+  cw mul x0 add y0 moveto
+} bind def
+
+% Function n: move to the next line
+/n { %def
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+} bind def
+
+% Function N: show and move to the next line
+/N {
+  Show
+  /y0 y0 bfs sub store
+  x0 y0 moveto
+}  bind def
+
+/S {
+  Show
+} bind def
+
+/p {
+  false UL
+  false BX
+  fCourier bfs scalefont setfont
+  Show
+} bind def
+
+/sy {
+  false UL
+  false BX
+  fSymbol bfs scalefont setfont
+  Show
+} bind def
+
+/k {
+  false UL
+  false BX
+  fCourier-Oblique bfs scalefont setfont
+  Show
+} bind def
+
+/K {
+  false UL
+  false BX
+  fCourier-Bold bfs scalefont setfont
+  Show
+} bind def
+
+/c {
+  false UL
+  false BX
+  fCourier-Oblique bfs scalefont setfont
+  Show
+} bind def
+
+/C {
+  false UL
+  false BX
+  fCourier-BoldOblique bfs scalefont setfont
+  Show 
+} bind def
+
+/l {
+  false UL
+  false BX
+  fHelvetica bfs scalefont setfont
+  Show
+} bind def
+
+/L {
+  false UL
+  false BX
+  fHelvetica-Bold bfs scalefont setfont
+  Show 
+} bind def
+
+/str{
+  false UL
+  false BX
+  fTimes-Roman bfs scalefont setfont
+  Show
+} bind def
+
+/e{
+  false UL
+  true BX
+  fHelvetica-Bold bfs scalefont setfont
+  Show
+} bind def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+%%IncludeResource: font Courier
+%%IncludeResource: font Courier-Oblique
+%%IncludeResource: font Courier-Bold
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Symbol
+%%IncludeResource: font Courier-BoldOblique
+%%BeginResource: encoding ISO-8859-1Encoding
+/ISO-8859-1Encoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright 
+/parenleft /parenright /asterisk /plus /comma /minus /period /slash 
+/zero /one /two /three /four /five /six /seven 
+/eight /nine /colon /semicolon /less /equal /greater /question 
+/at /A /B /C /D /E /F /G 
+/H /I /J /K /L /M /N /O 
+/P /Q /R /S /T /U /V /W 
+/X /Y /Z /bracketleft /backslash /bracketright /asciicircum /underscore 
+/quoteleft /a /b /c /d /e /f /g 
+/h /i /j /k /l /m /n /o 
+/p /q /r /s /t /u /v /w 
+/x /y /z /braceleft /bar /braceright /asciitilde /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef 
+/space /exclamdown /cent /sterling /currency /yen /brokenbar /section 
+/dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron 
+/degree /plusminus /twosuperior /threesuperior /acute /mu /paragraph /bullet 
+/cedilla /onesuperior /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown 
+/Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla 
+/Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis 
+/Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply 
+/Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /germandbls 
+/agrave /aacute /acircumflex /atilde /adieresis /aring /ae /ccedilla 
+/egrave /eacute /ecircumflex /edieresis /igrave /iacute /icircumflex /idieresis 
+/eth /ntilde /ograve /oacute /ocircumflex /otilde /odieresis /divide 
+/oslash /ugrave /uacute /ucircumflex /udieresis /yacute /thorn /ydieresis 
+] def
+%%EndResource
+% Initialize page description variables.
+/sh 612 def
+/sw 792 def
+/llx 24 def
+/urx 768 def
+/ury 588 def
+/lly 24 def
+/#copies 1 def
+/th 15.000000 def
+/fnfs 11 def
+/bfs 7.493857 def
+/cw 4.496314 def
+
+% Dictionary for ISO-8859-1 support
+/iso1dict 8 dict begin
+  /fCourier ISO-8859-1Encoding /Courier reencode_font
+  /fCourier-Bold ISO-8859-1Encoding /Courier-Bold reencode_font
+  /fCourier-BoldOblique ISO-8859-1Encoding /Courier-BoldOblique reencode_font
+  /fCourier-Oblique ISO-8859-1Encoding /Courier-Oblique reencode_font
+  /fHelvetica ISO-8859-1Encoding /Helvetica reencode_font
+  /fHelvetica-Bold ISO-8859-1Encoding /Helvetica-Bold reencode_font
+  /fTimes-Bold ISO-8859-1Encoding /Times-Bold reencode_font
+  /fTimes-Roman ISO-8859-1Encoding /Times-Roman reencode_font
+currentdict end def
+/bgcolor [ 0 0 0 ] def
+/bg false def
+/ul false def
+/bx false def
+% The font for line numbering
+/f# /Helvetica findfont bfs .6 mul scalefont def
+/fSymbol /Symbol findfont def
+/hm fnfs 0.25 mul def
+/pw
+   cw 81.400000 mul
+def
+/ph
+   522.321860 th add
+def
+/pmw urx llx sub pw 2 mul sub 1 div def
+/pmh 0 def
+/v 0 def
+/x [
+  0
+  dup pmw add pw add
+] def
+/y [
+  pmh ph add 0 mul ph add
+  dup
+] def
+/scx sw 2 div def
+/scy sh 2 div def
+/snx urx def
+/sny lly 2 add def
+/dx llx def
+/dy sny def
+/fnx scx def
+/fny dy def
+/lx snx def
+/ly ury fnfs 0.8 mul sub def
+/sx 0 def
+/tab 8 def
+/x0 0 def
+/y0 0 def
+%%EndSetup
+
+%%Page: (1-2) 1
+%%BeginPageSetup
+/pagesave save def
+sh 0 translate 90 rotate
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 12 add translate
+/v 0 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+(Appendix 2: Scaling algorithm) p n
+() N
+(          For each reflection h, we have a number of observations Ihl,) N
+(          with estimated standard deviation shl, which defines a weight) N
+(          whl. We need to determine the inverse scale factor ghl to put) N
+(          each observation on a common scale \(as Ihl/ghl\). This is done by) N
+(          minimizing) N
+() N
+(        Sum\( whl * \( Ihl - ghl * Ih \)**2 \)   Ref Hamilton, Rollett & Sparks) N
+() N
+(          where Ih is the current best estimate of the "true" intensity) N
+(        Ih = Sum \( whl * ghl * Ihl \) / Sum \( whl * ghl**2\)) N
+() N
+(          Each observation is assigned to a "run", which corresponds to a) N
+(          set of scale factors. A run would typically consist of a) N
+(          continuous rotation of a crystal about a single axis.) N
+(          The inverse scale factor ghl is derived as follows:) N
+(        ghl = Thl * Chl * Shl) N
+() N
+(          where Thl is an optional relative B-factor contribution, Chl is) N
+(          a scale factor \(1-dimensional or 3-dimensional \(ie DETECTOR) N
+(          option\)\), and Shl is a anisotropic correction expressed as) N
+(          spherical harmonics \(ie SECONDARY, ABSORPTION or SURFACE) N
+(          options\).) N
+(          a\) B-factor \(optional\)) N
+(          For each run, a relative B-factor \(Bi\) is determined at) N
+(          intervals in "time" \("time" is normally defined as rotation) N
+(          angle if no independent time value is available\), at positions) N
+(          ti \(t1, t2, . . tn\). Then for an observation measured at time tl) N
+(        B = Sum[i=1,n] \( p\(delt\) Bi \) / Sum \(p\(delt\)\)) N
+(        where   Bi  are the B-factors at time ti) N
+(                delt    = tl - ti) N
+(                p\(delt\) = exp \( - \(delt\)**2 / Vt \)) N
+(                Vt  is "variance" of weight, & controls the smoothness) N
+(                        of interpolation) N
+(        Thl = exp \( + 2 s B \)) N
+(                s = \(sin theta / lambda\)**2) N
+() N
+(          An alternative anisotropic B-factor may be used to correct for) N
+(          anisotropic fall-off of scattering: THIS OPTION IS NOT) N
+(          RECOMMENDED. This is parameterized on the components of the) N
+(          scattering vector \(divided by 2 for compatibility with the) N
+(          normal definition of B\) in two directions perpendicular to the) N
+(          Xray beam \(y & z in the "Cambridge" coordinate frame with x) N
+(          along the beam\).) N
+(        Thl = exp \( + 2[uy**2 Byy + 2 uy uz Byz + uz**2 Bzz]\)) N
+(        where  uy, uz are the components of d*/2) N
+() N
+(          Byy, Byz, Bzz are functions of time ti or batch as for the) N
+(          isotropic Bfactor. The principal components of B \(Bfac_min,) N
+(          Bfac_max\) are also printed.) N
+(          b\) Scale factors) N
+(          For each run, scale factors Cxyz are determined at positions) N
+(          \(x,y\) on the detector, at intervals on rotation angle z. Then) N
+(          for an observation at position \(x0, y0, z0\),) N
+(        Chl\(x0, y0, z0\) =) N
+(   Sum\(z\)[p\(delz\){Sum\(xy\)[q\(delxy\)*Cxyz]/Sum\(xy\)[q\(delxy\)]}/Sum\(z\)[p\(delz\)]) N
+(where   delz    = z - z0) N
+(        p\(delz\) = exp\(-delz**2/Vz\)) N
+(        q\(delxy\)= exp\(-\(\(x-x0\)**2 + \(y-y0\)**2\)/Vxy\)) N
+(        Vz, Vxy are the "variances" of the weight & control the smoothness) N
+(                of interpolation) N
+() N
+(          For the SCALES BATCH option, the scale along z is discontinuous:) N
+(          the normal option has one scale factor \(or set of scale factors) N
+(          across the detector\) for each batch. The SLOPE \(not recommended\)) N
+(          option has two scale factors per batch, with the scale) N
+(          interpolated linearly between the beginning and end according to) N
+(          the rotation angle of the reflection.) N
+(test.doc) (Page 1/2) ( 2 20, 13 10:43) title
+border
+/v 1 store
+/x0 x v get 3.147420 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+(          c\) Anisotropy factor) p n
+(          The optional surface or anisotropy factor Shl is expressed as a) N
+(          sum of spherical harmonic terms as a function of the direction) N
+(          of) N
+(          \(1\) the secondary beam \(SECONDARY correction\) in the camera) N
+(          spindle frame,) N
+(          \(2\) the secondary beam \(ABSORPTION correction\) in the crystal) N
+(          frame, permuted to put either a*, b* or c* along the spherical) N
+(          polar axis) N
+(          or) N
+(          \(3\) the scattering vector in the crystal frame \(SURFACE option\).) N
+() N
+(    1. SECONDARY beam direction \(camera frame\)) N
+(         s  =  [Phi] [UB] h) N
+(         s2 = s - s0) N
+(         s2' = [-Phi] s2) N
+(Polar coordinates:) N
+(         s2' = \(x y z\)) N
+(         PolarTheta = arctan\(sqrt\(x**2 + y**2\)/z\)) N
+(         PolarPhi   = arctan\(y/x\)) N
+(                             where [Phi] is the spindle rotation matrix) N
+(                                   [-Phi] is its inverse) N
+(                                   [UB]  is the setting matrix) N
+(                                   h = \(h k l\)) N
+() N
+(    2. ABSORPTION: Secondary beam direction \(permuted crystal frame\)) N
+(         s    = [Phi] [UB] h) N
+(         s2   = s - s0) N
+(         s2c' = [-Q] [-U] [-Phi] s2) N
+(Polar coordinates:) N
+(         s2' = \(x y z\)) N
+(         PolarTheta = arctan\(sqrt\(x**2 + y**2\)/z\)) N
+(         PolarPhi   = arctan\(y/x\)) N
+(                             where [Phi] is the spindle rotation matrix) N
+(                                   [-Phi] is its inverse) N
+(                                   [Q] is a permutation matrix to put) N
+(                                       h, k, or l along z \(see POLE option\)) N
+(                                   [U]  is the orientation matrix) N
+(                                   [B]  is the orthogonalization matrix) N
+(                                   h = \(h k l\)) N
+() N
+(    3. Scattering vector in crystal frame) N
+(        \(x y z\) = [Q][B] h) N
+(Polar coordinates:) N
+(         PolarTheta = arctan\(sqrt\(x**2 + y**2\)/z\)) N
+(         PolarPhi   = arctan\(y/x\)) N
+(                             where [Q] is a permutation matrix to put) N
+(                                       h, k, or l along z \(see POLE option\)) N
+(                                   [B]  is the orthogonalization matrix) N
+(                                   h = \(h k l\)) N
+() N
+(   then) N
+( Shl = 1  +  Sum[l=1,lmax] Sum[m=-l,+l] Clm  Ylm\(PolarTheta,PolarPhi\)) N
+(                             where Ylm is the spherical harmonic function for) N
+(                                       the direction given by the polar angles) N
+(                                   Clm are the coefficients determined by) N
+(                                       the program) N
+() N
+(   Notes:) N
+(     * The initial term "1" is essentially the l = 0 term, but with a) N
+(       fixed coefficient.) N
+(     * The number of terms = \(lmax + 1\)**2 - 1) N
+(     * Even terms \(ie l even\) are centrosymmetric, odd terms antisymmetric) N
+(     * Restraining all terms to zero \(with the TIE SURFACE\) reduces the) N
+(       anisotropic correction. This should always be done) N
+() N
+(test.doc) (Page 2/2) ( 2 20, 13 10:43) title
+border
+grestore
+(Printed by Kunio Hirata) rhead
+(test.doc) (1/1) (\346\260\264\346M-^[M-^\\\346M-^W\245 2\346M-^\\M-^H 20, 2013) footer
+end % of iso1dict
+pagesave restore
+showpage
+
+%%Trailer
+end
+%%EOF

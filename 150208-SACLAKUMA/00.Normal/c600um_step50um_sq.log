@@ -1,0 +1,2682 @@
+A:      0.00000    300.10000    300.00000
+B:      0.00000    300.00000   -300.00000
+C:      0.00000   -300.10000   -300.00000
+D:      0.00000   -300.00000    300.00000
+300.1 -300.1
+marumeta size(Y): 600
+SHOU/AMARI= 12.0 0.0
+number of Y lines= 11
+-300.1 300.1
+##########################
+##### Crystal No.1 ######
+##########################
+StartPhi of this vector=-60.0
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -60.0[deg]:    300.0 [um]
+Number of irradiation points on this vector: 5
+PHI= -60.0 CROSS:      0.00000    250.10000   -180.00000
+PHI= -59.9 CROSS:      0.00000    250.10000    -60.00000
+PHI= -59.8 CROSS:      0.00000    250.10000     60.00000
+PHI= -59.7 CROSS:      0.00000    250.10000    180.00000
+PHI= -59.6 CROSS:      0.00000    250.10000    300.00000
+Total points: 5
+StartPhi of this vector=-59.5
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -59.5[deg]:    304.5 [um]
+Number of irradiation points on this vector: 6
+PHI= -59.5 CROSS:      0.00000    200.10000   -200.00000
+PHI= -59.4 CROSS:      0.00000    200.10000   -100.00000
+PHI= -59.3 CROSS:      0.00000    200.10000      0.00000
+PHI= -59.2 CROSS:      0.00000    200.10000    100.00000
+PHI= -59.1 CROSS:      0.00000    200.10000    200.00000
+PHI= -59.0 CROSS:      0.00000    200.10000    300.00000
+Total points: 11
+StartPhi of this vector=-58.9
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -58.9[deg]:    309.9 [um]
+Number of irradiation points on this vector: 6
+PHI= -58.9 CROSS:      0.00000    150.10000   -200.00000
+PHI= -58.8 CROSS:      0.00000    150.10000   -100.00000
+PHI= -58.7 CROSS:      0.00000    150.10000      0.00000
+PHI= -58.6 CROSS:      0.00000    150.10000    100.00000
+PHI= -58.5 CROSS:      0.00000    150.10000    200.00000
+PHI= -58.4 CROSS:      0.00000    150.10000    300.00000
+Total points: 17
+StartPhi of this vector=-58.3
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -58.3[deg]:    315.3 [um]
+Number of irradiation points on this vector: 6
+PHI= -58.3 CROSS:      0.00000    100.10000   -200.00000
+PHI= -58.2 CROSS:      0.00000    100.10000   -100.00000
+PHI= -58.1 CROSS:      0.00000    100.10000      0.00000
+PHI= -58.0 CROSS:      0.00000    100.10000    100.00000
+PHI= -57.9 CROSS:      0.00000    100.10000    200.00000
+PHI= -57.8 CROSS:      0.00000    100.10000    300.00000
+Total points: 23
+StartPhi of this vector=-57.7
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -57.7[deg]:    320.6 [um]
+Number of irradiation points on this vector: 6
+PHI= -57.7 CROSS:      0.00000     50.10000   -200.00000
+PHI= -57.6 CROSS:      0.00000     50.10000   -100.00000
+PHI= -57.5 CROSS:      0.00000     50.10000      0.00000
+PHI= -57.4 CROSS:      0.00000     50.10000    100.00000
+PHI= -57.3 CROSS:      0.00000     50.10000    200.00000
+PHI= -57.2 CROSS:      0.00000     50.10000    300.00000
+Total points: 29
+StartPhi of this vector=-57.1
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -57.1[deg]:    325.9 [um]
+Number of irradiation points on this vector: 6
+PHI= -57.1 CROSS:      0.00000      0.10000   -200.00000
+PHI= -57.0 CROSS:      0.00000      0.10000   -100.00000
+PHI= -56.9 CROSS:      0.00000      0.10000      0.00000
+PHI= -56.8 CROSS:      0.00000      0.10000    100.00000
+PHI= -56.7 CROSS:      0.00000      0.10000    200.00000
+PHI= -56.6 CROSS:      0.00000      0.10000    300.00000
+Total points: 35
+StartPhi of this vector=-56.5
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -56.5[deg]:    331.2 [um]
+Number of irradiation points on this vector: 6
+PHI= -56.5 CROSS:      0.00000    -49.90000   -200.00000
+PHI= -56.4 CROSS:      0.00000    -49.90000   -100.00000
+PHI= -56.3 CROSS:      0.00000    -49.90000      0.00000
+PHI= -56.2 CROSS:      0.00000    -49.90000    100.00000
+PHI= -56.1 CROSS:      0.00000    -49.90000    200.00000
+PHI= -56.0 CROSS:      0.00000    -49.90000    300.00000
+Total points: 41
+StartPhi of this vector=-55.9
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -55.9[deg]:    336.4 [um]
+Number of irradiation points on this vector: 6
+PHI= -55.9 CROSS:      0.00000    -99.90000   -200.00000
+PHI= -55.8 CROSS:      0.00000    -99.90000   -100.00000
+PHI= -55.7 CROSS:      0.00000    -99.90000      0.00000
+PHI= -55.6 CROSS:      0.00000    -99.90000    100.00000
+PHI= -55.5 CROSS:      0.00000    -99.90000    200.00000
+PHI= -55.4 CROSS:      0.00000    -99.90000    300.00000
+Total points: 47
+StartPhi of this vector=-55.3
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -55.3[deg]:    341.6 [um]
+Number of irradiation points on this vector: 6
+PHI= -55.3 CROSS:      0.00000   -149.90000   -200.00000
+PHI= -55.2 CROSS:      0.00000   -149.90000   -100.00000
+PHI= -55.1 CROSS:      0.00000   -149.90000      0.00000
+PHI= -55.0 CROSS:      0.00000   -149.90000    100.00000
+PHI= -54.9 CROSS:      0.00000   -149.90000    200.00000
+PHI= -54.8 CROSS:      0.00000   -149.90000    300.00000
+Total points: 53
+StartPhi of this vector=-54.7
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -54.7[deg]:    346.7 [um]
+Number of irradiation points on this vector: 6
+PHI= -54.7 CROSS:      0.00000   -199.90000   -200.00000
+PHI= -54.6 CROSS:      0.00000   -199.90000   -100.00000
+PHI= -54.5 CROSS:      0.00000   -199.90000      0.00000
+PHI= -54.4 CROSS:      0.00000   -199.90000    100.00000
+PHI= -54.3 CROSS:      0.00000   -199.90000    200.00000
+PHI= -54.2 CROSS:      0.00000   -199.90000    300.00000
+Total points: 59
+StartPhi of this vector=-54.1
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -54.1[deg]:    351.8 [um]
+Number of irradiation points on this vector: 7
+PHI= -54.1 CROSS:      0.00000   -249.90000   -214.28571
+PHI= -54.0 CROSS:      0.00000   -249.90000   -128.57143
+PHI= -53.9 CROSS:      0.00000   -249.90000    -42.85714
+PHI= -53.8 CROSS:      0.00000   -249.90000     42.85714
+PHI= -53.7 CROSS:      0.00000   -249.90000    128.57143
+PHI= -53.6 CROSS:      0.00000   -249.90000    214.28571
+PHI= -53.5 CROSS:      0.00000   -249.90000    300.00000
+Total points: 66
+N points/crystal= 66
+Time for this crystal= 15.5 [min]
+##########################
+##### Crystal No.2 ######
+##########################
+StartPhi of this vector=-53.4
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -53.4[deg]:    357.7 [um]
+Number of irradiation points on this vector: 7
+PHI= -53.4 CROSS:      0.00000    250.10000   -214.28571
+PHI= -53.3 CROSS:      0.00000    250.10000   -128.57143
+PHI= -53.2 CROSS:      0.00000    250.10000    -42.85714
+PHI= -53.1 CROSS:      0.00000    250.10000     42.85714
+PHI= -53.0 CROSS:      0.00000    250.10000    128.57143
+PHI= -52.9 CROSS:      0.00000    250.10000    214.28571
+PHI= -52.8 CROSS:      0.00000    250.10000    300.00000
+Total points: 73
+StartPhi of this vector=-52.7
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -52.7[deg]:    363.6 [um]
+Number of irradiation points on this vector: 7
+PHI= -52.7 CROSS:      0.00000    200.10000   -214.28571
+PHI= -52.6 CROSS:      0.00000    200.10000   -128.57143
+PHI= -52.5 CROSS:      0.00000    200.10000    -42.85714
+PHI= -52.4 CROSS:      0.00000    200.10000     42.85714
+PHI= -52.3 CROSS:      0.00000    200.10000    128.57143
+PHI= -52.2 CROSS:      0.00000    200.10000    214.28571
+PHI= -52.1 CROSS:      0.00000    200.10000    300.00000
+Total points: 80
+StartPhi of this vector=-52.0
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -52.0[deg]:    369.4 [um]
+Number of irradiation points on this vector: 7
+PHI= -52.0 CROSS:      0.00000    150.10000   -214.28571
+PHI= -51.9 CROSS:      0.00000    150.10000   -128.57143
+PHI= -51.8 CROSS:      0.00000    150.10000    -42.85714
+PHI= -51.7 CROSS:      0.00000    150.10000     42.85714
+PHI= -51.6 CROSS:      0.00000    150.10000    128.57143
+PHI= -51.5 CROSS:      0.00000    150.10000    214.28571
+PHI= -51.4 CROSS:      0.00000    150.10000    300.00000
+Total points: 87
+StartPhi of this vector=-51.3
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -51.3[deg]:    375.1 [um]
+Number of irradiation points on this vector: 7
+PHI= -51.3 CROSS:      0.00000    100.10000   -214.28571
+PHI= -51.2 CROSS:      0.00000    100.10000   -128.57143
+PHI= -51.1 CROSS:      0.00000    100.10000    -42.85714
+PHI= -51.0 CROSS:      0.00000    100.10000     42.85714
+PHI= -50.9 CROSS:      0.00000    100.10000    128.57143
+PHI= -50.8 CROSS:      0.00000    100.10000    214.28571
+PHI= -50.7 CROSS:      0.00000    100.10000    300.00000
+Total points: 94
+StartPhi of this vector=-50.6
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -50.6[deg]:    380.8 [um]
+Number of irradiation points on this vector: 7
+PHI= -50.6 CROSS:      0.00000     50.10000   -214.28571
+PHI= -50.5 CROSS:      0.00000     50.10000   -128.57143
+PHI= -50.4 CROSS:      0.00000     50.10000    -42.85714
+PHI= -50.3 CROSS:      0.00000     50.10000     42.85714
+PHI= -50.2 CROSS:      0.00000     50.10000    128.57143
+PHI= -50.1 CROSS:      0.00000     50.10000    214.28571
+PHI= -50.0 CROSS:      0.00000     50.10000    300.00000
+Total points: 101
+StartPhi of this vector=-49.9
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -49.9[deg]:    386.5 [um]
+Number of irradiation points on this vector: 7
+PHI= -49.9 CROSS:      0.00000      0.10000   -214.28571
+PHI= -49.8 CROSS:      0.00000      0.10000   -128.57143
+PHI= -49.7 CROSS:      0.00000      0.10000    -42.85714
+PHI= -49.6 CROSS:      0.00000      0.10000     42.85714
+PHI= -49.5 CROSS:      0.00000      0.10000    128.57143
+PHI= -49.4 CROSS:      0.00000      0.10000    214.28571
+PHI= -49.3 CROSS:      0.00000      0.10000    300.00000
+Total points: 108
+StartPhi of this vector=-49.2
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -49.2[deg]:    392.1 [um]
+Number of irradiation points on this vector: 7
+PHI= -49.2 CROSS:      0.00000    -49.90000   -214.28571
+PHI= -49.1 CROSS:      0.00000    -49.90000   -128.57143
+PHI= -49.0 CROSS:      0.00000    -49.90000    -42.85714
+PHI= -48.9 CROSS:      0.00000    -49.90000     42.85714
+PHI= -48.8 CROSS:      0.00000    -49.90000    128.57143
+PHI= -48.7 CROSS:      0.00000    -49.90000    214.28571
+PHI= -48.6 CROSS:      0.00000    -49.90000    300.00000
+Total points: 115
+StartPhi of this vector=-48.5
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -48.5[deg]:    397.6 [um]
+Number of irradiation points on this vector: 7
+PHI= -48.5 CROSS:      0.00000    -99.90000   -214.28571
+PHI= -48.4 CROSS:      0.00000    -99.90000   -128.57143
+PHI= -48.3 CROSS:      0.00000    -99.90000    -42.85714
+PHI= -48.2 CROSS:      0.00000    -99.90000     42.85714
+PHI= -48.1 CROSS:      0.00000    -99.90000    128.57143
+PHI= -48.0 CROSS:      0.00000    -99.90000    214.28571
+PHI= -47.9 CROSS:      0.00000    -99.90000    300.00000
+Total points: 122
+StartPhi of this vector=-47.8
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -47.8[deg]:    403.0 [um]
+Number of irradiation points on this vector: 8
+PHI= -47.8 CROSS:      0.00000   -149.90000   -225.00000
+PHI= -47.7 CROSS:      0.00000   -149.90000   -150.00000
+PHI= -47.6 CROSS:      0.00000   -149.90000    -75.00000
+PHI= -47.5 CROSS:      0.00000   -149.90000      0.00000
+PHI= -47.4 CROSS:      0.00000   -149.90000     75.00000
+PHI= -47.3 CROSS:      0.00000   -149.90000    150.00000
+PHI= -47.2 CROSS:      0.00000   -149.90000    225.00000
+PHI= -47.1 CROSS:      0.00000   -149.90000    300.00000
+Total points: 130
+StartPhi of this vector=-47.0
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -47.0[deg]:    409.2 [um]
+Number of irradiation points on this vector: 8
+PHI= -47.0 CROSS:      0.00000   -199.90000   -225.00000
+PHI= -46.9 CROSS:      0.00000   -199.90000   -150.00000
+PHI= -46.8 CROSS:      0.00000   -199.90000    -75.00000
+PHI= -46.7 CROSS:      0.00000   -199.90000      0.00000
+PHI= -46.6 CROSS:      0.00000   -199.90000     75.00000
+PHI= -46.5 CROSS:      0.00000   -199.90000    150.00000
+PHI= -46.4 CROSS:      0.00000   -199.90000    225.00000
+PHI= -46.3 CROSS:      0.00000   -199.90000    300.00000
+Total points: 138
+StartPhi of this vector=-46.2
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -46.2[deg]:    415.3 [um]
+Number of irradiation points on this vector: 8
+PHI= -46.2 CROSS:      0.00000   -249.90000   -225.00000
+PHI= -46.1 CROSS:      0.00000   -249.90000   -150.00000
+PHI= -46.0 CROSS:      0.00000   -249.90000    -75.00000
+PHI= -45.9 CROSS:      0.00000   -249.90000      0.00000
+PHI= -45.8 CROSS:      0.00000   -249.90000     75.00000
+PHI= -45.7 CROSS:      0.00000   -249.90000    150.00000
+PHI= -45.6 CROSS:      0.00000   -249.90000    225.00000
+PHI= -45.5 CROSS:      0.00000   -249.90000    300.00000
+Total points: 146
+N points/crystal= 80
+Time for this crystal= 16.6666666667 [min]
+##########################
+##### Crystal No.3 ######
+##########################
+StartPhi of this vector=-45.4
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -45.4[deg]:    421.3 [um]
+Number of irradiation points on this vector: 8
+PHI= -45.4 CROSS:      0.00000    250.10000   -225.00000
+PHI= -45.3 CROSS:      0.00000    250.10000   -150.00000
+PHI= -45.2 CROSS:      0.00000    250.10000    -75.00000
+PHI= -45.1 CROSS:      0.00000    250.10000      0.00000
+PHI= -45.0 CROSS:      0.00000    250.10000     75.00000
+PHI= -44.9 CROSS:      0.00000    250.10000    150.00000
+PHI= -44.8 CROSS:      0.00000    250.10000    225.00000
+PHI= -44.7 CROSS:      0.00000    250.10000    300.00000
+Total points: 154
+StartPhi of this vector=-44.6
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -44.6[deg]:    427.2 [um]
+Number of irradiation points on this vector: 8
+PHI= -44.6 CROSS:      0.00000    200.10000   -225.00000
+PHI= -44.5 CROSS:      0.00000    200.10000   -150.00000
+PHI= -44.4 CROSS:      0.00000    200.10000    -75.00000
+PHI= -44.3 CROSS:      0.00000    200.10000      0.00000
+PHI= -44.2 CROSS:      0.00000    200.10000     75.00000
+PHI= -44.1 CROSS:      0.00000    200.10000    150.00000
+PHI= -44.0 CROSS:      0.00000    200.10000    225.00000
+PHI= -43.9 CROSS:      0.00000    200.10000    300.00000
+Total points: 162
+StartPhi of this vector=-43.8
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -43.8[deg]:    433.1 [um]
+Number of irradiation points on this vector: 8
+PHI= -43.8 CROSS:      0.00000    150.10000   -225.00000
+PHI= -43.7 CROSS:      0.00000    150.10000   -150.00000
+PHI= -43.6 CROSS:      0.00000    150.10000    -75.00000
+PHI= -43.5 CROSS:      0.00000    150.10000      0.00000
+PHI= -43.4 CROSS:      0.00000    150.10000     75.00000
+PHI= -43.3 CROSS:      0.00000    150.10000    150.00000
+PHI= -43.2 CROSS:      0.00000    150.10000    225.00000
+PHI= -43.1 CROSS:      0.00000    150.10000    300.00000
+Total points: 170
+StartPhi of this vector=-43.0
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -43.0[deg]:    438.8 [um]
+Number of irradiation points on this vector: 8
+PHI= -43.0 CROSS:      0.00000    100.10000   -225.00000
+PHI= -42.9 CROSS:      0.00000    100.10000   -150.00000
+PHI= -42.8 CROSS:      0.00000    100.10000    -75.00000
+PHI= -42.7 CROSS:      0.00000    100.10000      0.00000
+PHI= -42.6 CROSS:      0.00000    100.10000     75.00000
+PHI= -42.5 CROSS:      0.00000    100.10000    150.00000
+PHI= -42.4 CROSS:      0.00000    100.10000    225.00000
+PHI= -42.3 CROSS:      0.00000    100.10000    300.00000
+Total points: 178
+StartPhi of this vector=-42.2
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -42.2[deg]:    444.5 [um]
+Number of irradiation points on this vector: 8
+PHI= -42.2 CROSS:      0.00000     50.10000   -225.00000
+PHI= -42.1 CROSS:      0.00000     50.10000   -150.00000
+PHI= -42.0 CROSS:      0.00000     50.10000    -75.00000
+PHI= -41.9 CROSS:      0.00000     50.10000      0.00000
+PHI= -41.8 CROSS:      0.00000     50.10000     75.00000
+PHI= -41.7 CROSS:      0.00000     50.10000    150.00000
+PHI= -41.6 CROSS:      0.00000     50.10000    225.00000
+PHI= -41.5 CROSS:      0.00000     50.10000    300.00000
+Total points: 186
+StartPhi of this vector=-41.4
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -41.4[deg]:    450.1 [um]
+Number of irradiation points on this vector: 8
+PHI= -41.4 CROSS:      0.00000      0.10000   -225.00000
+PHI= -41.3 CROSS:      0.00000      0.10000   -150.00000
+PHI= -41.2 CROSS:      0.00000      0.10000    -75.00000
+PHI= -41.1 CROSS:      0.00000      0.10000      0.00000
+PHI= -41.0 CROSS:      0.00000      0.10000     75.00000
+PHI= -40.9 CROSS:      0.00000      0.10000    150.00000
+PHI= -40.8 CROSS:      0.00000      0.10000    225.00000
+PHI= -40.7 CROSS:      0.00000      0.10000    300.00000
+Total points: 194
+StartPhi of this vector=-40.6
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -40.6[deg]:    455.6 [um]
+Number of irradiation points on this vector: 9
+PHI= -40.6 CROSS:      0.00000    -49.90000   -233.33333
+PHI= -40.5 CROSS:      0.00000    -49.90000   -166.66667
+PHI= -40.4 CROSS:      0.00000    -49.90000   -100.00000
+PHI= -40.3 CROSS:      0.00000    -49.90000    -33.33333
+PHI= -40.2 CROSS:      0.00000    -49.90000     33.33333
+PHI= -40.1 CROSS:      0.00000    -49.90000    100.00000
+PHI= -40.0 CROSS:      0.00000    -49.90000    166.66667
+PHI= -39.9 CROSS:      0.00000    -49.90000    233.33333
+PHI= -39.8 CROSS:      0.00000    -49.90000    300.00000
+Total points: 203
+StartPhi of this vector=-39.7
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -39.7[deg]:    461.6 [um]
+Number of irradiation points on this vector: 9
+PHI= -39.7 CROSS:      0.00000    -99.90000   -233.33333
+PHI= -39.6 CROSS:      0.00000    -99.90000   -166.66667
+PHI= -39.5 CROSS:      0.00000    -99.90000   -100.00000
+PHI= -39.4 CROSS:      0.00000    -99.90000    -33.33333
+PHI= -39.3 CROSS:      0.00000    -99.90000     33.33333
+PHI= -39.2 CROSS:      0.00000    -99.90000    100.00000
+PHI= -39.1 CROSS:      0.00000    -99.90000    166.66667
+PHI= -39.0 CROSS:      0.00000    -99.90000    233.33333
+PHI= -38.9 CROSS:      0.00000    -99.90000    300.00000
+Total points: 212
+StartPhi of this vector=-38.8
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -38.8[deg]:    467.6 [um]
+Number of irradiation points on this vector: 9
+PHI= -38.8 CROSS:      0.00000   -149.90000   -233.33333
+PHI= -38.7 CROSS:      0.00000   -149.90000   -166.66667
+PHI= -38.6 CROSS:      0.00000   -149.90000   -100.00000
+PHI= -38.5 CROSS:      0.00000   -149.90000    -33.33333
+PHI= -38.4 CROSS:      0.00000   -149.90000     33.33333
+PHI= -38.3 CROSS:      0.00000   -149.90000    100.00000
+PHI= -38.2 CROSS:      0.00000   -149.90000    166.66667
+PHI= -38.1 CROSS:      0.00000   -149.90000    233.33333
+PHI= -38.0 CROSS:      0.00000   -149.90000    300.00000
+Total points: 221
+StartPhi of this vector=-37.9
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -37.9[deg]:    473.5 [um]
+Number of irradiation points on this vector: 9
+PHI= -37.9 CROSS:      0.00000   -199.90000   -233.33333
+PHI= -37.8 CROSS:      0.00000   -199.90000   -166.66667
+PHI= -37.7 CROSS:      0.00000   -199.90000   -100.00000
+PHI= -37.6 CROSS:      0.00000   -199.90000    -33.33333
+PHI= -37.5 CROSS:      0.00000   -199.90000     33.33333
+PHI= -37.4 CROSS:      0.00000   -199.90000    100.00000
+PHI= -37.3 CROSS:      0.00000   -199.90000    166.66667
+PHI= -37.2 CROSS:      0.00000   -199.90000    233.33333
+PHI= -37.1 CROSS:      0.00000   -199.90000    300.00000
+Total points: 230
+StartPhi of this vector=-37.0
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -37.0[deg]:    479.2 [um]
+Number of irradiation points on this vector: 9
+PHI= -37.0 CROSS:      0.00000   -249.90000   -233.33333
+PHI= -36.9 CROSS:      0.00000   -249.90000   -166.66667
+PHI= -36.8 CROSS:      0.00000   -249.90000   -100.00000
+PHI= -36.7 CROSS:      0.00000   -249.90000    -33.33333
+PHI= -36.6 CROSS:      0.00000   -249.90000     33.33333
+PHI= -36.5 CROSS:      0.00000   -249.90000    100.00000
+PHI= -36.4 CROSS:      0.00000   -249.90000    166.66667
+PHI= -36.3 CROSS:      0.00000   -249.90000    233.33333
+PHI= -36.2 CROSS:      0.00000   -249.90000    300.00000
+Total points: 239
+N points/crystal= 93
+Time for this crystal= 17.75 [min]
+##########################
+##### Crystal No.4 ######
+##########################
+StartPhi of this vector=-36.1
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -36.1[deg]:    484.8 [um]
+Number of irradiation points on this vector: 9
+PHI= -36.1 CROSS:      0.00000    250.10000   -233.33333
+PHI= -36.0 CROSS:      0.00000    250.10000   -166.66667
+PHI= -35.9 CROSS:      0.00000    250.10000   -100.00000
+PHI= -35.8 CROSS:      0.00000    250.10000    -33.33333
+PHI= -35.7 CROSS:      0.00000    250.10000     33.33333
+PHI= -35.6 CROSS:      0.00000    250.10000    100.00000
+PHI= -35.5 CROSS:      0.00000    250.10000    166.66667
+PHI= -35.4 CROSS:      0.00000    250.10000    233.33333
+PHI= -35.3 CROSS:      0.00000    250.10000    300.00000
+Total points: 248
+StartPhi of this vector=-35.2
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -35.2[deg]:    490.3 [um]
+Number of irradiation points on this vector: 9
+PHI= -35.2 CROSS:      0.00000    200.10000   -233.33333
+PHI= -35.1 CROSS:      0.00000    200.10000   -166.66667
+PHI= -35.0 CROSS:      0.00000    200.10000   -100.00000
+PHI= -34.9 CROSS:      0.00000    200.10000    -33.33333
+PHI= -34.8 CROSS:      0.00000    200.10000     33.33333
+PHI= -34.7 CROSS:      0.00000    200.10000    100.00000
+PHI= -34.6 CROSS:      0.00000    200.10000    166.66667
+PHI= -34.5 CROSS:      0.00000    200.10000    233.33333
+PHI= -34.4 CROSS:      0.00000    200.10000    300.00000
+Total points: 257
+StartPhi of this vector=-34.3
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -34.3[deg]:    495.7 [um]
+Number of irradiation points on this vector: 9
+PHI= -34.3 CROSS:      0.00000    150.10000   -233.33333
+PHI= -34.2 CROSS:      0.00000    150.10000   -166.66667
+PHI= -34.1 CROSS:      0.00000    150.10000   -100.00000
+PHI= -34.0 CROSS:      0.00000    150.10000    -33.33333
+PHI= -33.9 CROSS:      0.00000    150.10000     33.33333
+PHI= -33.8 CROSS:      0.00000    150.10000    100.00000
+PHI= -33.7 CROSS:      0.00000    150.10000    166.66667
+PHI= -33.6 CROSS:      0.00000    150.10000    233.33333
+PHI= -33.5 CROSS:      0.00000    150.10000    300.00000
+Total points: 266
+StartPhi of this vector=-33.4
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -33.4[deg]:    500.9 [um]
+Number of irradiation points on this vector: 9
+PHI= -33.4 CROSS:      0.00000    100.10000   -233.33333
+PHI= -33.3 CROSS:      0.00000    100.10000   -166.66667
+PHI= -33.2 CROSS:      0.00000    100.10000   -100.00000
+PHI= -33.1 CROSS:      0.00000    100.10000    -33.33333
+PHI= -33.0 CROSS:      0.00000    100.10000     33.33333
+PHI= -32.9 CROSS:      0.00000    100.10000    100.00000
+PHI= -32.8 CROSS:      0.00000    100.10000    166.66667
+PHI= -32.7 CROSS:      0.00000    100.10000    233.33333
+PHI= -32.6 CROSS:      0.00000    100.10000    300.00000
+Total points: 275
+StartPhi of this vector=-32.5
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -32.5[deg]:    506.0 [um]
+Number of irradiation points on this vector: 10
+PHI= -32.5 CROSS:      0.00000     50.10000   -240.00000
+PHI= -32.4 CROSS:      0.00000     50.10000   -180.00000
+PHI= -32.3 CROSS:      0.00000     50.10000   -120.00000
+PHI= -32.2 CROSS:      0.00000     50.10000    -60.00000
+PHI= -32.1 CROSS:      0.00000     50.10000      0.00000
+PHI= -32.0 CROSS:      0.00000     50.10000     60.00000
+PHI= -31.9 CROSS:      0.00000     50.10000    120.00000
+PHI= -31.8 CROSS:      0.00000     50.10000    180.00000
+PHI= -31.7 CROSS:      0.00000     50.10000    240.00000
+PHI= -31.6 CROSS:      0.00000     50.10000    300.00000
+Total points: 285
+StartPhi of this vector=-31.5
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -31.5[deg]:    511.6 [um]
+Number of irradiation points on this vector: 10
+PHI= -31.5 CROSS:      0.00000      0.10000   -240.00000
+PHI= -31.4 CROSS:      0.00000      0.10000   -180.00000
+PHI= -31.3 CROSS:      0.00000      0.10000   -120.00000
+PHI= -31.2 CROSS:      0.00000      0.10000    -60.00000
+PHI= -31.1 CROSS:      0.00000      0.10000      0.00000
+PHI= -31.0 CROSS:      0.00000      0.10000     60.00000
+PHI= -30.9 CROSS:      0.00000      0.10000    120.00000
+PHI= -30.8 CROSS:      0.00000      0.10000    180.00000
+PHI= -30.7 CROSS:      0.00000      0.10000    240.00000
+PHI= -30.6 CROSS:      0.00000      0.10000    300.00000
+Total points: 295
+StartPhi of this vector=-30.5
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -30.5[deg]:    517.0 [um]
+Number of irradiation points on this vector: 10
+PHI= -30.5 CROSS:      0.00000    -49.90000   -240.00000
+PHI= -30.4 CROSS:      0.00000    -49.90000   -180.00000
+PHI= -30.3 CROSS:      0.00000    -49.90000   -120.00000
+PHI= -30.2 CROSS:      0.00000    -49.90000    -60.00000
+PHI= -30.1 CROSS:      0.00000    -49.90000      0.00000
+PHI= -30.0 CROSS:      0.00000    -49.90000     60.00000
+PHI= -29.9 CROSS:      0.00000    -49.90000    120.00000
+PHI= -29.8 CROSS:      0.00000    -49.90000    180.00000
+PHI= -29.7 CROSS:      0.00000    -49.90000    240.00000
+PHI= -29.6 CROSS:      0.00000    -49.90000    300.00000
+Total points: 305
+StartPhi of this vector=-29.5
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -29.5[deg]:    522.2 [um]
+Number of irradiation points on this vector: 10
+PHI= -29.5 CROSS:      0.00000    -99.90000   -240.00000
+PHI= -29.4 CROSS:      0.00000    -99.90000   -180.00000
+PHI= -29.3 CROSS:      0.00000    -99.90000   -120.00000
+PHI= -29.2 CROSS:      0.00000    -99.90000    -60.00000
+PHI= -29.1 CROSS:      0.00000    -99.90000      0.00000
+PHI= -29.0 CROSS:      0.00000    -99.90000     60.00000
+PHI= -28.9 CROSS:      0.00000    -99.90000    120.00000
+PHI= -28.8 CROSS:      0.00000    -99.90000    180.00000
+PHI= -28.7 CROSS:      0.00000    -99.90000    240.00000
+PHI= -28.6 CROSS:      0.00000    -99.90000    300.00000
+Total points: 315
+StartPhi of this vector=-28.5
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -28.5[deg]:    527.3 [um]
+Number of irradiation points on this vector: 10
+PHI= -28.5 CROSS:      0.00000   -149.90000   -240.00000
+PHI= -28.4 CROSS:      0.00000   -149.90000   -180.00000
+PHI= -28.3 CROSS:      0.00000   -149.90000   -120.00000
+PHI= -28.2 CROSS:      0.00000   -149.90000    -60.00000
+PHI= -28.1 CROSS:      0.00000   -149.90000      0.00000
+PHI= -28.0 CROSS:      0.00000   -149.90000     60.00000
+PHI= -27.9 CROSS:      0.00000   -149.90000    120.00000
+PHI= -27.8 CROSS:      0.00000   -149.90000    180.00000
+PHI= -27.7 CROSS:      0.00000   -149.90000    240.00000
+PHI= -27.6 CROSS:      0.00000   -149.90000    300.00000
+Total points: 325
+StartPhi of this vector=-27.5
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -27.5[deg]:    532.2 [um]
+Number of irradiation points on this vector: 10
+PHI= -27.5 CROSS:      0.00000   -199.90000   -240.00000
+PHI= -27.4 CROSS:      0.00000   -199.90000   -180.00000
+PHI= -27.3 CROSS:      0.00000   -199.90000   -120.00000
+PHI= -27.2 CROSS:      0.00000   -199.90000    -60.00000
+PHI= -27.1 CROSS:      0.00000   -199.90000      0.00000
+PHI= -27.0 CROSS:      0.00000   -199.90000     60.00000
+PHI= -26.9 CROSS:      0.00000   -199.90000    120.00000
+PHI= -26.8 CROSS:      0.00000   -199.90000    180.00000
+PHI= -26.7 CROSS:      0.00000   -199.90000    240.00000
+PHI= -26.6 CROSS:      0.00000   -199.90000    300.00000
+Total points: 335
+StartPhi of this vector=-26.5
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -26.5[deg]:    537.0 [um]
+Number of irradiation points on this vector: 10
+PHI= -26.5 CROSS:      0.00000   -249.90000   -240.00000
+PHI= -26.4 CROSS:      0.00000   -249.90000   -180.00000
+PHI= -26.3 CROSS:      0.00000   -249.90000   -120.00000
+PHI= -26.2 CROSS:      0.00000   -249.90000    -60.00000
+PHI= -26.1 CROSS:      0.00000   -249.90000      0.00000
+PHI= -26.0 CROSS:      0.00000   -249.90000     60.00000
+PHI= -25.9 CROSS:      0.00000   -249.90000    120.00000
+PHI= -25.8 CROSS:      0.00000   -249.90000    180.00000
+PHI= -25.7 CROSS:      0.00000   -249.90000    240.00000
+PHI= -25.6 CROSS:      0.00000   -249.90000    300.00000
+Total points: 345
+N points/crystal= 106
+Time for this crystal= 18.8333333333 [min]
+##########################
+##### Crystal No.5 ######
+##########################
+StartPhi of this vector=-25.5
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -25.5[deg]:    541.6 [um]
+Number of irradiation points on this vector: 10
+PHI= -25.5 CROSS:      0.00000    250.10000   -240.00000
+PHI= -25.4 CROSS:      0.00000    250.10000   -180.00000
+PHI= -25.3 CROSS:      0.00000    250.10000   -120.00000
+PHI= -25.2 CROSS:      0.00000    250.10000    -60.00000
+PHI= -25.1 CROSS:      0.00000    250.10000      0.00000
+PHI= -25.0 CROSS:      0.00000    250.10000     60.00000
+PHI= -24.9 CROSS:      0.00000    250.10000    120.00000
+PHI= -24.8 CROSS:      0.00000    250.10000    180.00000
+PHI= -24.7 CROSS:      0.00000    250.10000    240.00000
+PHI= -24.6 CROSS:      0.00000    250.10000    300.00000
+Total points: 355
+StartPhi of this vector=-24.5
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -24.5[deg]:    546.0 [um]
+Number of irradiation points on this vector: 10
+PHI= -24.5 CROSS:      0.00000    200.10000   -240.00000
+PHI= -24.4 CROSS:      0.00000    200.10000   -180.00000
+PHI= -24.3 CROSS:      0.00000    200.10000   -120.00000
+PHI= -24.2 CROSS:      0.00000    200.10000    -60.00000
+PHI= -24.1 CROSS:      0.00000    200.10000      0.00000
+PHI= -24.0 CROSS:      0.00000    200.10000     60.00000
+PHI= -23.9 CROSS:      0.00000    200.10000    120.00000
+PHI= -23.8 CROSS:      0.00000    200.10000    180.00000
+PHI= -23.7 CROSS:      0.00000    200.10000    240.00000
+PHI= -23.6 CROSS:      0.00000    200.10000    300.00000
+Total points: 365
+StartPhi of this vector=-23.5
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -23.5[deg]:    550.2 [um]
+Number of irradiation points on this vector: 10
+PHI= -23.5 CROSS:      0.00000    150.10000   -240.00000
+PHI= -23.4 CROSS:      0.00000    150.10000   -180.00000
+PHI= -23.3 CROSS:      0.00000    150.10000   -120.00000
+PHI= -23.2 CROSS:      0.00000    150.10000    -60.00000
+PHI= -23.1 CROSS:      0.00000    150.10000      0.00000
+PHI= -23.0 CROSS:      0.00000    150.10000     60.00000
+PHI= -22.9 CROSS:      0.00000    150.10000    120.00000
+PHI= -22.8 CROSS:      0.00000    150.10000    180.00000
+PHI= -22.7 CROSS:      0.00000    150.10000    240.00000
+PHI= -22.6 CROSS:      0.00000    150.10000    300.00000
+Total points: 375
+StartPhi of this vector=-22.5
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -22.5[deg]:    554.3 [um]
+Number of irradiation points on this vector: 11
+PHI= -22.5 CROSS:      0.00000    100.10000   -245.45455
+PHI= -22.4 CROSS:      0.00000    100.10000   -190.90909
+PHI= -22.3 CROSS:      0.00000    100.10000   -136.36364
+PHI= -22.2 CROSS:      0.00000    100.10000    -81.81818
+PHI= -22.1 CROSS:      0.00000    100.10000    -27.27273
+PHI= -22.0 CROSS:      0.00000    100.10000     27.27273
+PHI= -21.9 CROSS:      0.00000    100.10000     81.81818
+PHI= -21.8 CROSS:      0.00000    100.10000    136.36364
+PHI= -21.7 CROSS:      0.00000    100.10000    190.90909
+PHI= -21.6 CROSS:      0.00000    100.10000    245.45455
+PHI= -21.5 CROSS:      0.00000    100.10000    300.00000
+Total points: 386
+StartPhi of this vector=-21.4
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -21.4[deg]:    558.6 [um]
+Number of irradiation points on this vector: 11
+PHI= -21.4 CROSS:      0.00000     50.10000   -245.45455
+PHI= -21.3 CROSS:      0.00000     50.10000   -190.90909
+PHI= -21.2 CROSS:      0.00000     50.10000   -136.36364
+PHI= -21.1 CROSS:      0.00000     50.10000    -81.81818
+PHI= -21.0 CROSS:      0.00000     50.10000    -27.27273
+PHI= -20.9 CROSS:      0.00000     50.10000     27.27273
+PHI= -20.8 CROSS:      0.00000     50.10000     81.81818
+PHI= -20.7 CROSS:      0.00000     50.10000    136.36364
+PHI= -20.6 CROSS:      0.00000     50.10000    190.90909
+PHI= -20.5 CROSS:      0.00000     50.10000    245.45455
+PHI= -20.4 CROSS:      0.00000     50.10000    300.00000
+Total points: 397
+StartPhi of this vector=-20.3
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -20.3[deg]:    562.7 [um]
+Number of irradiation points on this vector: 11
+PHI= -20.3 CROSS:      0.00000      0.10000   -245.45455
+PHI= -20.2 CROSS:      0.00000      0.10000   -190.90909
+PHI= -20.1 CROSS:      0.00000      0.10000   -136.36364
+PHI= -20.0 CROSS:      0.00000      0.10000    -81.81818
+PHI= -19.9 CROSS:      0.00000      0.10000    -27.27273
+PHI= -19.8 CROSS:      0.00000      0.10000     27.27273
+PHI= -19.7 CROSS:      0.00000      0.10000     81.81818
+PHI= -19.6 CROSS:      0.00000      0.10000    136.36364
+PHI= -19.5 CROSS:      0.00000      0.10000    190.90909
+PHI= -19.4 CROSS:      0.00000      0.10000    245.45455
+PHI= -19.3 CROSS:      0.00000      0.10000    300.00000
+Total points: 408
+StartPhi of this vector=-19.2
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -19.2[deg]:    566.6 [um]
+Number of irradiation points on this vector: 11
+PHI= -19.2 CROSS:      0.00000    -49.90000   -245.45455
+PHI= -19.1 CROSS:      0.00000    -49.90000   -190.90909
+PHI= -19.0 CROSS:      0.00000    -49.90000   -136.36364
+PHI= -18.9 CROSS:      0.00000    -49.90000    -81.81818
+PHI= -18.8 CROSS:      0.00000    -49.90000    -27.27273
+PHI= -18.7 CROSS:      0.00000    -49.90000     27.27273
+PHI= -18.6 CROSS:      0.00000    -49.90000     81.81818
+PHI= -18.5 CROSS:      0.00000    -49.90000    136.36364
+PHI= -18.4 CROSS:      0.00000    -49.90000    190.90909
+PHI= -18.3 CROSS:      0.00000    -49.90000    245.45455
+PHI= -18.2 CROSS:      0.00000    -49.90000    300.00000
+Total points: 419
+StartPhi of this vector=-18.1
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -18.1[deg]:    570.3 [um]
+Number of irradiation points on this vector: 11
+PHI= -18.1 CROSS:      0.00000    -99.90000   -245.45455
+PHI= -18.0 CROSS:      0.00000    -99.90000   -190.90909
+PHI= -17.9 CROSS:      0.00000    -99.90000   -136.36364
+PHI= -17.8 CROSS:      0.00000    -99.90000    -81.81818
+PHI= -17.7 CROSS:      0.00000    -99.90000    -27.27273
+PHI= -17.6 CROSS:      0.00000    -99.90000     27.27273
+PHI= -17.5 CROSS:      0.00000    -99.90000     81.81818
+PHI= -17.4 CROSS:      0.00000    -99.90000    136.36364
+PHI= -17.3 CROSS:      0.00000    -99.90000    190.90909
+PHI= -17.2 CROSS:      0.00000    -99.90000    245.45455
+PHI= -17.1 CROSS:      0.00000    -99.90000    300.00000
+Total points: 430
+StartPhi of this vector=-17.0
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -17.0[deg]:    573.8 [um]
+Number of irradiation points on this vector: 11
+PHI= -17.0 CROSS:      0.00000   -149.90000   -245.45455
+PHI= -16.9 CROSS:      0.00000   -149.90000   -190.90909
+PHI= -16.8 CROSS:      0.00000   -149.90000   -136.36364
+PHI= -16.7 CROSS:      0.00000   -149.90000    -81.81818
+PHI= -16.6 CROSS:      0.00000   -149.90000    -27.27273
+PHI= -16.5 CROSS:      0.00000   -149.90000     27.27273
+PHI= -16.4 CROSS:      0.00000   -149.90000     81.81818
+PHI= -16.3 CROSS:      0.00000   -149.90000    136.36364
+PHI= -16.2 CROSS:      0.00000   -149.90000    190.90909
+PHI= -16.1 CROSS:      0.00000   -149.90000    245.45455
+PHI= -16.0 CROSS:      0.00000   -149.90000    300.00000
+Total points: 441
+StartPhi of this vector=-15.9
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -15.9[deg]:    577.0 [um]
+Number of irradiation points on this vector: 11
+PHI= -15.9 CROSS:      0.00000   -199.90000   -245.45455
+PHI= -15.8 CROSS:      0.00000   -199.90000   -190.90909
+PHI= -15.7 CROSS:      0.00000   -199.90000   -136.36364
+PHI= -15.6 CROSS:      0.00000   -199.90000    -81.81818
+PHI= -15.5 CROSS:      0.00000   -199.90000    -27.27273
+PHI= -15.4 CROSS:      0.00000   -199.90000     27.27273
+PHI= -15.3 CROSS:      0.00000   -199.90000     81.81818
+PHI= -15.2 CROSS:      0.00000   -199.90000    136.36364
+PHI= -15.1 CROSS:      0.00000   -199.90000    190.90909
+PHI= -15.0 CROSS:      0.00000   -199.90000    245.45455
+PHI= -14.9 CROSS:      0.00000   -199.90000    300.00000
+Total points: 452
+StartPhi of this vector=-14.8
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -14.8[deg]:    580.1 [um]
+Number of irradiation points on this vector: 11
+PHI= -14.8 CROSS:      0.00000   -249.90000   -245.45455
+PHI= -14.7 CROSS:      0.00000   -249.90000   -190.90909
+PHI= -14.6 CROSS:      0.00000   -249.90000   -136.36364
+PHI= -14.5 CROSS:      0.00000   -249.90000    -81.81818
+PHI= -14.4 CROSS:      0.00000   -249.90000    -27.27273
+PHI= -14.3 CROSS:      0.00000   -249.90000     27.27273
+PHI= -14.2 CROSS:      0.00000   -249.90000     81.81818
+PHI= -14.1 CROSS:      0.00000   -249.90000    136.36364
+PHI= -14.0 CROSS:      0.00000   -249.90000    190.90909
+PHI= -13.9 CROSS:      0.00000   -249.90000    245.45455
+PHI= -13.8 CROSS:      0.00000   -249.90000    300.00000
+Total points: 463
+N points/crystal= 118
+Time for this crystal= 19.8333333333 [min]
+##########################
+##### Crystal No.6 ######
+##########################
+StartPhi of this vector=-13.7
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -13.7[deg]:    582.9 [um]
+Number of irradiation points on this vector: 11
+PHI= -13.7 CROSS:      0.00000    250.10000   -245.45455
+PHI= -13.6 CROSS:      0.00000    250.10000   -190.90909
+PHI= -13.5 CROSS:      0.00000    250.10000   -136.36364
+PHI= -13.4 CROSS:      0.00000    250.10000    -81.81818
+PHI= -13.3 CROSS:      0.00000    250.10000    -27.27273
+PHI= -13.2 CROSS:      0.00000    250.10000     27.27273
+PHI= -13.1 CROSS:      0.00000    250.10000     81.81818
+PHI= -13.0 CROSS:      0.00000    250.10000    136.36364
+PHI= -12.9 CROSS:      0.00000    250.10000    190.90909
+PHI= -12.8 CROSS:      0.00000    250.10000    245.45455
+PHI= -12.7 CROSS:      0.00000    250.10000    300.00000
+Total points: 474
+StartPhi of this vector=-12.6
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -12.6[deg]:    585.6 [um]
+Number of irradiation points on this vector: 11
+PHI= -12.6 CROSS:      0.00000    200.10000   -245.45455
+PHI= -12.5 CROSS:      0.00000    200.10000   -190.90909
+PHI= -12.4 CROSS:      0.00000    200.10000   -136.36364
+PHI= -12.3 CROSS:      0.00000    200.10000    -81.81818
+PHI= -12.2 CROSS:      0.00000    200.10000    -27.27273
+PHI= -12.1 CROSS:      0.00000    200.10000     27.27273
+PHI= -12.0 CROSS:      0.00000    200.10000     81.81818
+PHI= -11.9 CROSS:      0.00000    200.10000    136.36364
+PHI= -11.8 CROSS:      0.00000    200.10000    190.90909
+PHI= -11.7 CROSS:      0.00000    200.10000    245.45455
+PHI= -11.6 CROSS:      0.00000    200.10000    300.00000
+Total points: 485
+StartPhi of this vector=-11.5
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -11.5[deg]:    588.0 [um]
+Number of irradiation points on this vector: 11
+PHI= -11.5 CROSS:      0.00000    150.10000   -245.45455
+PHI= -11.4 CROSS:      0.00000    150.10000   -190.90909
+PHI= -11.3 CROSS:      0.00000    150.10000   -136.36364
+PHI= -11.2 CROSS:      0.00000    150.10000    -81.81818
+PHI= -11.1 CROSS:      0.00000    150.10000    -27.27273
+PHI= -11.0 CROSS:      0.00000    150.10000     27.27273
+PHI= -10.9 CROSS:      0.00000    150.10000     81.81818
+PHI= -10.8 CROSS:      0.00000    150.10000    136.36364
+PHI= -10.7 CROSS:      0.00000    150.10000    190.90909
+PHI= -10.6 CROSS:      0.00000    150.10000    245.45455
+PHI= -10.5 CROSS:      0.00000    150.10000    300.00000
+Total points: 496
+StartPhi of this vector=-10.4
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at -10.4[deg]:    590.1 [um]
+Number of irradiation points on this vector: 11
+PHI= -10.4 CROSS:      0.00000    100.10000   -245.45455
+PHI= -10.3 CROSS:      0.00000    100.10000   -190.90909
+PHI= -10.2 CROSS:      0.00000    100.10000   -136.36364
+PHI= -10.1 CROSS:      0.00000    100.10000    -81.81818
+PHI= -10.0 CROSS:      0.00000    100.10000    -27.27273
+PHI=  -9.9 CROSS:      0.00000    100.10000     27.27273
+PHI=  -9.8 CROSS:      0.00000    100.10000     81.81818
+PHI=  -9.7 CROSS:      0.00000    100.10000    136.36364
+PHI=  -9.6 CROSS:      0.00000    100.10000    190.90909
+PHI=  -9.5 CROSS:      0.00000    100.10000    245.45455
+PHI=  -9.4 CROSS:      0.00000    100.10000    300.00000
+Total points: 507
+StartPhi of this vector= -9.3
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  -9.3[deg]:    592.1 [um]
+Number of irradiation points on this vector: 11
+PHI=  -9.3 CROSS:      0.00000     50.10000   -245.45455
+PHI=  -9.2 CROSS:      0.00000     50.10000   -190.90909
+PHI=  -9.1 CROSS:      0.00000     50.10000   -136.36364
+PHI=  -9.0 CROSS:      0.00000     50.10000    -81.81818
+PHI=  -8.9 CROSS:      0.00000     50.10000    -27.27273
+PHI=  -8.8 CROSS:      0.00000     50.10000     27.27273
+PHI=  -8.7 CROSS:      0.00000     50.10000     81.81818
+PHI=  -8.6 CROSS:      0.00000     50.10000    136.36364
+PHI=  -8.5 CROSS:      0.00000     50.10000    190.90909
+PHI=  -8.4 CROSS:      0.00000     50.10000    245.45455
+PHI=  -8.3 CROSS:      0.00000     50.10000    300.00000
+Total points: 518
+StartPhi of this vector= -8.2
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  -8.2[deg]:    593.9 [um]
+Number of irradiation points on this vector: 11
+PHI=  -8.2 CROSS:      0.00000      0.10000   -245.45455
+PHI=  -8.1 CROSS:      0.00000      0.10000   -190.90909
+PHI=  -8.0 CROSS:      0.00000      0.10000   -136.36364
+PHI=  -7.9 CROSS:      0.00000      0.10000    -81.81818
+PHI=  -7.8 CROSS:      0.00000      0.10000    -27.27273
+PHI=  -7.7 CROSS:      0.00000      0.10000     27.27273
+PHI=  -7.6 CROSS:      0.00000      0.10000     81.81818
+PHI=  -7.5 CROSS:      0.00000      0.10000    136.36364
+PHI=  -7.4 CROSS:      0.00000      0.10000    190.90909
+PHI=  -7.3 CROSS:      0.00000      0.10000    245.45455
+PHI=  -7.2 CROSS:      0.00000      0.10000    300.00000
+Total points: 529
+StartPhi of this vector= -7.1
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  -7.1[deg]:    595.4 [um]
+Number of irradiation points on this vector: 11
+PHI=  -7.1 CROSS:      0.00000    -49.90000   -245.45455
+PHI=  -7.0 CROSS:      0.00000    -49.90000   -190.90909
+PHI=  -6.9 CROSS:      0.00000    -49.90000   -136.36364
+PHI=  -6.8 CROSS:      0.00000    -49.90000    -81.81818
+PHI=  -6.7 CROSS:      0.00000    -49.90000    -27.27273
+PHI=  -6.6 CROSS:      0.00000    -49.90000     27.27273
+PHI=  -6.5 CROSS:      0.00000    -49.90000     81.81818
+PHI=  -6.4 CROSS:      0.00000    -49.90000    136.36364
+PHI=  -6.3 CROSS:      0.00000    -49.90000    190.90909
+PHI=  -6.2 CROSS:      0.00000    -49.90000    245.45455
+PHI=  -6.1 CROSS:      0.00000    -49.90000    300.00000
+Total points: 540
+StartPhi of this vector= -6.0
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  -6.0[deg]:    596.7 [um]
+Number of irradiation points on this vector: 11
+PHI=  -6.0 CROSS:      0.00000    -99.90000   -245.45455
+PHI=  -5.9 CROSS:      0.00000    -99.90000   -190.90909
+PHI=  -5.8 CROSS:      0.00000    -99.90000   -136.36364
+PHI=  -5.7 CROSS:      0.00000    -99.90000    -81.81818
+PHI=  -5.6 CROSS:      0.00000    -99.90000    -27.27273
+PHI=  -5.5 CROSS:      0.00000    -99.90000     27.27273
+PHI=  -5.4 CROSS:      0.00000    -99.90000     81.81818
+PHI=  -5.3 CROSS:      0.00000    -99.90000    136.36364
+PHI=  -5.2 CROSS:      0.00000    -99.90000    190.90909
+PHI=  -5.1 CROSS:      0.00000    -99.90000    245.45455
+PHI=  -5.0 CROSS:      0.00000    -99.90000    300.00000
+Total points: 551
+StartPhi of this vector= -4.9
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  -4.9[deg]:    597.8 [um]
+Number of irradiation points on this vector: 11
+PHI=  -4.9 CROSS:      0.00000   -149.90000   -245.45455
+PHI=  -4.8 CROSS:      0.00000   -149.90000   -190.90909
+PHI=  -4.7 CROSS:      0.00000   -149.90000   -136.36364
+PHI=  -4.6 CROSS:      0.00000   -149.90000    -81.81818
+PHI=  -4.5 CROSS:      0.00000   -149.90000    -27.27273
+PHI=  -4.4 CROSS:      0.00000   -149.90000     27.27273
+PHI=  -4.3 CROSS:      0.00000   -149.90000     81.81818
+PHI=  -4.2 CROSS:      0.00000   -149.90000    136.36364
+PHI=  -4.1 CROSS:      0.00000   -149.90000    190.90909
+PHI=  -4.0 CROSS:      0.00000   -149.90000    245.45455
+PHI=  -3.9 CROSS:      0.00000   -149.90000    300.00000
+Total points: 562
+StartPhi of this vector= -3.8
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  -3.8[deg]:    598.7 [um]
+Number of irradiation points on this vector: 11
+PHI=  -3.8 CROSS:      0.00000   -199.90000   -245.45455
+PHI=  -3.7 CROSS:      0.00000   -199.90000   -190.90909
+PHI=  -3.6 CROSS:      0.00000   -199.90000   -136.36364
+PHI=  -3.5 CROSS:      0.00000   -199.90000    -81.81818
+PHI=  -3.4 CROSS:      0.00000   -199.90000    -27.27273
+PHI=  -3.3 CROSS:      0.00000   -199.90000     27.27273
+PHI=  -3.2 CROSS:      0.00000   -199.90000     81.81818
+PHI=  -3.1 CROSS:      0.00000   -199.90000    136.36364
+PHI=  -3.0 CROSS:      0.00000   -199.90000    190.90909
+PHI=  -2.9 CROSS:      0.00000   -199.90000    245.45455
+PHI=  -2.8 CROSS:      0.00000   -199.90000    300.00000
+Total points: 573
+StartPhi of this vector= -2.7
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  -2.7[deg]:    599.3 [um]
+Number of irradiation points on this vector: 11
+PHI=  -2.7 CROSS:      0.00000   -249.90000   -245.45455
+PHI=  -2.6 CROSS:      0.00000   -249.90000   -190.90909
+PHI=  -2.5 CROSS:      0.00000   -249.90000   -136.36364
+PHI=  -2.4 CROSS:      0.00000   -249.90000    -81.81818
+PHI=  -2.3 CROSS:      0.00000   -249.90000    -27.27273
+PHI=  -2.2 CROSS:      0.00000   -249.90000     27.27273
+PHI=  -2.1 CROSS:      0.00000   -249.90000     81.81818
+PHI=  -2.0 CROSS:      0.00000   -249.90000    136.36364
+PHI=  -1.9 CROSS:      0.00000   -249.90000    190.90909
+PHI=  -1.8 CROSS:      0.00000   -249.90000    245.45455
+PHI=  -1.7 CROSS:      0.00000   -249.90000    300.00000
+Total points: 584
+N points/crystal= 121
+Time for this crystal= 20.0833333333 [min]
+##########################
+##### Crystal No.7 ######
+##########################
+StartPhi of this vector= -1.6
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  -1.6[deg]:    599.8 [um]
+Number of irradiation points on this vector: 11
+PHI=  -1.6 CROSS:      0.00000    250.10000   -245.45455
+PHI=  -1.5 CROSS:      0.00000    250.10000   -190.90909
+PHI=  -1.4 CROSS:      0.00000    250.10000   -136.36364
+PHI=  -1.3 CROSS:      0.00000    250.10000    -81.81818
+PHI=  -1.2 CROSS:      0.00000    250.10000    -27.27273
+PHI=  -1.1 CROSS:      0.00000    250.10000     27.27273
+PHI=  -1.0 CROSS:      0.00000    250.10000     81.81818
+PHI=  -0.9 CROSS:      0.00000    250.10000    136.36364
+PHI=  -0.8 CROSS:      0.00000    250.10000    190.90909
+PHI=  -0.7 CROSS:      0.00000    250.10000    245.45455
+PHI=  -0.6 CROSS:      0.00000    250.10000    300.00000
+Total points: 595
+StartPhi of this vector= -0.5
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  -0.5[deg]:    600.0 [um]
+Number of irradiation points on this vector: 11
+PHI=  -0.5 CROSS:      0.00000    200.10000   -245.45455
+PHI=  -0.4 CROSS:      0.00000    200.10000   -190.90909
+PHI=  -0.3 CROSS:      0.00000    200.10000   -136.36364
+PHI=  -0.2 CROSS:      0.00000    200.10000    -81.81818
+PHI=  -0.1 CROSS:      0.00000    200.10000    -27.27273
+PHI=   0.0 CROSS:      0.00000    200.10000     27.27273
+PHI=   0.1 CROSS:      0.00000    200.10000     81.81818
+PHI=   0.2 CROSS:      0.00000    200.10000    136.36364
+PHI=   0.3 CROSS:      0.00000    200.10000    190.90909
+PHI=   0.4 CROSS:      0.00000    200.10000    245.45455
+PHI=   0.5 CROSS:      0.00000    200.10000    300.00000
+Total points: 606
+StartPhi of this vector=  0.6
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at   0.6[deg]:    600.0 [um]
+Number of irradiation points on this vector: 11
+PHI=   0.6 CROSS:      0.00000    150.10000   -245.45455
+PHI=   0.7 CROSS:      0.00000    150.10000   -190.90909
+PHI=   0.8 CROSS:      0.00000    150.10000   -136.36364
+PHI=   0.9 CROSS:      0.00000    150.10000    -81.81818
+PHI=   1.0 CROSS:      0.00000    150.10000    -27.27273
+PHI=   1.1 CROSS:      0.00000    150.10000     27.27273
+PHI=   1.2 CROSS:      0.00000    150.10000     81.81818
+PHI=   1.3 CROSS:      0.00000    150.10000    136.36364
+PHI=   1.4 CROSS:      0.00000    150.10000    190.90909
+PHI=   1.5 CROSS:      0.00000    150.10000    245.45455
+PHI=   1.6 CROSS:      0.00000    150.10000    300.00000
+Total points: 617
+StartPhi of this vector=  1.7
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at   1.7[deg]:    599.7 [um]
+Number of irradiation points on this vector: 11
+PHI=   1.7 CROSS:      0.00000    100.10000   -245.45455
+PHI=   1.8 CROSS:      0.00000    100.10000   -190.90909
+PHI=   1.9 CROSS:      0.00000    100.10000   -136.36364
+PHI=   2.0 CROSS:      0.00000    100.10000    -81.81818
+PHI=   2.1 CROSS:      0.00000    100.10000    -27.27273
+PHI=   2.2 CROSS:      0.00000    100.10000     27.27273
+PHI=   2.3 CROSS:      0.00000    100.10000     81.81818
+PHI=   2.4 CROSS:      0.00000    100.10000    136.36364
+PHI=   2.5 CROSS:      0.00000    100.10000    190.90909
+PHI=   2.6 CROSS:      0.00000    100.10000    245.45455
+PHI=   2.7 CROSS:      0.00000    100.10000    300.00000
+Total points: 628
+StartPhi of this vector=  2.8
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at   2.8[deg]:    599.3 [um]
+Number of irradiation points on this vector: 11
+PHI=   2.8 CROSS:      0.00000     50.10000   -245.45455
+PHI=   2.9 CROSS:      0.00000     50.10000   -190.90909
+PHI=   3.0 CROSS:      0.00000     50.10000   -136.36364
+PHI=   3.1 CROSS:      0.00000     50.10000    -81.81818
+PHI=   3.2 CROSS:      0.00000     50.10000    -27.27273
+PHI=   3.3 CROSS:      0.00000     50.10000     27.27273
+PHI=   3.4 CROSS:      0.00000     50.10000     81.81818
+PHI=   3.5 CROSS:      0.00000     50.10000    136.36364
+PHI=   3.6 CROSS:      0.00000     50.10000    190.90909
+PHI=   3.7 CROSS:      0.00000     50.10000    245.45455
+PHI=   3.8 CROSS:      0.00000     50.10000    300.00000
+Total points: 639
+StartPhi of this vector=  3.9
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at   3.9[deg]:    598.6 [um]
+Number of irradiation points on this vector: 11
+PHI=   3.9 CROSS:      0.00000      0.10000   -245.45455
+PHI=   4.0 CROSS:      0.00000      0.10000   -190.90909
+PHI=   4.1 CROSS:      0.00000      0.10000   -136.36364
+PHI=   4.2 CROSS:      0.00000      0.10000    -81.81818
+PHI=   4.3 CROSS:      0.00000      0.10000    -27.27273
+PHI=   4.4 CROSS:      0.00000      0.10000     27.27273
+PHI=   4.5 CROSS:      0.00000      0.10000     81.81818
+PHI=   4.6 CROSS:      0.00000      0.10000    136.36364
+PHI=   4.7 CROSS:      0.00000      0.10000    190.90909
+PHI=   4.8 CROSS:      0.00000      0.10000    245.45455
+PHI=   4.9 CROSS:      0.00000      0.10000    300.00000
+Total points: 650
+StartPhi of this vector=  5.0
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at   5.0[deg]:    597.7 [um]
+Number of irradiation points on this vector: 11
+PHI=   5.0 CROSS:      0.00000    -49.90000   -245.45455
+PHI=   5.1 CROSS:      0.00000    -49.90000   -190.90909
+PHI=   5.2 CROSS:      0.00000    -49.90000   -136.36364
+PHI=   5.3 CROSS:      0.00000    -49.90000    -81.81818
+PHI=   5.4 CROSS:      0.00000    -49.90000    -27.27273
+PHI=   5.5 CROSS:      0.00000    -49.90000     27.27273
+PHI=   5.6 CROSS:      0.00000    -49.90000     81.81818
+PHI=   5.7 CROSS:      0.00000    -49.90000    136.36364
+PHI=   5.8 CROSS:      0.00000    -49.90000    190.90909
+PHI=   5.9 CROSS:      0.00000    -49.90000    245.45455
+PHI=   6.0 CROSS:      0.00000    -49.90000    300.00000
+Total points: 661
+StartPhi of this vector=  6.1
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at   6.1[deg]:    596.6 [um]
+Number of irradiation points on this vector: 11
+PHI=   6.1 CROSS:      0.00000    -99.90000   -245.45455
+PHI=   6.2 CROSS:      0.00000    -99.90000   -190.90909
+PHI=   6.3 CROSS:      0.00000    -99.90000   -136.36364
+PHI=   6.4 CROSS:      0.00000    -99.90000    -81.81818
+PHI=   6.5 CROSS:      0.00000    -99.90000    -27.27273
+PHI=   6.6 CROSS:      0.00000    -99.90000     27.27273
+PHI=   6.7 CROSS:      0.00000    -99.90000     81.81818
+PHI=   6.8 CROSS:      0.00000    -99.90000    136.36364
+PHI=   6.9 CROSS:      0.00000    -99.90000    190.90909
+PHI=   7.0 CROSS:      0.00000    -99.90000    245.45455
+PHI=   7.1 CROSS:      0.00000    -99.90000    300.00000
+Total points: 672
+StartPhi of this vector=  7.2
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at   7.2[deg]:    595.3 [um]
+Number of irradiation points on this vector: 11
+PHI=   7.2 CROSS:      0.00000   -149.90000   -245.45455
+PHI=   7.3 CROSS:      0.00000   -149.90000   -190.90909
+PHI=   7.4 CROSS:      0.00000   -149.90000   -136.36364
+PHI=   7.5 CROSS:      0.00000   -149.90000    -81.81818
+PHI=   7.6 CROSS:      0.00000   -149.90000    -27.27273
+PHI=   7.7 CROSS:      0.00000   -149.90000     27.27273
+PHI=   7.8 CROSS:      0.00000   -149.90000     81.81818
+PHI=   7.9 CROSS:      0.00000   -149.90000    136.36364
+PHI=   8.0 CROSS:      0.00000   -149.90000    190.90909
+PHI=   8.1 CROSS:      0.00000   -149.90000    245.45455
+PHI=   8.2 CROSS:      0.00000   -149.90000    300.00000
+Total points: 683
+StartPhi of this vector=  8.3
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at   8.3[deg]:    593.7 [um]
+Number of irradiation points on this vector: 11
+PHI=   8.3 CROSS:      0.00000   -199.90000   -245.45455
+PHI=   8.4 CROSS:      0.00000   -199.90000   -190.90909
+PHI=   8.5 CROSS:      0.00000   -199.90000   -136.36364
+PHI=   8.6 CROSS:      0.00000   -199.90000    -81.81818
+PHI=   8.7 CROSS:      0.00000   -199.90000    -27.27273
+PHI=   8.8 CROSS:      0.00000   -199.90000     27.27273
+PHI=   8.9 CROSS:      0.00000   -199.90000     81.81818
+PHI=   9.0 CROSS:      0.00000   -199.90000    136.36364
+PHI=   9.1 CROSS:      0.00000   -199.90000    190.90909
+PHI=   9.2 CROSS:      0.00000   -199.90000    245.45455
+PHI=   9.3 CROSS:      0.00000   -199.90000    300.00000
+Total points: 694
+StartPhi of this vector=  9.4
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at   9.4[deg]:    591.9 [um]
+Number of irradiation points on this vector: 11
+PHI=   9.4 CROSS:      0.00000   -249.90000   -245.45455
+PHI=   9.5 CROSS:      0.00000   -249.90000   -190.90909
+PHI=   9.6 CROSS:      0.00000   -249.90000   -136.36364
+PHI=   9.7 CROSS:      0.00000   -249.90000    -81.81818
+PHI=   9.8 CROSS:      0.00000   -249.90000    -27.27273
+PHI=   9.9 CROSS:      0.00000   -249.90000     27.27273
+PHI=  10.0 CROSS:      0.00000   -249.90000     81.81818
+PHI=  10.1 CROSS:      0.00000   -249.90000    136.36364
+PHI=  10.2 CROSS:      0.00000   -249.90000    190.90909
+PHI=  10.3 CROSS:      0.00000   -249.90000    245.45455
+PHI=  10.4 CROSS:      0.00000   -249.90000    300.00000
+Total points: 705
+N points/crystal= 121
+Time for this crystal= 20.0833333333 [min]
+##########################
+##### Crystal No.8 ######
+##########################
+StartPhi of this vector= 10.5
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  10.5[deg]:    590.0 [um]
+Number of irradiation points on this vector: 11
+PHI=  10.5 CROSS:      0.00000    250.10000   -245.45455
+PHI=  10.6 CROSS:      0.00000    250.10000   -190.90909
+PHI=  10.7 CROSS:      0.00000    250.10000   -136.36364
+PHI=  10.8 CROSS:      0.00000    250.10000    -81.81818
+PHI=  10.9 CROSS:      0.00000    250.10000    -27.27273
+PHI=  11.0 CROSS:      0.00000    250.10000     27.27273
+PHI=  11.1 CROSS:      0.00000    250.10000     81.81818
+PHI=  11.2 CROSS:      0.00000    250.10000    136.36364
+PHI=  11.3 CROSS:      0.00000    250.10000    190.90909
+PHI=  11.4 CROSS:      0.00000    250.10000    245.45455
+PHI=  11.5 CROSS:      0.00000    250.10000    300.00000
+Total points: 716
+StartPhi of this vector= 11.6
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  11.6[deg]:    587.7 [um]
+Number of irradiation points on this vector: 11
+PHI=  11.6 CROSS:      0.00000    200.10000   -245.45455
+PHI=  11.7 CROSS:      0.00000    200.10000   -190.90909
+PHI=  11.8 CROSS:      0.00000    200.10000   -136.36364
+PHI=  11.9 CROSS:      0.00000    200.10000    -81.81818
+PHI=  12.0 CROSS:      0.00000    200.10000    -27.27273
+PHI=  12.1 CROSS:      0.00000    200.10000     27.27273
+PHI=  12.2 CROSS:      0.00000    200.10000     81.81818
+PHI=  12.3 CROSS:      0.00000    200.10000    136.36364
+PHI=  12.4 CROSS:      0.00000    200.10000    190.90909
+PHI=  12.5 CROSS:      0.00000    200.10000    245.45455
+PHI=  12.6 CROSS:      0.00000    200.10000    300.00000
+Total points: 727
+StartPhi of this vector= 12.7
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  12.7[deg]:    585.3 [um]
+Number of irradiation points on this vector: 11
+PHI=  12.7 CROSS:      0.00000    150.10000   -245.45455
+PHI=  12.8 CROSS:      0.00000    150.10000   -190.90909
+PHI=  12.9 CROSS:      0.00000    150.10000   -136.36364
+PHI=  13.0 CROSS:      0.00000    150.10000    -81.81818
+PHI=  13.1 CROSS:      0.00000    150.10000    -27.27273
+PHI=  13.2 CROSS:      0.00000    150.10000     27.27273
+PHI=  13.3 CROSS:      0.00000    150.10000     81.81818
+PHI=  13.4 CROSS:      0.00000    150.10000    136.36364
+PHI=  13.5 CROSS:      0.00000    150.10000    190.90909
+PHI=  13.6 CROSS:      0.00000    150.10000    245.45455
+PHI=  13.7 CROSS:      0.00000    150.10000    300.00000
+Total points: 738
+StartPhi of this vector= 13.8
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  13.8[deg]:    582.7 [um]
+Number of irradiation points on this vector: 11
+PHI=  13.8 CROSS:      0.00000    100.10000   -245.45455
+PHI=  13.9 CROSS:      0.00000    100.10000   -190.90909
+PHI=  14.0 CROSS:      0.00000    100.10000   -136.36364
+PHI=  14.1 CROSS:      0.00000    100.10000    -81.81818
+PHI=  14.2 CROSS:      0.00000    100.10000    -27.27273
+PHI=  14.3 CROSS:      0.00000    100.10000     27.27273
+PHI=  14.4 CROSS:      0.00000    100.10000     81.81818
+PHI=  14.5 CROSS:      0.00000    100.10000    136.36364
+PHI=  14.6 CROSS:      0.00000    100.10000    190.90909
+PHI=  14.7 CROSS:      0.00000    100.10000    245.45455
+PHI=  14.8 CROSS:      0.00000    100.10000    300.00000
+Total points: 749
+StartPhi of this vector= 14.9
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  14.9[deg]:    579.8 [um]
+Number of irradiation points on this vector: 11
+PHI=  14.9 CROSS:      0.00000     50.10000   -245.45455
+PHI=  15.0 CROSS:      0.00000     50.10000   -190.90909
+PHI=  15.1 CROSS:      0.00000     50.10000   -136.36364
+PHI=  15.2 CROSS:      0.00000     50.10000    -81.81818
+PHI=  15.3 CROSS:      0.00000     50.10000    -27.27273
+PHI=  15.4 CROSS:      0.00000     50.10000     27.27273
+PHI=  15.5 CROSS:      0.00000     50.10000     81.81818
+PHI=  15.6 CROSS:      0.00000     50.10000    136.36364
+PHI=  15.7 CROSS:      0.00000     50.10000    190.90909
+PHI=  15.8 CROSS:      0.00000     50.10000    245.45455
+PHI=  15.9 CROSS:      0.00000     50.10000    300.00000
+Total points: 760
+StartPhi of this vector= 16.0
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  16.0[deg]:    576.8 [um]
+Number of irradiation points on this vector: 11
+PHI=  16.0 CROSS:      0.00000      0.10000   -245.45455
+PHI=  16.1 CROSS:      0.00000      0.10000   -190.90909
+PHI=  16.2 CROSS:      0.00000      0.10000   -136.36364
+PHI=  16.3 CROSS:      0.00000      0.10000    -81.81818
+PHI=  16.4 CROSS:      0.00000      0.10000    -27.27273
+PHI=  16.5 CROSS:      0.00000      0.10000     27.27273
+PHI=  16.6 CROSS:      0.00000      0.10000     81.81818
+PHI=  16.7 CROSS:      0.00000      0.10000    136.36364
+PHI=  16.8 CROSS:      0.00000      0.10000    190.90909
+PHI=  16.9 CROSS:      0.00000      0.10000    245.45455
+PHI=  17.0 CROSS:      0.00000      0.10000    300.00000
+Total points: 771
+StartPhi of this vector= 17.1
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  17.1[deg]:    573.5 [um]
+Number of irradiation points on this vector: 11
+PHI=  17.1 CROSS:      0.00000    -49.90000   -245.45455
+PHI=  17.2 CROSS:      0.00000    -49.90000   -190.90909
+PHI=  17.3 CROSS:      0.00000    -49.90000   -136.36364
+PHI=  17.4 CROSS:      0.00000    -49.90000    -81.81818
+PHI=  17.5 CROSS:      0.00000    -49.90000    -27.27273
+PHI=  17.6 CROSS:      0.00000    -49.90000     27.27273
+PHI=  17.7 CROSS:      0.00000    -49.90000     81.81818
+PHI=  17.8 CROSS:      0.00000    -49.90000    136.36364
+PHI=  17.9 CROSS:      0.00000    -49.90000    190.90909
+PHI=  18.0 CROSS:      0.00000    -49.90000    245.45455
+PHI=  18.1 CROSS:      0.00000    -49.90000    300.00000
+Total points: 782
+StartPhi of this vector= 18.2
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  18.2[deg]:    570.0 [um]
+Number of irradiation points on this vector: 11
+PHI=  18.2 CROSS:      0.00000    -99.90000   -245.45455
+PHI=  18.3 CROSS:      0.00000    -99.90000   -190.90909
+PHI=  18.4 CROSS:      0.00000    -99.90000   -136.36364
+PHI=  18.5 CROSS:      0.00000    -99.90000    -81.81818
+PHI=  18.6 CROSS:      0.00000    -99.90000    -27.27273
+PHI=  18.7 CROSS:      0.00000    -99.90000     27.27273
+PHI=  18.8 CROSS:      0.00000    -99.90000     81.81818
+PHI=  18.9 CROSS:      0.00000    -99.90000    136.36364
+PHI=  19.0 CROSS:      0.00000    -99.90000    190.90909
+PHI=  19.1 CROSS:      0.00000    -99.90000    245.45455
+PHI=  19.2 CROSS:      0.00000    -99.90000    300.00000
+Total points: 793
+StartPhi of this vector= 19.3
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  19.3[deg]:    566.3 [um]
+Number of irradiation points on this vector: 11
+PHI=  19.3 CROSS:      0.00000   -149.90000   -245.45455
+PHI=  19.4 CROSS:      0.00000   -149.90000   -190.90909
+PHI=  19.5 CROSS:      0.00000   -149.90000   -136.36364
+PHI=  19.6 CROSS:      0.00000   -149.90000    -81.81818
+PHI=  19.7 CROSS:      0.00000   -149.90000    -27.27273
+PHI=  19.8 CROSS:      0.00000   -149.90000     27.27273
+PHI=  19.9 CROSS:      0.00000   -149.90000     81.81818
+PHI=  20.0 CROSS:      0.00000   -149.90000    136.36364
+PHI=  20.1 CROSS:      0.00000   -149.90000    190.90909
+PHI=  20.2 CROSS:      0.00000   -149.90000    245.45455
+PHI=  20.3 CROSS:      0.00000   -149.90000    300.00000
+Total points: 804
+StartPhi of this vector= 20.4
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  20.4[deg]:    562.4 [um]
+Number of irradiation points on this vector: 11
+PHI=  20.4 CROSS:      0.00000   -199.90000   -245.45455
+PHI=  20.5 CROSS:      0.00000   -199.90000   -190.90909
+PHI=  20.6 CROSS:      0.00000   -199.90000   -136.36364
+PHI=  20.7 CROSS:      0.00000   -199.90000    -81.81818
+PHI=  20.8 CROSS:      0.00000   -199.90000    -27.27273
+PHI=  20.9 CROSS:      0.00000   -199.90000     27.27273
+PHI=  21.0 CROSS:      0.00000   -199.90000     81.81818
+PHI=  21.1 CROSS:      0.00000   -199.90000    136.36364
+PHI=  21.2 CROSS:      0.00000   -199.90000    190.90909
+PHI=  21.3 CROSS:      0.00000   -199.90000    245.45455
+PHI=  21.4 CROSS:      0.00000   -199.90000    300.00000
+Total points: 815
+StartPhi of this vector= 21.5
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  21.5[deg]:    558.3 [um]
+Number of irradiation points on this vector: 11
+PHI=  21.5 CROSS:      0.00000   -249.90000   -245.45455
+PHI=  21.6 CROSS:      0.00000   -249.90000   -190.90909
+PHI=  21.7 CROSS:      0.00000   -249.90000   -136.36364
+PHI=  21.8 CROSS:      0.00000   -249.90000    -81.81818
+PHI=  21.9 CROSS:      0.00000   -249.90000    -27.27273
+PHI=  22.0 CROSS:      0.00000   -249.90000     27.27273
+PHI=  22.1 CROSS:      0.00000   -249.90000     81.81818
+PHI=  22.2 CROSS:      0.00000   -249.90000    136.36364
+PHI=  22.3 CROSS:      0.00000   -249.90000    190.90909
+PHI=  22.4 CROSS:      0.00000   -249.90000    245.45455
+PHI=  22.5 CROSS:      0.00000   -249.90000    300.00000
+Total points: 826
+N points/crystal= 121
+Time for this crystal= 20.0833333333 [min]
+##########################
+##### Crystal No.9 ######
+##########################
+StartPhi of this vector= 22.6
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  22.6[deg]:    553.9 [um]
+Number of irradiation points on this vector: 11
+PHI=  22.6 CROSS:      0.00000    250.10000   -245.45455
+PHI=  22.7 CROSS:      0.00000    250.10000   -190.90909
+PHI=  22.8 CROSS:      0.00000    250.10000   -136.36364
+PHI=  22.9 CROSS:      0.00000    250.10000    -81.81818
+PHI=  23.0 CROSS:      0.00000    250.10000    -27.27273
+PHI=  23.1 CROSS:      0.00000    250.10000     27.27273
+PHI=  23.2 CROSS:      0.00000    250.10000     81.81818
+PHI=  23.3 CROSS:      0.00000    250.10000    136.36364
+PHI=  23.4 CROSS:      0.00000    250.10000    190.90909
+PHI=  23.5 CROSS:      0.00000    250.10000    245.45455
+PHI=  23.6 CROSS:      0.00000    250.10000    300.00000
+Total points: 837
+StartPhi of this vector= 23.7
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  23.7[deg]:    549.4 [um]
+Number of irradiation points on this vector: 10
+PHI=  23.7 CROSS:      0.00000    200.10000   -240.00000
+PHI=  23.8 CROSS:      0.00000    200.10000   -180.00000
+PHI=  23.9 CROSS:      0.00000    200.10000   -120.00000
+PHI=  24.0 CROSS:      0.00000    200.10000    -60.00000
+PHI=  24.1 CROSS:      0.00000    200.10000      0.00000
+PHI=  24.2 CROSS:      0.00000    200.10000     60.00000
+PHI=  24.3 CROSS:      0.00000    200.10000    120.00000
+PHI=  24.4 CROSS:      0.00000    200.10000    180.00000
+PHI=  24.5 CROSS:      0.00000    200.10000    240.00000
+PHI=  24.6 CROSS:      0.00000    200.10000    300.00000
+Total points: 847
+StartPhi of this vector= 24.7
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  24.7[deg]:    545.1 [um]
+Number of irradiation points on this vector: 10
+PHI=  24.7 CROSS:      0.00000    150.10000   -240.00000
+PHI=  24.8 CROSS:      0.00000    150.10000   -180.00000
+PHI=  24.9 CROSS:      0.00000    150.10000   -120.00000
+PHI=  25.0 CROSS:      0.00000    150.10000    -60.00000
+PHI=  25.1 CROSS:      0.00000    150.10000      0.00000
+PHI=  25.2 CROSS:      0.00000    150.10000     60.00000
+PHI=  25.3 CROSS:      0.00000    150.10000    120.00000
+PHI=  25.4 CROSS:      0.00000    150.10000    180.00000
+PHI=  25.5 CROSS:      0.00000    150.10000    240.00000
+PHI=  25.6 CROSS:      0.00000    150.10000    300.00000
+Total points: 857
+StartPhi of this vector= 25.7
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  25.7[deg]:    540.6 [um]
+Number of irradiation points on this vector: 10
+PHI=  25.7 CROSS:      0.00000    100.10000   -240.00000
+PHI=  25.8 CROSS:      0.00000    100.10000   -180.00000
+PHI=  25.9 CROSS:      0.00000    100.10000   -120.00000
+PHI=  26.0 CROSS:      0.00000    100.10000    -60.00000
+PHI=  26.1 CROSS:      0.00000    100.10000      0.00000
+PHI=  26.2 CROSS:      0.00000    100.10000     60.00000
+PHI=  26.3 CROSS:      0.00000    100.10000    120.00000
+PHI=  26.4 CROSS:      0.00000    100.10000    180.00000
+PHI=  26.5 CROSS:      0.00000    100.10000    240.00000
+PHI=  26.6 CROSS:      0.00000    100.10000    300.00000
+Total points: 867
+StartPhi of this vector= 26.7
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  26.7[deg]:    536.0 [um]
+Number of irradiation points on this vector: 10
+PHI=  26.7 CROSS:      0.00000     50.10000   -240.00000
+PHI=  26.8 CROSS:      0.00000     50.10000   -180.00000
+PHI=  26.9 CROSS:      0.00000     50.10000   -120.00000
+PHI=  27.0 CROSS:      0.00000     50.10000    -60.00000
+PHI=  27.1 CROSS:      0.00000     50.10000      0.00000
+PHI=  27.2 CROSS:      0.00000     50.10000     60.00000
+PHI=  27.3 CROSS:      0.00000     50.10000    120.00000
+PHI=  27.4 CROSS:      0.00000     50.10000    180.00000
+PHI=  27.5 CROSS:      0.00000     50.10000    240.00000
+PHI=  27.6 CROSS:      0.00000     50.10000    300.00000
+Total points: 877
+StartPhi of this vector= 27.7
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  27.7[deg]:    531.2 [um]
+Number of irradiation points on this vector: 10
+PHI=  27.7 CROSS:      0.00000      0.10000   -240.00000
+PHI=  27.8 CROSS:      0.00000      0.10000   -180.00000
+PHI=  27.9 CROSS:      0.00000      0.10000   -120.00000
+PHI=  28.0 CROSS:      0.00000      0.10000    -60.00000
+PHI=  28.1 CROSS:      0.00000      0.10000      0.00000
+PHI=  28.2 CROSS:      0.00000      0.10000     60.00000
+PHI=  28.3 CROSS:      0.00000      0.10000    120.00000
+PHI=  28.4 CROSS:      0.00000      0.10000    180.00000
+PHI=  28.5 CROSS:      0.00000      0.10000    240.00000
+PHI=  28.6 CROSS:      0.00000      0.10000    300.00000
+Total points: 887
+StartPhi of this vector= 28.7
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  28.7[deg]:    526.3 [um]
+Number of irradiation points on this vector: 10
+PHI=  28.7 CROSS:      0.00000    -49.90000   -240.00000
+PHI=  28.8 CROSS:      0.00000    -49.90000   -180.00000
+PHI=  28.9 CROSS:      0.00000    -49.90000   -120.00000
+PHI=  29.0 CROSS:      0.00000    -49.90000    -60.00000
+PHI=  29.1 CROSS:      0.00000    -49.90000      0.00000
+PHI=  29.2 CROSS:      0.00000    -49.90000     60.00000
+PHI=  29.3 CROSS:      0.00000    -49.90000    120.00000
+PHI=  29.4 CROSS:      0.00000    -49.90000    180.00000
+PHI=  29.5 CROSS:      0.00000    -49.90000    240.00000
+PHI=  29.6 CROSS:      0.00000    -49.90000    300.00000
+Total points: 897
+StartPhi of this vector= 29.7
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  29.7[deg]:    521.2 [um]
+Number of irradiation points on this vector: 10
+PHI=  29.7 CROSS:      0.00000    -99.90000   -240.00000
+PHI=  29.8 CROSS:      0.00000    -99.90000   -180.00000
+PHI=  29.9 CROSS:      0.00000    -99.90000   -120.00000
+PHI=  30.0 CROSS:      0.00000    -99.90000    -60.00000
+PHI=  30.1 CROSS:      0.00000    -99.90000      0.00000
+PHI=  30.2 CROSS:      0.00000    -99.90000     60.00000
+PHI=  30.3 CROSS:      0.00000    -99.90000    120.00000
+PHI=  30.4 CROSS:      0.00000    -99.90000    180.00000
+PHI=  30.5 CROSS:      0.00000    -99.90000    240.00000
+PHI=  30.6 CROSS:      0.00000    -99.90000    300.00000
+Total points: 907
+StartPhi of this vector= 30.7
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  30.7[deg]:    515.9 [um]
+Number of irradiation points on this vector: 10
+PHI=  30.7 CROSS:      0.00000   -149.90000   -240.00000
+PHI=  30.8 CROSS:      0.00000   -149.90000   -180.00000
+PHI=  30.9 CROSS:      0.00000   -149.90000   -120.00000
+PHI=  31.0 CROSS:      0.00000   -149.90000    -60.00000
+PHI=  31.1 CROSS:      0.00000   -149.90000      0.00000
+PHI=  31.2 CROSS:      0.00000   -149.90000     60.00000
+PHI=  31.3 CROSS:      0.00000   -149.90000    120.00000
+PHI=  31.4 CROSS:      0.00000   -149.90000    180.00000
+PHI=  31.5 CROSS:      0.00000   -149.90000    240.00000
+PHI=  31.6 CROSS:      0.00000   -149.90000    300.00000
+Total points: 917
+StartPhi of this vector= 31.7
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  31.7[deg]:    510.5 [um]
+Number of irradiation points on this vector: 10
+PHI=  31.7 CROSS:      0.00000   -199.90000   -240.00000
+PHI=  31.8 CROSS:      0.00000   -199.90000   -180.00000
+PHI=  31.9 CROSS:      0.00000   -199.90000   -120.00000
+PHI=  32.0 CROSS:      0.00000   -199.90000    -60.00000
+PHI=  32.1 CROSS:      0.00000   -199.90000      0.00000
+PHI=  32.2 CROSS:      0.00000   -199.90000     60.00000
+PHI=  32.3 CROSS:      0.00000   -199.90000    120.00000
+PHI=  32.4 CROSS:      0.00000   -199.90000    180.00000
+PHI=  32.5 CROSS:      0.00000   -199.90000    240.00000
+PHI=  32.6 CROSS:      0.00000   -199.90000    300.00000
+Total points: 927
+StartPhi of this vector= 32.7
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  32.7[deg]:    504.9 [um]
+Number of irradiation points on this vector: 10
+PHI=  32.7 CROSS:      0.00000   -249.90000   -240.00000
+PHI=  32.8 CROSS:      0.00000   -249.90000   -180.00000
+PHI=  32.9 CROSS:      0.00000   -249.90000   -120.00000
+PHI=  33.0 CROSS:      0.00000   -249.90000    -60.00000
+PHI=  33.1 CROSS:      0.00000   -249.90000      0.00000
+PHI=  33.2 CROSS:      0.00000   -249.90000     60.00000
+PHI=  33.3 CROSS:      0.00000   -249.90000    120.00000
+PHI=  33.4 CROSS:      0.00000   -249.90000    180.00000
+PHI=  33.5 CROSS:      0.00000   -249.90000    240.00000
+PHI=  33.6 CROSS:      0.00000   -249.90000    300.00000
+Total points: 937
+N points/crystal= 111
+Time for this crystal= 19.25 [min]
+##########################
+##### Crystal No.10 ######
+##########################
+StartPhi of this vector= 33.7
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  33.7[deg]:    499.2 [um]
+Number of irradiation points on this vector: 9
+PHI=  33.7 CROSS:      0.00000    250.10000   -233.33333
+PHI=  33.8 CROSS:      0.00000    250.10000   -166.66667
+PHI=  33.9 CROSS:      0.00000    250.10000   -100.00000
+PHI=  34.0 CROSS:      0.00000    250.10000    -33.33333
+PHI=  34.1 CROSS:      0.00000    250.10000     33.33333
+PHI=  34.2 CROSS:      0.00000    250.10000    100.00000
+PHI=  34.3 CROSS:      0.00000    250.10000    166.66667
+PHI=  34.4 CROSS:      0.00000    250.10000    233.33333
+PHI=  34.5 CROSS:      0.00000    250.10000    300.00000
+Total points: 946
+StartPhi of this vector= 34.6
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  34.6[deg]:    493.9 [um]
+Number of irradiation points on this vector: 9
+PHI=  34.6 CROSS:      0.00000    200.10000   -233.33333
+PHI=  34.7 CROSS:      0.00000    200.10000   -166.66667
+PHI=  34.8 CROSS:      0.00000    200.10000   -100.00000
+PHI=  34.9 CROSS:      0.00000    200.10000    -33.33333
+PHI=  35.0 CROSS:      0.00000    200.10000     33.33333
+PHI=  35.1 CROSS:      0.00000    200.10000    100.00000
+PHI=  35.2 CROSS:      0.00000    200.10000    166.66667
+PHI=  35.3 CROSS:      0.00000    200.10000    233.33333
+PHI=  35.4 CROSS:      0.00000    200.10000    300.00000
+Total points: 955
+StartPhi of this vector= 35.5
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  35.5[deg]:    488.5 [um]
+Number of irradiation points on this vector: 9
+PHI=  35.5 CROSS:      0.00000    150.10000   -233.33333
+PHI=  35.6 CROSS:      0.00000    150.10000   -166.66667
+PHI=  35.7 CROSS:      0.00000    150.10000   -100.00000
+PHI=  35.8 CROSS:      0.00000    150.10000    -33.33333
+PHI=  35.9 CROSS:      0.00000    150.10000     33.33333
+PHI=  36.0 CROSS:      0.00000    150.10000    100.00000
+PHI=  36.1 CROSS:      0.00000    150.10000    166.66667
+PHI=  36.2 CROSS:      0.00000    150.10000    233.33333
+PHI=  36.3 CROSS:      0.00000    150.10000    300.00000
+Total points: 964
+StartPhi of this vector= 36.4
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  36.4[deg]:    482.9 [um]
+Number of irradiation points on this vector: 9
+PHI=  36.4 CROSS:      0.00000    100.10000   -233.33333
+PHI=  36.5 CROSS:      0.00000    100.10000   -166.66667
+PHI=  36.6 CROSS:      0.00000    100.10000   -100.00000
+PHI=  36.7 CROSS:      0.00000    100.10000    -33.33333
+PHI=  36.8 CROSS:      0.00000    100.10000     33.33333
+PHI=  36.9 CROSS:      0.00000    100.10000    100.00000
+PHI=  37.0 CROSS:      0.00000    100.10000    166.66667
+PHI=  37.1 CROSS:      0.00000    100.10000    233.33333
+PHI=  37.2 CROSS:      0.00000    100.10000    300.00000
+Total points: 973
+StartPhi of this vector= 37.3
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  37.3[deg]:    477.3 [um]
+Number of irradiation points on this vector: 9
+PHI=  37.3 CROSS:      0.00000     50.10000   -233.33333
+PHI=  37.4 CROSS:      0.00000     50.10000   -166.66667
+PHI=  37.5 CROSS:      0.00000     50.10000   -100.00000
+PHI=  37.6 CROSS:      0.00000     50.10000    -33.33333
+PHI=  37.7 CROSS:      0.00000     50.10000     33.33333
+PHI=  37.8 CROSS:      0.00000     50.10000    100.00000
+PHI=  37.9 CROSS:      0.00000     50.10000    166.66667
+PHI=  38.0 CROSS:      0.00000     50.10000    233.33333
+PHI=  38.1 CROSS:      0.00000     50.10000    300.00000
+Total points: 982
+StartPhi of this vector= 38.2
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  38.2[deg]:    471.5 [um]
+Number of irradiation points on this vector: 9
+PHI=  38.2 CROSS:      0.00000      0.10000   -233.33333
+PHI=  38.3 CROSS:      0.00000      0.10000   -166.66667
+PHI=  38.4 CROSS:      0.00000      0.10000   -100.00000
+PHI=  38.5 CROSS:      0.00000      0.10000    -33.33333
+PHI=  38.6 CROSS:      0.00000      0.10000     33.33333
+PHI=  38.7 CROSS:      0.00000      0.10000    100.00000
+PHI=  38.8 CROSS:      0.00000      0.10000    166.66667
+PHI=  38.9 CROSS:      0.00000      0.10000    233.33333
+PHI=  39.0 CROSS:      0.00000      0.10000    300.00000
+Total points: 991
+StartPhi of this vector= 39.1
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  39.1[deg]:    465.6 [um]
+Number of irradiation points on this vector: 9
+PHI=  39.1 CROSS:      0.00000    -49.90000   -233.33333
+PHI=  39.2 CROSS:      0.00000    -49.90000   -166.66667
+PHI=  39.3 CROSS:      0.00000    -49.90000   -100.00000
+PHI=  39.4 CROSS:      0.00000    -49.90000    -33.33333
+PHI=  39.5 CROSS:      0.00000    -49.90000     33.33333
+PHI=  39.6 CROSS:      0.00000    -49.90000    100.00000
+PHI=  39.7 CROSS:      0.00000    -49.90000    166.66667
+PHI=  39.8 CROSS:      0.00000    -49.90000    233.33333
+PHI=  39.9 CROSS:      0.00000    -49.90000    300.00000
+Total points: 1000
+StartPhi of this vector= 40.0
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  40.0[deg]:    459.6 [um]
+Number of irradiation points on this vector: 9
+PHI=  40.0 CROSS:      0.00000    -99.90000   -233.33333
+PHI=  40.1 CROSS:      0.00000    -99.90000   -166.66667
+PHI=  40.2 CROSS:      0.00000    -99.90000   -100.00000
+PHI=  40.3 CROSS:      0.00000    -99.90000    -33.33333
+PHI=  40.4 CROSS:      0.00000    -99.90000     33.33333
+PHI=  40.5 CROSS:      0.00000    -99.90000    100.00000
+PHI=  40.6 CROSS:      0.00000    -99.90000    166.66667
+PHI=  40.7 CROSS:      0.00000    -99.90000    233.33333
+PHI=  40.8 CROSS:      0.00000    -99.90000    300.00000
+Total points: 1009
+StartPhi of this vector= 40.9
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  40.9[deg]:    453.5 [um]
+Number of irradiation points on this vector: 9
+PHI=  40.9 CROSS:      0.00000   -149.90000   -233.33333
+PHI=  41.0 CROSS:      0.00000   -149.90000   -166.66667
+PHI=  41.1 CROSS:      0.00000   -149.90000   -100.00000
+PHI=  41.2 CROSS:      0.00000   -149.90000    -33.33333
+PHI=  41.3 CROSS:      0.00000   -149.90000     33.33333
+PHI=  41.4 CROSS:      0.00000   -149.90000    100.00000
+PHI=  41.5 CROSS:      0.00000   -149.90000    166.66667
+PHI=  41.6 CROSS:      0.00000   -149.90000    233.33333
+PHI=  41.7 CROSS:      0.00000   -149.90000    300.00000
+Total points: 1018
+StartPhi of this vector= 41.8
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  41.8[deg]:    447.3 [um]
+Number of irradiation points on this vector: 8
+PHI=  41.8 CROSS:      0.00000   -199.90000   -225.00000
+PHI=  41.9 CROSS:      0.00000   -199.90000   -150.00000
+PHI=  42.0 CROSS:      0.00000   -199.90000    -75.00000
+PHI=  42.1 CROSS:      0.00000   -199.90000      0.00000
+PHI=  42.2 CROSS:      0.00000   -199.90000     75.00000
+PHI=  42.3 CROSS:      0.00000   -199.90000    150.00000
+PHI=  42.4 CROSS:      0.00000   -199.90000    225.00000
+PHI=  42.5 CROSS:      0.00000   -199.90000    300.00000
+Total points: 1026
+StartPhi of this vector= 42.6
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  42.6[deg]:    441.7 [um]
+Number of irradiation points on this vector: 8
+PHI=  42.6 CROSS:      0.00000   -249.90000   -225.00000
+PHI=  42.7 CROSS:      0.00000   -249.90000   -150.00000
+PHI=  42.8 CROSS:      0.00000   -249.90000    -75.00000
+PHI=  42.9 CROSS:      0.00000   -249.90000      0.00000
+PHI=  43.0 CROSS:      0.00000   -249.90000     75.00000
+PHI=  43.1 CROSS:      0.00000   -249.90000    150.00000
+PHI=  43.2 CROSS:      0.00000   -249.90000    225.00000
+PHI=  43.3 CROSS:      0.00000   -249.90000    300.00000
+Total points: 1034
+N points/crystal= 97
+Time for this crystal= 18.0833333333 [min]
+##########################
+##### Crystal No.11 ######
+##########################
+StartPhi of this vector= 43.4
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  43.4[deg]:    435.9 [um]
+Number of irradiation points on this vector: 8
+PHI=  43.4 CROSS:      0.00000    250.10000   -225.00000
+PHI=  43.5 CROSS:      0.00000    250.10000   -150.00000
+PHI=  43.6 CROSS:      0.00000    250.10000    -75.00000
+PHI=  43.7 CROSS:      0.00000    250.10000      0.00000
+PHI=  43.8 CROSS:      0.00000    250.10000     75.00000
+PHI=  43.9 CROSS:      0.00000    250.10000    150.00000
+PHI=  44.0 CROSS:      0.00000    250.10000    225.00000
+PHI=  44.1 CROSS:      0.00000    250.10000    300.00000
+Total points: 1042
+StartPhi of this vector= 44.2
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  44.2[deg]:    430.1 [um]
+Number of irradiation points on this vector: 8
+PHI=  44.2 CROSS:      0.00000    200.10000   -225.00000
+PHI=  44.3 CROSS:      0.00000    200.10000   -150.00000
+PHI=  44.4 CROSS:      0.00000    200.10000    -75.00000
+PHI=  44.5 CROSS:      0.00000    200.10000      0.00000
+PHI=  44.6 CROSS:      0.00000    200.10000     75.00000
+PHI=  44.7 CROSS:      0.00000    200.10000    150.00000
+PHI=  44.8 CROSS:      0.00000    200.10000    225.00000
+PHI=  44.9 CROSS:      0.00000    200.10000    300.00000
+Total points: 1050
+StartPhi of this vector= 45.0
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  45.0[deg]:    424.3 [um]
+Number of irradiation points on this vector: 8
+PHI=  45.0 CROSS:      0.00000    150.10000   -225.00000
+PHI=  45.1 CROSS:      0.00000    150.10000   -150.00000
+PHI=  45.2 CROSS:      0.00000    150.10000    -75.00000
+PHI=  45.3 CROSS:      0.00000    150.10000      0.00000
+PHI=  45.4 CROSS:      0.00000    150.10000     75.00000
+PHI=  45.5 CROSS:      0.00000    150.10000    150.00000
+PHI=  45.6 CROSS:      0.00000    150.10000    225.00000
+PHI=  45.7 CROSS:      0.00000    150.10000    300.00000
+Total points: 1058
+StartPhi of this vector= 45.8
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  45.8[deg]:    418.3 [um]
+Number of irradiation points on this vector: 8
+PHI=  45.8 CROSS:      0.00000    100.10000   -225.00000
+PHI=  45.9 CROSS:      0.00000    100.10000   -150.00000
+PHI=  46.0 CROSS:      0.00000    100.10000    -75.00000
+PHI=  46.1 CROSS:      0.00000    100.10000      0.00000
+PHI=  46.2 CROSS:      0.00000    100.10000     75.00000
+PHI=  46.3 CROSS:      0.00000    100.10000    150.00000
+PHI=  46.4 CROSS:      0.00000    100.10000    225.00000
+PHI=  46.5 CROSS:      0.00000    100.10000    300.00000
+Total points: 1066
+StartPhi of this vector= 46.6
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  46.6[deg]:    412.3 [um]
+Number of irradiation points on this vector: 8
+PHI=  46.6 CROSS:      0.00000     50.10000   -225.00000
+PHI=  46.7 CROSS:      0.00000     50.10000   -150.00000
+PHI=  46.8 CROSS:      0.00000     50.10000    -75.00000
+PHI=  46.9 CROSS:      0.00000     50.10000      0.00000
+PHI=  47.0 CROSS:      0.00000     50.10000     75.00000
+PHI=  47.1 CROSS:      0.00000     50.10000    150.00000
+PHI=  47.2 CROSS:      0.00000     50.10000    225.00000
+PHI=  47.3 CROSS:      0.00000     50.10000    300.00000
+Total points: 1074
+StartPhi of this vector= 47.4
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  47.4[deg]:    406.1 [um]
+Number of irradiation points on this vector: 8
+PHI=  47.4 CROSS:      0.00000      0.10000   -225.00000
+PHI=  47.5 CROSS:      0.00000      0.10000   -150.00000
+PHI=  47.6 CROSS:      0.00000      0.10000    -75.00000
+PHI=  47.7 CROSS:      0.00000      0.10000      0.00000
+PHI=  47.8 CROSS:      0.00000      0.10000     75.00000
+PHI=  47.9 CROSS:      0.00000      0.10000    150.00000
+PHI=  48.0 CROSS:      0.00000      0.10000    225.00000
+PHI=  48.1 CROSS:      0.00000      0.10000    300.00000
+Total points: 1082
+StartPhi of this vector= 48.2
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  48.2[deg]:    399.9 [um]
+Number of irradiation points on this vector: 7
+PHI=  48.2 CROSS:      0.00000    -49.90000   -214.28571
+PHI=  48.3 CROSS:      0.00000    -49.90000   -128.57143
+PHI=  48.4 CROSS:      0.00000    -49.90000    -42.85714
+PHI=  48.5 CROSS:      0.00000    -49.90000     42.85714
+PHI=  48.6 CROSS:      0.00000    -49.90000    128.57143
+PHI=  48.7 CROSS:      0.00000    -49.90000    214.28571
+PHI=  48.8 CROSS:      0.00000    -49.90000    300.00000
+Total points: 1089
+StartPhi of this vector= 48.9
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  48.9[deg]:    394.4 [um]
+Number of irradiation points on this vector: 7
+PHI=  48.9 CROSS:      0.00000    -99.90000   -214.28571
+PHI=  49.0 CROSS:      0.00000    -99.90000   -128.57143
+PHI=  49.1 CROSS:      0.00000    -99.90000    -42.85714
+PHI=  49.2 CROSS:      0.00000    -99.90000     42.85714
+PHI=  49.3 CROSS:      0.00000    -99.90000    128.57143
+PHI=  49.4 CROSS:      0.00000    -99.90000    214.28571
+PHI=  49.5 CROSS:      0.00000    -99.90000    300.00000
+Total points: 1096
+StartPhi of this vector= 49.6
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  49.6[deg]:    388.9 [um]
+Number of irradiation points on this vector: 7
+PHI=  49.6 CROSS:      0.00000   -149.90000   -214.28571
+PHI=  49.7 CROSS:      0.00000   -149.90000   -128.57143
+PHI=  49.8 CROSS:      0.00000   -149.90000    -42.85714
+PHI=  49.9 CROSS:      0.00000   -149.90000     42.85714
+PHI=  50.0 CROSS:      0.00000   -149.90000    128.57143
+PHI=  50.1 CROSS:      0.00000   -149.90000    214.28571
+PHI=  50.2 CROSS:      0.00000   -149.90000    300.00000
+Total points: 1103
+StartPhi of this vector= 50.3
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  50.3[deg]:    383.3 [um]
+Number of irradiation points on this vector: 7
+PHI=  50.3 CROSS:      0.00000   -199.90000   -214.28571
+PHI=  50.4 CROSS:      0.00000   -199.90000   -128.57143
+PHI=  50.5 CROSS:      0.00000   -199.90000    -42.85714
+PHI=  50.6 CROSS:      0.00000   -199.90000     42.85714
+PHI=  50.7 CROSS:      0.00000   -199.90000    128.57143
+PHI=  50.8 CROSS:      0.00000   -199.90000    214.28571
+PHI=  50.9 CROSS:      0.00000   -199.90000    300.00000
+Total points: 1110
+StartPhi of this vector= 51.0
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  51.0[deg]:    377.6 [um]
+Number of irradiation points on this vector: 7
+PHI=  51.0 CROSS:      0.00000   -249.90000   -214.28571
+PHI=  51.1 CROSS:      0.00000   -249.90000   -128.57143
+PHI=  51.2 CROSS:      0.00000   -249.90000    -42.85714
+PHI=  51.3 CROSS:      0.00000   -249.90000     42.85714
+PHI=  51.4 CROSS:      0.00000   -249.90000    128.57143
+PHI=  51.5 CROSS:      0.00000   -249.90000    214.28571
+PHI=  51.6 CROSS:      0.00000   -249.90000    300.00000
+Total points: 1117
+N points/crystal= 83
+Time for this crystal= 16.9166666667 [min]
+##########################
+##### Crystal No.12 ######
+##########################
+StartPhi of this vector= 51.7
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  51.7[deg]:    371.9 [um]
+Number of irradiation points on this vector: 7
+PHI=  51.7 CROSS:      0.00000    250.10000   -214.28571
+PHI=  51.8 CROSS:      0.00000    250.10000   -128.57143
+PHI=  51.9 CROSS:      0.00000    250.10000    -42.85714
+PHI=  52.0 CROSS:      0.00000    250.10000     42.85714
+PHI=  52.1 CROSS:      0.00000    250.10000    128.57143
+PHI=  52.2 CROSS:      0.00000    250.10000    214.28571
+PHI=  52.3 CROSS:      0.00000    250.10000    300.00000
+Total points: 1124
+StartPhi of this vector= 52.4
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  52.4[deg]:    366.1 [um]
+Number of irradiation points on this vector: 7
+PHI=  52.4 CROSS:      0.00000    200.10000   -214.28571
+PHI=  52.5 CROSS:      0.00000    200.10000   -128.57143
+PHI=  52.6 CROSS:      0.00000    200.10000    -42.85714
+PHI=  52.7 CROSS:      0.00000    200.10000     42.85714
+PHI=  52.8 CROSS:      0.00000    200.10000    128.57143
+PHI=  52.9 CROSS:      0.00000    200.10000    214.28571
+PHI=  53.0 CROSS:      0.00000    200.10000    300.00000
+Total points: 1131
+StartPhi of this vector= 53.1
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  53.1[deg]:    360.3 [um]
+Number of irradiation points on this vector: 7
+PHI=  53.1 CROSS:      0.00000    150.10000   -214.28571
+PHI=  53.2 CROSS:      0.00000    150.10000   -128.57143
+PHI=  53.3 CROSS:      0.00000    150.10000    -42.85714
+PHI=  53.4 CROSS:      0.00000    150.10000     42.85714
+PHI=  53.5 CROSS:      0.00000    150.10000    128.57143
+PHI=  53.6 CROSS:      0.00000    150.10000    214.28571
+PHI=  53.7 CROSS:      0.00000    150.10000    300.00000
+Total points: 1138
+StartPhi of this vector= 53.8
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  53.8[deg]:    354.4 [um]
+Number of irradiation points on this vector: 7
+PHI=  53.8 CROSS:      0.00000    100.10000   -214.28571
+PHI=  53.9 CROSS:      0.00000    100.10000   -128.57143
+PHI=  54.0 CROSS:      0.00000    100.10000    -42.85714
+PHI=  54.1 CROSS:      0.00000    100.10000     42.85714
+PHI=  54.2 CROSS:      0.00000    100.10000    128.57143
+PHI=  54.3 CROSS:      0.00000    100.10000    214.28571
+PHI=  54.4 CROSS:      0.00000    100.10000    300.00000
+Total points: 1145
+StartPhi of this vector= 54.5
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  54.5[deg]:    348.4 [um]
+Number of irradiation points on this vector: 6
+PHI=  54.5 CROSS:      0.00000     50.10000   -200.00000
+PHI=  54.6 CROSS:      0.00000     50.10000   -100.00000
+PHI=  54.7 CROSS:      0.00000     50.10000      0.00000
+PHI=  54.8 CROSS:      0.00000     50.10000    100.00000
+PHI=  54.9 CROSS:      0.00000     50.10000    200.00000
+PHI=  55.0 CROSS:      0.00000     50.10000    300.00000
+Total points: 1151
+StartPhi of this vector= 55.1
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  55.1[deg]:    343.3 [um]
+Number of irradiation points on this vector: 6
+PHI=  55.1 CROSS:      0.00000      0.10000   -200.00000
+PHI=  55.2 CROSS:      0.00000      0.10000   -100.00000
+PHI=  55.3 CROSS:      0.00000      0.10000      0.00000
+PHI=  55.4 CROSS:      0.00000      0.10000    100.00000
+PHI=  55.5 CROSS:      0.00000      0.10000    200.00000
+PHI=  55.6 CROSS:      0.00000      0.10000    300.00000
+Total points: 1157
+StartPhi of this vector= 55.7
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  55.7[deg]:    338.1 [um]
+Number of irradiation points on this vector: 6
+PHI=  55.7 CROSS:      0.00000    -49.90000   -200.00000
+PHI=  55.8 CROSS:      0.00000    -49.90000   -100.00000
+PHI=  55.9 CROSS:      0.00000    -49.90000      0.00000
+PHI=  56.0 CROSS:      0.00000    -49.90000    100.00000
+PHI=  56.1 CROSS:      0.00000    -49.90000    200.00000
+PHI=  56.2 CROSS:      0.00000    -49.90000    300.00000
+Total points: 1163
+StartPhi of this vector= 56.3
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  56.3[deg]:    332.9 [um]
+Number of irradiation points on this vector: 6
+PHI=  56.3 CROSS:      0.00000    -99.90000   -200.00000
+PHI=  56.4 CROSS:      0.00000    -99.90000   -100.00000
+PHI=  56.5 CROSS:      0.00000    -99.90000      0.00000
+PHI=  56.6 CROSS:      0.00000    -99.90000    100.00000
+PHI=  56.7 CROSS:      0.00000    -99.90000    200.00000
+PHI=  56.8 CROSS:      0.00000    -99.90000    300.00000
+Total points: 1169
+StartPhi of this vector= 56.9
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  56.9[deg]:    327.7 [um]
+Number of irradiation points on this vector: 6
+PHI=  56.9 CROSS:      0.00000   -149.90000   -200.00000
+PHI=  57.0 CROSS:      0.00000   -149.90000   -100.00000
+PHI=  57.1 CROSS:      0.00000   -149.90000      0.00000
+PHI=  57.2 CROSS:      0.00000   -149.90000    100.00000
+PHI=  57.3 CROSS:      0.00000   -149.90000    200.00000
+PHI=  57.4 CROSS:      0.00000   -149.90000    300.00000
+Total points: 1175
+StartPhi of this vector= 57.5
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  57.5[deg]:    322.4 [um]
+Number of irradiation points on this vector: 6
+PHI=  57.5 CROSS:      0.00000   -199.90000   -200.00000
+PHI=  57.6 CROSS:      0.00000   -199.90000   -100.00000
+PHI=  57.7 CROSS:      0.00000   -199.90000      0.00000
+PHI=  57.8 CROSS:      0.00000   -199.90000    100.00000
+PHI=  57.9 CROSS:      0.00000   -199.90000    200.00000
+PHI=  58.0 CROSS:      0.00000   -199.90000    300.00000
+Total points: 1181
+StartPhi of this vector= 58.1
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  58.1[deg]:    317.1 [um]
+Number of irradiation points on this vector: 6
+PHI=  58.1 CROSS:      0.00000   -249.90000   -200.00000
+PHI=  58.2 CROSS:      0.00000   -249.90000   -100.00000
+PHI=  58.3 CROSS:      0.00000   -249.90000      0.00000
+PHI=  58.4 CROSS:      0.00000   -249.90000    100.00000
+PHI=  58.5 CROSS:      0.00000   -249.90000    200.00000
+PHI=  58.6 CROSS:      0.00000   -249.90000    300.00000
+Total points: 1187
+N points/crystal= 70
+Time for this crystal= 15.8333333333 [min]
+##########################
+##### Crystal No.13 ######
+##########################
+StartPhi of this vector= 58.7
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  58.7[deg]:    311.7 [um]
+Number of irradiation points on this vector: 6
+PHI=  58.7 CROSS:      0.00000    250.10000   -200.00000
+PHI=  58.8 CROSS:      0.00000    250.10000   -100.00000
+PHI=  58.9 CROSS:      0.00000    250.10000      0.00000
+PHI=  59.0 CROSS:      0.00000    250.10000    100.00000
+PHI=  59.1 CROSS:      0.00000    250.10000    200.00000
+PHI=  59.2 CROSS:      0.00000    250.10000    300.00000
+Total points: 1193
+StartPhi of this vector= 59.3
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  59.3[deg]:    306.3 [um]
+Number of irradiation points on this vector: 6
+PHI=  59.3 CROSS:      0.00000    200.10000   -200.00000
+PHI=  59.4 CROSS:      0.00000    200.10000   -100.00000
+PHI=  59.5 CROSS:      0.00000    200.10000      0.00000
+PHI=  59.6 CROSS:      0.00000    200.10000    100.00000
+PHI=  59.7 CROSS:      0.00000    200.10000    200.00000
+PHI=  59.8 CROSS:      0.00000    200.10000    300.00000
+Total points: 1199
+StartPhi of this vector= 59.9
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  59.9[deg]:    300.9 [um]
+Number of irradiation points on this vector: 5
+PHI=  59.9 CROSS:      0.00000    150.10000   -180.00000
+PHI=  60.0 CROSS:      0.00000    150.10000    -60.00000
+PHI=  60.1 CROSS:      0.00000    150.10000     60.00000
+PHI=  60.2 CROSS:      0.00000    150.10000    180.00000
+PHI=  60.3 CROSS:      0.00000    150.10000    300.00000
+Total points: 1204
+StartPhi of this vector= 60.4
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  60.4[deg]:    296.4 [um]
+Number of irradiation points on this vector: 5
+PHI=  60.4 CROSS:      0.00000    100.10000   -180.00000
+PHI=  60.5 CROSS:      0.00000    100.10000    -60.00000
+PHI=  60.6 CROSS:      0.00000    100.10000     60.00000
+PHI=  60.7 CROSS:      0.00000    100.10000    180.00000
+PHI=  60.8 CROSS:      0.00000    100.10000    300.00000
+Total points: 1209
+StartPhi of this vector= 60.9
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  60.9[deg]:    291.8 [um]
+Number of irradiation points on this vector: 5
+PHI=  60.9 CROSS:      0.00000     50.10000   -180.00000
+PHI=  61.0 CROSS:      0.00000     50.10000    -60.00000
+PHI=  61.1 CROSS:      0.00000     50.10000     60.00000
+PHI=  61.2 CROSS:      0.00000     50.10000    180.00000
+PHI=  61.3 CROSS:      0.00000     50.10000    300.00000
+Total points: 1214
+StartPhi of this vector= 61.4
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  61.4[deg]:    287.2 [um]
+Number of irradiation points on this vector: 5
+PHI=  61.4 CROSS:      0.00000      0.10000   -180.00000
+PHI=  61.5 CROSS:      0.00000      0.10000    -60.00000
+PHI=  61.6 CROSS:      0.00000      0.10000     60.00000
+PHI=  61.7 CROSS:      0.00000      0.10000    180.00000
+PHI=  61.8 CROSS:      0.00000      0.10000    300.00000
+Total points: 1219
+StartPhi of this vector= 61.9
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  61.9[deg]:    282.6 [um]
+Number of irradiation points on this vector: 5
+PHI=  61.9 CROSS:      0.00000    -49.90000   -180.00000
+PHI=  62.0 CROSS:      0.00000    -49.90000    -60.00000
+PHI=  62.1 CROSS:      0.00000    -49.90000     60.00000
+PHI=  62.2 CROSS:      0.00000    -49.90000    180.00000
+PHI=  62.3 CROSS:      0.00000    -49.90000    300.00000
+Total points: 1224
+StartPhi of this vector= 62.4
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  62.4[deg]:    278.0 [um]
+Number of irradiation points on this vector: 5
+PHI=  62.4 CROSS:      0.00000    -99.90000   -180.00000
+PHI=  62.5 CROSS:      0.00000    -99.90000    -60.00000
+PHI=  62.6 CROSS:      0.00000    -99.90000     60.00000
+PHI=  62.7 CROSS:      0.00000    -99.90000    180.00000
+PHI=  62.8 CROSS:      0.00000    -99.90000    300.00000
+Total points: 1229
+StartPhi of this vector= 62.9
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  62.9[deg]:    273.3 [um]
+Number of irradiation points on this vector: 5
+PHI=  62.9 CROSS:      0.00000   -149.90000   -180.00000
+PHI=  63.0 CROSS:      0.00000   -149.90000    -60.00000
+PHI=  63.1 CROSS:      0.00000   -149.90000     60.00000
+PHI=  63.2 CROSS:      0.00000   -149.90000    180.00000
+PHI=  63.3 CROSS:      0.00000   -149.90000    300.00000
+Total points: 1234
+StartPhi of this vector= 63.4
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  63.4[deg]:    268.7 [um]
+Number of irradiation points on this vector: 5
+PHI=  63.4 CROSS:      0.00000   -199.90000   -180.00000
+PHI=  63.5 CROSS:      0.00000   -199.90000    -60.00000
+PHI=  63.6 CROSS:      0.00000   -199.90000     60.00000
+PHI=  63.7 CROSS:      0.00000   -199.90000    180.00000
+PHI=  63.8 CROSS:      0.00000   -199.90000    300.00000
+Total points: 1239
+StartPhi of this vector= 63.9
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  63.9[deg]:    264.0 [um]
+Number of irradiation points on this vector: 5
+PHI=  63.9 CROSS:      0.00000   -249.90000   -180.00000
+PHI=  64.0 CROSS:      0.00000   -249.90000    -60.00000
+PHI=  64.1 CROSS:      0.00000   -249.90000     60.00000
+PHI=  64.2 CROSS:      0.00000   -249.90000    180.00000
+PHI=  64.3 CROSS:      0.00000   -249.90000    300.00000
+Total points: 1244
+N points/crystal= 57
+Time for this crystal= 14.75 [min]
+##########################
+##### Crystal No.14 ######
+##########################
+StartPhi of this vector= 64.4
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  64.4[deg]:    259.3 [um]
+Number of irradiation points on this vector: 5
+PHI=  64.4 CROSS:      0.00000    250.10000   -180.00000
+PHI=  64.5 CROSS:      0.00000    250.10000    -60.00000
+PHI=  64.6 CROSS:      0.00000    250.10000     60.00000
+PHI=  64.7 CROSS:      0.00000    250.10000    180.00000
+PHI=  64.8 CROSS:      0.00000    250.10000    300.00000
+Total points: 1249
+StartPhi of this vector= 64.9
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  64.9[deg]:    254.5 [um]
+Number of irradiation points on this vector: 5
+PHI=  64.9 CROSS:      0.00000    200.10000   -180.00000
+PHI=  65.0 CROSS:      0.00000    200.10000    -60.00000
+PHI=  65.1 CROSS:      0.00000    200.10000     60.00000
+PHI=  65.2 CROSS:      0.00000    200.10000    180.00000
+PHI=  65.3 CROSS:      0.00000    200.10000    300.00000
+Total points: 1254
+StartPhi of this vector= 65.4
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  65.4[deg]:    249.8 [um]
+Number of irradiation points on this vector: 4
+PHI=  65.4 CROSS:      0.00000    150.10000   -150.00000
+PHI=  65.5 CROSS:      0.00000    150.10000      0.00000
+PHI=  65.6 CROSS:      0.00000    150.10000    150.00000
+PHI=  65.7 CROSS:      0.00000    150.10000    300.00000
+Total points: 1258
+StartPhi of this vector= 65.8
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  65.8[deg]:    246.0 [um]
+Number of irradiation points on this vector: 4
+PHI=  65.8 CROSS:      0.00000    100.10000   -150.00000
+PHI=  65.9 CROSS:      0.00000    100.10000      0.00000
+PHI=  66.0 CROSS:      0.00000    100.10000    150.00000
+PHI=  66.1 CROSS:      0.00000    100.10000    300.00000
+Total points: 1262
+StartPhi of this vector= 66.2
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  66.2[deg]:    242.1 [um]
+Number of irradiation points on this vector: 4
+PHI=  66.2 CROSS:      0.00000     50.10000   -150.00000
+PHI=  66.3 CROSS:      0.00000     50.10000      0.00000
+PHI=  66.4 CROSS:      0.00000     50.10000    150.00000
+PHI=  66.5 CROSS:      0.00000     50.10000    300.00000
+Total points: 1266
+StartPhi of this vector= 66.6
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  66.6[deg]:    238.3 [um]
+Number of irradiation points on this vector: 4
+PHI=  66.6 CROSS:      0.00000      0.10000   -150.00000
+PHI=  66.7 CROSS:      0.00000      0.10000      0.00000
+PHI=  66.8 CROSS:      0.00000      0.10000    150.00000
+PHI=  66.9 CROSS:      0.00000      0.10000    300.00000
+Total points: 1270
+StartPhi of this vector= 67.0
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  67.0[deg]:    234.4 [um]
+Number of irradiation points on this vector: 4
+PHI=  67.0 CROSS:      0.00000    -49.90000   -150.00000
+PHI=  67.1 CROSS:      0.00000    -49.90000      0.00000
+PHI=  67.2 CROSS:      0.00000    -49.90000    150.00000
+PHI=  67.3 CROSS:      0.00000    -49.90000    300.00000
+Total points: 1274
+StartPhi of this vector= 67.4
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  67.4[deg]:    230.6 [um]
+Number of irradiation points on this vector: 4
+PHI=  67.4 CROSS:      0.00000    -99.90000   -150.00000
+PHI=  67.5 CROSS:      0.00000    -99.90000      0.00000
+PHI=  67.6 CROSS:      0.00000    -99.90000    150.00000
+PHI=  67.7 CROSS:      0.00000    -99.90000    300.00000
+Total points: 1278
+StartPhi of this vector= 67.8
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  67.8[deg]:    226.7 [um]
+Number of irradiation points on this vector: 4
+PHI=  67.8 CROSS:      0.00000   -149.90000   -150.00000
+PHI=  67.9 CROSS:      0.00000   -149.90000      0.00000
+PHI=  68.0 CROSS:      0.00000   -149.90000    150.00000
+PHI=  68.1 CROSS:      0.00000   -149.90000    300.00000
+Total points: 1282
+StartPhi of this vector= 68.2
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  68.2[deg]:    222.8 [um]
+Number of irradiation points on this vector: 4
+PHI=  68.2 CROSS:      0.00000   -199.90000   -150.00000
+PHI=  68.3 CROSS:      0.00000   -199.90000      0.00000
+PHI=  68.4 CROSS:      0.00000   -199.90000    150.00000
+PHI=  68.5 CROSS:      0.00000   -199.90000    300.00000
+Total points: 1286
+StartPhi of this vector= 68.6
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  68.6[deg]:    218.9 [um]
+Number of irradiation points on this vector: 4
+PHI=  68.6 CROSS:      0.00000   -249.90000   -150.00000
+PHI=  68.7 CROSS:      0.00000   -249.90000      0.00000
+PHI=  68.8 CROSS:      0.00000   -249.90000    150.00000
+PHI=  68.9 CROSS:      0.00000   -249.90000    300.00000
+Total points: 1290
+N points/crystal= 46
+Time for this crystal= 13.8333333333 [min]
+##########################
+##### Crystal No.15 ######
+##########################
+StartPhi of this vector= 69.0
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  69.0[deg]:    215.0 [um]
+Number of irradiation points on this vector: 4
+PHI=  69.0 CROSS:      0.00000    250.10000   -150.00000
+PHI=  69.1 CROSS:      0.00000    250.10000      0.00000
+PHI=  69.2 CROSS:      0.00000    250.10000    150.00000
+PHI=  69.3 CROSS:      0.00000    250.10000    300.00000
+Total points: 1294
+StartPhi of this vector= 69.4
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  69.4[deg]:    211.1 [um]
+Number of irradiation points on this vector: 4
+PHI=  69.4 CROSS:      0.00000    200.10000   -150.00000
+PHI=  69.5 CROSS:      0.00000    200.10000      0.00000
+PHI=  69.6 CROSS:      0.00000    200.10000    150.00000
+PHI=  69.7 CROSS:      0.00000    200.10000    300.00000
+Total points: 1298
+StartPhi of this vector= 69.8
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  69.8[deg]:    207.2 [um]
+Number of irradiation points on this vector: 4
+PHI=  69.8 CROSS:      0.00000    150.10000   -150.00000
+PHI=  69.9 CROSS:      0.00000    150.10000      0.00000
+PHI=  70.0 CROSS:      0.00000    150.10000    150.00000
+PHI=  70.1 CROSS:      0.00000    150.10000    300.00000
+Total points: 1302
+StartPhi of this vector= 70.2
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  70.2[deg]:    203.2 [um]
+Number of irradiation points on this vector: 4
+PHI=  70.2 CROSS:      0.00000    100.10000   -150.00000
+PHI=  70.3 CROSS:      0.00000    100.10000      0.00000
+PHI=  70.4 CROSS:      0.00000    100.10000    150.00000
+PHI=  70.5 CROSS:      0.00000    100.10000    300.00000
+Total points: 1306
+StartPhi of this vector= 70.6
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  70.6[deg]:    199.3 [um]
+Number of irradiation points on this vector: 3
+PHI=  70.6 CROSS:      0.00000     50.10000   -100.00000
+PHI=  70.7 CROSS:      0.00000     50.10000    100.00000
+PHI=  70.8 CROSS:      0.00000     50.10000    300.00000
+Total points: 1309
+StartPhi of this vector= 70.9
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  70.9[deg]:    196.3 [um]
+Number of irradiation points on this vector: 3
+PHI=  70.9 CROSS:      0.00000      0.10000   -100.00000
+PHI=  71.0 CROSS:      0.00000      0.10000    100.00000
+PHI=  71.1 CROSS:      0.00000      0.10000    300.00000
+Total points: 1312
+StartPhi of this vector= 71.2
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  71.2[deg]:    193.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  71.2 CROSS:      0.00000    -49.90000   -100.00000
+PHI=  71.3 CROSS:      0.00000    -49.90000    100.00000
+PHI=  71.4 CROSS:      0.00000    -49.90000    300.00000
+Total points: 1315
+StartPhi of this vector= 71.5
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  71.5[deg]:    190.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  71.5 CROSS:      0.00000    -99.90000   -100.00000
+PHI=  71.6 CROSS:      0.00000    -99.90000    100.00000
+PHI=  71.7 CROSS:      0.00000    -99.90000    300.00000
+Total points: 1318
+StartPhi of this vector= 71.8
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  71.8[deg]:    187.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  71.8 CROSS:      0.00000   -149.90000   -100.00000
+PHI=  71.9 CROSS:      0.00000   -149.90000    100.00000
+PHI=  72.0 CROSS:      0.00000   -149.90000    300.00000
+Total points: 1321
+StartPhi of this vector= 72.1
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  72.1[deg]:    184.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  72.1 CROSS:      0.00000   -199.90000   -100.00000
+PHI=  72.2 CROSS:      0.00000   -199.90000    100.00000
+PHI=  72.3 CROSS:      0.00000   -199.90000    300.00000
+Total points: 1324
+StartPhi of this vector= 72.4
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  72.4[deg]:    181.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  72.4 CROSS:      0.00000   -249.90000   -100.00000
+PHI=  72.5 CROSS:      0.00000   -249.90000    100.00000
+PHI=  72.6 CROSS:      0.00000   -249.90000    300.00000
+Total points: 1327
+N points/crystal= 37
+Time for this crystal= 13.0833333333 [min]
+##########################
+##### Crystal No.16 ######
+##########################
+StartPhi of this vector= 72.7
+Start vector::      0.00000    250.10000   -300.00000
+End   vector::      0.00000    250.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  72.7[deg]:    178.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  72.7 CROSS:      0.00000    250.10000   -100.00000
+PHI=  72.8 CROSS:      0.00000    250.10000    100.00000
+PHI=  72.9 CROSS:      0.00000    250.10000    300.00000
+Total points: 1330
+StartPhi of this vector= 73.0
+Start vector::      0.00000    200.10000   -300.00000
+End   vector::      0.00000    200.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  73.0[deg]:    175.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  73.0 CROSS:      0.00000    200.10000   -100.00000
+PHI=  73.1 CROSS:      0.00000    200.10000    100.00000
+PHI=  73.2 CROSS:      0.00000    200.10000    300.00000
+Total points: 1333
+StartPhi of this vector= 73.3
+Start vector::      0.00000    150.10000   -300.00000
+End   vector::      0.00000    150.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  73.3[deg]:    172.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  73.3 CROSS:      0.00000    150.10000   -100.00000
+PHI=  73.4 CROSS:      0.00000    150.10000    100.00000
+PHI=  73.5 CROSS:      0.00000    150.10000    300.00000
+Total points: 1336
+StartPhi of this vector= 73.6
+Start vector::      0.00000    100.10000   -300.00000
+End   vector::      0.00000    100.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  73.6[deg]:    169.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  73.6 CROSS:      0.00000    100.10000   -100.00000
+PHI=  73.7 CROSS:      0.00000    100.10000    100.00000
+PHI=  73.8 CROSS:      0.00000    100.10000    300.00000
+Total points: 1339
+StartPhi of this vector= 73.9
+Start vector::      0.00000     50.10000   -300.00000
+End   vector::      0.00000     50.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  73.9[deg]:    166.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  73.9 CROSS:      0.00000     50.10000   -100.00000
+PHI=  74.0 CROSS:      0.00000     50.10000    100.00000
+PHI=  74.1 CROSS:      0.00000     50.10000    300.00000
+Total points: 1342
+StartPhi of this vector= 74.2
+Start vector::      0.00000      0.10000   -300.00000
+End   vector::      0.00000      0.10000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  74.2[deg]:    163.4 [um]
+Number of irradiation points on this vector: 3
+PHI=  74.2 CROSS:      0.00000      0.10000   -100.00000
+PHI=  74.3 CROSS:      0.00000      0.10000    100.00000
+PHI=  74.4 CROSS:      0.00000      0.10000    300.00000
+Total points: 1345
+StartPhi of this vector= 74.5
+Start vector::      0.00000    -49.90000   -300.00000
+End   vector::      0.00000    -49.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  74.5[deg]:    160.3 [um]
+Number of irradiation points on this vector: 3
+PHI=  74.5 CROSS:      0.00000    -49.90000   -100.00000
+PHI=  74.6 CROSS:      0.00000    -49.90000    100.00000
+PHI=  74.7 CROSS:      0.00000    -49.90000    300.00000
+Total points: 1348
+StartPhi of this vector= 74.8
+Start vector::      0.00000    -99.90000   -300.00000
+End   vector::      0.00000    -99.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  74.8[deg]:    157.3 [um]
+Number of irradiation points on this vector: 3
+PHI=  74.8 CROSS:      0.00000    -99.90000   -100.00000
+PHI=  74.9 CROSS:      0.00000    -99.90000    100.00000
+PHI=  75.0 CROSS:      0.00000    -99.90000    300.00000
+Total points: 1351
+StartPhi of this vector= 75.1
+Start vector::      0.00000   -149.90000   -300.00000
+End   vector::      0.00000   -149.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  75.1[deg]:    154.3 [um]
+Number of irradiation points on this vector: 3
+PHI=  75.1 CROSS:      0.00000   -149.90000   -100.00000
+PHI=  75.2 CROSS:      0.00000   -149.90000    100.00000
+PHI=  75.3 CROSS:      0.00000   -149.90000    300.00000
+Total points: 1354
+StartPhi of this vector= 75.4
+Start vector::      0.00000   -199.90000   -300.00000
+End   vector::      0.00000   -199.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  75.4[deg]:    151.2 [um]
+Number of irradiation points on this vector: 3
+PHI=  75.4 CROSS:      0.00000   -199.90000   -100.00000
+PHI=  75.5 CROSS:      0.00000   -199.90000    100.00000
+PHI=  75.6 CROSS:      0.00000   -199.90000    300.00000
+Total points: 1357
+StartPhi of this vector= 75.7
+Start vector::      0.00000   -249.90000   -300.00000
+End   vector::      0.00000   -249.90000    300.00000
+Absolute length of this vector:    600.0 [um]
+Length of this vector from X-rays at  75.7[deg]:    148.2 [um]
+Number of irradiation points on this vector: 2
+PHI=  75.7 CROSS:      0.00000   -249.90000      0.00000
+PHI=  75.8 CROSS:      0.00000   -249.90000    300.00000
+Total points: 1359
+N points/crystal= 32
+Time for this crystal= 12.6666666667 [min]
+Number of crystals: 16
+1TIME: 4.55416666667  2TIME: 9.10833333333

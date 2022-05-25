@@ -1,0 +1,118 @@
+
+ Generate File TITLE:   .
+ Crystal Identifier:    still
+
+
+
+ *** WARNING *** No attempt will be made to measure overloaded reflections
+ Use keywords PROFILE OVERLOAD to estimate overloads by profile fitting
+ IMAGE    CCX    CCY    CCOM   DIST YSCALE  TILT TWIST   ROFF   TOFF  RESID  WRESID    FULL   PART   OVRL  NEG  BAD  I/SIGI  I/SIGI   Rsym  Nsym SDRAT
+                                                                                                             overall (at 2.5A)
+        1  -0.02   0.00    0.00  200.1  1.000     0     0   0.00   0.00  0.035     0.1       0   4237     0  1182    0    2.1     0.5    0.000    0   0.0
+        2  -0.01   0.00    0.00  200.1  1.000     8     0   0.00   0.00  0.038     0.1       0   4242     1  1237    0    2.1     0.5    0.000    0   0.0
+        3  -0.01   0.00    0.00  200.1  1.000    10     0   0.00   0.00  0.041     0.1       0   4252     0  1255    0    2.0     0.6    0.000    0   0.0
+        4  -0.01   0.00    0.00  200.1  1.000    11     0   0.00   0.00  0.031     0.1       0   4309     0  1315    0    2.0     0.5    0.000    0   0.0
+        5  -0.01   0.00   -0.00  200.1  1.000    12    -1   0.00   0.00  0.035     0.1       0   4331     0  1274    0    2.2     0.7    0.000    0   0.0
+
+
+ RESULTS OF POSTREFINEMENT
+  9 successive pairs of images will be used
+ Each image will have its own missetting angles
+ Initial cell parameters 177.755 182.502 204.301  90.00  90.00  90.00
+ Initial missetting angles    0.000    0.000    0.000
+ Cell parameters are not refined
+ Beam parameters are being refined
+ Input values (degrees): mosaic spread (EPS) 0.200 horizontal divergence (DIVH) 0.020 vertical divergence (DIVV) 0.020
+ Image     PHIX     PHIY     PHIZ        A        B        C      ALPHA     BETA    GAMMA   MOSAIC   DIVH   DIVV    Resid      NR
+    1     Post refinement was not performed for this image
+       2      0.00    -0.02     0.02    177.76  182.50  204.30   90.00   90.00   90.00    0.00   0.00   0.00   0.000     0
+    sds PSIY   0.01 PSIZ   0.01      0.00    0.00    0.00    0.00    0.00    0.00    0.00   0.00   0.00
+       3      0.00    -0.02     0.02    177.76  182.50  204.30   90.00   90.00   90.00    0.00   0.00   0.00   0.000     0
+    sds PSIY   0.01 PSIZ   0.01      0.00    0.00    0.00    0.00    0.00    0.00    0.00   0.00   0.00
+       4      0.00    -0.02     0.02    177.76  182.50  204.30   90.00   90.00   90.00    0.20   0.02   0.02   0.021    21
+    sds PSIY   0.01 PSIZ   0.01      0.00    0.00    0.00    0.00    0.00    0.00    0.00   0.00   0.00
+       5      0.00    -0.04     0.02    177.76  182.50  204.30   90.00   90.00   90.00    0.20   0.02   0.02   0.023    44
+    sds PSIY   0.01 PSIZ   0.00      0.00    0.00    0.00    0.00    0.00    0.00    0.00   0.00   0.00
+
+
+ *** Warning messages ***
+
+ *** SERIOUS PROBLEMS ***
+ ========================
+ The following problems may have a significant effect on data quality
+ Action should be taken to eliminate these warnings.
+
+ ERROR IN DETECTOR GAIN
+ ======================
+ The ratio of the observed variation in background pixels to that
+ expected statistically (the BGRATIO) lies outside the range 0.9 to 1.1.
+ Actual values: minimum:  0.83  maximum:  0.83
+ The most likely explanation is that the GAIN of the detector is incorrect.
+ The current GAIN is 0.30 but the observed BGRATIO suggests it should be
+ set to 0.21.
+ NOTE however that diffuse scatter can lead to an increased value of BGRATIO
+ even when the gain is correct.
+ Since the gain for any detector should remain constant, it should be worked out
+ for a crystal giving strong diffraction and "clean" spots (ie no disorder or
+ diffuse scatter)and kept at this value.
+ Processing data with an incorrect gain will result in a systematic 
+ overestimate of very weak reflections and incorrect standard deviations.
+
+
+ *** PROBLEMS WORTH CONSIDERING ***
+ ==================================
+ The following warnings suggest that the processing might be improved
+ if appropriate action is taken.
+
+ ****   IMPORTANT   ****
+ =======================
+ PIXELS IN CENTRE OF DETECTOR WITH VALUES OF LESS THAN (OR EQUAL TO)    0
+ ========================================================================
+ Spots with pixel values less than (or equal to)    0 in the measurement box
+ (in the peak or background) have been found in the central region of the
+ detector (within  56mm of the direct beam position). These pixels are assumed to
+ be in the inactive area of the detector.
+ (The pixel value is set with keyword NULLPIX, and assigning a non-zero value
+ for NULLPIX can be used to reject spots that lie behind the backstop shadow).
+
+ If this is happening because the X-ray background is extremely low, then the
+ program may be incorrectly rejecting some spots.
+ You should check if this is indeed the case using the "pick" menu option of
+ the X-window graphics to inspect the image.
+ To avoid rejecting spots, use the keyword BIAS to add a constant to all pixel
+ values. The adc offset will also automatically be adjusted, do NOT reset it
+ with an ADCOFFSET keyword.
+ In addition, reduce RMAX or RSCAN (LIMITS keyword) to ensure that no spots are
+ predicted which have any part of their measurement box outside the scanned area.
+ ALL SPOTS CONTAINING A PIXEL WITH A VALUE LESS THAN OR EQUAL TO    0 WILL
+ BE REJECTED UNLESS "BIAS" IS SET.
+ $TABLE: Refined detector parameters:
+ $GRAPHS :Camera constants CCX CCY (mm) CCOM (deg) v image:A:1,2,3,4:  
+ :Distance (mm) v image:A:1,5:
+ :Yscale v image:A:1,6:
+ :Tilt and twist (hundredths of deg) v image:A:1,7,8:
+ :ROFF and TOFF (mm) v image:A:1,9,10:
+ :Positional error (mm) and weighted error v image:A:1,11,12:
+ :I/sig(I) overall and outer v image:N:1,18,19:
+ :Rsym v image:N:1,20:  
+ :SDratio v image:N:1,22:  
+ :Number of overloads and badspots v image:A:1,15,17: $$
+ IMAGE    CCX    CCY    CCOM   DIST YSCALE  TILT TWIST   ROFF   TOFF  RESID  WRESID    FULL   PART   OVRL  NEG  BAD I/sigI I/sigI_out  Rsym  Nsym SDRAT $$ $$
+        1  -0.02   0.00    0.00  200.1  1.000     0     0   0.00   0.00  0.035     0.1       0   4237     0  1182    0    2.1     0.5    0.000    0   0.0                                               
+        2  -0.01   0.00    0.00  200.1  1.000     8     0   0.00   0.00  0.038     0.1       0   4242     1  1237    0    2.1     0.5    0.000    0   0.0                                               
+        3  -0.01   0.00    0.00  200.1  1.000    10     0   0.00   0.00  0.041     0.1       0   4252     0  1255    0    2.0     0.6    0.000    0   0.0                                               
+        4  -0.01   0.00    0.00  200.1  1.000    11     0   0.00   0.00  0.031     0.1       0   4309     0  1315    0    2.0     0.5    0.000    0   0.0                                               
+        5  -0.01   0.00   -0.00  200.1  1.000    12    -1   0.00   0.00  0.035     0.1       0   4331     0  1274    0    2.2     0.7    0.000    0   0.0                                               
+ $$
+  $TABLE: Post refinement:
+ $GRAPHS :Missets phix phiy phiz v image:A:1,2,3,4:  
+ :Cell parameters A,B,C v image:A:1,5,6,7:  
+ :Cell angles alpha beta gamma v image:A:1,8,9,10:  
+ :Mosaic spread v image:A:1,11:  
+ :Beam divergences v image:A:1,12,13: $$  
+ Image     PHIX     PHIY     PHIZ        A        B        C      ALPHA     BETA    GAMMA   MOSAIC   DIVH   DIVV    Resid      NR $$ $$
+       2      0.00    -0.02     0.02    177.76  182.50  204.30   90.00   90.00   90.00    0.00   0.00   0.00   0.000     0                                                                              
+       3      0.00    -0.02     0.02    177.76  182.50  204.30   90.00   90.00   90.00    0.00   0.00   0.00   0.000     0                                                                              
+       4      0.00    -0.02     0.02    177.76  182.50  204.30   90.00   90.00   90.00    0.20   0.02   0.02   0.021    21                                                                              
+       5      0.00    -0.04     0.02    177.76  182.50  204.30   90.00   90.00   90.00    0.20   0.02   0.02   0.023    44                                                                              
+ $$
